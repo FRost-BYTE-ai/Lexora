@@ -168,6 +168,15 @@ export default function App() {
                     <p className="text-[10px] text-slate-500">Semantic Search</p>
                   </div>
                 </div>
+                <div className="flex items-start gap-3">
+                  <div className="p-1 bg-blue-50 rounded text-blue-600 mt-0.5">
+                    <BookOpen className="w-3 h-3" />
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-slate-700">Citation Search</p>
+                    <p className="text-[10px] text-slate-500">Judgment Retrieval</p>
+                  </div>
+                </div>
               </div>
             </div>
           </nav>
@@ -309,6 +318,14 @@ export default function App() {
               </div>
             </div>
             <div className="relative group">
+              <div className="absolute -top-8 left-0 flex gap-2">
+                <button 
+                  onClick={() => setInput('2023 SCC OnLine Mad 1234')}
+                  className="text-[10px] font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded hover:bg-blue-100 transition-colors"
+                >
+                  Example Citation: 2023 SCC OnLine Mad 1234
+                </button>
+              </div>
               <textarea
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
