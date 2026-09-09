@@ -1,5 +1,10 @@
 {
-  "name": "LexTamil",
-  "description": "AI-powered legal chatbot for simplifying Tamil Nadu laws with Tamil-first explanations, classification, and semantic search.",
-  "requestFramePermissions": []
+  "name": "Lexora",
+  "description": "AI-powered legal assistant simplifying Indian and Tamil Nadu laws with multilingual support, citation verification, document analysis, and procedural action plans.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

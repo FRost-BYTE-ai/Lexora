@@ -1,0 +1,271 @@
+import { TranslationStructure } from './types';
+
+export const tanglishTranslations: TranslationStructure = {
+  common: {
+    appName: 'Lexora',
+    appTagline: 'Tamil Nadu Satta Thozhilnutpam',
+    version: '',
+    ok: 'Sari',
+    cancel: 'Cancel Sei',
+    done: 'Mudindhadhu',
+    close: 'Moodu',
+    copy: 'Copy Sei',
+    copied: 'Copy Aayiduchu!',
+    download: 'Download Sei',
+    send: 'Anuppu',
+    listen: 'Kekka',
+    speaking: 'Olikkiradhu...',
+    stop: 'Nirutthu',
+    translate: 'Mozhipeyarka',
+    translating: 'Mozhipeyarkkappadugiradhu...',
+    showOriginal: 'Asal-ai Kaattavum',
+    inEnglish: 'English-il',
+    inTamil: 'Tamil-il',
+    inTanglish: 'Tanglish-il',
+    inHindi: 'Hindi-il',
+    search: 'Thedu',
+    filter: 'Filter Sei',
+    all: 'Ellaam',
+    step: 'Padi',
+    notice: 'Arivippu',
+    error: 'Pizhai (Error)',
+    retry: 'Meendum Try Pannavum',
+    whyThisAnswer: 'Indha vilakkathirku aadharam enna?',
+    verifiedReference: 'Saripaarkkapatta Merkol',
+    checked: 'Saripaarkkapatathu',
+    loading: 'Load aagudhu...',
+    legalDisclaimerTitle: 'Satta Vizhippunarvu Arivippu',
+    legalDisclaimerText: 'Lexora kalvi matrum satta vizhippunarvu nokkathirkaga satta thagavalgalai vazhangugiradhu. Idhu oru advocate-oda direct consultation-kku substitute aagaadhu.'
+  },
+  accessibility: {
+    sendMessage: 'Satta kelviyai anuppavum',
+    voiceInput: 'Voice input thodangavum',
+    stopVoiceInput: 'Voice input nirutthavum',
+    uploadDoc: 'Aayvu-kku document upload seiyyavum',
+    closeDialog: 'Modal window moodavum',
+    toggleMenu: 'Menu maatrhavum',
+    copyText: 'Text-ai copy seiyyavum',
+    listenAudio: 'Voice moolam kekkavum',
+    translateText: 'Message-ai translate seiyyavum',
+    openLibrary: 'Satta Noolagam thirakkavum',
+    openDraft: 'Satta Varaivu thirakkavum',
+    openScrutiny: 'Aavanam Aayvu thirakkavum',
+    selectLanguage: 'Language select seiyyavum',
+    selectJurisdiction: 'Jurisdiction select seiyyavum',
+    selectExplanationLevel: 'Explanation level select seiyyavum'
+  },
+  nav: {
+    legalLibrary: 'Satta Noolagam',
+    draftGenerator: 'Satta Varaivu Uruvaakki',
+    documentScrutiny: 'Aavanam Aayvu',
+    filterByDomain: 'Satta Pirivugal Padi Vadikattavum',
+    nlpPipeline: 'NLP & Satta Seyalaakkam',
+    indicBert: 'IndicBERT + FastText',
+    indicBertDesc: 'Tamil mozhi kandaridhal & classification',
+    grounding: 'Madras HC & Satta Sync',
+    groundingDesc: 'Madras HC theerppugal & India Code sync'
+  },
+  header: {
+    tamilNaduMode: 'Tamil Nadu Murai',
+    allIndiaMode: 'All India (Muzhu India)',
+    tnModeTooltip: 'Tamil Nadu sattangal & Madras High Court theerppugalukku munnurimai',
+    inModeTooltip: 'Mathiya arasu sattangal & Supreme Court theerppugalukku munnurimai',
+    explanationLevel: 'Nilai:',
+    levelCitizen: 'Kudimagan',
+    levelStudent: 'Satta Maanavar',
+    levelAdvocate: 'Vazhakkarignar',
+    levelSimpleTamil: 'Simple text',
+    descCitizen: 'Eliya nadaimurai vilakkam',
+    descStudent: 'Satta kotpaadugal & pirivugal',
+    descAdvocate: 'Vazhakku vaadhangal & citations',
+    descSimpleTamil: 'Complex sorkal illadha simple text vilakkam',
+    libraryButton: 'Noolagam'
+  },
+  domains: {
+    general: 'Pothu Sattam',
+    property: 'Sothu & Nilam',
+    consumer: 'Nugarvor Urimaigal',
+    family: 'Kudumbam & Thirumanam',
+    employment: 'Velai & Thozhilaalar Sattam',
+    criminal: 'Kutraviyal & Kaaval Thurai',
+    finance: 'Nithi & Vangi',
+    government: 'Arasu Sevaigal & RTI'
+  },
+  quickPrompts: {
+    title: 'Viraivu Kelvigal:',
+    citation: '📜 Case Citation: 2023 SCC OnLine Mad 1234',
+    patta: '🏛️ TN Patta Chitta Peyar Maatram Murai',
+    tenancy: '🏠 Vaadagai Advance Thogai Thiruppi Perudhal'
+  },
+  riskBadges: {
+    low: 'Pothuvaana Thagaval',
+    lowTooltip: 'Standard legal guidance and procedural awareness.',
+    medium: 'Mukkiyam: Lawyer-idam Check Seiyyavum',
+    mediumTooltip: 'Statutory deadline, official notice alladhu panam sammandhappattadhu.',
+    high: 'Adhiga Satta Aabathulla Vivagaaram',
+    highTooltip: 'Criminal alladhu periya sothu prachanai — advocate aalosanai koodiya seekiram thevai.',
+    riskIndicatorTitle: 'Satta Aabathu Mathippeedu Indicator',
+    riskGeneralNotice: 'Lexora general legal guidance mattume tharum. High-risk vishayangalukku direct-ah advocate-ai consult panradhu dhaan best.'
+  },
+  chat: {
+    welcomeMessage: 'Vanakkam! Naan **Lexora** — Tamil Nadu matrum Indian sattangalukkana unga AI assistant.\n\nEnnidam unga vaadagai agreement, nilam/Patta, nugarvor kuraigal, velai prachanaigal, alladhu court case-gal pathi kelvigal kekkalam.',
+    welcomeFollowUps: [
+      'Vaadagai advance thogai thiruppi peruvadhu eppadi?',
+      'Online-il Patta peyar maatram seivadhu eppadi?',
+      'Nugarvor aanaayathil e-Daakhil moolam complaint file pannuvadhu eppadi?'
+    ],
+    inputPlaceholder: 'Unga satta kelviyai kelungal... (Enter amukkavum)',
+    tnModeActive: '🏛️ Tamil Nadu Sattam active-il ulladhu',
+    inModeActive: '🇮🇳 Central Acts active-il ulladhu',
+    footerNote: 'IndicBERT NLP, Sentence Transformers matrum Gemini AI vazhinadathum • Tamil Nadu Satta Thozhilnutpa Muyarchi',
+    errorGeneral: '⚠️ Satta thagavalgalai peruvadhil thozhilnutpa pizhai erpattulladhu. Dhayavuseidhu siridhu neram kazhithu meendum try pannavum.',
+    loadingStatutes: 'Tamil Nadu sattangal, theerppugal & satta vidhigalai thedugiradhu...',
+    scrutinyReport: 'Aayvu Arikkai',
+    draftNoticePrompt: 'Idharkana Legal Notice Varaivu Seiyya'
+  },
+  sources: {
+    title: 'Sattapoorva Aadharangal & Saripaarkkapatta Theerppugal',
+    showLess: 'Surukkavum',
+    viewAll: 'Anaithaiyum Paarkka',
+    verifiedReference: 'Saripaarkkapatta Merkol',
+    checked: 'Saripaarkkapatathu',
+    openSource: 'Official legal source-ai thirakkavum'
+  },
+  actionPlan: {
+    title: 'Seyal Thittam & Nadaimurai Vazhikaatti',
+    subtitle: 'Unga munnetrathirku erpa adutha padigalai tick seiyyavum',
+    doneCount: '-il',
+    stepPrefix: 'Padi',
+    citizenNotice: 'Arivippu: Makkal vizhippunarvukkana nadaimurai padigal. Satta limitation kaalakkedu vidhigal porundhum.'
+  },
+  followUp: {
+    title: 'Parinduraikkappatta Thodarchi Satta Kelvigal'
+  },
+  voice: {
+    listening: 'Ketkkiradhu',
+    stopListening: 'Nirutha click seiyyavum',
+    startListening: 'Kural input (Pesavum)',
+    notSupported: 'Indha browser-il speech recognition aadharikkapadavillai'
+  },
+  explainability: {
+    title: 'Indha Vilakkathirku Aadharam Enna? (Explainability Audit)',
+    subtitle: 'Velippadayana saripaarppu alaveedugal & satta tharavugal',
+    queryUnderstood: 'Adaiyaalam Kaanappatta Kelvi',
+    languageDetected: 'Kandarindha Mozhi',
+    legalDomain: 'Satta Pirivu',
+    jurisdictionApplied: 'Porundhum Athigaara Varambu',
+    verificationStatus: 'Saripaarppu Nilai',
+    retrievedReferences: 'Perappatta Sattapoorva Aadharangal:',
+    verifiedSourcesCount: 'saripaarkkapatta aadharangal',
+    groundingFactors: 'Payanpaduthappatta Satta Kaaranigal & Vidhigal',
+    auditDisclaimer: 'Lexora Indian Acts, Tamil Nadu Gazettes matrum Madras High Court theerppugalai aadharamaaga kondu pathil tharugiradhu.',
+    closeAudit: 'Audit-ai Moodu'
+  },
+  uploadModal: {
+    title: 'Satta Aavana Upload & Aayvu',
+    subtitle: 'Vaadagai agreement, court notice, bill-gal alladhu velai order-galai aayvu seiyya',
+    dragDrop: 'Unga satta aavanathai inge drag & drop seiyyavum',
+    supportedFormats: 'PDF, DOCX, TXT alladhu scan seitha notices aadharikkapadum (20MB varai)',
+    browseFiles: 'Files-ai Choose Seiyya',
+    readyToAnalyze: 'Aayvukku Thayaar',
+    chooseDifferent: 'Vera file select panna click seiyya',
+    loadTemplates: 'Alladhu standard Tamil Nadu legal forms-ai load seiyyavum:',
+    templateRental: '🏢 TN Vaadagai Agreement Sample',
+    templateRentalFile: 'tn_residential_lease_agreement.txt',
+    templateRentalContent: 'RESIDENTIAL LEASE AGREEMENT (TAMIL NADU)\n\nThis Lease Agreement executed on 01/01/2024 between Mr. S. Ramanathan (Landlord) and Mr. K. Vijay (Tenant) for premises at No. 14, Anna Nagar West, Chennai - 600040.\n\nKey Terms:\n1. Monthly Rent: Rs. 22,000 payable before 5th of each calendar month.\n2. Security Advance: Rs. 2,20,000 (10 months rent) paid via NEFT.\n3. Notice Period: 30 days written notice by either party.\n4. Stamp Duty & Registration: As per TN Regulation of Rights and Responsibilities of Landlords and Tenants Act, 2017.\n5. Jurisdiction: Courts at Chennai alone shall have jurisdiction.',
+    templateConsumer: '🛒 Nugarvor Kuraitheer Notice Sample',
+    templateConsumerFile: 'consumer_defective_goods_notice.txt',
+    templateConsumerContent: 'LEGAL GRIEVANCE UNDER CONSUMER PROTECTION ACT, 2019\n\nTo: Apex Electronics Private Limited, Mount Road, Chennai.\nFrom: A. Sundaram, Consumer, T. Nagar, Chennai.\n\nSubject: Notice for replacement of defective LED Television and refund of Rs. 45,000.\n\nDetails:\nPurchased Model X50 on 12/08/2024 against Invoice No. CHN-8849. Screen failed within 14 days. Service center failed to repair within 30 days despite written complaint.\n\nDemanded: Full refund with 9% statutory interest within 15 days.',
+    stepUploading: '1. Document paadhugaappa upload aagudhu...',
+    stepExtracting: '2. Satta clauses & text extract aagudhu...',
+    stepAnalyzing: '3. Legal obligations & risk factor aayvu seiyapadudhu...',
+    stepGrounding: '4. Tamil Nadu & Indian statutes-oda match panni check pannudhu...',
+    stepReady: '5. Scrutiny report ready!',
+    analyzingTitle: 'Automated Document Scrutiny Pipeline',
+    analyzingDesc: 'IndicBERT & Legal Graph moolam clauses process aagudhu...',
+    encryptionNotice: 'Client Encryption Paadhugaappu',
+    cancel: 'Cancel Sei',
+    analyzeBtn: 'Aavanathai Aayvu Seiyya',
+    errorUpload: 'Mudhalla oru file select pannunga.',
+    scrutinyQueryPrefix: 'Indha document-oda legal clauses matrum risk points-ai scrutiny panni details tharavum:'
+  },
+  draftModal: {
+    title: 'Satta Varaivu Uruvaakki',
+    subtitle: 'Udanadi legal notice, complaint petition, RTI manu alladhu claim draft',
+    selectType: 'Satta Aavana Vagaiyai Therntheduthukkollavum',
+    types: {
+      rti: {
+        label: 'RTI Manu (Pirivu 6(1))',
+        labelTamil: 'RTI Manu (Section 6(1))',
+        description: 'RTI Act 2005 padi arasu aavanangal, file status alladhu information kettu application poduvadhu.'
+      },
+      consumer_complaint: {
+        label: 'Nugarvor Kuraitheer Notice',
+        labelTamil: 'Consumer Demand Notice',
+        description: 'Defective goods alladhu poor service-kku CPA 2019 padi 15 naal time kuduthu demand notice.'
+      },
+      tenancy_notice: {
+        label: 'Vaadagai Advance / Rent Notice',
+        labelTamil: 'Tenancy Deposit Refund Notice',
+        description: 'TN Tenancy Act 2017 padi advance thogai thiruppi ketkum satta arivippu.'
+      },
+      legal_notice: {
+        label: 'Formal Legal Demand Notice',
+        labelTamil: 'Advocate Legal Notice',
+        description: 'Court-ku poradhukku munnadi 15-30 days time tharum standard legal demand notice.'
+      },
+      grievance_letter: {
+        label: 'Arasu Kuraitheer Manu',
+        labelTamil: 'Public Grievance Petition',
+        description: 'District Collector, Tahsildar alladhu Corporation Commissioner-kku anuppum formal representation.'
+      }
+    },
+    jurisdictionSetting: 'Athigaara Varambu Setting',
+    draftLanguage: 'Varaivu Mozhi',
+    complainantName: 'Manudhaarar / Ungal Peyar & Address',
+    complainantPlaceholder: 'e.g., K. Sundararajan, Chennai',
+    respondentName: 'Edhirtharappu / Opposite Party Peyar',
+    respondentPlaceholder: 'e.g., Public Information Officer / Landlord Peyar',
+    facts: 'Nigazhvugalin Kaalavarisai / Kuraigalin Vivaram',
+    factsPlaceholder: 'Mukkiya dates, pay panna amount, agreement details matrum nadandha violations-ai ezhudhavum...',
+    relief: 'Koorappadum Theervu / Nivaaranam',
+    reliefPlaceholder: 'e.g., 15 days-kulle advance amount Rs. 1,50,000 refund panna vendum...',
+    defaultComplainant: 'M. Anand, Resident of Chennai',
+    defaultRespondent: 'Landlord / Service Provider, Chennai',
+    defaultFacts: '01/03/2023-il Rs. 1,00,000 advance koduthu rental agreement potten. 28/02/2024-il 1 month notice kuduthu kaali seythen. Veetla damage edhuvum illanalum landlord advance thiruppi tharala.',
+    defaultRelief: 'Indha notice vandha 15 days-kulle advance Rs. 1,00,000 thogaiyai 9% annual interest-oda thiruppi thara vendum.',
+    generateBtn: 'Draft-ai Uruvaakku',
+    generatingBtn: 'Draft Uruvaakkappadugiradhu...',
+    generatedTitle: 'Uruvaakkappatta Satta Draft',
+    legalNoticeDisclaimer: 'NOTIFY: Indha draft reference purpose-kku mattume. Court-il submit panna advocate aalosanai thevai.',
+    editParameters: '← Details maatri meendum uruvaakkavum',
+    footerNotice: 'Tamil Nadu state rules & Union statutes padi draft seyyappattadhu.',
+    copy: 'Copy Sei',
+    copied: 'Copy Aayiduchu!',
+    downloadTxt: 'Download Sei (TXT)'
+  },
+  libraryModal: {
+    title: 'Satta Noolagam (Knowledge Explorer)',
+    subtitle: 'Indian Constitution, Central Acts, Tamil Nadu Enactments & Citizen Charters',
+    searchPlaceholder: 'Tamil Nadu Acts, Patta, RTI, Vaadagai, BNS pathi thedungal...',
+    categories: {
+      all: 'Ella Categories-um',
+      tnLaws: 'Tamil Nadu Sattangal',
+      centralActs: 'Central Acts',
+      citizenRights: 'Citizen Rights',
+      governmentServices: 'Arasu Sevaigal',
+      constitution: 'Constitution',
+      courtProcedures: 'Court Procedures'
+    },
+    allJurisdictions: 'Ella Jurisdictions-um',
+    emptyResults: 'Unga thedalukku etra satta pirivugal kidaikkavillai',
+    emptyHint: '"Patta", "Vaadagai", "Consumer", "RTI", alladhu "BNS" pottu thedi paarunga',
+    keySections: 'Mukkiya Pirivugal / Vidhigal:',
+    askInChat: 'Chat-il Kelungal →',
+    askInChatPrefix: 'Indha sattathin mukkiya sections, procedures matrum citizen rights vilakkavum:',
+    closeExplorer: 'Noolagathai Moodu',
+    sourceNotice: 'India Code, Tamil Nadu Gazettes matrum official courts data-vudan sync seyyappattadhu.',
+    tnLawBadge: 'Tamil Nadu Law',
+    centralStatuteBadge: 'Central Statute'
+  }
+};

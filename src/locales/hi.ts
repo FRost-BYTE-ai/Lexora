@@ -1,0 +1,271 @@
+import { TranslationStructure } from './types';
+
+export const hiTranslations: TranslationStructure = {
+  common: {
+    appName: 'Lexora',
+    appTagline: 'भारतीय एवं तमिलनाडु कानूनी तकनीक',
+    version: '',
+    ok: 'ठीक है',
+    cancel: 'रद्द करें',
+    done: 'पूर्ण',
+    close: 'बंद करें',
+    copy: 'कॉपी करें',
+    copied: 'कॉपी हो गया!',
+    download: 'डाउनलोड करें',
+    send: 'भेजें',
+    listen: 'सुनें',
+    speaking: 'बोल रहा है...',
+    stop: 'रोकें',
+    translate: 'अनुवाद करें',
+    translating: 'अनुवाद हो रहा है...',
+    showOriginal: 'मूल देखें',
+    inEnglish: 'अंग्रेज़ी में',
+    inTamil: 'तमिल में',
+    inTanglish: 'तांग्लिश में',
+    inHindi: 'हिन्दी में',
+    search: 'खोजें',
+    filter: 'फ़िल्टर',
+    all: 'सभी',
+    step: 'चरण',
+    notice: 'सूचना',
+    error: 'त्रुटि',
+    retry: 'पुनः प्रयास करें',
+    whyThisAnswer: 'यह उत्तर क्यों?',
+    verifiedReference: 'सत्यापित संदर्भ',
+    checked: 'जाँचा गया',
+    loading: 'लोड हो रहा है...',
+    legalDisclaimerTitle: 'कानूनी साक्षरता अस्वीकरण',
+    legalDisclaimerText: 'Lexora केवल कानूनी साक्षरता और शैक्षिक मार्गदर्शन प्रदान करता है। यह किसी पेशेवर अधिवक्ता का विकल्प नहीं है।'
+  },
+  accessibility: {
+    sendMessage: 'कानूनी प्रश्न संदेश भेजें',
+    voiceInput: 'आवाज से इनपुट शुरू करें',
+    stopVoiceInput: 'आवाज इनपुट रोकें',
+    uploadDoc: 'दस्तावेज़ विश्लेषण हेतु अपलोड करें',
+    closeDialog: 'डायलॉग बंद करें',
+    toggleMenu: 'नेविगेशन मेनू टॉगल करें',
+    copyText: 'टेक्स्ट क्लिपबोर्ड पर कॉपी करें',
+    listenAudio: 'ऑडियो प्रतिक्रिया सुनें',
+    translateText: 'संदेश अनुवाद करें',
+    openLibrary: 'कानूनी ज्ञान पुस्तकालय खोलें',
+    openDraft: 'कानूनी ड्राफ्ट जनरेटर खोलें',
+    openScrutiny: 'दस्तावेज़ जांच खोलें',
+    selectLanguage: 'इंटरफ़ेस भाषा चुनें',
+    selectJurisdiction: 'कानूनी अधिकार क्षेत्र चुनें',
+    selectExplanationLevel: 'व्याख्या स्तर चुनें'
+  },
+  nav: {
+    legalLibrary: 'कानूनी पुस्तकालय',
+    draftGenerator: 'ड्राफ्ट जनरेटर',
+    documentScrutiny: 'दस्तावेज़ जांच',
+    filterByDomain: 'कानूनी क्षेत्र अनुसार फ़िल्टर',
+    nlpPipeline: 'एनएलपी और लीगल पाइपलाइन',
+    indicBert: 'IndicBERT + FastText',
+    indicBertDesc: 'बहुभाषी पहचान एवं कानूनी वर्गीकरण',
+    grounding: 'सत्यापन एवं न्यायिक मिसालें',
+    groundingDesc: 'मद्रास उच्च न्यायालय एवं केंद्रीय कानून सिंक'
+  },
+  header: {
+    tamilNaduMode: 'तमिलनाडु मोड',
+    allIndiaMode: 'अखिल भारतीय',
+    tnModeTooltip: 'तमिलनाडु राज्य अधिनियम, मद्रास उच्च न्यायालय एवं राज्य पोर्टलों को प्राथमिकता दें',
+    inModeTooltip: 'केंद्रीय अधिनियम एवं उच्चतम न्यायालय के निर्णयों को प्राथमिकता दें',
+    explanationLevel: 'स्तर:',
+    levelCitizen: 'नागरिक',
+    levelStudent: 'छात्र',
+    levelAdvocate: 'अधिवक्ता',
+    levelSimpleTamil: 'सरल पाठ (Simple text)',
+    descCitizen: 'दैनिक जीवन के सरल उदाहरणों के साथ',
+    descStudent: 'वैधानिक प्रावधान एवं कानूनी सिद्धांत',
+    descAdvocate: 'याचिका संदर्भ एवं आधिकारिक निर्णय',
+    descSimpleTamil: 'सरल भाषा एवं सहज व्याख्या',
+    libraryButton: 'पुस्तकालय'
+  },
+  domains: {
+    general: 'सामान्य कानून',
+    property: 'संपत्ति एवं भूमि',
+    consumer: 'उपभोक्ता अधिकार',
+    family: 'परिवार एवं विवाह',
+    employment: 'रोजगार एवं श्रम',
+    criminal: 'आपराधिक एवं पुलिस',
+    finance: 'वित्त एवं बैंकिंग',
+    government: 'सरकारी सेवाएं एवं आरटीआई'
+  },
+  quickPrompts: {
+    title: 'त्वरित प्रश्न:',
+    citation: '📜 निर्णय उद्धरण: 2023 SCC OnLine Mad 1234',
+    patta: '🏛️ TN पट्टा चिट्टा स्थानांतरण प्रक्रिया',
+    tenancy: '🏠 किराए की अग्रिम राशि की वापसी'
+  },
+  riskBadges: {
+    low: 'सामान्य जानकारी',
+    lowTooltip: 'मानक कानूनी जानकारी और प्रक्रियात्मक साक्षरता।',
+    medium: 'महत्वपूर्ण: वकील से सलाह लें',
+    mediumTooltip: 'वैधानिक समयसीमा, आधिकारिक नोटिस या वित्तीय दायित्व शामिल हैं।',
+    high: 'उच्च-जोखिम कानूनी मामला',
+    highTooltip: 'तत्काल कानूनी सहायता आवश्यक, आपराधिक या गंभीर संपत्ति मामला।',
+    riskIndicatorTitle: 'जोखिम मूल्यांकन सूचक',
+    riskGeneralNotice: 'Lexora सामान्य कानूनी मार्गदर्शन प्रदान करता है। उच्च जोखिम वाले मामलों में पेशेवर वकील से परामर्श करें।'
+  },
+  chat: {
+    welcomeMessage: 'स्वागत है! मैं **Lexora** हूँ — आपका एआई कानूनी सहायक, जो भारतीय एवं तमिलनाडु कानूनों में विशेषज्ञता रखता है।\n\nआप मुझसे किराया अनुबंध, भूमि रिकॉर्ड व पट्टा, उपभोक्ता शिकायतें, श्रम अधिकार या अदालती प्रक्रियाओं के बारे में पूछ सकते हैं।',
+    welcomeFollowUps: [
+      'तमिलनाडु में किराये की अग्रिम राशि कैसे वापस पाएं?',
+      'TN ई-सर्विसेज द्वारा ऑनलाइन पट्टा स्थानांतरण का आवेदन कैसे करें?',
+      'e-Daakhil पोर्टल पर उपभोक्ता शिकायत कैसे दर्ज करें?'
+    ],
+    inputPlaceholder: 'भारतीय / तमिलनाडु कानून से संबंधित अपना प्रश्न पूछें... (Enter दबाएं)',
+    tnModeActive: '🏛️ तमिलनाडु मोड सक्रिय',
+    inModeActive: '🇮🇳 केंद्रीय अधिनियम सक्रिय',
+    footerNote: 'IndicBERT NLP, Sentence Transformers एवं Gemini AI द्वारा संचालित • कानूनी तकनीक पहल',
+    errorGeneral: '⚠️ कानूनी जानकारी प्राप्त करते समय तकनीकी त्रुटि हुई। कृपया पुनः प्रयास करें।',
+    loadingStatutes: 'अधिनियमों, न्यायिक मिसालों एवं वैधानिक नियमों की खोज जारी...',
+    scrutinyReport: 'दस्तावेज़ जांच रिपोर्ट',
+    draftNoticePrompt: 'इसके लिए कानूनी नोटिस तैयार करें'
+  },
+  sources: {
+    title: 'वैधानिक स्रोत एवं सत्यापित न्यायिक मिसालें',
+    showLess: 'कम दिखाएं',
+    viewAll: 'सभी देखें',
+    verifiedReference: 'सत्यापित संदर्भ',
+    checked: 'जाँचा गया',
+    openSource: 'आधिकारिक कानूनी स्रोत खोलें'
+  },
+  actionPlan: {
+    title: 'कार्य योजना एवं प्रक्रियात्मक चरण',
+    subtitle: 'प्रक्रिया के अनुसार अनुशंसित चरणों की जाँच करें',
+    doneCount: 'में से',
+    stepPrefix: 'चरण',
+    citizenNotice: 'सूचना: नागरिक जागरूकता हेतु प्रक्रियात्मक चरण। वैधानिक समयसीमा नियम लागू।'
+  },
+  followUp: {
+    title: 'सुझाए गए अनुवर्ती कानूनी प्रश्न'
+  },
+  voice: {
+    listening: 'सुन रहा है',
+    stopListening: 'रोकें',
+    startListening: 'आवाज से बोलें (Voice Input)',
+    notSupported: 'इस ब्राउज़र में स्पीच रिकग्निशन समर्थित नहीं है'
+  },
+  explainability: {
+    title: 'यह उत्तर क्यों? (पारदर्शिता ऑडिट)',
+    subtitle: 'पारदर्शी सत्यापन पैरामीटर एवं कानूनी स्रोत',
+    queryUnderstood: 'पहचाना गया प्रश्न',
+    languageDetected: 'पहचानी गई भाषा',
+    legalDomain: 'कानूनी क्षेत्र',
+    jurisdictionApplied: 'लागू अधिकार क्षेत्र',
+    verificationStatus: 'सत्यापन स्थिति',
+    retrievedReferences: 'प्राप्त वैधानिक संदर्भ:',
+    verifiedSourcesCount: 'सत्यापित स्रोत',
+    groundingFactors: 'लागू किए गए आधार और नियम',
+    auditDisclaimer: 'Lexora भारतीय संसद के अधिनियमों, तमिलनाडु राजपत्रों और उच्चतम न्यायालय/मद्रास उच्च न्यायालय के निर्णयों पर आधारित जानकारी देता है।',
+    closeAudit: 'ऑडिट बंद करें'
+  },
+  uploadModal: {
+    title: 'कानूनी दस्तावेज़ अपलोड एवं जांच',
+    subtitle: 'किराया अनुबंध, अदालती नोटिस, बिल या रोजगार अनुबंध का सरल विश्लेषण',
+    dragDrop: 'अपना कानूनी दस्तावेज़ यहाँ खींचें और छोड़ें',
+    supportedFormats: 'PDF, DOCX, TXT या स्कैन किए गए नोटिस (20MB तक)',
+    browseFiles: 'फ़ाइलें ब्राउज़ करें',
+    readyToAnalyze: 'विश्लेषण के लिए तैयार',
+    chooseDifferent: 'दूसरी फ़ाइल चुनने के लिए क्लिक करें',
+    loadTemplates: 'या मानक तमिलनाडु कानूनी प्रारूप लोड करें:',
+    templateRental: '🏢 TN किराया अनुबंध नमूना',
+    templateRentalFile: 'tn_residential_lease_agreement.txt',
+    templateRentalContent: 'RESIDENTIAL LEASE AGREEMENT (TAMIL NADU)\n\nThis Lease Agreement executed on 01/01/2024 between Mr. S. Ramanathan (Landlord) and Mr. K. Vijay (Tenant) for premises at No. 14, Anna Nagar West, Chennai - 600040.\n\nKey Terms:\n1. Monthly Rent: Rs. 22,000 payable before 5th of each calendar month.\n2. Security Advance: Rs. 2,20,000 (10 months rent) paid via NEFT.\n3. Notice Period: 30 days written notice by either party.\n4. Stamp Duty & Registration: As per TN Regulation of Rights and Responsibilities of Landlords and Tenants Act, 2017.\n5. Jurisdiction: Courts at Chennai alone shall have jurisdiction.',
+    templateConsumer: '🛒 उपभोक्ता शिकायत नोटिस',
+    templateConsumerFile: 'consumer_defective_goods_notice.txt',
+    templateConsumerContent: 'LEGAL GRIEVANCE UNDER CONSUMER PROTECTION ACT, 2019\n\nTo: Apex Electronics Private Limited, Mount Road, Chennai.\nFrom: A. Sundaram, Consumer, T. Nagar, Chennai.\n\nSubject: Notice for replacement of defective LED Television and refund of Rs. 45,000.\n\nDetails:\nPurchased Model X50 on 12/08/2024 against Invoice No. CHN-8849. Screen failed within 14 days. Service center failed to repair within 30 days despite written complaint.\n\nDemanded: Full refund with 9% statutory interest within 15 days.',
+    stepUploading: '1. दस्तावेज़ सुरक्षित अपलोड हो रहा है...',
+    stepExtracting: '2. कानूनी धाराओं और पाठ का निष्कर्षण...',
+    stepAnalyzing: '3. देनदारियों एवं जोखिमों का सरल विश्लेषण...',
+    stepGrounding: '4. तमिलनाडु एवं केंद्रीय कानूनों से सत्यापन...',
+    stepReady: '5. सरल जांच विश्लेषण तैयार!',
+    analyzingTitle: 'स्वचालित दस्तावेज़ जांच पाइपलाइन',
+    analyzingDesc: 'सरल भाषा में विश्लेषण तैयार किया जा रहा है...',
+    encryptionNotice: 'एंड-टू-एंड सुरक्षित एन्क्रिप्शन',
+    cancel: 'रद्द करें',
+    analyzeBtn: 'दस्तावेज़ का विश्लेषण करें',
+    errorUpload: 'कृपया पहले कोई दस्तावेज़ चुनें या लोड करें।',
+    scrutinyQueryPrefix: 'कृपया इस दस्तावेज़ का सरल एवं स्पष्ट कानूनी विश्लेषण प्रदान करें:'
+  },
+  draftModal: {
+    title: 'कानूनी ड्राफ्ट जनरेटर',
+    subtitle: 'आरटीआई, उपभोक्ता शिकायत, कानूनी नोटिस या किराया दावा ड्राफ्ट तैयार करें',
+    selectType: 'कानूनी दस्तावेज़ का प्रकार चुनें',
+    types: {
+      rti: {
+        label: 'RTI आवेदन (धारा 6(1))',
+        labelTamil: 'தகவல் அறியும் உரிமை மனு',
+        description: 'आरटीआई अधिनियम 2005 के तहत सरकारी रिकॉर्ड, फाइलों की स्थिति या जानकारी प्राप्त करने हेतु।'
+      },
+      consumer_complaint: {
+        label: 'उपभोक्ता शिकायत नोटिस',
+        labelTamil: 'நுகர்வோர் குறைதீர் அறிவிப்பு',
+        description: 'खराब सामान या सेवा में कमी के लिए सीपीए 2019 के तहत 15-दिवसीय वैधानिक मांग नोटिस।'
+      },
+      tenancy_notice: {
+        label: 'किराया अग्रिम / बेदखली नोटिस',
+        labelTamil: 'வாடகை ஒப்பந்த முன்வைப்புத் தொகை நோட்டீஸ்',
+        description: 'तमिलनाडु किरायेदारी अधिनियम 2017 के तहत अग्रिम राशि वापसी या विवाद हेतु औपचारिक नोटिस।'
+      },
+      legal_notice: {
+        label: 'औपचारिक कानूनी मांग नोटिस',
+        labelTamil: 'வழக்கறிஞர் சட்டப்பூர்வ அறிவிப்பு',
+        description: 'दीवानी कार्यवाही शुरू करने से पहले 15-30 दिनों की वैधानिक पूर्व-मुकदमा नोटिस।'
+      },
+      grievance_letter: {
+        label: 'सार्वजनिक शिकायत याचिका',
+        labelTamil: 'அரசு குறைதீர் மனு',
+        description: 'जिला कलेक्टर, तहसीलदार या निगम आयुक्त को औपचारिक प्रशासनिक याचिका।'
+      }
+    },
+    jurisdictionSetting: 'अधिकार क्षेत्र निर्धारण',
+    draftLanguage: 'ड्राफ्ट भाषा',
+    complainantName: 'आवेदक / शिकायतकर्ता का नाम',
+    complainantPlaceholder: 'उदा. के. सुंदरराजन, चेन्नई',
+    respondentName: 'विपक्षी दल / उत्तरदाता का नाम व कार्यालय',
+    respondentPlaceholder: 'उदा. जन सूचना अधिकारी / मकान मालिक का नाम',
+    facts: 'तथ्यों का विवरण / शिकायत का संक्षिप्त वर्णन',
+    factsPlaceholder: 'प्रमुख तिथियां, भुगतान की गई राशि, अनुबंध और उल्लंघन का विवरण लिखें...',
+    relief: 'मांगी गई राहत / विशिष्ट मांग',
+    reliefPlaceholder: 'उदा. 15 दिनों के भीतर रु. 1,50,000 की सुरक्षा अग्रिम राशि की तत्काल वापसी...',
+    defaultComplainant: 'एम. आनंद, चेन्नई निवासी',
+    defaultRespondent: 'मकान मालिक / सेवा प्रदाता, चेन्नई',
+    defaultFacts: '01/03/2023 को रु. 1,00,000 के अग्रिम के साथ किराया अनुबंध किया। 1 महीने की पूर्व सूचना देकर 28/02/2024 को परिसर खाली कर दिया। कोई क्षति न होने के बावजूद मकान मालिक ने राशि लौटाने से मना कर दिया।',
+    defaultRelief: 'इस नोटिस के 15 दिनों के भीतर 9% वार्षिक ब्याज सहित रु. 1,00,000 की अग्रिम राशि की तत्काल वापसी।',
+    generateBtn: 'ड्राफ्ट तैयार करें',
+    generatingBtn: 'औपचारिक ड्राफ्ट तैयार हो रहा है...',
+    generatedTitle: 'तैयार किया गया औपचारिक कानूनी ड्राफ्ट',
+    legalNoticeDisclaimer: 'सूचना: यह ड्राफ्ट मार्गदर्शन हेतु वैधानिक प्रारूपों का उपयोग करके तैयार किया गया है। न्यायालय में प्रस्तुत करने से पूर्व किसी वकील से परामर्श लें।',
+    editParameters: '← विवरण संपादित करें और पुनः बनाएं',
+    footerNotice: 'तमिलनाडु राज्य नियमों एवं लागू केंद्रीय अधिनियमों के अनुसार तैयार।',
+    copy: 'कॉपी करें',
+    copied: 'कॉपी हो गया!',
+    downloadTxt: 'TXT डाउनलोड करें'
+  },
+  libraryModal: {
+    title: 'कानूनी ज्ञान पुस्तकालय',
+    subtitle: 'भारतीय संविधान, केंद्रीय अधिनियम, तमिलनाडु राज्य कानून एवं नागरिक चार्टर',
+    searchPlaceholder: 'तमिलनाडु अधिनियम, पट्टा, आरटीआई, किरायेदारी, बीएनएस खोजें...',
+    categories: {
+      all: 'सभी श्रेणियां',
+      tnLaws: 'तमिलनाडु कानून',
+      centralActs: 'केंद्रीय अधिनियम',
+      citizenRights: 'नागरिक अधिकार',
+      governmentServices: 'सरकारी सेवाएं',
+      constitution: 'संविधान',
+      courtProcedures: 'अदालती प्रक्रियाएं'
+    },
+    allJurisdictions: 'सभी अधिकार क्षेत्र',
+    emptyResults: 'आपकी खोज के अनुसार कोई कानूनी अधिनियम नहीं मिला',
+    emptyHint: '"पट्टा", "किरायेदारी", "उपभोक्ता", "RTI", या "BNS" जैसे शब्दों से खोजें',
+    keySections: 'प्रमुख धाराएं / प्रावधान:',
+    askInChat: 'चैट में पूछें →',
+    askInChatPrefix: 'प्रावधानों, प्रक्रिया और नागरिक अधिकारों की व्याख्या करें:',
+    closeExplorer: 'पुस्तकालय बंद करें',
+    sourceNotice: 'इंडिया कोड, तमिलनाडु सरकारी राजपत्रों और आधिकारिक न्यायिक पोर्टलों से समन्वयित।',
+    tnLawBadge: 'तमिलनाडु कानून',
+    centralStatuteBadge: 'केंद्रीय अधिनियम'
+  }
+};

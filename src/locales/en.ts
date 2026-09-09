@@ -1,0 +1,271 @@
+import { TranslationStructure } from './types';
+
+export const enTranslations: TranslationStructure = {
+  common: {
+    appName: 'Lexora',
+    appTagline: 'Tamil Nadu Legal Tech',
+    version: '',
+    ok: 'OK',
+    cancel: 'Cancel',
+    done: 'Done',
+    close: 'Close',
+    copy: 'Copy',
+    copied: 'Copied!',
+    download: 'Download',
+    send: 'Send',
+    listen: 'Listen',
+    speaking: 'Speaking...',
+    stop: 'Stop',
+    translate: 'Translate',
+    translating: 'Translating...',
+    showOriginal: 'Show Original',
+    inEnglish: 'In English',
+    inTamil: 'In Tamil',
+    inTanglish: 'In Tanglish',
+    inHindi: 'In Hindi',
+    search: 'Search',
+    filter: 'Filter',
+    all: 'All',
+    step: 'Step',
+    notice: 'Notice',
+    error: 'Error',
+    retry: 'Retry',
+    whyThisAnswer: 'Why this answer?',
+    verifiedReference: 'Verified Reference',
+    checked: 'Checked',
+    loading: 'Loading...',
+    legalDisclaimerTitle: 'Legal Literacy Disclaimer',
+    legalDisclaimerText: 'Lexora provides legal information for educational literacy. It is not a replacement for a practicing advocate.'
+  },
+  accessibility: {
+    sendMessage: 'Send legal inquiry message',
+    voiceInput: 'Start voice input',
+    stopVoiceInput: 'Stop voice input',
+    uploadDoc: 'Upload legal document for scrutiny',
+    closeDialog: 'Close modal dialog',
+    toggleMenu: 'Toggle navigation menu',
+    copyText: 'Copy text to clipboard',
+    listenAudio: 'Listen to spoken response',
+    translateText: 'Translate message response',
+    openLibrary: 'Open Legal Knowledge Explorer',
+    openDraft: 'Open Legal Draft Generator',
+    openScrutiny: 'Open Document Scrutiny',
+    selectLanguage: 'Select interface language',
+    selectJurisdiction: 'Select legal jurisdiction',
+    selectExplanationLevel: 'Select explanation complexity level'
+  },
+  nav: {
+    legalLibrary: 'Legal Library',
+    draftGenerator: 'Draft Generator',
+    documentScrutiny: 'Document Scrutiny',
+    filterByDomain: 'Filter by Legal Domain',
+    nlpPipeline: 'NLP & Legal Pipeline',
+    indicBert: 'IndicBERT + FastText',
+    indicBertDesc: 'Tamil language detection & domain tagging',
+    grounding: 'Grounding & Precedent Match',
+    groundingDesc: 'Madras HC citations & India Code sync'
+  },
+  header: {
+    tamilNaduMode: 'Tamil Nadu Mode',
+    allIndiaMode: 'All India',
+    tnModeTooltip: 'Prioritize Tamil Nadu State Acts, Madras High Court & TN Portals',
+    inModeTooltip: 'Prioritize Central / Union Acts and Supreme Court Precedents',
+    explanationLevel: 'Level:',
+    levelCitizen: 'Citizen',
+    levelStudent: 'Student',
+    levelAdvocate: 'Advocate',
+    levelSimpleTamil: 'Simple text',
+    descCitizen: 'Simplified, everyday analogies',
+    descStudent: 'Statutory basis & doctrines',
+    descAdvocate: 'Pleadings & citations',
+    descSimpleTamil: 'Plain language explanations without complex legal jargon',
+    libraryButton: 'Library'
+  },
+  domains: {
+    general: 'General Law',
+    property: 'Property & Land',
+    consumer: 'Consumer Rights',
+    family: 'Family & Marriage',
+    employment: 'Employment & Labour',
+    criminal: 'Criminal & Police',
+    finance: 'Finance & Banking',
+    government: 'Government Services & RTI'
+  },
+  quickPrompts: {
+    title: 'Quick Prompts:',
+    citation: '📜 Case Citation: 2023 SCC OnLine Mad 1234',
+    patta: '🏛️ TN Patta Chitta Transfer Procedure',
+    tenancy: '🏠 Return of Rental Advance Deposit'
+  },
+  riskBadges: {
+    low: 'General Information',
+    lowTooltip: 'Standard legal information and procedural literacy.',
+    medium: 'Important: Verify with Lawyer',
+    mediumTooltip: 'Involves statutory deadlines, official notices, or financial liability.',
+    high: 'High-Risk Legal Matter',
+    highTooltip: 'Urgent criminal or high-stake property exposure requiring immediate counsel.',
+    riskIndicatorTitle: 'Risk Assessment Indicator',
+    riskGeneralNotice: 'Lexora provides general legal information. High-risk indicators recommend personal consultation with a certified advocate.'
+  },
+  chat: {
+    welcomeMessage: 'Welcome! I am **Lexora** — your AI legal assistant dedicated to Indian and Tamil Nadu law.\n\nYou can ask me about tenancy agreements, land records & Patta, consumer grievances, employment rights, or court procedures.',
+    welcomeFollowUps: [
+      'How to recover tenancy advance deposit in Tamil Nadu?',
+      'How to apply for online Patta transfer via TN e-Services?',
+      'How to file a consumer complaint on e-Daakhil portal?'
+    ],
+    inputPlaceholder: 'Ask your legal question regarding Indian / Tamil Nadu law... (Enter to send)',
+    tnModeActive: '🏛️ Tamil Nadu Mode active',
+    inModeActive: '🇮🇳 Central Acts active',
+    footerNote: 'Powered by IndicBERT NLP, Sentence Transformers & Gemini AI • Tamil Nadu Legal Tech Initiative',
+    errorGeneral: '⚠️ A technical error occurred while retrieving legal information. Please try again in a moment.',
+    loadingStatutes: 'Searching Tamil Nadu Acts, case citations & statutory rules...',
+    scrutinyReport: 'Scrutiny Report',
+    draftNoticePrompt: 'Draft Legal Notice for this'
+  },
+  sources: {
+    title: 'Statutory Sources & Verified Precedents',
+    showLess: 'Show Less',
+    viewAll: 'View All',
+    verifiedReference: 'Verified Reference',
+    checked: 'Checked',
+    openSource: 'Open official legal source'
+  },
+  actionPlan: {
+    title: 'Action Plan & Procedural Roadmap',
+    subtitle: 'Check off recommended milestones as you proceed',
+    doneCount: 'of',
+    stepPrefix: 'Step',
+    citizenNotice: 'Notice: Procedural steps for citizen awareness. Statutory limitation rules apply.'
+  },
+  followUp: {
+    title: 'Suggested Follow-up Legal Enquiries'
+  },
+  voice: {
+    listening: 'Listening',
+    stopListening: 'Stop listening',
+    startListening: 'Voice input (Speak)',
+    notSupported: 'Speech recognition is not available in this browser'
+  },
+  explainability: {
+    title: 'Why this answer? (Explainability Audit)',
+    subtitle: 'Transparent verification metrics and retrieval parameters',
+    queryUnderstood: 'Query Recognized As',
+    languageDetected: 'Language Detected',
+    legalDomain: 'Legal Domain',
+    jurisdictionApplied: 'Jurisdiction Applied',
+    verificationStatus: 'Verification Status',
+    retrievedReferences: 'Retrieved Statutory References:',
+    verifiedSourcesCount: 'verified sources',
+    groundingFactors: 'Grounding Factors & Rules Applied',
+    auditDisclaimer: 'Lexora ensures traceable retrieval grounded in authoritative Indian Acts, Tamil Nadu State gazettes, and Supreme Court / Madras High Court rulings.',
+    closeAudit: 'Close Audit'
+  },
+  uploadModal: {
+    title: 'Legal Document Upload & Scrutiny',
+    subtitle: 'Analyze rental deeds, court notices, consumer bills, or employment contracts',
+    dragDrop: 'Drag & drop your legal document here',
+    supportedFormats: 'Supports PDF, DOCX, TXT, or scanned notices (up to 20MB)',
+    browseFiles: 'Browse Files',
+    readyToAnalyze: 'Ready to analyze',
+    chooseDifferent: 'Click to choose a different file',
+    loadTemplates: 'Or load standard Tamil Nadu legal templates:',
+    templateRental: '🏢 TN Rental Agreement Sample',
+    templateRentalFile: 'tn_residential_lease_agreement.txt',
+    templateRentalContent: 'RESIDENTIAL LEASE AGREEMENT (TAMIL NADU)\n\nThis Lease Agreement executed on 01/01/2024 between Mr. S. Ramanathan (Landlord) and Mr. K. Vijay (Tenant) for premises at No. 14, Anna Nagar West, Chennai - 600040.\n\nKey Terms:\n1. Monthly Rent: Rs. 22,000 payable before 5th of each calendar month.\n2. Security Advance: Rs. 2,20,000 (10 months rent) paid via NEFT.\n3. Notice Period: 30 days written notice by either party.\n4. Stamp Duty & Registration: As per TN Regulation of Rights and Responsibilities of Landlords and Tenants Act, 2017.\n5. Jurisdiction: Courts at Chennai alone shall have jurisdiction.',
+    templateConsumer: '🛒 Consumer Grievance Notice',
+    templateConsumerFile: 'consumer_defective_goods_notice.txt',
+    templateConsumerContent: 'LEGAL GRIEVANCE UNDER CONSUMER PROTECTION ACT, 2019\n\nTo: Apex Electronics Private Limited, Mount Road, Chennai.\nFrom: A. Sundaram, Consumer, T. Nagar, Chennai.\n\nSubject: Notice for replacement of defective LED Television and refund of Rs. 45,000.\n\nDetails:\nPurchased Model X50 on 12/08/2024 against Invoice No. CHN-8849. Screen failed within 14 days. Service center failed to repair within 30 days despite written complaint.\n\nDemanded: Full refund with 9% statutory interest within 15 days.',
+    stepUploading: '1. Securely uploading document...',
+    stepExtracting: '2. Extracting legal clauses and text...',
+    stepAnalyzing: '3. Analyzing obligations & risk exposure...',
+    stepGrounding: '4. Grounding against Tamil Nadu & Indian statutes...',
+    stepReady: '5. Scrutiny analysis finalized!',
+    analyzingTitle: 'Automated Document Scrutiny Pipeline',
+    analyzingDesc: 'Processing clauses with IndicBERT & Legal Knowledge Graph...',
+    encryptionNotice: 'End-to-End Client Encryption',
+    cancel: 'Cancel',
+    analyzeBtn: 'Analyze Document',
+    errorUpload: 'Please select or load a document first.',
+    scrutinyQueryPrefix: 'Please perform a detailed legal scrutiny and clause-by-clause analysis of the following document:'
+  },
+  draftModal: {
+    title: 'Legal Draft Generator',
+    subtitle: 'Instant statutory notice, complaint, RTI, or tenancy claim drafts',
+    selectType: 'Select Legal Document Type',
+    types: {
+      rti: {
+        label: 'RTI Application (Section 6(1))',
+        labelTamil: 'தகவல் அறியும் உரிமை மனு',
+        description: 'Formal request for public records, status of files, or government sanction details under RTI Act 2005.'
+      },
+      consumer_complaint: {
+        label: 'Consumer Grievance Demand Notice',
+        labelTamil: 'நுகர்வோர் குறைதீர் அறிவிப்பு',
+        description: 'Statutory 15-day pre-litigation demand notice for defective goods or deficient services under CPA 2019.'
+      },
+      tenancy_notice: {
+        label: 'Tenancy Deposit / Rent Notice',
+        labelTamil: 'வாடகை ஒப்பந்த முன்வைப்புத் தொகை நோட்டீஸ்',
+        description: 'Formal notice for refund of advance deposit or rent dispute under TN Tenancy Act 2017.'
+      },
+      legal_notice: {
+        label: 'Formal Legal Demand Notice',
+        labelTamil: 'வழக்கறிஞர் சட்டப்பூர்வ அறிவிப்பு',
+        description: 'Standard statutory pre-suit notice giving 15-30 days remedy period before initiating civil action.'
+      },
+      grievance_letter: {
+        label: 'Public Grievance Petition',
+        labelTamil: 'அரசு குறைதீர் மனு',
+        description: 'Formal administrative representation to District Collector, Tahsildar, or Corporation Commissioner.'
+      }
+    },
+    jurisdictionSetting: 'Jurisdiction Setting',
+    draftLanguage: 'Draft Language',
+    complainantName: 'Applicant / Complainant Name',
+    complainantPlaceholder: 'e.g., K. Sundararajan, Chennai',
+    respondentName: 'Opposite Party / Respondent Name & Office',
+    respondentPlaceholder: 'e.g., The Public Information Officer / Landlord Name',
+    facts: 'Chronology of Facts / Grievance Details',
+    factsPlaceholder: 'Detail key dates, amounts paid, agreements signed, and violations committed...',
+    relief: 'Remedy / Specific Relief Demanded',
+    reliefPlaceholder: 'e.g., Immediate refund of security deposit of Rs. 1,50,000 within 15 days...',
+    defaultComplainant: 'M. Anand, Resident of Chennai',
+    defaultRespondent: 'Landlord / Service Provider, Chennai',
+    defaultFacts: 'Entered into rental agreement on 01/03/2023 with advance deposit of Rs. 1,00,000. Vacated premises on 28/02/2024 after giving 1 month notice. The landlord has refused to return the deposit despite no damage to premises.',
+    defaultRelief: 'Immediate refund of advance deposit of Rs. 1,00,000 along with 9% interest per annum within 15 days of this notice.',
+    generateBtn: 'Generate Draft',
+    generatingBtn: 'Generating Formal Draft...',
+    generatedTitle: 'Generated Formal Draft',
+    legalNoticeDisclaimer: 'NOTICE: This draft is generated using statutory templates for guidance. Please consult an advocate for formal signing and court filing.',
+    editParameters: '← Edit Parameters & Re-generate',
+    footerNotice: 'Drafted in compliance with Tamil Nadu state rules and applicable Union statutes.',
+    copy: 'Copy',
+    copied: 'Copied!',
+    downloadTxt: 'Download TXT'
+  },
+  libraryModal: {
+    title: 'Legal Knowledge Explorer',
+    subtitle: 'Indian Constitution, Central Acts, Tamil Nadu Enactments & Citizen Charters',
+    searchPlaceholder: 'Search Tamil Nadu Acts, Patta, RTI, Tenancy, BNS in Tamil or English...',
+    categories: {
+      all: 'All Categories',
+      tnLaws: 'Tamil Nadu Laws',
+      centralActs: 'Central Acts',
+      citizenRights: 'Citizen Rights',
+      governmentServices: 'Government Services',
+      constitution: 'Constitution',
+      courtProcedures: 'Court Procedures'
+    },
+    allJurisdictions: 'All Jurisdictions',
+    emptyResults: 'No legal statutes found matching your search filter',
+    emptyHint: 'Try searching for terms like "Patta", "Tenancy", "Consumer", "RTI", or "BNS"',
+    keySections: 'Key Sections / Provisions:',
+    askInChat: 'Ask in Chat →',
+    askInChatPrefix: 'Explain the provisions, procedure, and citizen rights under:',
+    closeExplorer: 'Close Explorer',
+    sourceNotice: 'Synced with India Code, Tamil Nadu Government Gazettes, and official judicial portals.',
+    tnLawBadge: 'Tamil Nadu Law',
+    centralStatuteBadge: 'Central Statute'
+  }
+};
