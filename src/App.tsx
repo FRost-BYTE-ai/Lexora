@@ -17,7 +17,8 @@ import {
   Jurisdiction, 
   ExplanationLevel, 
   ExplainabilityData,
-  Category 
+  Category,
+  Conversation
 } from './types';
 import { sendLegalQuery, classifyQueryApi, translateTextApi } from './services/legalApiService';
 import { speakLegalText } from './services/speechService';
@@ -42,10 +43,100 @@ import { VoiceInputButton } from './components/VoiceInputButton';
 export default function App() {
   const { language, t } = useLanguage();
 
-  const [messages, setMessages] = useState<Message[]>([]);
+  // Conversation History state
+  const [conversations, setConversations] = useState<Conversation[]>(() => {
+    try {
+      const saved = localStorage.getItem('lexora_conversations');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+      }
+    } catch (e) {}
+    return [
+      {
+        id: 'conv-1',
+        title: language === 'ta' ? 'புதிய சட்ட ஆலோசனை' : 'New Legal Consultation',
+        timestamp: Date.now(),
+        messages: [],
+        domain: 'general'
+      }
+    ];
+  });
+
+  const [activeConversationId, setActiveConversationId] = useState<string>(() => conversations[0]?.id || 'conv-1');
+
+  const activeConversation = conversations.find(c => c.id === activeConversationId) || conversations[0];
+  const messages = activeConversation?.messages || [];
+
+  const setMessages = (action: React.SetStateAction<Message[]>) => {
+    setConversations(prev => {
+      return prev.map(conv => {
+        if (conv.id === activeConversationId) {
+          const updatedMessages = typeof action === 'function' ? action(conv.messages) : action;
+          let title = conv.title;
+          const firstUserMsg = updatedMessages.find(m => m.role === 'user');
+          if (firstUserMsg && (title === 'New Legal Consultation' || title === 'புதிய சட்ட ஆலோசனை' || !title)) {
+            title = firstUserMsg.content.slice(0, 32) + (firstUserMsg.content.length > 32 ? '...' : '');
+          }
+          return { ...conv, messages: updatedMessages, title };
+        }
+        return conv;
+      });
+    });
+  };
+
+  useEffect(() => {
+    try {
+      localStorage.setItem('lexora_conversations', JSON.stringify(conversations));
+    } catch (e) {}
+  }, [conversations]);
+
+  const handleNewConversation = () => {
+    const newConv: Conversation = {
+      id: `conv-${Date.now()}`,
+      title: language === 'ta' ? 'புதிய சட்ட ஆலோசனை' : 'New Legal Consultation',
+      timestamp: Date.now(),
+      messages: [],
+      domain: domain
+    };
+    setConversations(prev => [newConv, ...prev]);
+    setActiveConversationId(newConv.id);
+    setInput('');
+    searchBoxRef.current?.focus();
+  };
+
+  const handleSelectConversation = (id: string) => {
+    setActiveConversationId(id);
+    const target = conversations.find(c => c.id === id);
+    if (target && target.domain) {
+      setDomain(target.domain);
+    }
+  };
+
+  const handleDeleteConversation = (id: string) => {
+    setConversations(prev => {
+      const filtered = prev.filter(c => c.id !== id);
+      if (filtered.length === 0) {
+        const fresh: Conversation = {
+          id: `conv-${Date.now()}`,
+          title: language === 'ta' ? 'புதிய சட்ட ஆலோசனை' : 'New Legal Consultation',
+          timestamp: Date.now(),
+          messages: [],
+          domain: 'general'
+        };
+        setActiveConversationId(fresh.id);
+        return [fresh];
+      }
+      if (id === activeConversationId) {
+        setActiveConversationId(filtered[0].id);
+      }
+      return filtered;
+    });
+  };
+
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [domain, setDomain] = useState<LegalDomain>('general');
+  const [domain, setDomain] = useState<LegalDomain>(activeConversation?.domain || 'general');
   const [jurisdiction, setJurisdiction] = useState<Jurisdiction>('TN');
   const [explanationLevel, setExplanationLevel] = useState<ExplanationLevel>('citizen');
 
@@ -303,12 +394,6 @@ export default function App() {
     setMessages(prev => [...prev, assistantMessage]);
   };
 
-  const handleNewQuery = () => {
-    setMessages([]);
-    setInput('');
-    searchBoxRef.current?.focus();
-  };
-
   const handleOpenDraftWithContext = (contextText: string) => {
     setDraftTopic(contextText);
     setIsDraftModalOpen(true);
@@ -318,15 +403,18 @@ export default function App() {
 
   return (
     <div className="flex h-screen bg-[#FDFBF7] dark:bg-[#090D16] font-sans overflow-hidden text-slate-900 dark:text-slate-100">
-      {/* Redesigned Collapsible Sidebar */}
+      {/* Redesigned Collapsible Sidebar with Conversation History */}
       <Sidebar
         isCollapsed={isSidebarCollapsed}
         onToggleCollapse={() => setIsSidebarCollapsed(!isSidebarCollapsed)}
         isMobileOpen={isMobileSidebarOpen}
         onCloseMobile={() => setIsMobileSidebarOpen(false)}
         selectedDomain={domain}
-        onSelectDomain={(d) => setDomain(d)}
-        onNewQuery={handleNewQuery}
+        onSelectDomain={(d) => {
+          setDomain(d);
+          setConversations(prev => prev.map(c => c.id === activeConversationId ? { ...c, domain: d } : c));
+        }}
+        onNewQuery={handleNewConversation}
         onFocusSearch={() => searchBoxRef.current?.focus()}
         onOpenLibrary={() => setIsLibraryModalOpen(true)}
         onOpenDraft={() => {
@@ -338,7 +426,11 @@ export default function App() {
         onOpenSchemes={() => setIsSchemesModalOpen(true)}
         onOpenHardware={() => setIsHardwareModalOpen(true)}
         savedCount={0}
-        conversationCount={isThreadActive ? 1 : 0}
+        conversationCount={conversations.length}
+        conversations={conversations.map(c => ({ id: c.id, title: c.title, timestamp: c.timestamp }))}
+        activeConversationId={activeConversationId}
+        onSelectConversation={handleSelectConversation}
+        onDeleteConversation={handleDeleteConversation}
       />
 
       {/* Main Content Area */}
@@ -391,13 +483,13 @@ export default function App() {
               <div className="flex items-center justify-between pb-3 border-b border-slate-200/80 dark:border-slate-800/80">
                 <div className="flex items-center gap-2">
                   <MessageSquare className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
-                  <span className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
-                    {t.nav.conversations} ({jurisdiction === 'TN' ? 'Tamil Nadu' : 'All India'})
+                  <span className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 truncate max-w-[220px] sm:max-w-md">
+                    {activeConversation.title} ({jurisdiction === 'TN' ? 'Tamil Nadu' : 'All India'})
                   </span>
                 </div>
                 <button
                   type="button"
-                  onClick={handleNewQuery}
+                  onClick={handleNewConversation}
                   className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors border border-slate-200 dark:border-slate-700 cursor-pointer"
                 >
                   <RefreshCw className="w-3.5 h-3.5 text-slate-500" />

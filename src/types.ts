@@ -96,6 +96,14 @@ export interface Message {
   schemeData?: GovernmentScheme;
 }
 
+export interface Conversation {
+  id: string;
+  title: string;
+  timestamp: number;
+  messages: Message[];
+  domain: LegalDomain;
+}
+
 export interface LegalContext {
   title: string;
   content: string;
