@@ -27,7 +27,7 @@ export const VoiceInputButton: React.FC<VoiceInputButtonProps> = ({
     setHasSupport(isSpeechRecognitionSupported());
   }, []);
 
-  const handleToggle = () => {
+  const handleToggle = async () => {
     if (isListening) {
       recognitionInstance?.stop();
       setIsListening(false);
@@ -38,7 +38,7 @@ export const VoiceInputButton: React.FC<VoiceInputButtonProps> = ({
     setIsListening(true);
     onStart?.();
 
-    const recognition = startSpeechRecognition({
+    const recognition = await startSpeechRecognition({
       language,
       onResult: (text) => {
         onTranscript(text);

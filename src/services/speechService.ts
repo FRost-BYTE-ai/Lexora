@@ -113,21 +113,34 @@ export function transliterateTamilToTanglish(text: string): string {
     .replace(/pp/g, 'pp');
 }
 
-export function startSpeechRecognition(options: SpeechRecognitionHookOptions) {
+export async function startSpeechRecognition(options: SpeechRecognitionHookOptions) {
   if (!isSpeechRecognitionSupported()) {
     options.onError?.('Speech recognition is not supported in this browser environment.');
     return null;
   }
 
+  try {
+    if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+      await navigator.mediaDevices.getUserMedia({ audio: true });
+    }
+  } catch (err: any) {
+    console.warn('Microphone permission denied or unavailable:', err);
+    options.onError?.('Microphone permission denied. Please allow microphone access in browser settings.');
+    return null;
+  }
+
   const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+  if (!SpeechRecognition) {
+    options.onError?.('Speech recognition API unavailable.');
+    return null;
+  }
+
   const recognition = new SpeechRecognition();
 
-  recognition.continuous = false;
+  recognition.continuous = true;
   recognition.interimResults = true;
   
   // Set speech recognition language
-  // For Tanglish mode, we use ta-IN recognition so spoken Tamil/mixed phonemes are accurately captured,
-  // then seamlessly transliterate to English/Latin script.
   if (options.language === 'ta') {
     recognition.lang = 'ta-IN'; // Tamil (India)
   } else if (options.language === 'hi') {
@@ -138,41 +151,40 @@ export function startSpeechRecognition(options: SpeechRecognitionHookOptions) {
     recognition.lang = 'en-IN'; // Indian English
   }
 
-  let lastTranscript = '';
+  let accumulatedFinal = '';
+  let lastEmitted = '';
 
   recognition.onresult = (event: any) => {
-    let finalTranscript = '';
-    let interimTranscript = '';
-
-    for (let i = 0; i < event.results.length; ++i) {
+    let interim = '';
+    for (let i = event.resultIndex; i < event.results.length; ++i) {
       const res = event.results[i];
       if (res.isFinal) {
-        finalTranscript += res[0].transcript + ' ';
+        accumulatedFinal += res[0].transcript + ' ';
       } else {
-        interimTranscript += res[0].transcript;
+        interim += res[0].transcript;
       }
     }
 
-    const raw = (finalTranscript + interimTranscript).trim();
-    if (raw) {
-      const processed = options.language === 'tanglish' ? transliterateTamilToTanglish(raw) : raw;
-      lastTranscript = processed;
+    const currentText = (accumulatedFinal + interim).trim();
+    if (currentText && currentText !== lastEmitted) {
+      lastEmitted = currentText;
+      const processed = options.language === 'tanglish' ? transliterateTamilToTanglish(currentText) : currentText;
       options.onResult(processed);
     }
   };
 
   recognition.onerror = (event: any) => {
     console.warn('Speech recognition error:', event.error);
-    if (event.error === 'no-speech' && lastTranscript) {
-      // If speech was captured before timeout, don't show error
+    if (event.error === 'no-speech') {
       return;
     }
     options.onError?.(event.error === 'not-allowed' ? 'Microphone permission denied.' : `Speech error: ${event.error}`);
   };
 
   recognition.onend = () => {
-    if (lastTranscript) {
-      options.onResult(lastTranscript);
+    if (accumulatedFinal) {
+      const processed = options.language === 'tanglish' ? transliterateTamilToTanglish(accumulatedFinal) : accumulatedFinal;
+      options.onResult(processed.trim());
     }
     options.onEnd?.();
   };

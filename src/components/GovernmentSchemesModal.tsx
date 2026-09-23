@@ -24,6 +24,148 @@ interface GovernmentSchemesModalProps {
   onAskAboutScheme: (query: string) => void;
 }
 
+const FALLBACK_SCHEMES: GovernmentScheme[] = [
+  {
+    id: 'pmfby-crop-insurance',
+    name: 'Pradhan Mantri Fasal Bima Yojana (PMFBY)',
+    nameTamil: 'பிரதம மந்திரி பயிர் காப்பீட்டுத் திட்டம் (PMFBY)',
+    category: 'Insurance',
+    eligibility: 'All farmers growing notified crops in notified areas (loanee and non-loanee farmers, sharecroppers and tenant farmers eligible).',
+    eligibilityTamil: 'அறிவிக்கப்பட்ட பகுதிகளில் அறிவிக்கப்பட்ட பயிர்களை சாகுபடி செய்யும் அனைத்து விவசாயிகள் (கடன் பெற்றோர் மற்றும் பெறாதோர், குத்தகை விவசாயிகள் உட்பட).',
+    requiredDocuments: [
+      'Aadhaar Card',
+      'Land Ownership Record (Patta / Chitta / Revenue Adangal)',
+      'Village Administrative Officer (VAO) Sowing Certificate',
+      'Bank Passbook photocopy showing IFSC & Account No',
+      'Tenant Agreement / Self-declaration (for tenant farmers)'
+    ],
+    requiredDocumentsTamil: [
+      'ஆதார் அட்டை',
+      'பட்டா / சிட்டா மற்றும் நடப்பு பசலி அடங்கல் நகல்',
+      'கிராம நிர்வாக அலுவலர் (VAO) வழங்கிய பயிர் சாகுபடி சான்று',
+      'வங்கி கணக்கு புத்தக நகல் (IFSC & கணக்கு எண் தெளிவாக)',
+      'குத்தகை ஒப்பந்தம் / சுய பிரகடனம்'
+    ],
+    applicationProcess: 'Enroll via nearest Primary Agricultural Credit Society (PACS), National Crop Insurance Portal (pmfby.gov.in), Common Service Centre (CSC), or commercial bank before statutory cut-off dates.',
+    applicationProcessTamil: 'அருகிலுள்ள தொடக்க வேளாண் கூட்டுறவு சங்கம் (PACS), e-Sevai / CSC மையம் அல்லது pmfby.gov.in மூலம் காலக்கெடுவிற்குள் பதிவு செய்யவும்.',
+    relevantAuthority: 'District Grievance Redressal Committee (DGRC) headed by District Collector • Joint Director of Agriculture',
+    relevantAuthorityTamil: 'மாவட்ட ஆட்சித்தலைவர் தலைமையிலான குறைதீர் குழு • வேளாண்மை இணை இயக்குநர்',
+    officialSource: 'Ministry of Agriculture & Farmers Welfare, Govt of India & Department of Agriculture, Govt of Tamil Nadu',
+    portalUrl: 'https://pmfby.gov.in/',
+    keyBenefits: 'Premium capped at 2% for Kharif crops, 1.5% for Rabi food & oilseed crops, and 5% for commercial/horticultural crops; remaining premium shared equally by Central and State Governments.',
+    keyBenefitsTamil: 'காரிப் பயிர்களுக்கு 2%, ரபி உணவுப் பயிர்களுக்கு 1.5%, வணிகப் பயிர்களுக்கு 5% மட்டுமே குறைந்த பிரீமியம். மீதி பிரீமியத்தை அரசே செலுத்துகிறது. மகசூல் இழப்பிற்கு முழு இழப்பீடு.',
+    schemeStatus: 'Active'
+  },
+  {
+    id: 'kcc-interest-subvention',
+    name: 'Kisan Credit Card (KCC) & Modified Interest Subvention Scheme (MISS)',
+    nameTamil: 'கிசான் கடன் அட்டை (KCC) & வட்டி மானியத் திட்டம்',
+    category: 'Credit',
+    eligibility: 'Individual/joint farmers, owner cultivators, tenant farmers, oral lessees, sharecroppers, and SHGs/JLGs engaged in agriculture, animal husbandry, or fisheries.',
+    eligibilityTamil: 'சொந்த நிலம் வைத்துள்ள விவசாயிகள், குத்தகை விவசாயிகள், பங்கு சாகுபடியாளர்கள், கால்நடை மற்றும் மீன்வள விவசாயிகள்.',
+    requiredDocuments: [
+      'Duly completed KCC application form',
+      'Identity & Address Proof (Aadhaar / Voter ID)',
+      'Land Records (Patta, Chitta, Adangal copy)',
+      'Crop cultivation plan / cropping pattern certificate'
+    ],
+    requiredDocumentsTamil: [
+      'பூர்த்தி செய்யப்பட்ட KCC விண்ணப்பப் படிவம்',
+      'அடையாள அட்டை (ஆதார் / வாக்காளர் அட்டை)',
+      'நில ஆவணங்கள் (பட்டா, சிட்டா, நடப்பு அடங்கல் நகல்)',
+      'பயிர் சாகுபடி திட்டம்'
+    ],
+    applicationProcess: 'Apply at the village Primary Agricultural Credit Society (PACS), District Central Cooperative Bank (DCCB) branch, or online through the JanSamarth portal.',
+    applicationProcessTamil: 'கிராம தொடக்க வேளாண் கூட்டுறவு சங்கம் (PACS) அல்லது மாவட்ட மத்திய கூட்டுறவு வங்கி (DCCB) கிளையில் விண்ணப்பிக்கலாம்.',
+    relevantAuthority: 'Primary Agricultural Credit Society (PACS) Management • District Central Cooperative Bank (DCCB)',
+    relevantAuthorityTamil: 'தொடக்க வேளாண் கூட்டுறவு சங்கம் (PACS) • மாவட்ட மத்திய கூட்டுறவு வங்கி (DCCB)',
+    officialSource: 'Reserve Bank of India (RBI) & NABARD Rural Credit Division',
+    portalUrl: 'https://www.jansamarth.in/',
+    keyBenefits: 'Short-term crop credit up to ₹3,00,000 at a benchmark 7% interest per annum. Prompt Repaying Farmers receive an additional 3% prompt repayment subvention (PRIS), reducing the effective interest rate to just 4% per annum (zero interest in select Tamil Nadu cooperative schemes).',
+    keyBenefitsTamil: 'ரூ. 3 லட்சம் வரை குறுகிய கால பயிர்க்கடன் 7% வட்டியில். உரிய தவணையில் திருப்பிச் செலுத்துவோருக்கு 3% ஊக்கத்தொகை கழிவு செய்யப்பட்டு வெறும் 4% வட்டியில் (தமிழ்நாடு கூட்டுறவில் வட்டி இல்லாக் கடன்).',
+    schemeStatus: 'Active'
+  },
+  {
+    id: 'computerization-of-pacs',
+    name: 'Centrally Sponsored Project for Computerization of PACS',
+    nameTamil: 'தொடக்க வேளாண் கூட்டுறவு சங்கங்கள் (PACS) கணினிமயமாக்கல் திட்டம்',
+    category: 'Cooperative',
+    eligibility: 'All functional Primary Agricultural Credit Societies across India onboarded into the national ERP system.',
+    eligibilityTamil: 'அனைத்து செயல்பாட்டில் உள்ள தொடக்க வேளாண் கூட்டுறவு சங்கங்கள் (PACS).',
+    requiredDocuments: [
+      'Society Registration Certificate under State Cooperative Act',
+      'Approved Society By-laws & Member Register',
+      'Audited Financial Statements (Last 3 years)'
+    ],
+    requiredDocumentsTamil: [
+      'கூட்டுறவு சங்க பதிவுச் சான்றிதழ்',
+      'உறுப்பினர் பதிவேடு மற்றும் சங்க துணை விதிகள் நகல்',
+      'கடந்த 3 ஆண்டுகளுக்கான தணிக்கை அறிக்கை'
+    ],
+    applicationProcess: 'Implemented directly through the State Registrar of Cooperative Societies, NABARD, and Ministry of Cooperation via state-level implementation committees.',
+    applicationProcessTamil: 'மத்திய கூட்டுறவு அமைச்சகம், நபார்டு மற்றும் தமிழ்நாடு கூட்டுறவு சங்கங்களின் பதிவாளர் மூலம் நேரடியாக செயல்படுத்தப்படுகிறது.',
+    relevantAuthority: 'Ministry of Cooperation, GoI • Registrar of Co-operative Societies, Tamil Nadu',
+    relevantAuthorityTamil: 'மத்திய கூட்டுறவு அமைச்சகம் • தமிழ்நாடு கூட்டுறவு சங்கங்களின் பதிவாளர்',
+    officialSource: 'Ministry of Cooperation, Government of India',
+    portalUrl: 'https://cooperation.gov.in/',
+    keyBenefits: 'Standardizes PACS operations on cloud ERP, integrates PACS with DCCBs, eliminates fake ledger entries, and allows PACS to deliver CSC services, fertilizer sales, and PDS transactions seamlessly.',
+    keyBenefitsTamil: 'ஒற்றை கிளவுட் மென்பொருள் மூலம் நேரடி கணினிமயமாக்கல், முறைகேடுகள் தவிர்ப்பு, CSC இணையவழி சேவைகள் மற்றும் வெளிப்படையான கடன் பரிவர்த்தனை.',
+    schemeStatus: 'Updated Guidelines 2024-25'
+  },
+  {
+    id: 'model-bylaws-multipurpose-pacs',
+    name: 'Model By-laws for Multipurpose PACS & Diversified Services',
+    nameTamil: 'பல்நோக்கு தொடக்க வேளாண் கூட்டுறவு சங்கங்களுக்கான மாதிரி துணை விதிகள்',
+    category: 'Cooperative',
+    eligibility: 'PACS adopting the Ministry of Cooperation Model By-laws by resolution of their General Body.',
+    eligibilityTamil: 'பொதுக்குழு தீர்மானம் மூலம் மாதிரி துணை விதிகளை ஏற்றுக்கொள்ளும் அனைத்து தொடக்க வேளாண் கூட்டுறவு சங்கங்கள்.',
+    requiredDocuments: [
+      'General Body Meeting Resolution adopting Model By-laws',
+      'Submission to Circle Deputy Registrar of Cooperative Societies (DRCS)'
+    ],
+    requiredDocumentsTamil: [
+      'மாதிரி துணை விதிகளை ஏற்பதற்கான பொதுக்குழுக் கூட்டத் தீர்மானம்',
+      'வட்ட துணைப் பதிவாளரிடம் சமர்ப்பிப்பு படிவம்'
+    ],
+    applicationProcess: 'PACS convenes a Special or Annual General Body meeting with statutory quorum, approves the adoption of 25+ diversified business domains, and registers amendments with the Circle Deputy Registrar.',
+    applicationProcessTamil: 'சங்கத்தின் பொதுக்குழுவில் தீர்மானம் நிறைவேற்றி, வட்ட துணைப் பதிவாளரிடம் (DRCS) பதிவு செய்ய வேண்டும். இதன் மூலம் உரம் விற்பனை, வாடகை இயந்திர மையம், CSC சேவை உள்ளிட்ட 25-க்கும் மேற்பட்ட வணிகங்களை தொடங்கலாம்.',
+    relevantAuthority: 'Circle Deputy Registrar of Co-operative Societies (DRCS) • Joint Registrar (District)',
+    relevantAuthorityTamil: 'வட்ட கூட்டுறவு துணைப் பதிவாளர் (DRCS) • மாவட்ட கூட்டுறவு இணைப் பதிவாளர்',
+    officialSource: 'Ministry of Cooperation & Tamil Nadu Co-operative Department',
+    portalUrl: 'https://cooperation.gov.in/model-by-laws',
+    keyBenefits: 'Enables PACS to diversify beyond crop loans into community service centers (CSC), custom hiring centers for farm machinery, cold storage, retail fuel outlets, dairy, and national seed/organic marketing.',
+    keyBenefitsTamil: 'பயிர்க்கடன் மட்டுமின்றி உழவு இயந்திர வாடகை மையம், பெட்ரோல்/டீசல் பங்க், பால் பண்ணை, விதை உற்பத்தி மற்றும் சி.எஸ்.சி இணைய சேவைகள் வழங்கும் அதிகாரமளித்தல்.',
+    schemeStatus: 'Active'
+  },
+  {
+    id: 'agriculture-infrastructure-fund',
+    name: 'Agriculture Infrastructure Fund (AIF) for Cooperatives & Farmers',
+    nameTamil: 'வேளாண் உட்கட்டமைப்பு நிதி (AIF) - கூட்டுறவு சங்கங்களுக்கான திட்டம்',
+    category: 'Storage & Infra',
+    eligibility: 'Primary Agricultural Credit Societies (PACS), Marketing Cooperative Societies, Farmer Producer Organizations (FPOs), Self Help Groups, and individual agri-entrepreneurs.',
+    eligibilityTamil: 'தொடக்க வேளாண் கூட்டுறவு சங்கங்கள் (PACS), உழவர் உற்பத்தியாளர் நிறுவனங்கள் (FPO), சுயஉதவிக் குழுக்கள் மற்றும் விவசாய தொழில்முனைவோர்.',
+    requiredDocuments: [
+      'Detailed Project Report (DPR) for post-harvest infrastructure or godown',
+      'Land ownership or long-term lease deed (minimum 10-15 years)',
+      'Registration Certificate & Audited Financials of PACS / Applicant'
+    ],
+    requiredDocumentsTamil: [
+      'கிடங்கு அல்லது அறுவடை பின்செய் உட்கட்டமைப்பு விரிவான திட்ட அறிக்கை (DPR)',
+      'நில உரிமைப் பத்திரம் அல்லது நீண்ட கால குத்தகை ஒப்பந்தம்',
+      'பதிவுச் சான்றிதழ் மற்றும் தணிக்கை அறிக்கை'
+    ],
+    applicationProcess: 'Apply online through the Agri Infra Fund portal (agriinfra.dac.gov.in) with bank project appraisal and collateral backing.',
+    applicationProcessTamil: 'agriinfra.dac.gov.in இணையதளம் மூலமாக வங்கி திட்ட மதிப்பீட்டுடன் விண்ணப்பிக்கலாம்.',
+    relevantAuthority: 'National Bank for Agriculture and Rural Development (NABARD) • Ministry of Agriculture, GoI',
+    relevantAuthorityTamil: 'நபார்டு (NABARD) • மத்திய வேளாண் அமைச்சகம்',
+    officialSource: 'Agri Infra Fund, Ministry of Agriculture & Farmers Welfare',
+    portalUrl: 'https://agriinfra.dac.gov.in/',
+    keyBenefits: 'Interest subvention of 3% per annum up to ₹2 crore for loans disbursed for post-harvest infrastructure projects such as cold storage, godowns, sorting/grading units, and PACS primary processing centers.',
+    keyBenefitsTamil: 'ரூ. 2 கோடி வரை குளிர்சாதன கிடங்கு, சேமிப்புக் கிடங்கு மற்றும் பதப்படுத்தும் நிலையங்கள் அமைக்க ஆண்டுக்கு 3% வட்டி மானியம்.',
+    schemeStatus: 'Active'
+  }
+];
+
 export const GovernmentSchemesModal: React.FC<GovernmentSchemesModalProps> = ({
   isOpen,
   onClose,
@@ -49,12 +191,34 @@ export const GovernmentSchemesModal: React.FC<GovernmentSchemesModalProps> = ({
         category: selectedCategory === 'All' ? undefined : selectedCategory,
         search: searchTerm || undefined
       });
-      setSchemes(data);
-      if (data.length > 0 && !activeScheme) {
-        setActiveScheme(data[0]);
+      if (data && data.length > 0) {
+        setSchemes(data);
+        if (!activeScheme) setActiveScheme(data[0]);
+      } else {
+        // Fallback to local static schemes filtered
+        let filtered = [...FALLBACK_SCHEMES];
+        if (selectedCategory !== 'All') {
+          filtered = filtered.filter(s => s.category.toLowerCase() === selectedCategory.toLowerCase());
+        }
+        if (searchTerm) {
+          const q = searchTerm.toLowerCase();
+          filtered = filtered.filter(s => s.name.toLowerCase().includes(q) || s.nameTamil.toLowerCase().includes(q));
+        }
+        setSchemes(filtered);
+        if (filtered.length > 0 && !activeScheme) setActiveScheme(filtered[0]);
       }
     } catch (err) {
-      console.error('Failed to load schemes:', err);
+      console.warn('Failed to fetch remote schemes, using fallback:', err);
+      let filtered = [...FALLBACK_SCHEMES];
+      if (selectedCategory !== 'All') {
+        filtered = filtered.filter(s => s.category.toLowerCase() === selectedCategory.toLowerCase());
+      }
+      if (searchTerm) {
+        const q = searchTerm.toLowerCase();
+        filtered = filtered.filter(s => s.name.toLowerCase().includes(q) || s.nameTamil.toLowerCase().includes(q));
+      }
+      setSchemes(filtered);
+      if (filtered.length > 0 && !activeScheme) setActiveScheme(filtered[0]);
     } finally {
       setIsLoading(false);
     }
