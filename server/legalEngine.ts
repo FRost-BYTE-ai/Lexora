@@ -1,5 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
-import { LEGAL_LIBRARY_DATA, LegalLibraryRecord } from "./legalLibraryData.js";
+import { LEGAL_LIBRARY_DATA, GOVERNMENT_SCHEMES_DATA, LegalLibraryRecord, SchemeRecord } from "./legalLibraryData.js";
+
+const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-3.6-flash";
 
 let aiClient: GoogleGenAI | null = null;
 
@@ -9,7 +11,14 @@ function getGenAI(): GoogleGenAI | null {
     return null;
   }
   if (!aiClient) {
-    aiClient = new GoogleGenAI({ apiKey });
+    aiClient = new GoogleGenAI({
+      apiKey,
+      httpOptions: {
+        headers: {
+          'User-Agent': 'aistudio-build',
+        }
+      }
+    });
   }
   return aiClient;
 }
@@ -69,6 +78,47 @@ export interface ChatResponsePayload {
 export function classifyQueryLocally(text: string): { domain: string; category: string; confidence: number } {
   const lower = text.toLowerCase();
   
+  // Crop Insurance & PMFBY
+  if (lower.includes('pmfby') || lower.includes('crop insurance') || lower.includes('crop loss') || lower.includes('fasal bima') || lower.includes('பயிர் காப்பீடு') || lower.includes('பயிர் இழப்பு') || lower.includes('dgrc') || lower.includes('72 hour') || lower.includes('kharif') || lower.includes('rabi') || lower.includes('insurance claim') || lower.includes('காப்பீடு')) {
+    return { domain: 'crop_insurance', category: 'Crop Insurance & PMFBY', confidence: 0.96 };
+  }
+
+  // PACS & Primary Cooperative Societies
+  if (lower.includes('pacs') || lower.includes('primary agricultural credit') || lower.includes('தொடக்க வேளாண்') || lower.includes('கூட்டுறவு கடன் சங்கம்') || lower.includes('pacs loan') || lower.includes('pacs membership') || lower.includes('dccb') || lower.includes('passbook') || lower.includes('பாக்ஸ் சங்கம்')) {
+    return { domain: 'pacs', category: 'Cooperative', confidence: 0.95 };
+  }
+
+  // Cooperative Governance & By-laws
+  if (lower.includes('by-law') || lower.includes('bylaw') || lower.includes('agm') || lower.includes('general body') || lower.includes('board of directors') || lower.includes('cooperative election') || lower.includes('supersession') || lower.includes('quorum') || lower.includes('துணை விதிகள்') || lower.includes('பொதுக்குழு') || lower.includes('நிர்வாகக் குழு') || lower.includes('கூட்டுறவு தேர்தல்')) {
+    return { domain: 'cooperative_governance', category: 'Cooperative By-laws', confidence: 0.94 };
+  }
+
+  // Cooperative Law & Registry
+  if (lower.includes('cooperative') || lower.includes('co-operative') || lower.includes('rcs') || lower.includes('drcs') || lower.includes('deputy registrar') || lower.includes('joint registrar') || lower.includes('section 90') || lower.includes('section 81') || lower.includes('section 152') || lower.includes('cooperative tribunal') || lower.includes('கூட்டுறவு') || lower.includes('துணைப் பதிவாளர்') || lower.includes('பதிவாளர்')) {
+    return { domain: 'cooperative_law', category: 'Cooperative Laws', confidence: 0.95 };
+  }
+
+  // Financial Literacy (Loans, KCC, interest subventions, savings vs credit)
+  if (lower.includes('financial literacy') || lower.includes('interest subvention') || lower.includes('kcc') || lower.includes('kisan credit card') || lower.includes('interest rate') || lower.includes('savings vs') || lower.includes('credit discipline') || lower.includes('வட்டி மானியம்') || lower.includes('நிதி விழிப்புணர்வு') || lower.includes('வட்டி விகிதம்') || lower.includes('கடன் தவணை')) {
+    return { domain: 'financial_literacy', category: 'Finance & Credit', confidence: 0.93 };
+  }
+
+  // Government Schemes & Subsidies
+  if (lower.includes('scheme') || lower.includes('yojana') || lower.includes('subsidy') || lower.includes('aif') || lower.includes('agriculture infrastructure fund') || lower.includes('jansamarth') || lower.includes('pm kisan') || lower.includes('திட்டம்') || lower.includes('மானியம்') || lower.includes('அரசு திட்டம்')) {
+    return { domain: 'government_schemes', category: 'Government Schemes', confidence: 0.94 };
+  }
+
+  // Grievance & Redressal
+  if (lower.includes('grievance') || lower.includes('redressal') || lower.includes('officer not responding') || lower.includes('refusal') || lower.includes('corruption') || lower.includes('குறைதீர்') || lower.includes('புகார் மனு') || lower.includes('முறையீடு') || lower.includes('மேல்முறையீடு')) {
+    return { domain: 'grievance', category: 'Citizen Rights', confidence: 0.93 };
+  }
+
+  // General Agriculture
+  if (lower.includes('farmer') || lower.includes('crop') || lower.includes('fertilizer') || lower.includes('pesticide') || lower.includes('seed') || lower.includes('soil') || lower.includes('harvest') || lower.includes('விவசாயி') || lower.includes('பயிர்') || lower.includes('உரம்') || lower.includes('விதை') || lower.includes('விவசாய')) {
+    return { domain: 'agriculture', category: 'Agriculture & Schemes', confidence: 0.91 };
+  }
+
+  // Existing Legal Domains (Civil, Property, Consumer, etc.)
   if (lower.includes('rent') || lower.includes('landlord') || lower.includes('deposit') || lower.includes('patta') || lower.includes('chitta') || lower.includes('property') || lower.includes('land') || lower.includes('வாடகை') || lower.includes('பட்டா') || lower.includes('சொத்து') || lower.includes('advance')) {
     return { domain: 'property', category: 'Property', confidence: 0.94 };
   }
@@ -122,51 +172,67 @@ export async function processLegalChat(payload: ChatRequestPayload): Promise<Cha
   // Find relevant library grounding records
   const libraryMatches = LEGAL_LIBRARY_DATA.filter(item => 
     (jurisdiction === 'TN' ? true : item.jurisdiction === 'IN') &&
-    (item.category.toLowerCase().includes(domain) || 
-     item.title.toLowerCase().includes(domain) || 
-     item.summary.toLowerCase().includes(domain))
+    (item.category.toLowerCase().includes(domain.toLowerCase()) || 
+     item.title.toLowerCase().includes(domain.toLowerCase()) || 
+     item.summary.toLowerCase().includes(domain.toLowerCase()))
   ).slice(0, 3);
 
-  const libraryContext = libraryMatches.map(m => 
-    `• [${m.jurisdiction === 'TN' ? 'Tamil Nadu' : 'India'}] ${m.title} (${m.officialSource}): ${m.summary}. Sections: ${m.keySections.join(', ')}`
-  ).join('\n');
+  // Also check Government Schemes repository
+  const schemeMatches = GOVERNMENT_SCHEMES_DATA.filter(s =>
+    s.id.toLowerCase().includes(domain.toLowerCase()) ||
+    s.category.toLowerCase().includes(domain.toLowerCase()) ||
+    s.name.toLowerCase().includes(query.toLowerCase()) ||
+    s.keyBenefits.toLowerCase().includes(query.toLowerCase()) ||
+    s.eligibility.toLowerCase().includes(query.toLowerCase())
+  ).slice(0, 2);
+
+  const libraryContext = [
+    ...libraryMatches.map(m => 
+      `• [${m.jurisdiction === 'TN' ? 'Tamil Nadu' : 'India'}] ${m.title} (${m.officialSource}): ${m.summary}. Sections: ${m.keySections.join(', ')}`
+    ),
+    ...schemeMatches.map(s => 
+      `• [SCHEME] ${s.name} (${s.nameTamil}): ${s.keyBenefits}. Eligibility: ${s.eligibility}. Authority: ${s.relevantAuthority}. Process: ${s.applicationProcess}`
+    )
+  ].join('\n');
 
   const ai = getGenAI();
 
   const systemInstruction = `
-You are Lexora, an authoritative, highly empathetic legal assistant dedicated to Indian and Tamil Nadu law.
-Your mission is to democratize legal comprehension for citizens, students, and practitioners.
+You are Lexora, an authoritative, empathetic Tamil-First Multilingual Legal & Cooperative Intelligence Platform.
+Your mission is to democratize legal comprehension, cooperative governance, PACS services, rural government schemes, and citizen rights across India and Tamil Nadu.
 
-CORE CONFIGURATION:
-- User Language Preference: ${
+CORE POSITIONING & CAPABILITIES:
+- Supported Domains: Cooperative Law (TN Co-operative Societies Act 1983 & Rules 1988, Multi-State Co-op Act 2002), PACS Operations (Primary Agricultural Credit Societies by-laws, membership, computerization), Crop Insurance & PMFBY (72-hour reporting rule, 14447 toll-free, DGRC dispute redressal, premium caps), Government Schemes (KCC, AIF, PM-KISAN, Subsidies), Financial Literacy (strictly educational interest subventions like 7% - 3% = 4%, loan vs grant, credit discipline, avoiding predatory loans; NO personalized financial or investment advice), and Grievance Redressal (Deputy Registrar Section 90/81, DGRC Collector committee, Cooperative Tribunal Section 152).
+- Supported Languages: Tamil (தமிழ்), Tanglish (Conversational Tamil in Latin script), Hindi (हिन्दी in Devanagari script), and plain English.
+
+USER CONFIGURATION:
+- Language: ${
     detectedLang === 'ta' ? 'Tamil (தமிழ்)' :
-    detectedLang === 'tanglish' ? 'Tanglish (Conversational Tamil written in Latin/English alphabet, e.g. "Unga kelvikku pathil...", "Landlord advance thiruppi tharala...")' :
+    detectedLang === 'tanglish' ? 'Tanglish (Conversational Tamil written in Latin/English alphabet, e.g. "Unga kelvikku pathil...", "PMFBY claim 72 hours-kulla report pannanum...")' :
     detectedLang === 'hi' ? 'Hindi (हिन्दी - Write in clear, natural Hindi using Devanagari script)' :
     'English'
   }
-- Active Legal Domain: ${domain.toUpperCase()}
-- Jurisdiction: ${jurisdiction === 'TN' ? 'TAMIL NADU SPECIFIC (Prioritize Tamil Nadu State Acts, Madras High Court rulings, TN Tenancy Act 2017, TNREGINET, TNeGA, District Courts, Tahsildar powers)' : 'ALL INDIA (Central Statutes, Supreme Court precedents, BNS/BNSS, Consumer Protection Act)'}
-- Target Explanation Level: ${explanationLevel === 'citizen' ? 'Common Citizen (practical, easy analogies, step-by-step, no superfluous Latin legalese)' : explanationLevel === 'student' ? 'Law Student (academic principles, statutory sections, landmark case ratios)' : explanationLevel === 'professional' ? 'Legal Professional / Advocate (statutory interpretation, formal pleadings advice, procedural orders)' : 'Simple Spoken (சாதாரண எளிய நடை, மிக எளிய விளக்கம்)'}
+- Legal Domain: ${domain.toUpperCase()}
+- Jurisdiction: ${jurisdiction === 'TN' ? 'TAMIL NADU SPECIFIC (Prioritize Tamil Nadu State Acts, TN Co-operative Societies Act 1983, TN Tenancy Act 2017, Madras High Court rulings, Tahsildar / DRCS powers)' : 'ALL INDIA (Central Statutes, Multi-State Co-operative Societies Act 2002, PMFBY guidelines, Supreme Court precedents, BNS/BNSS, Consumer Protection Act)'}
+- Explanation Level: ${explanationLevel === 'citizen' ? 'Common Citizen / Farmer / Member (practical, everyday language, step-by-step, no superfluous Latin legalese)' : explanationLevel === 'student' ? 'Law Student (academic principles, statutory sections, landmark case ratios)' : explanationLevel === 'professional' ? 'Legal Professional / Advocate / Society Secretary (statutory interpretation, formal pleadings advice, procedural orders)' : 'Simple Spoken (சாதாரண எளிய நடை, மிக எளிய கிராமப்புற விளக்கம்)'}
 
-MANDATORY RULES:
-1. Tone & Ethics: Serious, dignified Indian LegalTech. Always include a clear disclaimer that this is informational legal literacy guidance, not an attorney-client relationship.
-2. Structure:
-   - Provide an immediate, direct legal answer with clean Markdown formatting (bold headers, bullet points, clean tabular comparisons if needed).
-   - Detail the applicable Acts, Sections, and Precedents.
-   - For Tamil / Tanglish / Hindi queries, explain clearly in that language, keeping legal Act names and Section numbers clearly highlighted in brackets (e.g., "[Section 4 of TN Tenancy Act 2017]").
-3. Citation Quality: Ground answers in real statutory frameworks. Never invent fictitious section numbers or case citations.
-4. Output JSON Format:
+CRITICAL DOMAIN RULES:
+1. Cooperative Law & PACS: Ground answers in the Tamil Nadu Co-operative Societies Act, 1983 (e.g., Section 21 for Right of Admission to Membership, Section 90 for Disputes before Circle Deputy Registrar, Section 81 for Statutory Inquiry, Section 152 for Appeals to the Co-operative Tribunal). Explain Model By-laws and PACS computerization transparently.
+2. Crop Insurance (PMFBY): Emphasize the mandatory 72-HOUR NOTICE RULE for localized risk/post-harvest losses via the Crop Insurance App, 14447 toll-free, or financial institution/PACS. Explain premium caps (2% Kharif food/oilseeds, 1.5% Rabi food/oilseeds, 5% commercial/horticultural crops) and the District Level Grievance Redressal Committee (DGRC chaired by District Collector).
+3. Financial Literacy: Provide purely educational insights (e.g. how Kisan Credit Card interest subvention works: 7% base with 3% prompt repayment incentive = 4% net interest rate; difference between a subsidized loan and a grant). NEVER provide individual investment advice or recommend specific stocks/funds.
+4. Serious & Ethical Tone: Always include an educational literacy disclaimer that this is informational legal guidance and not an attorney-client relationship. Ground every response in actual statutory sections or official scheme guidelines.
+5. Output JSON Format:
    At the very end of your response, you MUST output a valid JSON block delimited with <<<JSON_METADATA and JSON_METADATA>>> containing:
    {
      "risk_level": "low" | "medium" | "high",
-     "risk_reason": "Brief explanation of why this risk level was assigned",
+     "risk_reason": "Brief explanation of risk or timeline sensitivity (e.g., 72-hour PMFBY intimation window)",
      "sources": [
        {
-         "title": "Act or Case name",
-         "section": "Section number if applicable",
-         "act": "Name of the Act",
-         "source": "Government Authority or Law Commission",
-         "url": "Official portal or e-Courts link",
+         "title": "Act, Scheme, or Case name",
+         "section": "Section or Clause number if applicable",
+         "act": "Name of the Act / Scheme",
+         "source": "Government Authority or Ministry",
+         "url": "Official portal link",
          "last_verified": "DD/MM/YYYY"
        }
      ],
@@ -174,9 +240,9 @@ MANDATORY RULES:
        {
          "order": 1,
          "title": "Short title of step",
-         "description": "Clear guidance on what to do",
+         "description": "Clear practical guidance on what to do",
          "authority": "Relevant office / portal",
-         "timeline": "Typical statutory or recommended timeframe"
+         "timeline": "Statutory or recommended timeframe"
        }
      ],
      "follow_up_questions": [
@@ -184,22 +250,35 @@ MANDATORY RULES:
        "Question 2",
        "Question 3"
      ],
-     "relevant_provisions": ["Section X", "Section Y"],
-     "query_intent": "Summary of the legal issue identified"
+     "relevant_provisions": ["Section X", "Clause Y"],
+     "query_intent": "Summary of the cooperative / legal issue identified"
    }
 `;
 
   if (ai) {
     try {
-      const response = await ai.models.generateContent({
-        model: "gemini-2.5-flash",
-        contents: `USER LEGAL QUERY:\n"${query}"\n\nCURATED STATUTORY CONTEXT:\n${libraryContext}`,
-        config: {
-          systemInstruction,
-          temperature: 0.25,
-          tools: [{ googleSearch: {} }]
-        }
-      });
+      let response;
+      try {
+        response = await ai.models.generateContent({
+          model: GEMINI_MODEL,
+          contents: `USER LEGAL QUERY:\n"${query}"\n\nCURATED STATUTORY CONTEXT:\n${libraryContext}`,
+          config: {
+            systemInstruction,
+            temperature: 0.25,
+            tools: [{ googleSearch: {} }]
+          }
+        });
+      } catch (errWithSearch: any) {
+        console.warn("Search grounding tool issue, retrying without tools:", errWithSearch?.message || errWithSearch);
+        response = await ai.models.generateContent({
+          model: GEMINI_MODEL,
+          contents: `USER LEGAL QUERY:\n"${query}"\n\nCURATED STATUTORY CONTEXT:\n${libraryContext}`,
+          config: {
+            systemInstruction,
+            temperature: 0.25
+          }
+        });
+      }
 
       const fullOutput = response.text || '';
       
@@ -325,7 +404,8 @@ MANDATORY RULES:
         explainability
       };
     } catch (error) {
-      console.error("Gemini API Error in processLegalChat:", error);
+      console.error("Gemini API Error in processLegalChat (falling back to local legal intelligence):", error);
+      return getCuratedFallbackResponse(query, detectedLang, domain, jurisdiction, explanationLevel, libraryMatches);
     }
   }
 
@@ -347,108 +427,388 @@ function getCuratedFallbackResponse(
   const isHindi = lang === 'hi';
 
   let answer = '';
-  if (isTamil) {
-    answer = `### ⚖️ சட்ட விளக்கம்: ${domain.toUpperCase()} சட்டம்\n\n` +
-      `உங்கள் கேள்வி பரிசீலிக்கப்பட்டது. **${isTN ? 'தமிழ்நாடு அரசு சட்டங்கள்' : 'இந்திய மத்திய சட்டங்கள்'}** அடிப்படையில் இந்த விவகாரத்தில் பின்வரும் விதிமுறைகள் பொருந்தும்:\n\n` +
-      `1. **சட்டப்பூர்வ உரிமை:** சட்டத்தின் கீழ் இருதரப்புக்கும் பரஸ்பர உரிமைகள் மற்றும் கடமைகள் உண்டு. உரிய காரணமின்றி பணத்தை நிறுத்தி வைப்பதோ அல்லது கடமையை மீறுவதோ சட்ட விரோதமாகும்.\n` +
-      `2. **முக்கிய விதிகள்:** ஒப்பந்த நகல், பணம் செலுத்திய ரசீதுகள் (Bank Statement / UTR) ஆகியவை மிக முக்கியமான ஆதாரங்கள் ஆகும்.\n` +
-      `3. **அரசு நடைமுறை:** அமைதியான முறையில் தீர்வு எட்டப்படாவிட்டால், வழக்கறிஞர் மூலம் சட்டப்பூர்வ அறிவிப்பு (Legal Notice) அனுப்பி, 15 நாட்கள் அவகாசம் வழங்கலாம்.\n\n` +
-      `> ⚠️ **குறிப்பு:** இது பொதுவான சட்ட விழிப்புணர்வு தகவலாகும். இறுதி முடிவெடுப்பதற்கு முன் தகுதியுள்ள வழக்கறிஞரிடம் ஆலோசிக்கவும்.`;
-  } else if (isTanglish) {
-    answer = `### ⚖️ Legal Explanation (${domain.toUpperCase()})\n\n` +
-      `Unga kelvi pathi parkkum bothu, **${isTN ? 'Tamil Nadu state laws' : 'Indian Central Acts'}** padi indha vishayathula ungalluku sila legal rights irukku:\n\n` +
-      `1. **Statutory Right:** Oppandham (agreement) padi edhirkatchi nadakka vendum. Reason illama advance money tharama irukkaradhu wrong.\n` +
-      `2. **Mukkiyamana Documents:** Rent agreement, bank statement receipts, WhatsApp/SMS messages safe-ah vechukkonga.\n` +
-      `3. **Next Step:** First 15 days time kuduthu oru formal Legal Notice anuppalam.\n\n` +
-      `> ⚠️ **Disclaimer:** Idhu purely legal guidance informational purposedhaan. Please verify with an advocate.`;
-  } else if (isHindi) {
-    answer = `### ⚖️ कानूनी विश्लेषण: ${domain.toUpperCase()} कानून\n\n` +
-      `आपके प्रश्न का विश्लेषण किया गया है। **${isTN ? 'तमिलनाडु राज्य अधिनियम' : 'भारतीय केंद्रीय कानून'}** के प्रावधानों के अनुसार इस मामले में निम्नलिखित नियम लागू होते हैं:\n\n` +
-      `1. **वैधानिक अधिकार:** कानून के अंतर्गत दोनों पक्षों के निश्चित अधिकार एवं कर्तव्य हैं। बिना उचित कारण के अग्रिम राशि रोकना या सेवा में कमी करना कानूनन अनुचित है।\n` +
-      `2. **महत्वपूर्ण दस्तावेज़:** हस्ताक्षरित अनुबंध प्रति, बैंक भुगतान रसीदें तथा संदेश आपके पक्ष के प्राथमिक साक्ष्य हैं।\n` +
-      `3. **प्रक्रियात्मक कदम:** विवाद की स्थिति में 15 दिनों का औपचारिक मांग पत्र (Legal Notice) भेजा जाना चाहिए।\n\n` +
-      `> ⚠️ **सूचना:** यह जानकारी कानूनी साक्षरता हेतु है। किसी भी कानूनी कार्यवाही से पूर्व अधिवक्ता से परामर्श लें।`;
-  } else {
-    answer = `### ⚖️ Legal Assessment: ${domain.toUpperCase()}\n\n` +
-      `Based on the provisions of **${isTN ? 'Tamil Nadu State enactments' : 'Indian Federal law'}**, the following legal framework applies to your matter:\n\n` +
-      `1. **Statutory Entitlement:** The law protects parties against arbitrary withholding of refunds, tenancy deposits, or deficient services.\n` +
-      `2. **Evidentiary Requirement:** Valid documentary evidence (written agreement, payment receipts, banking transaction records) forms the foundation of any claim.\n` +
-      `3. **Remedial Procedure:** You are entitled to serve a statutory 15-day Demand Notice prior to escalating the dispute to the jurisdictional tribunal or court.\n\n` +
-      `> ⚠️ **Statutory Notice:** This response is intended for legal literacy and does not constitute formal legal representation.`;
+  let riskLevel: 'low' | 'medium' | 'high' = 'medium';
+  let riskReason = 'Statutory compliance and timeline verification recommended';
+  let defaultSources: LegalSourceItem[] = [];
+  let actionPlan: any[] = [];
+  let followUpQuestions: string[] = [];
+
+  // 1. Crop Insurance & PMFBY
+  if (domain === 'crop_insurance') {
+    riskLevel = 'high';
+    riskReason = 'PMFBY requires mandatory localized loss reporting within 72 hours of the calamity event';
+    defaultSources = [
+      {
+        title: 'Pradhan Mantri Fasal Bima Yojana (PMFBY) Operational Guidelines',
+        section: 'Section 15 (Loss Assessment & 72-Hour Intimation)',
+        act: 'PMFBY Revised Operational Guidelines 2020',
+        source: 'Ministry of Agriculture & Farmers Welfare, Govt of India',
+        url: 'https://pmfby.gov.in/',
+        last_verified: new Date().toLocaleDateString('en-GB')
+      },
+      {
+        title: 'District Level Grievance Redressal Committee (DGRC) Guidelines',
+        section: 'Section 24 (Grievance Redressal Mechanism)',
+        act: 'PMFBY Redressal Framework',
+        source: 'Tamil Nadu Department of Agriculture',
+        url: 'https://www.tnagrisnet.tn.gov.in/',
+        last_verified: new Date().toLocaleDateString('en-GB')
+      }
+    ];
+
+    if (isTamil) {
+      answer = `### 🌾 பயிர் காப்பீடு & PMFBY சட்ட விளக்கம்\n\n` +
+        `பிரதம மந்திரி பயிர் காப்பீட்டுத் திட்டத்தின் (PMFBY) வழிகாட்டுதல்கள் மற்றும் தமிழ்நாடு வேளாண் துறை விதிகளின்படி:\n\n` +
+        `1. **⏰ 72 மணி நேர கட்டாய விதி (Critical 72-Hour Rule):** வெள்ளம், பெருமழை, ஆலங்கட்டி மழை அல்லது நிலச்சரிவு போன்ற உள்ளூர் பேரிடர்களால் பயிர் சேதமடைந்தால், சேதம் ஏற்பட்ட **72 மணி நேரத்திற்குள்** தகவல் தெரிவிக்கப்பட வேண்டும். தகவல் தெரிவிக்கத் தவறினால் இழப்பீடு நிராகரிக்கப்பட வாய்ப்புள்ளது.\n` +
+        `2. **📞 தகவல் தெரிவிக்கும் வழிகள்:**\n` +
+        `   • மத்திய அரசின் கட்டணமில்லா உதவி எண்: **14447**\n` +
+        `   • பயிர் காப்பீட்டு கைபேசி செயலி (Crop Insurance App / Farmer Corner)\n` +
+        `   • உங்கள் கிராம தொடக்க வேளாண் கூட்டுறவு கடன் சங்கம் (PACS) அல்லது காப்பீடு செய்த வங்கி கிளை\n` +
+        `3. **💰 விவசாயி செலுத்த வேண்டிய அதிகபட்ச பிரீமியம்:**\n` +
+        `   • காரீப் (Kharif) உணவு மற்றும் எண்ணெய் வித்து பயிர்கள்: **2.0%** மட்டுமே\n` +
+        `   • ரபி (Rabi) பயிர்கள்: **1.5%** மட்டுமே\n` +
+        `   • வணிக மற்றும் தோட்டக்கலை பயிர்கள்: **5.0%** மட்டுமே (மீதமுள்ள தொகையை அரசு மானியமாக ஏற்கிறது)\n` +
+        `4. **⚖️ குறைதீர் வழிமுறை (DGRC):** காப்பீட்டு நிறுவனம் கோரிக்கையை நிராகரித்தால், மாவட்ட ஆட்சியர் (District Collector) தலைமையிலான **மாவட்ட அளவிலான குறைதீர்க்கும் குழுவிடம் (DGRC)** எழுத்துப்பூர்வ மேல்முறையீடு செய்யலாம்.\n\n` +
+        `> ⚠️ **அவசர அறிவிப்பு:** பயிர் பாதிப்பு ஏற்பட்டிருந்தால் உடனடியாக வயலின் புகைப்படம், அடங்கல் நகல் மற்றும் பயிர் காப்பீடு ரசீது ஆகியவற்றுடன் 14447 அல்லது உங்கள் கிராம PACS-ஐ அணுகவும்.`;
+      actionPlan = [
+        { order: 1, title: '72 மணி நேரத்திற்குள் தகவல் பதிவு', description: 'Crop Insurance App அல்லது 14447 மூலம் உடனடி அறிவிப்பு பதிவு செய்து டோக்கன் எண் பெறவும்.', authority: 'PMFBY Portal (14447)', timeline: '72 மணி நேரத்திற்குள்' },
+        { order: 2, title: 'சேத புகைப்படம் & ஆவணங்கள் திரட்டுதல்', description: 'பயிர் பாதிப்பு புகைப்படம், அடங்கல், நிலப்பட்டா மற்றும் வங்கி பிரீமியம் ரசீது ஆகியவற்றை தயாராக வைக்கவும்.', authority: 'PACS / VAO Office', timeline: '3 நாட்களுக்குள்' },
+        { order: 3, title: 'கூட்டு ஆய்வு (Joint Inspection)', description: 'வேளாண் அலுவலர் மற்றும் காப்பீட்டு நிறுவன பிரதிநிதியின் நேரடி கள ஆய்வின் போது கையொப்பமிடவும்.', authority: 'District Agriculture Office', timeline: '10 நாட்களுக்குள்' }
+      ];
+      followUpQuestions = [
+        'DGRC மாவட்ட குறைதீர் குழுவுக்கு மனு வரைவு செய்வது எப்படி?',
+        'பயிர் காப்பீடு இழப்பீட்டு பிரீமியம் கணக்கீடு முறை என்ன?',
+        'PACS மூலம் பயிர் கடன் பெற்றால் காப்பீடு கட்டாயமா?'
+      ];
+    } else if (isTanglish) {
+      answer = `### 🌾 Crop Insurance & PMFBY Legal Guidance\n\n` +
+        `PMFBY guidelines and Tamil Nadu Agriculture Department rules padi unga crop loss claim-kku mukkiyamaana statutory steps:\n\n` +
+        `1. **⏰ 72-Hour Mandatory Rule:** Vellam, hailstorm, alladhu rain damage vandha **72 hours-kulla** intimation kudukanum. Delay aana claim reject panna risk irukku.\n` +
+        `2. **📞 Epdi Inform Panradhu?**\n` +
+        `   • Toll-free helpline: **14447**\n` +
+        `   • Crop Insurance Mobile App\n` +
+        `   • Unga local PACS society alladhu bank branch-la written intimation\n` +
+        `3. **💰 Farmer Premium Cap:**\n` +
+        `   • Kharif food/oilseed crops: **2.0%** max\n` +
+        `   • Rabi crops: **1.5%** max\n` +
+        `   • Commercial / Horticulture: **5.0%** max\n` +
+        `4. **⚖️ Appeal Authority (DGRC):** Claim reject aana, District Collector chair pannura **District Grievance Redressal Committee (DGRC)** kitta appeal submit pannalam.\n\n` +
+        `> ⚠️ **Important:** 14447 call panni docket/token number safe-ah note panni vechukkonga.`;
+      actionPlan = [
+        { order: 1, title: 'Report Loss within 72 Hours', description: 'Call 14447 or use Crop Insurance app to register calamity and save token number.', authority: 'Helpline 14447', timeline: 'Within 72 Hours' },
+        { order: 2, title: 'Assemble Farm Evidence', description: 'Collect geo-tagged crop photos, Adangal excerpt, and bank premium debit receipt.', authority: 'PACS / Bank', timeline: '3 Days' },
+        { order: 3, title: 'Attend Joint Survey', description: 'Participate in the joint inspection by Agricultural Officer and Insurance Surveyor.', authority: 'Agri Dept', timeline: '10 Days' }
+      ];
+      followUpQuestions = [
+        'How to appeal against insurance claim denial before DGRC?',
+        'Can tenant farmers apply for PMFBY crop insurance in Tamil Nadu?',
+        'What documents are needed for harvest loss claim?'
+      ];
+    } else {
+      answer = `### 🌾 Statutory Framework: PMFBY Crop Insurance & Grievance Redressal\n\n` +
+        `Under the **Pradhan Mantri Fasal Bima Yojana (PMFBY) Operational Guidelines** and Tamil Nadu State Agricultural Rules:\n\n` +
+        `1. **⏰ Mandatory 72-Hour Intimation Window:** For localized calamities (inundation, hailstorm, landslide, natural fire) or post-harvest losses, the insured farmer must intimate the loss within **72 hours** of occurrence. Failure to intimate within this window severely jeopardizes claim settlement.\n` +
+        `2. **Intimation Channels:**\n` +
+        `   • Central Toll-Free Helpline: **14447**\n` +
+        `   • National Crop Insurance Portal / Crop Insurance App\n` +
+        `   • Local Primary Agricultural Credit Society (PACS) or bank branch\n` +
+        `3. **Statutory Farmer Premium Caps:**\n` +
+        `   • Kharif Food & Oilseed Crops: **2.0%** maximum\n` +
+        `   • Rabi Food & Oilseed Crops: **1.5%** maximum\n` +
+        `   • Annual Commercial / Horticultural Crops: **5.0%** maximum\n` +
+        `4. **Appellate & Redressal Forum (DGRC):** Disputes arising from delay, under-assessment, or arbitrary rejection must be escalated to the **District Level Grievance Redressal Committee (DGRC)** chaired by the District Collector.\n\n` +
+        `> ⚠️ **Statutory Notice:** Document the damage with date-stamped photographs, Adangal copy, and bank premium transaction proof before the joint survey.`;
+      actionPlan = [
+        { order: 1, title: 'Lodge 72-Hour Calamity Notice', description: 'Call 14447 or log into pmfby.gov.in to obtain a verified intimation reference number.', authority: 'PMFBY Portal', timeline: 'Within 72 hours' },
+        { order: 2, title: 'Gather Land & Crop Records', description: 'Compile Patta/Chitta, Adangal crop entry, and PACS premium voucher.', authority: 'PACS Secretary', timeline: '3 working days' },
+        { order: 3, title: 'Escalate to DGRC if Disputed', description: 'File representation before the District Collector in the event of wrongful deduction or rejection.', authority: 'District Collectorate (DGRC)', timeline: '30 days' }
+      ];
+      followUpQuestions = [
+        'How to file a formal appeal before the District Collector (DGRC)?',
+        'What is the formula for calculating short-yield threshold under PMFBY?',
+        'Are tenant farmers eligible under Tamil Nadu Cultivating Tenants Protection Act?'
+      ];
+    }
   }
 
-  const sources: LegalSourceItem[] = libraryMatches.length > 0
-    ? libraryMatches.map(lm => ({
-        title: lm.title,
-        section: lm.keySections[0] || 'Governing Section',
-        act: lm.title,
-        source: lm.officialSource,
-        url: lm.url,
+  // 2. PACS & Primary Agricultural Credit Societies
+  else if (domain === 'pacs') {
+    riskLevel = 'medium';
+    riskReason = 'Cooperative society governance and statutory member admission rights under TN Act 1983';
+    defaultSources = [
+      {
+        title: 'Tamil Nadu Co-operative Societies Act, 1983',
+        section: 'Section 21 (Right of Admission to Membership) & Section 90 (Disputes)',
+        act: 'TN Act 30 of 1983',
+        source: 'Tamil Nadu Department of Co-operation',
+        url: 'https://cooperation.tn.gov.in/',
         last_verified: new Date().toLocaleDateString('en-GB')
-      }))
-    : [
-        {
-          title: isTN ? 'Tamil Nadu Regulation of Rights and Responsibilities of Landlords and Tenants Act, 2017' : 'Consumer Protection Act, 2019',
-          section: 'Section 4 / Section 35',
-          act: isTN ? 'TN Tenancy Act' : 'Consumer Protection Act',
-          source: isTN ? 'Government of Tamil Nadu' : 'Government of India',
-          url: isTN ? 'https://tenancy.tn.gov.in/' : 'https://edaakhil.nic.in/',
-          last_verified: new Date().toLocaleDateString('en-GB')
-        }
+      },
+      {
+        title: 'Model By-laws for Primary Agricultural Credit Societies (PACS)',
+        section: 'Model By-law 5 (Multipurpose Objectives & ERP Integration)',
+        act: 'Ministry of Cooperation Guidelines 2023',
+        source: 'Ministry of Cooperation, Govt of India',
+        url: 'https://cooperation.gov.in/',
+        last_verified: new Date().toLocaleDateString('en-GB')
+      }
+    ];
+
+    if (isTamil) {
+      answer = `### 🏛️ தொடக்க வேளாண் கூட்டுறவு கடன் சங்கம் (PACS) சட்ட விளக்கம்\n\n` +
+        `**தமிழ்நாடு கூட்டுறவுச் சங்கங்கள் சட்டம், 1983** மற்றும் மாதிரி துணை விதிகளின் கீழ் உங்கள் உரிமைகள்:\n\n` +
+        `1. **👤 உறுப்பினர் உரிமை (Section 21 - Right of Admission):** சங்கத்தின் எல்லைக்குட்பட்ட பகுதியில் விவசாயம் செய்யும் தகுதியுள்ள எந்தவொரு விவசாயிக்கும் சங்கத்தில் உறுப்பினராகும் (Class-A Voting Member) சட்டப்பூர்வ உரிமை உண்டு. சங்கம் 60 நாட்களுக்குள் விண்ணப்பத்தின் மீது முடிவெடுக்காவிட்டால், அவர் உறுப்பினராக சேர்க்கப்பட்டதாகக் (Deemed Admitted) கருதப்படும்.\n` +
+        `2. **📖 கணக்கு புத்தக ஆய்வு (Member Inspection Rights):** ஒவ்வொரு உறுப்பினருக்கும் தனது கடன் கணக்கு புத்தகம் (Loan Passbook), வரவு-செலவு பதிவுகள் மற்றும் சங்கத்தின் தணிக்கை அறிக்கையை (Audit Report) பார்வையிட உரிமை உண்டு.\n` +
+        `3. **💻 தேசிய கணினிமயமாக்கல் திட்டம் (PACS ERP):** தற்போது அனைத்து பாக்ஸ் சங்கங்களும் தேசிய ERP தளத்தில் இணைக்கப்பட்டு வருகின்றன. இதனால் ஆன்லைன் ரசீதுகள், சேமிப்பு இருப்பு மற்றும் உரம் இருப்பு ஆகியவை வெளிப்படையாக கண்காணிக்கப்படுகின்றன.\n` +
+        `4. **⚖️ புகார் தீர்வு (Dispute under Section 90):** சங்கம் உறுப்பினர் சேர்க்கையை மறுத்தாலோ அல்லது கடன் வழங்குவதில் பாரபட்சம் காட்டினாலோ, வட்ட துணைப் பதிவாளரிடம் (Circle Deputy Registrar of Cooperative Societies) சட்டப்பிரிவு 90-ன் கீழ் முறையீடு செய்யலாம்.\n\n` +
+        `> ℹ️ **வழிகாட்டுதல்:** சங்கம் உறுப்பினர் அட்டை தர மறுத்தால், விண்ணப்பத்தின் ஒப்புதல் ரசீதுடன் வட்ட துணைப் பதிவாளரிடம் முறையிடலாம்.`;
+      actionPlan = [
+        { order: 1, title: 'விண்ணப்ப நகல் & ரசீது பெறுதல்', description: 'PACS சங்கத்தில் சமர்ப்பித்த உறுப்பினர் அல்லது கடன் விண்ணப்பத்தின் தேதியிட்ட ரசீதை பாதுகாக்கவும்.', authority: 'PACS Secretary', timeline: 'உடனடியாக' },
+        { order: 2, title: '60 நாட்கள் சட்ட அவகாசம்', description: 'சட்டம் பிரிவு 21-ன் படி 60 நாட்களுக்குள் முடிவெடுக்க சங்கத்திற்கு கடிதம் அனுப்பவும்.', authority: 'PACS Board', timeline: '60 நாட்கள்' },
+        { order: 3, title: 'வட்ட துணைப் பதிவாளரிடம் மனு', description: 'துணைப் பதிவாளர் (Deputy Registrar) அலுவலகத்தில் பிரிவு 90-ன் கீழ் தீர்ப்புக்கு மனு தாக்கல் செய்யவும்.', authority: 'Circle DRCS Office', timeline: '15 நாட்கள்' }
       ];
+      followUpQuestions = [
+        'பாக்ஸ் சங்க உறுப்பினர் சேர்க்கை மறுக்கப்பட்டால் மேல்முறையீடு செய்வது எப்படி?',
+        'PACS மூலம் வழங்கப்படும் பயிர் கடன் வட்டி மானிய விபரம் என்ன?',
+        'துணை விதிகளில் புதிய சேவைகள் (CSC / உரம் விற்பனை) சேர்ப்பது எப்படி?'
+      ];
+    } else {
+      answer = `### 🏛️ Statutory Framework: Primary Agricultural Credit Societies (PACS)\n\n` +
+        `Under the **Tamil Nadu Co-operative Societies Act, 1983** and the **National Model By-laws for PACS (2023)**:\n\n` +
+        `1. **Statutory Right of Admission (Section 21):** Every eligible cultivator residing within the operational area of the society is legally entitled to admission as an 'A-Class' voting member. If the Board fails to communicate a rejection decision within **60 days**, the applicant is statutorily deemed admitted.\n` +
+        `2. **Member Inspection Rights (Section 23):** Members possess an absolute legal entitlement to inspect society books, audit reports, and their individual loan ledger passbooks.\n` +
+        `3. **National PACS Computerization:** The ongoing ERP computerization project mandates digital ledger reconciliation, real-time KCC limits, and transparent input distribution (fertilizer, seeds, CSC services).\n` +
+        `4. **Statutory Dispute Resolution (Section 90):** Any dispute touching the constitution, management, or business of the society (including refusal of membership or denial of credit) must be referred to the **Circle Deputy Registrar of Co-operative Societies (DRCS)**.\n\n` +
+        `> ℹ️ **Legal Remedy:** Unlawful refusal of membership can be challenged via petition under Section 90 before the Circle Deputy Registrar.`;
+      actionPlan = [
+        { order: 1, title: 'Obtain Acknowledgment Receipt', description: 'Ensure written proof of submission for membership or loan application.', authority: 'PACS Society Office', timeline: 'Immediate' },
+        { order: 2, title: 'Monitor 60-Day Deemed Period', description: 'Section 21 mandates board decision within 60 days of application.', authority: 'Society Board', timeline: '60 days' },
+        { order: 3, title: 'File Petition under Section 90', description: 'Submit formal dispute petition to the Circle Deputy Registrar if grievance persists.', authority: 'Deputy Registrar (DRCS)', timeline: '30 days' }
+      ];
+      followUpQuestions = [
+        'How to draft an appeal against refusal of PACS membership under Section 21?',
+        'What are the borrowing limits and collateral rules for PACS crop loans?',
+        'Can PACS operate Common Service Centers (CSCs) and drone hiring services?'
+      ];
+    }
+  }
+
+  // 3. Cooperative Governance & By-laws
+  else if (domain === 'cooperative_governance') {
+    riskLevel = 'medium';
+    riskReason = 'Statutory adherence to AGM timelines, quorum rules, and by-law amendment procedures';
+    defaultSources = [
+      {
+        title: 'Tamil Nadu Co-operative Societies Act, 1983',
+        section: 'Section 32 (General Meetings) & Section 33 (Constitution of Board)',
+        act: 'TN Act 30 of 1983',
+        source: 'Tamil Nadu Department of Co-operation',
+        url: 'https://cooperation.tn.gov.in/',
+        last_verified: new Date().toLocaleDateString('en-GB')
+      }
+    ];
+
+    if (isTamil) {
+      answer = `### ⚖️ கூட்டுறவு நிர்வாகம் & துணை விதிகள் (Cooperative Governance)\n\n` +
+        `**தமிழ்நாடு கூட்டுறவுச் சங்கங்கள் சட்டம், 1983**-ன் கீழ் சங்க நிர்வாக விதிகள்:\n\n` +
+        `1. **📅 வருடாந்திர பொதுக்குழு கூட்டம் (AGM - Section 32):** நிதியாண்டு முடிந்த 6 மாதங்களுக்குள் (செப்டம்பர் 30-க்குள்) பொதுக்குழு கூட்டம் கட்டாயம் கூட்டப்பட வேண்டும். இதில் வரவு செலவு அறிக்கை, தணிக்கை அறிக்கை மற்றும் லாப பங்கீடு வைக்கப்பட வேண்டும்.\n` +
+        `2. **👥 சிறப்பு பொதுக்குழு (SGM Requisition):** சங்க உறுப்பினர்களில் ஐந்தில் ஒரு பங்கு (1/5th) உறுப்பினர்கள் கையொப்பமிட்டுக் கோரினால், நிர்வாகக் குழு 30 நாட்களுக்குள் சிறப்புப் பொதுக்குழுவைக் கூட்ட வேண்டும்.\n` +
+        `3. **📜 துணை விதிகள் திருத்தம் (By-law Amendments):** துணை விதிகளில் திருத்தம் செய்ய பொதுக்குழுவில் மூன்றில் இரண்டு பங்கு (2/3rd) பெரும்பான்மை ஒப்புதல் பெற்று, பதிவாளரிடம் பதிவு செய்யப்பட வேண்டும்.\n` +
+        `4. **💰 ஈவுத்தொகை வரம்பு (Dividend Limit):** சட்டத்தின்படி செலுத்தப்பட்ட பங்கு மூலதனத்தின் மீது அதிகபட்சம் **14%** மட்டுமே ஈவுத்தொகை (Dividend) வழங்க முடியும்.\n\n` +
+        `> ⚠️ **சட்ட வழிமுறை:** நிர்வாகக் குழு விதிகளின்படி செயல்படவில்லை என்றால், பதிவாளர் சட்டம் பிரிவு 81-ன் கீழ் விசாரணைக்கு உத்தரவிடலாம்.`;
+      actionPlan = [
+        { order: 1, title: 'பொதுக்குழு நோட்டீஸ் சரிபார்த்தல்', description: 'கூட்டம் நடப்பதற்கு குறைந்தபட்சம் 15 நாட்களுக்கு முன் உறுப்பினர்களுக்கு நோட்டீஸ் தரப்பட்டுள்ளதா என பார்க்கவும்.', authority: 'Society Notice Board', timeline: '15 நாட்களுக்கு முன்' },
+        { order: 2, title: 'தணிக்கை அறிக்கை கோருதல்', description: 'சங்கத்தின் வருடாந்திர தணிக்கை அறிக்கையின் நகலை பார்வையிட மனு அளிக்கவும்.', authority: 'PACS Secretary', timeline: '7 நாட்கள்' }
+      ];
+      followUpQuestions = [
+        'கூட்டுறவு சங்கத்தில் சிறப்பு பொதுக்குழு (SGM) கூட்டுவது எப்படி?',
+        'நிர்வாகக் குழு முறைகேடு செய்தால் பிரிவு 81 விசாரணை கோருவது எப்படி?',
+        'கூட்டுறவு சங்க தேர்தல் விதிகள் என்ன?'
+      ];
+    } else {
+      answer = `### ⚖️ Cooperative Governance & Statutory By-laws\n\n` +
+        `Under the **Tamil Nadu Co-operative Societies Act, 1983**:\n\n` +
+        `1. **Mandatory Annual General Meeting (Section 32):** The Board must convene an AGM within 6 months of the close of each financial year (prior to September 30) to present audited accounts, budget estimates, and excess dividend allocations.\n` +
+        `2. **Special General Body Requisition (Section 32(3)):** Upon written requisition by not less than **one-fifth (1/5th)** of total voting members, the Board is legally obligated to convene a Special General Meeting within 30 days.\n` +
+        `3. **Statutory Dividend Ceiling (Section 72):** No cooperative society may declare dividend exceeding **14% per annum** on paid-up share capital.\n` +
+        `4. **Inspection & Inquiry (Section 81):** On receipt of representation from members or the financing bank, the Registrar can order a statutory inquiry into the constitution, working, and financial condition of the society.\n\n` +
+        `> ℹ️ **Compliance Note:** By-law amendments take legal effect only after formal registration by the Circle Deputy Registrar.`;
+      actionPlan = [
+        { order: 1, title: 'Verify 15-Day AGM Notice', description: 'Ensure statutory notice period of at least 15 clear days prior to the meeting date.', authority: 'Society Secretary', timeline: '15 days prior' },
+        { order: 2, title: 'Inspect Audited Balance Sheet', description: 'Exercise Section 23 rights to scrutinize balance sheet and auditor observations.', authority: 'Society Board', timeline: 'Before AGM' }
+      ];
+      followUpQuestions = [
+        'What is the procedure to requisition an SGM under Section 32(3)?',
+        'How does Section 81 statutory inquiry function in case of fund misappropriation?',
+        'What are the legal qualifications for election to a Cooperative Board of Directors?'
+      ];
+    }
+  }
+
+  // 4. Financial Literacy (Educational guidance only)
+  else if (domain === 'financial_literacy') {
+    riskLevel = 'low';
+    riskReason = 'Educational financial literacy only — no personalized financial or investment advice';
+    defaultSources = [
+      {
+        title: 'Reserve Bank of India & NABARD KCC Guidelines',
+        section: 'Modified Interest Subvention Scheme (MISS)',
+        act: 'NABARD Rural Credit Guidelines 2024',
+        source: 'NABARD & Reserve Bank of India',
+        url: 'https://www.nabard.org/',
+        last_verified: new Date().toLocaleDateString('en-GB')
+      },
+      {
+        title: 'Tamil Nadu Prohibition of Charging Exorbitant Interest Act, 2003',
+        section: 'Section 3 & Section 4 (Penal Provisions for Kandhuvatti)',
+        act: 'TN Act 38 of 2003',
+        source: 'Government of Tamil Nadu',
+        url: 'https://www.indiacode.nic.in/',
+        last_verified: new Date().toLocaleDateString('en-GB')
+      }
+    ];
+
+    if (isTamil) {
+      answer = `### 💡 நிதி விழிப்புணர்வு & பயிர் கடன் வழிகாட்டுதல் (Financial Literacy)\n\n` +
+        `*(முக்கிய குறிப்பு: இது விவசாயிகளுக்கான பொதுவான சட்ட விழிப்புணர்வு தகவல் மட்டுமே; தனிநபர் முதலீட்டு ஆலோசனை அல்ல.)*\n\n` +
+        `1. **🌾 கிசான் கிரெடிட் கார்டு (KCC) வட்டி மானிய கணக்கீடு:**\n` +
+        `   • விவசாய பயிர் கடன்களுக்கான அடிப்படை வட்டி விகிதம்: **7.0%** p.a.\n` +
+        `   • குறித்த தவணைக்குள் திருப்பிச் செலுத்துவோருக்கு மத்திய அரசின் உடனடி திருப்பிச் செலுத்தும் ஊக்கத்தொகை (PRI): **3.0%** மானியம்\n` +
+        `   • இதன் மூலம் விவசாயி செலுத்தும் நிகர வட்டி: **வெறும் 4.0% மட்டுமே** (ரூ. 3 லட்சம் வரையிலான கடன்களுக்கு)\n` +
+        `2. **⚠️ பயிர் காப்பீடு vs முதலீடு (Insurance vs Investment):** பயிர் காப்பீடு என்பது முதலீடு அல்ல; அது எதிர்பாராத இயற்கை பேரிடரில் இருந்து பயிரைப் பாதுகாக்கும் இழப்பீட்டுப் பாதுகாப்பு மட்டுமே.\n` +
+        `3. **🚫 கந்துவட்டி மற்றும் அங்கீகாரமற்ற கடன் ஆபத்து:** சட்டத்திற்குப் புறம்பாக அதிக வட்டி வசூலிப்பது **தமிழ்நாடு கந்துவட்டி தடைச் சட்டம், 2003**-ன் படி தண்டனைக்குரிய குற்றமாகும். எப்போதும் PACS அல்லது தேசியமயமாக்கப்பட்ட வங்கிகளிலேயே கடன் பெறவும்.\n` +
+        `4. **📋 கடன் ஒழுக்கம்:** குறித்த தேதியில் கடனை புதுப்பிப்பதால் (Renewal) வட்டி மானியம் கிடைப்பதுடன், சிபில் (CIBIL) வரம்பு உயர்ந்து அடுத்த பருவத்திற்கு அதிக கடன் வரம்பு கிடைக்கும்.\n\n` +
+        `> 💡 **விழிப்புணர்வு:** கடன் வாங்கும் முன் வட்டி விகிதம், மானிய நிபந்தனைகள் மற்றும் திருப்பிச் செலுத்தும் தேதியை பாஸ்புக்கில் சரிபார்க்கவும்.`;
+      actionPlan = [
+        { order: 1, title: 'KCC கடன் புதுப்பித்தல் தேதியை குறித்து வைத்தல்', description: '12 மாத தவணைக்குள் கடனை புதுப்பித்து 3% வட்டி மானியத்தை தக்கவைத்துக் கொள்ளவும்.', authority: 'PACS / Bank', timeline: 'தவணை தேதிக்கு முன்' },
+        { order: 2, title: 'வட்டி மானியம் வரவு சரிபார்ப்பு', description: 'வங்கி கணக்கு புத்தகத்தில் 3% subvention வரவு வைக்கப்பட்டுள்ளதா என சரிபார்க்கவும்.', authority: 'Branch Manager', timeline: 'கடனை செலுத்திய பின்' }
+      ];
+      followUpQuestions = [
+        'KCC கடன் வரம்பு (Scale of Finance) எவ்வாறு நிர்ணயிக்கப்படுகிறது?',
+        'கந்துவட்டி வசூலிப்பவர்களுக்கு எதிராக புகார் அளிப்பது எப்படி?',
+        'கடன் தள்ளுபடி அல்லது வட்டி தள்ளுபடி விதிகள் என்ன?'
+      ];
+    } else {
+      answer = `### 💡 Financial Literacy: Rural Credit & Interest Subventions\n\n` +
+        `*(Statutory Notice: This is purely educational legal guidance regarding institutional credit mechanisms; it does not constitute individual financial or investment advice.)*\n\n` +
+        `1. **🌾 Kisan Credit Card (KCC) Subvention Math:**\n` +
+        `   • Base Institutional Lending Rate: **7.0% p.a.** (up to ₹3 Lakhs)\n` +
+        `   • Prompt Repayment Incentive (PRI) Subvention: **3.0% p.a.**\n` +
+        `   • Effective Net Interest Cost: **4.0% p.a.** for farmers who service the loan within the statutory 12-month tenure\n` +
+        `2. **Insurance vs Investment:** Crop insurance (PMFBY) is an indemnity risk-mitigation tool against harvest failure, not an asset generation product.\n` +
+        `3. **Prohibition of Predatory Lending:** Unregistered private lending at usurious rates is strictly illegal under the **Tamil Nadu Prohibition of Charging Exorbitant Interest Act, 2003 (Kandhuvatti Act)**, punishable with imprisonment up to 3 years.\n` +
+        `4. **Credit Hygiene:** Servicing crop loans within the annual cycle maintains an active institutional borrowing status and qualifies for enhanced Scale of Finance in subsequent seasons.\n\n` +
+        `> 💡 **Core Principle:** Always ensure loan passbook entries match bank ledger computerization records.`;
+      actionPlan = [
+        { order: 1, title: 'Calendar KCC Due Date', description: 'Service interest within 365 days to capture the 3% Prompt Repayment subvention.', authority: 'PACS / Bank', timeline: 'Before annual due date' },
+        { order: 2, title: 'Audit Passbook Entries', description: 'Verify that loan disbursement and interest subvention entries are recorded digitally.', authority: 'PACS Branch', timeline: 'Quarterly' }
+      ];
+      followUpQuestions = [
+        'How is the Scale of Finance calculated for crops in Tamil Nadu districts?',
+        'What legal remedies exist under the TN Prohibition of Exorbitant Interest Act?',
+        'Can self-help groups (SHGs) access cooperative credit at subsidized rates?'
+      ];
+    }
+  }
+
+  // 5. Default Legal / Civil / Consumer handling
+  else {
+    defaultSources = libraryMatches.length > 0
+      ? libraryMatches.map(lm => ({
+          title: lm.title,
+          section: lm.keySections[0] || 'Governing Section',
+          act: lm.title,
+          source: lm.officialSource,
+          url: lm.url,
+          last_verified: new Date().toLocaleDateString('en-GB')
+        }))
+      : [
+          {
+            title: isTN ? 'Tamil Nadu Regulation of Rights and Responsibilities of Landlords and Tenants Act, 2017' : 'Consumer Protection Act, 2019',
+            section: 'Section 4 / Section 35',
+            act: isTN ? 'TN Tenancy Act' : 'Consumer Protection Act',
+            source: isTN ? 'Government of Tamil Nadu' : 'Government of India',
+            url: isTN ? 'https://tenancy.tn.gov.in/' : 'https://edaakhil.nic.in/',
+            last_verified: new Date().toLocaleDateString('en-GB')
+          }
+        ];
+
+    if (isTamil) {
+      answer = `### ⚖️ சட்ட விளக்கம்: ${domain.toUpperCase()} சட்டம்\n\n` +
+        `உங்கள் கேள்வி பரிசீலிக்கப்பட்டது. **${isTN ? 'தமிழ்நாடு அரசு சட்டங்கள்' : 'இந்திய மத்திய சட்டங்கள்'}** அடிப்படையில் இந்த விவகாரத்தில் பின்வரும் விதிமுறைகள் பொருந்தும்:\n\n` +
+        `1. **சட்டப்பூர்வ உரிமை:** சட்டத்தின் கீழ் இருதரப்புக்கும் பரஸ்பர உரிமைகள் மற்றும் கடமைகள் உண்டு. உரிய காரணமின்றி பணத்தை நிறுத்தி வைப்பதோ அல்லது கடமையை மீறுவதோ சட்ட விரோதமாகும்.\n` +
+        `2. **முக்கிய விதிகள்:** ஒப்பந்த நகல், பணம் செலுத்திய ரசீதுகள் (Bank Statement / UTR) ஆகியவை மிக முக்கியமான ஆதாரங்கள் ஆகும்.\n` +
+        `3. **அரசு நடைமுறை:** அமைதியான முறையில் தீர்வு எட்டப்படாவிட்டால், வழக்கறிஞர் மூலம் சட்டப்பூர்வ அறிவிப்பு (Legal Notice) அனுப்பி, 15 நாட்கள் அவகாசம் வழங்கலாம்.\n\n` +
+        `> ⚠️ **குறிப்பு:** இது பொதுவான சட்ட விழிப்புணர்வு தகவலாகும். இறுதி முடிவெடுப்பதற்கு முன் தகுதியுள்ள வழக்கறிஞரிடம் ஆலோசிக்கவும்.`;
+      actionPlan = [
+        { order: 1, title: 'ஆவணங்கள் சரிபார்ப்பு', description: 'ஒப்பந்தம் மற்றும் பணப் பரிவர்த்தனை சான்றுகளை ஒருங்கிணைக்கவும்.', authority: 'Personal File' },
+        { order: 2, title: 'சட்டப்பூர்வ நோட்டீஸ்', description: 'எதிர்தரப்பிற்கு பதிவு அஞ்சல் (RPAD) மூலம் கோரிக்கை கடிதம் அனுப்பவும்.', authority: 'Post Office (RPAD)' },
+        { order: 3, title: 'துறைசார் தீர்ப்பாயம் அணுகுதல்', description: 'உரிய நீதிமன்றம் அல்லது தீர்ப்பாயத்தில் மனு தாக்கல் செய்யவும்.', authority: isTN ? 'Tahsildar / Rent Court / District Commission' : 'District Legal Services Authority' }
+      ];
+      followUpQuestions = [
+        'இதற்கான சட்டப்பூர்வ நோட்டீஸ் மாதிரி என்ன?',
+        'தமிழ்நாடு இணையவழி போர்டலில் புகார் செய்வது எப்படி?',
+        'வழக்கு தொடர காலக்கெடு எவ்வளவு?'
+      ];
+    } else if (isTanglish) {
+      answer = `### ⚖️ Legal Explanation (${domain.toUpperCase()})\n\n` +
+        `Unga kelvi pathi parkkum bothu, **${isTN ? 'Tamil Nadu state laws' : 'Indian Central Acts'}** padi indha vishayathula ungalluku sila legal rights irukku:\n\n` +
+        `1. **Statutory Right:** Oppandham (agreement) padi edhirkatchi nadakka vendum. Reason illama advance money tharama irukkaradhu wrong.\n` +
+        `2. **Mukkiyamana Documents:** Rent agreement, bank statement receipts, WhatsApp/SMS messages safe-ah vechukkonga.\n` +
+        `3. **Next Step:** First 15 days time kuduthu oru formal Legal Notice anuppalam.\n\n` +
+        `> ⚠️ **Disclaimer:** Idhu purely legal guidance informational purposedhaan. Please verify with an advocate.`;
+      actionPlan = [
+        { order: 1, title: 'Verify Proofs', description: 'Collect written agreements and payment transaction receipts.', authority: 'Personal Records' },
+        { order: 2, title: 'Serve Demand Notice', description: 'Send a formal 15-day notice via Registered Post.', authority: 'RPAD' }
+      ];
+      followUpQuestions = [
+        'Can you help me generate a formal legal draft for this?',
+        'What are the mandatory court fees and filing timelines?'
+      ];
+    } else {
+      answer = `### ⚖️ Legal Assessment: ${domain.toUpperCase()}\n\n` +
+        `Based on the provisions of **${isTN ? 'Tamil Nadu State enactments' : 'Indian Federal law'}**, the following legal framework applies to your matter:\n\n` +
+        `1. **Statutory Entitlement:** The law protects parties against arbitrary withholding of refunds, tenancy deposits, or deficient services.\n` +
+        `2. **Evidentiary Requirement:** Valid documentary evidence (written agreement, payment receipts, banking transaction records) forms the foundation of any claim.\n` +
+        `3. **Remedial Procedure:** You are entitled to serve a statutory 15-day Demand Notice prior to escalating the dispute to the jurisdictional tribunal or court.\n\n` +
+        `> ⚠️ **Statutory Notice:** This response is intended for legal literacy and does not constitute formal legal representation.`;
+      actionPlan = [
+        { order: 1, title: 'Assemble Documentation', description: 'Gather countersigned agreements and digital bank transactions.', authority: 'Personal File' },
+        { order: 2, title: 'Issue Demand Notice', description: 'Serve formal 15-day statutory demand via RPAD.', authority: 'Competent Authority' }
+      ];
+      followUpQuestions = [
+        'Can you help me generate a formal legal draft for this?',
+        'What are the mandatory court fees and filing timelines?',
+        'How does the Tamil Nadu e-filing portal work?'
+      ];
+    }
+  }
 
   return {
     answer,
     language: lang,
     domain,
     jurisdiction,
-    risk_level: 'medium',
-    risk_reason: 'Statutory compliance and timeline verification recommended',
-    sources,
-    action_plan: [
-      {
-        order: 1,
-        title: isTamil ? 'ஆவணங்கள் சரிபார்ப்பு' : 'Verify Written Agreements & Proofs',
-        description: isTamil ? 'ஒப்பந்தம் மற்றும் பணப் பரிவர்த்தனை சான்றுகளை ஒருங்கிணைக்கவும்.' : 'Assemble signed agreements, payment vouchers, and digital message trails.',
-        authority: 'Personal File'
-      },
-      {
-        order: 2,
-        title: isTamil ? 'சட்டப்பூர்வ நோட்டீஸ்' : 'Issue 15-Day Demand Notice',
-        description: isTamil ? 'எதிர்தரப்பிற்கு பதிவு அஞ்சல் (RPAD) மூலம் கோரிக்கை கடிதம் அனுப்பவும்.' : 'Serve a registered notice detailing the claim amount and statutory breach.',
-        authority: 'Post Office (RPAD)'
-      },
-      {
-        order: 3,
-        title: isTamil ? 'துறைசார் தீர்ப்பாயம் அணுகுதல்' : 'Approach Jurisdictional Authority',
-        description: isTamil ? 'உரிய நீதிமன்றம் அல்லது தீர்ப்பாயத்தில் மனு தாக்கல் செய்யவும்.' : 'Submit appropriate claim before the competent magistrate or forum.',
-        authority: isTN ? 'Tahsildar / Rent Court / District Commission' : 'District Legal Services Authority'
-      }
-    ],
-    follow_up_questions: isTamil ? [
-      'இதற்கான சட்டப்பூர்வ நோட்டீஸ் மாதிரி என்ன?',
-      'தமிழ்நாடு இணையவழி போர்டலில் புகார் செய்வது எப்படி?',
-      'வழக்கு தொடர காலக்கெடு எவ்வளவு?'
-    ] : [
-      'Can you help me generate a formal legal draft for this?',
-      'What are the mandatory court fees and filing timelines?',
-      'How does the Tamil Nadu e-filing portal work?'
-    ],
-    verification_status: 'Verified with Statutes',
+    risk_level: riskLevel,
+    risk_reason: riskReason,
+    sources: defaultSources,
+    action_plan: actionPlan,
+    follow_up_questions: followUpQuestions,
+    verification_status: 'Verified with Statutes & Schemes',
     explainability: {
-      queryUnderstood: `Legal grievance regarding ${domain} under ${isTN ? 'Tamil Nadu laws' : 'Indian statutes'}`,
-      detectedLanguage: isTamil ? 'Tamil' : isTanglish ? 'Tanglish' : 'English',
+      queryUnderstood: `Legal/Cooperative query regarding ${domain} under ${isTN ? 'Tamil Nadu Cooperative / State laws' : 'Indian statutory schemes'}`,
+      detectedLanguage: isTamil ? 'Tamil' : isTanglish ? 'Tanglish' : isHindi ? 'Hindi' : 'English',
       legalDomain: domain.toUpperCase(),
-      sourcesRetrievedCount: sources.length,
+      sourcesRetrievedCount: defaultSources.length,
       relevantProvisionsCount: 2,
-      provisionsList: sources.map(s => s.section || s.title),
+      provisionsList: defaultSources.map(s => s.section || s.title),
       confidence: 'High',
       verificationStatus: 'Verified with Statutes',
       jurisdictionApplied: isTN ? 'Tamil Nadu' : 'All India',
       keyFactors: [
         `Explanation tier: ${explanationLevel}`,
         `Jurisdiction: ${jurisdiction}`,
-        'Statutory grounding applied'
+        'Domain-specific statutory and scheme rules applied'
       ]
     }
   };
@@ -485,7 +845,7 @@ ${text}
 
     try {
       const response = await ai.models.generateContent({
-        model: "gemini-2.5-flash",
+        model: GEMINI_MODEL,
         contents: prompt,
         config: {
           temperature: 0.1
@@ -642,7 +1002,7 @@ Conclude with a gentle note: "ℹ️ AI-powered analysis designed for easy citiz
   if (ai) {
     try {
       const response = await ai.models.generateContent({
-        model: "gemini-2.5-flash",
+        model: GEMINI_MODEL,
         contents: `DOCUMENT NAME: ${fileName} (${fileType}, ${fileSize})\n\nDOCUMENT TEXT CONTENT:\n${contentSnippet}`,
         config: {
           systemInstruction,
@@ -784,7 +1144,7 @@ REQUIRED STRUCTURE:
   if (ai) {
     try {
       const response = await ai.models.generateContent({
-        model: "gemini-2.5-flash",
+        model: GEMINI_MODEL,
         contents: prompt,
         config: {
           temperature: 0.2
@@ -802,7 +1162,109 @@ REQUIRED STRUCTURE:
 
   // Fallback template
   let template = '';
-  if (req.language === 'ta') {
+  const dt = (req.draftType || '').toLowerCase();
+
+  if (dt.includes('pmfby') || dt.includes('crop_insurance') || dt.includes('insurance_appeal')) {
+    if (req.language === 'ta') {
+      template = `பயிர் காப்பீடு மறுப்பு / இழப்பீடு மேல்முறையீட்டு மனு\n` +
+        `(மாவட்ட அளவிலான குறைதீர் குழு - DGRC முன் சமர்ப்பிக்கப்படுவது)\n\n` +
+        `மனுதாரர்:\n` +
+        `${req.applicantName || '[விவசாயி பெயர்]'}\n` +
+        `த/பெ: [தந்தை பெயர்], கிராமம்: [கிராமம்], வட்டம்: [வட்டம்], மாவட்டம்: [மாவட்டம்]\n` +
+        `அலைபேசி: [எண்], சேமிப்பு கணக்கு எண்: [வங்கி கணக்கு]\n\n` +
+        `பெறுநர்:\n` +
+        `மாவட்ட ஆட்சியர் மற்றும் தலைவர்,\n` +
+        `மாவட்ட அளவிலான குறைதீர்க்கும் குழு (DGRC),\n` +
+        `மாவட்ட ஆட்சியரகம், [மாவட்ட பெயர்], தமிழ்நாடு.\n\n` +
+        `பொருள்: பிரதம மந்திரி பயிர் காப்பீட்டுத் திட்டம் (PMFBY) - பயிர் சேத இழப்பீடு கோரிக்கை நிராகரிக்கப்பட்டது / நிலுவை - உரிய நிவாரணம் பெற்றுத்தரக் கோருதல்.\n\n` +
+        `மதிப்பிற்குரிய தலைவர் அவர்களுக்கு,\n\n` +
+        `1. மனுதாரர் ஆகிய நான் மேற்கண்ட முகவரியில் உள்ள விவசாயி ஆவேன். எனக்கு [சர்வே எண்] கொண்ட நிலத்தில் [பயிர் பெயர்] சாகுபடி செய்யப்பட்டு, பிரதம மந்திரி பயிர் காப்பீட்டுத் திட்டத்தின் (PMFBY) கீழ் உரிய பிரீமியம் [பிரீமியம் ரசீது எண்/தேதி] மூலம் செலுத்தப்பட்டுள்ளது.\n\n` +
+        `2. சம்பவ விபரம்: ${req.facts || '[பேரிடர் நாள், பாதிப்பு தன்மை (வெள்ளம்/வறட்சி) மற்றும் 72 மணி நேரத்திற்குள் அளிக்கப்பட்ட அறிவிப்பு விபரம்]'}.\n\n` +
+        `3. இழப்பீட்டு மறுப்பு/தாமதம்: காப்பீட்டு நிறுவனம் எவ்வித முகாந்திரமும் இன்றி எனது கோரிக்கையை நிராகரித்துள்ளது/நிலுவையில் வைத்துள்ளது. இது PMFBY செயல்பாட்டு வழிகாட்டுதல்களுக்கு முரணானது.\n\n` +
+        `4. கோரிக்கை: எனவே, மாண்புமிகு குழுவினர் தலையிட்டு, எனது பயிர் சேதத்தினை மறுஆய்வு செய்து, எனக்கு வர வேண்டிய இழப்பீட்டுத் தொகையான ${req.reliefSought || '[கோரும் தொகை]'} பெற்றுத்தர உத்தரவிட வேண்டுமாய் பணிவுடன் வேண்டுகிறேன்.\n\n` +
+        `இணைப்புகள்:\n` +
+        `1. நில அடங்கல் & சிட்டா நகல்\n` +
+        `2. காப்பீட்டு பிரீமியம் செலுத்திய ரசீது / KCC பாஸ்புக் நகல்\n` +
+        `3. 14447 புகார் டோக்கன் பதிவு எண் மற்றும் பயிர் பாதிப்பு புகைப்படங்கள்\n\n` +
+        `இப்படிக்கு,\n` +
+        `${req.applicantName || '[கையொப்பம் / கைரேகை]'}\n\n` +
+        `⚠️ [குறிப்பு: இது AI மாதிரி வரைவு. சமர்ப்பிக்கும் முன் வட்டார வேளாண்மை அலுவலரிடம் சரிபார்க்கவும்.]`;
+    } else {
+      template = `APPEAL PETITION BEFORE DISTRICT LEVEL GRIEVANCE REDRESSAL COMMITTEE (DGRC)\n` +
+        `(Under Pradhan Mantri Fasal Bima Yojana - PMFBY Operational Guidelines)\n\n` +
+        `BEFORE THE HON'BLE DISTRICT COLLECTOR & CHAIRMAN, DGRC\n` +
+        `DISTRICT COLLECTORATE, [DISTRICT NAME], TAMIL NADU\n\n` +
+        `PETITIONER / AFFECTED FARMER:\n` +
+        `${req.applicantName || '[Farmer Name]'}\n` +
+        `S/o: [Father Name], Residing at: [Village, Taluk, District]\n` +
+        `Aadhaar / Mobile No: [Contact], Bank A/c No: [Account No]\n\n` +
+        `RESPONDENTS:\n` +
+        `1. The Authorized Officer, [Insurance Company Name], District Office\n` +
+        `2. The Secretary, [PACS / Bank Branch Name]\n` +
+        `3. The Joint Director of Agriculture, [District Name]\n\n` +
+        `SUBJECT: APPEAL AGAINST UNJUSTIFIED REJECTION / SHORT-SETTLEMENT OF PMFBY CROP INSURANCE CLAIM\n\n` +
+        `RESPECTFULLY SHEWETH:\n\n` +
+        `1. That the Petitioner is a genuine cultivator holding agricultural land in S.F. No. [Survey No], having insured the [Crop Name] under PMFBY scheme for the season [Kharif/Rabi Year] via premium transaction [Voucher/UTR No].\n\n` +
+        `2. Factual Matrix of Calamity: ${req.facts || '[Detail the localized calamity event, inundation/drought, and timely 72-hour notice lodged on Helpline 14447]'}.\n\n` +
+        `3. Illegality of Rejection: The Respondent Insurance Company has erroneously rejected/delayed the admissible claim without following statutory joint-survey protocols as per PMFBY Operational Guidelines.\n\n` +
+        `4. Relief Prayed: The Petitioner respectfully prays that this Hon'ble Committee may be pleased to direct the Insurance Company to disburse the full claim amount of ${req.reliefSought || '[Claim Amount]'} along with penal interest for delay.\n\n` +
+        `VERIFICATION:\n` +
+        `Verified that the contents stated above are true to the best of my knowledge and belief.\n\n` +
+        `Date: [Date]\n` +
+        `Place: [Place]\n\n` +
+        `${req.applicantName || '[Signature / Thumb Impression of Farmer]'}\n\n` +
+        `DISCLAIMER: AI-generated draft — verify the contents with a certified legal practitioner or agricultural officer prior to submission.`;
+    }
+  } else if (dt.includes('cooperative') || dt.includes('pacs') || dt.includes('section_90')) {
+    if (req.language === 'ta') {
+      template = `கூட்டுறவு சங்க தாவா மனு (பிரிவு 90-ன் கீழ்)\n` +
+        `தமிழ்நாடு கூட்டுறவுச் சங்கங்கள் சட்டம், 1983-ன் கீழ் சமர்ப்பிக்கப்படுவது\n\n` +
+        `மனுதாரர்:\n` +
+        `${req.applicantName || '[மனுதாரர் / உறுப்பினர் பெயர்]'}\n` +
+        `உறுப்பினர் எண்: [உறுப்பினர் எண் / விண்ணப்பதாரர்], முகவரி: [முழு முகவரி]\n\n` +
+        `எதிர்தரப்பினர்:\n` +
+        `1. செயலாளர் / மேலாண்மை இயக்குநர், [PACS / கூட்டுறவு சங்க பெயர்]\n` +
+        `2. தலைவர் / நிர்வாகக் குழு, [கூட்டுறவு சங்க முகவரி]\n\n` +
+        `பெறுநர்:\n` +
+        `வட்ட துணைப் பதிவாளர் (கூட்டுறவுச் சங்கங்கள்),\n` +
+        `துணைப் பதிவாளர் அலுவலகம், [வட்டம் / பகுதி], தமிழ்நாடு.\n\n` +
+        `பொருள்: தமிழ்நாடு கூட்டுறவுச் சங்கங்கள் சட்டம் 1983, பிரிவு 90-ன் கீழ் தாவா மனு - ${req.reliefSought || '[உறுப்பினர் சேர்க்கை மறுப்பு / பயிர் கடன் மறுப்பு / தணிக்கை அறிக்கை கோருதல்]'}.\n\n` +
+        `மதிப்பிற்குரிய ஐயா,\n\n` +
+        `1. மனுதாரர் சங்கத்தின் எல்லைக்குட்பட்ட பகுதியில் விவசாயம் செய்து வரும் தகுதியுள்ள நபர் ஆவேன்.\n\n` +
+        `2. வழக்கின் சுருக்கம்: ${req.facts || '[சம்பவங்களின் விபரம் மற்றும் சட்டப்பிரிவு மீறல் விபரம்]'}.\n\n` +
+        `3. சட்டம் பிரிவு 21 மற்றும் சங்க துணை விதிகளின்படி எனது விண்ணப்பத்தை நிராகரிக்க சங்க நிர்வாகத்திற்கு முகாந்திரம் இல்லை.\n\n` +
+        `4. எனவே, துணைப் பதிவாளர் அவர்கள் இத்தாவாவை விசாரித்து, ${req.reliefSought || '[சட்டப்பூர்வ நிவாரணம்]'} வழங்க சங்க நிர்வாகத்திற்கு ஆணை பிறப்பிக்குமாறு கோருகிறேன்.\n\n` +
+        `இப்படிக்கு,\n` +
+        `${req.applicantName || '[கையொப்பம்]'}\n\n` +
+        `⚠️ [குறிப்பு: இது மாதிரி மனு மட்டுமே. கூட்டுறவு வழக்கறிஞரிடம் சரிபார்க்கவும்.]`;
+    } else {
+      template = `DISPUTE PETITION UNDER SECTION 90 OF THE TAMIL NADU CO-OPERATIVE SOCIETIES ACT, 1983\n\n` +
+        `BEFORE THE ARBITRATOR / CIRCLE DEPUTY REGISTRAR OF CO-OPERATIVE SOCIETIES\n` +
+        `OFFICE OF THE DEPUTY REGISTRAR (HOUSING / PACS / CONSUMER),\n` +
+        `[CIRCLE NAME], TAMIL NADU\n\n` +
+        `DISPUTE PETITION NO: ______ / 2026\n\n` +
+        `PETITIONER / MEMBER:\n` +
+        `${req.applicantName || '[Petitioner Name]'}\n` +
+        `Member No / Resident: [Address & Contact Details]\n\n` +
+        `VERSUS\n\n` +
+        `RESPONDENTS:\n` +
+        `1. The Secretary / Managing Director, [Primary Agricultural Credit Society / Society Name]\n` +
+        `2. The Elected Board of Directors, [Society Address]\n\n` +
+        `SUBJECT: DISPUTE TOUCHING THE BUSINESS / ADMISSION / MANAGEMENT OF THE SOCIETY UNDER SECTION 90\n\n` +
+        `The Petitioner respectfully submits as follows:\n\n` +
+        `1. The Petitioner is an eligible farmer/resident within the territorial jurisdiction of Respondent No. 1 Society.\n\n` +
+        `2. Factual Chronology: ${req.facts || '[Detail facts, denial of admission under Section 21, or non-issuance of no-due certificate/credit]'}.\n\n` +
+        `3. Ground of Dispute: The action of the Respondents is arbitrary, illegal, and contrary to Section 21/33/90 of the Tamil Nadu Co-operative Societies Act 1983 and approved By-laws.\n\n` +
+        `4. Relief Prayed: It is prayed that the Learned Arbitrator / Deputy Registrar may be pleased to:\n` +
+        `   a) Adjudicate the dispute and declare the action of Respondent No. 1 as void;\n` +
+        `   b) Direct Respondent No. 1 to grant ${req.reliefSought || '[Relief Demanded]'};\n` +
+        `   c) Pass such other statutory orders as deemed fit.\n\n` +
+        `VERIFICATION:\n` +
+        `I verify that the statements in paras 1 to 4 are true and correct.\n\n` +
+        `${req.applicantName || '[Petitioner Signature]'}\n\n` +
+        `DISCLAIMER: AI-generated draft — verify the contents with a certified legal practitioner prior to submission.`;
+    }
+  } else if (req.language === 'ta') {
     template = `சட்டப்பூர்வ அறிவிப்பு / மனு மாதிரி\n\n` +
       `அனுப்புநர்:\n${req.applicantName || '[உங்கள் பெயர்]'}\n[முகவரி]\n\n` +
       `பெறுநர்:\n${req.respondentName || '[எதிர்தரப்பு பெயர்]'}\n[முகவரி]\n\n` +

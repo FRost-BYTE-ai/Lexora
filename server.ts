@@ -9,7 +9,7 @@ import {
   analyzeLegalDocumentServer,
   generateLegalDraftServer
 } from "./server/legalEngine.js";
-import { LEGAL_LIBRARY_DATA } from "./server/legalLibraryData.js";
+import { LEGAL_LIBRARY_DATA, GOVERNMENT_SCHEMES_DATA } from "./server/legalLibraryData.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -144,6 +144,59 @@ async function startServer() {
     }
 
     res.json({ items, total: items.length });
+  });
+
+  // Government Schemes Repository Endpoint (SIH Cooperative & Rural Agriculture)
+  app.get("/api/government-schemes", (req, res) => {
+    const { category, search } = req.query;
+    let schemes = [...GOVERNMENT_SCHEMES_DATA];
+
+    if (category && typeof category === 'string' && category !== 'All') {
+      schemes = schemes.filter(s => s.category.toLowerCase() === category.toLowerCase());
+    }
+    if (search && typeof search === 'string') {
+      const q = search.toLowerCase();
+      schemes = schemes.filter(s => 
+        s.name.toLowerCase().includes(q) || 
+        s.nameTamil.toLowerCase().includes(q) || 
+        s.keyBenefits.toLowerCase().includes(q) ||
+        s.keyBenefitsTamil.toLowerCase().includes(q) ||
+        s.eligibility.toLowerCase().includes(q) ||
+        s.eligibilityTamil.toLowerCase().includes(q)
+      );
+    }
+
+    res.json({ schemes, total: schemes.length });
+  });
+
+  // Rural Kiosk Smart Document & Voice Assist Hardware Status Endpoint
+  app.get("/api/hardware/status", (req, res) => {
+    res.json({
+      status: "online",
+      deviceId: "LEXORA-KIOSK-TN-042",
+      deviceName: "Lexora Rural Kiosk & PACS Assist Station",
+      edgeGateway: "Lexora Edge v2.4 (RPi 5 / Jetson Nano Controller)",
+      cameraStatus: "ready",
+      micStatus: "ready",
+      speakerStatus: "ready",
+      opticalModule: {
+        device: "Overhead Document Camera (Sony IMX477 12MP)",
+        resolution: "4056x3040",
+        lightingLed: "Active 5500K Diffuse Ring Light",
+        rectification: "Perspective & Deskew Edge Pipeline Active"
+      },
+      audioModule: {
+        microphone: "Dual MEMS Directional Noise-Cancelling Array",
+        speaker: "Class-D 5W High-Clarity Voice Speaker",
+        sampleRate: "48kHz 24-bit",
+        languagesSupported: ["ta", "en", "tanglish", "hi"]
+      },
+      connectionType: "Local Rural Kiosk Hub",
+      cloudSyncStatus: "Connected to Lexora Server",
+      latencyMs: 42,
+      mode: "Hardware + Software Gateway",
+      developmentPhase: "Existing Software Document Engine + Proposed Kiosk Enclosure"
+    });
   });
 
   // User Feedback Endpoint

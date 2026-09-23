@@ -29,6 +29,10 @@ export const LegalLibraryModal: React.FC<LegalLibraryModalProps> = ({
 
   const categories = [
     { id: 'All', label: t.libraryModal.categories.all },
+    { id: 'Cooperative Laws', label: t.libraryModal.categories.cooperativeLaws || 'Cooperative Laws' },
+    { id: 'Cooperative By-laws', label: t.libraryModal.categories.cooperativeByLaws || 'Cooperative By-laws' },
+    { id: 'Government Schemes', label: t.libraryModal.categories.governmentSchemes || 'Government Schemes' },
+    { id: 'Crop Insurance & PMFBY', label: t.libraryModal.categories.cropInsurance || 'Crop Insurance & PMFBY' },
     { id: 'Tamil Nadu Laws', label: t.libraryModal.categories.tnLaws },
     { id: 'Acts', label: t.libraryModal.categories.centralActs },
     { id: 'Citizen Rights', label: t.libraryModal.categories.citizenRights },

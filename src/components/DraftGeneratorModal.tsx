@@ -49,6 +49,24 @@ export const DraftGeneratorModal: React.FC<DraftGeneratorModalProps> = ({
     description: string;
   }> = [
     {
+      id: 'cooperative_grievance',
+      label: t.draftModal.types.cooperative_grievance.label,
+      subLabel: t.draftModal.types.cooperative_grievance.labelTamil,
+      description: t.draftModal.types.cooperative_grievance.description
+    },
+    {
+      id: 'pmfby_claim_appeal',
+      label: t.draftModal.types.pmfby_claim_appeal.label,
+      subLabel: t.draftModal.types.pmfby_claim_appeal.labelTamil,
+      description: t.draftModal.types.pmfby_claim_appeal.description
+    },
+    {
+      id: 'pacs_membership_appeal',
+      label: t.draftModal.types.pacs_membership_appeal.label,
+      subLabel: t.draftModal.types.pacs_membership_appeal.labelTamil,
+      description: t.draftModal.types.pacs_membership_appeal.description
+    },
+    {
       id: 'rti',
       label: t.draftModal.types.rti.label,
       subLabel: t.draftModal.types.rti.labelTamil,

@@ -1,8 +1,9 @@
 {
-  "name": "Lexora",
-  "description": "AI-powered legal assistant simplifying Indian and Tamil Nadu laws with multilingual support, citation verification, document analysis, and procedural action plans.",
+  "name": "Lexora - Legal & Cooperative Intelligence",
+  "description": "Tamil-First Multilingual Legal & Cooperative Intelligence Platform providing guidance on cooperative laws, governance by-laws, PACS services, PMFBY crop insurance, government schemes, financial literacy, and grievance redressal.",
   "requestFramePermissions": [
-    "microphone"
+    "microphone",
+    "camera"
   ],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"

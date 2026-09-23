@@ -148,3 +148,46 @@ export async function fetchLegalLibraryApi(params?: { category?: string; jurisdi
   const data = await response.json();
   return data.items || [];
 }
+
+export async function fetchGovernmentSchemesApi(params?: { category?: string; search?: string }) {
+  const query = new URLSearchParams();
+  if (params?.category && params.category !== 'All') query.append('category', params.category);
+  if (params?.search) query.append('search', params.search);
+
+  const response = await fetch(`/api/government-schemes?${query.toString()}`);
+  if (!response.ok) {
+    throw new Error('Failed to fetch government schemes');
+  }
+
+  const data = await response.json();
+  return data.schemes || [];
+}
+
+export async function fetchHardwareStatusApi() {
+  const response = await fetch('/api/hardware/status');
+  if (!response.ok) {
+    throw new Error('Failed to fetch hardware module status');
+  }
+  return response.json();
+}
+
+export async function analyzeHardwareDocumentApi(imageDataUrl: string, documentLabel: string, language: LanguageMode = 'ta') {
+  const response = await fetch('/api/documents/upload', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      fileName: documentLabel,
+      fileType: 'image/jpeg',
+      fileSize: '1.4 MB (Overhead Kiosk Capture)',
+      contentSnippet: `Physical rural document scanned via Lexora Kiosk Hardware Module: ${documentLabel}`,
+      language
+    })
+  });
+
+  if (!response.ok) {
+    throw new Error('Hardware document analysis failed');
+  }
+
+  return response.json();
+}
+

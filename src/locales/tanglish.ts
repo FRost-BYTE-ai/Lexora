@@ -34,8 +34,12 @@ export const tanglishTranslations: TranslationStructure = {
     verifiedReference: 'Saripaarkkapatta Merkol',
     checked: 'Saripaarkkapatathu',
     loading: 'Load aagudhu...',
+    themeToggle: 'Theme Maatravum',
+    lightMode: 'Pagal Mode',
+    darkMode: 'Iravu Mode',
+    verifiedCorpus: 'Saripaarkkapatta Indian Legal Corpus',
     legalDisclaimerTitle: 'Satta Vizhippunarvu Arivippu',
-    legalDisclaimerText: 'Lexora kalvi matrum satta vizhippunarvu nokkathirkaga satta thagavalgalai vazhangugiradhu. Idhu oru advocate-oda direct consultation-kku substitute aagaadhu.'
+    legalDisclaimerText: 'Lexora kalvi matrum thagaval nokkangalukkaga satta thagavalgalai vazhangugiradhu. Idhu thozhilmurai satta aalosanai-kku maatragaadhu.'
   },
   accessibility: {
     sendMessage: 'Satta kelviyai anuppavum',
@@ -55,15 +59,93 @@ export const tanglishTranslations: TranslationStructure = {
     selectExplanationLevel: 'Explanation level select seiyyavum'
   },
   nav: {
+    newQuery: 'Pudhiya Kelvi (New Query)',
+    search: 'Thedal (Search)',
+    workspace: 'PANIYIDAM (WORKSPACE)',
+    conversations: 'Uraiyaadalgal',
     legalLibrary: 'Satta Noolagam',
+    schemesDirectory: 'Arasu Schemes & Thittangal',
+    hardwareAssist: 'Smart Doc & Voice Assist Kiosk',
+    saved: 'Semikkappattavai',
+    tools: 'KARUVIGAL (TOOLS)',
     draftGenerator: 'Satta Varaivu Uruvaakki',
     documentScrutiny: 'Aavanam Aayvu',
+    caseExplorer: 'Vazhakku Aayvu',
+    legalDomains: 'SATTA PIRIVUGAL',
     filterByDomain: 'Satta Pirivugal Padi Vadikattavum',
     nlpPipeline: 'NLP & Satta Seyalaakkam',
     indicBert: 'IndicBERT + FastText',
     indicBertDesc: 'Tamil mozhi kandaridhal & classification',
     grounding: 'Madras HC & Satta Sync',
     groundingDesc: 'Madras HC theerppugal & India Code sync'
+  },
+  hero: {
+    badge: 'TAMIL-FIRST MULTILINGUAL LEGAL INTELLIGENCE',
+    title: 'Sattathin adipadayil saripaarkappatta satta vidhaigal.',
+    subtitle: 'Tamil, English or Tanglish-la kelunga. Lexora kandupidithu, saripaarthu vilakkugiradhu.',
+    searchPlaceholder: 'Sattam sambanthapetta kelviyai Tamil, English, or Tanglish-la kelunga...',
+    whatCanHelp: 'Lexora edharkellam udhava mudiyum?',
+    cardAskQuestion: 'Satta Kelvi Kekka',
+    cardAskQuestionDesc: 'Satta pirivugaludan koodiya nambagamaan satta vidhaigal',
+    cardAnalyzeDoc: 'Document Aayvu Seiyya',
+    cardAnalyzeDocDesc: 'Agreement, contract upload panni risk kandupidikavum',
+    cardDraftDoc: 'Satta Notice Varaivu Seiyya',
+    cardDraftDocDesc: 'Legal notice, RTI manukkal, consumer complaint uruvaakka',
+    cardFindCase: 'Case / Section Theda',
+    cardFindCaseDesc: 'Madras High Court theerppugal & section ವಿವರங்கள்',
+    cardGovServices: 'Arasu Sevai Valikaatti',
+    cardGovServicesDesc: 'Patta transfer, EC, TN e-Sevai & grievance info',
+    cardExploreLibrary: 'Satta Noolagam Paarkka',
+    cardExploreLibraryDesc: 'TN State Acts & Central Statutes muluvathum',
+    prompts: {
+      section420: 'Section 420 IPC / BNS vilakkam',
+      tenancyRights: 'TN Rent Act padi tenant rights enna?',
+      draftNotice: 'Advance thogai thirumba pera legal notice template',
+      checkDocument: 'Rental agreement document check panni risks sollu',
+      findJudgment: 'Property easement sambandha patta Madras HC theerppu'
+    }
+  },
+  researching: {
+    title: 'LEXORA AAYVU SEIYUDHU',
+    stepQueryUnderstood: 'Kelvi purinthu kollappattadhu',
+    stepDomainIdentified: 'Satta pirivu adaiyaalam kaanappattadhu',
+    stepJurisdictionIdentified: 'Jurisdiction urudhi seiyyappattadhu',
+    stepSearchingSources: 'Satta aadharangal thedappadugiradhu...',
+    stepComparingProvisions: 'Sambandhapetta sections oppidappadugiradhu...',
+    stepVerifyingEvidence: 'Satta saandrugal saripaarkkappadugiradhu...'
+  },
+  structuredCards: {
+    legalPosition: 'SATTA NILAI (LEGAL POSITION)',
+    relevantProvisions: 'PORUNDHUM SECTIONS (PROVISIONS)',
+    simpleExplanation: 'ELIYA VILAKKAM (SIMPLE EXPLANATION)',
+    sourcesTitle: 'SATTA AADHARANGAL (SOURCES)',
+    evidenceRelevance: 'Aadhara porutham',
+    importantTitle: 'MUKKIYA ARIVIPPU (IMPORTANT)',
+    proceduralSteps: 'ADUTHU SEIYYA VENDIYA NADAVADIKKAI'
+  },
+  copilot: {
+    buttonLabel: '✦ Lexora Copilot',
+    title: 'Lexora Copilot',
+    subtitle: 'Neenga enna seiyya virumbureenga?',
+    analyzeDoc: 'Document aayvu seiyya',
+    draftNotice: 'Notice varaivu seiyya',
+    findSection: 'Legal section theda',
+    compareLaws: 'Sattangalai oppida',
+    govServices: 'TN e-Sevai guide'
+  },
+  caseExplorer: {
+    title: 'Case Timeline & Munmaadhiri Theerppugal',
+    subtitle: 'Madras High Court matrum Supreme Court theerppugalin timeline aayvu',
+    searchPlaceholder: 'Case peyar, citation, allathu subject vechu thedunga...',
+    timelineTitle: 'CASE TIMELINE',
+    filterAll: 'Anaithu Pirivugalum',
+    stageFiled: 'Pugaar / Case Thaakkal Seiyyappattadhu',
+    stageLowerCourt: 'Keelamai Needhimanra Uttharavu',
+    stageAppeal: 'Maelmuraiyeedu Thaakkal',
+    stageHighCourt: 'High Court Theerppu',
+    stageCurrent: 'Tharpodhaiya Satta Nilai',
+    askLexora: 'Indha theerppai Lexora-vil aaraayavum',
+    precedentsCount: 'Theerppugal'
   },
   header: {
     tamilNaduMode: 'Tamil Nadu Murai',
@@ -89,7 +171,15 @@ export const tanglishTranslations: TranslationStructure = {
     employment: 'Velai & Thozhilaalar Sattam',
     criminal: 'Kutraviyal & Kaaval Thurai',
     finance: 'Nithi & Vangi',
-    government: 'Arasu Sevaigal & RTI'
+    government: 'Arasu Sevaigal & RTI',
+    cooperative_law: 'Kooturavu Sangangal Sattam',
+    cooperative_governance: 'Kooturavu Nirvaagam & By-laws',
+    pacs: 'Thodakka Velaan Kooturavu Vangi (PACS)',
+    agriculture: 'Velaanmai & Nilam Urimaigal',
+    government_schemes: 'Arasu Thittangal & Maaniyangal',
+    crop_insurance: 'Payir Kaappidu (PMFBY)',
+    financial_literacy: 'Krama Nithi & Loan Vilippunarvu',
+    grievance: 'Kurai Theerkkum Amaippugal'
   },
   quickPrompts: {
     title: 'Viraivu Kelvigal:',
@@ -218,6 +308,21 @@ export const tanglishTranslations: TranslationStructure = {
         label: 'Arasu Kuraitheer Manu',
         labelTamil: 'Public Grievance Petition',
         description: 'District Collector, Tahsildar alladhu Corporation Commissioner-kku anuppum formal representation.'
+      },
+      cooperative_grievance: {
+        label: 'Kooturavu Sanga Dhaava Manu (Sec 90)',
+        labelTamil: 'Cooperative Dispute Petition',
+        description: 'TN Cooperative Societies Act Section 90 padi Circle Deputy Registrar-idam submit seyyum petition.'
+      },
+      pmfby_claim_appeal: {
+        label: 'Payir Kaappidu Claim Appeal (DGRC)',
+        labelTamil: 'PMFBY Crop Insurance Appeal',
+        description: 'District Collector thalaimaiyil DGRC committee-kku insurance claim reject aanaal appeal seyyum petition.'
+      },
+      pacs_membership_appeal: {
+        label: 'PACS Membership Admission Petition',
+        labelTamil: 'PACS Membership Petition',
+        description: 'TN Cooperative Act Section 21 padi PACS-il membership serkka koorum formal petition.'
       }
     },
     jurisdictionSetting: 'Athigaara Varambu Setting',
@@ -250,6 +355,10 @@ export const tanglishTranslations: TranslationStructure = {
     searchPlaceholder: 'Tamil Nadu Acts, Patta, RTI, Vaadagai, BNS pathi thedungal...',
     categories: {
       all: 'Ella Categories-um',
+      cooperativeLaws: 'Kooturavu Sangangal Sattangal',
+      cooperativeByLaws: 'PACS Model By-laws & Nirvaagam',
+      governmentSchemes: 'Arasu Schemes & Maaniyangal',
+      cropInsurance: 'Payir Kaappidu (PMFBY)',
       tnLaws: 'Tamil Nadu Sattangal',
       centralActs: 'Central Acts',
       citizenRights: 'Citizen Rights',

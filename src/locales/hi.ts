@@ -34,8 +34,12 @@ export const hiTranslations: TranslationStructure = {
     verifiedReference: 'सत्यापित संदर्भ',
     checked: 'जाँचा गया',
     loading: 'लोड हो रहा है...',
+    themeToggle: 'थीम बदलें',
+    lightMode: 'दिन मोड',
+    darkMode: 'रात मोड',
+    verifiedCorpus: 'सत्यापित भारतीय कानूनी कॉर्पस',
     legalDisclaimerTitle: 'कानूनी साक्षरता अस्वीकरण',
-    legalDisclaimerText: 'Lexora केवल कानूनी साक्षरता और शैक्षिक मार्गदर्शन प्रदान करता है। यह किसी पेशेवर अधिवक्ता का विकल्प नहीं है।'
+    legalDisclaimerText: 'Lexora शैक्षिक और सूचनात्मक उद्देश्यों के लिए कानूनी जानकारी प्रदान करता है। यह पेशेवर कानूनी सलाह का विकल्प नहीं है।'
   },
   accessibility: {
     sendMessage: 'कानूनी प्रश्न संदेश भेजें',
@@ -55,15 +59,93 @@ export const hiTranslations: TranslationStructure = {
     selectExplanationLevel: 'व्याख्या स्तर चुनें'
   },
   nav: {
+    newQuery: 'नया प्रश्न',
+    search: 'खोज',
+    workspace: 'कार्यक्षेत्र (WORKSPACE)',
+    conversations: 'बातचीत',
     legalLibrary: 'कानूनी पुस्तकालय',
+    schemesDirectory: 'सरकारी योजनाएं एवं सब्सिडी',
+    hardwareAssist: 'स्मार्ट दस्तावेज़ एवं वॉइस असिस्ट',
+    saved: 'सहेजे गए',
+    tools: 'उपकरण (TOOLS)',
     draftGenerator: 'ड्राफ्ट जनरेटर',
-    documentScrutiny: 'दस्तावेज़ जांच',
+    documentScrutiny: 'दस्तावेज़ विश्लेषण',
+    caseExplorer: 'केस एक्सप्लोरर',
+    legalDomains: 'कानूनी क्षेत्र',
     filterByDomain: 'कानूनी क्षेत्र अनुसार फ़िल्टर',
     nlpPipeline: 'एनएलपी और लीगल पाइपलाइन',
     indicBert: 'IndicBERT + FastText',
     indicBertDesc: 'बहुभाषी पहचान एवं कानूनी वर्गीकरण',
     grounding: 'सत्यापन एवं न्यायिक मिसालें',
     groundingDesc: 'मद्रास उच्च न्यायालय एवं केंद्रीय कानून सिंक'
+  },
+  hero: {
+    badge: 'तमिल-प्रथम बहुभाषी कानूनी इंटेलिजेंस',
+    title: 'कानून पर आधारित सत्यापित कानूनी उत्तर।',
+    subtitle: 'तमिल, अंग्रेजी या तंग्लिश में पूछें। लेक्सोरा कानूनी स्रोतों की पुष्टि और व्याख्या करता है।',
+    searchPlaceholder: 'तमिल, अंग्रेजी या तंग्लिश में कानूनी प्रश्न पूछें...',
+    whatCanHelp: 'लेक्सोरा किसमें मदद कर सकता है?',
+    cardAskQuestion: 'कानूनी प्रश्न पूछें',
+    cardAskQuestionDesc: 'संवैधानिक धाराओं के साथ स्रोत-सत्यापित उत्तर',
+    cardAnalyzeDoc: 'दस्तावेज़ विश्लेषण करें',
+    cardAnalyzeDocDesc: 'अनुबंध और कानूनी नोटिस अपलोड कर जोखिम जांचें',
+    cardDraftDoc: 'कानूनी ड्राफ्ट तैयार करें',
+    cardDraftDocDesc: 'नोटिस, शिकायत एवं आरटीआई आवेदन तैयार करें',
+    cardFindCase: 'केस / धारा खोजें',
+    cardFindCaseDesc: 'मद्रास उच्च न्यायालय के फैसले और धाराएं खोजें',
+    cardGovServices: 'सरकारी सेवाएं',
+    cardGovServicesDesc: 'पट्टा, ईसी, टीएन ई-सेवाएं और उपभोक्ता पोर्टल',
+    cardExploreLibrary: 'कानूनी पुस्तकालय देखें',
+    cardExploreLibraryDesc: 'तमिलनाडु राज्य अधिनियम एवं केंद्रीय कानून',
+    prompts: {
+      section420: 'धारा 420 IPC / BNS विवरण',
+      tenancyRights: 'किरायेदार अधिकार एवं किराया कानून',
+      draftNotice: 'जमानत राशि वापसी हेतु कानूनी नोटिस',
+      checkDocument: 'किराया अनुबंध की कानूनी समीक्षा',
+      findJudgment: 'भूमि अधिकार पर मद्रास उच्च न्यायालय का फैसला'
+    }
+  },
+  researching: {
+    title: 'लेक्सोरा शोध कर रहा है',
+    stepQueryUnderstood: 'प्रश्न समझा गया',
+    stepDomainIdentified: 'कानूनी क्षेत्र की पहचान की गई',
+    stepJurisdictionIdentified: 'अधिकार क्षेत्र की पुष्टि की गई',
+    stepSearchingSources: 'कानूनी स्रोत खोजे जा रहे हैं...',
+    stepComparingProvisions: 'प्रासंगिक धाराओं की तुलना की जा रही है...',
+    stepVerifyingEvidence: 'साक्ष्य सत्यापित किए जा रहे हैं...'
+  },
+  structuredCards: {
+    legalPosition: 'कानूनी स्थिति (LEGAL POSITION)',
+    relevantProvisions: 'लागू धाराएं (PROVISIONS)',
+    simpleExplanation: 'सरल स्पष्टीकरण (SIMPLE EXPLANATION)',
+    sourcesTitle: 'कानूनी स्रोत एवं साक्ष्य (SOURCES)',
+    evidenceRelevance: 'साक्ष्य प्रासंगिकता',
+    importantTitle: 'महत्वपूर्ण सूचना (IMPORTANT)',
+    proceduralSteps: 'आगे की कार्रवाई के कदम (ACTION STEPS)'
+  },
+  copilot: {
+    buttonLabel: '✦ लेक्सोरा कॉपायलट',
+    title: 'लेक्सोरा कॉपायलट',
+    subtitle: 'आप क्या करना चाहते हैं?',
+    analyzeDoc: 'दस्तावेज़ विश्लेषण',
+    draftNotice: 'नोटिस ड्राफ्ट करें',
+    findSection: 'कानूनी धारा खोजें',
+    compareLaws: 'कानूनों की तुलना करें',
+    govServices: 'टीएन ई-सेवा गाइड'
+  },
+  caseExplorer: {
+    title: 'केस समयरेखा और मिसालें',
+    subtitle: 'मद्रास उच्च न्यायालय और उच्चतम न्यायालय के ऐतिहासिक फैसलों की समयरेखा',
+    searchPlaceholder: 'केस नाम, उद्धरण या कानूनी विषय से खोजें...',
+    timelineTitle: 'केस समयरेखा (CASE TIMELINE)',
+    filterAll: 'सभी क्षेत्र',
+    stageFiled: 'शिकायत / मुकदमा दायर किया गया',
+    stageLowerCourt: 'निचली अदालत का आदेश',
+    stageAppeal: 'अपील दायर की गई',
+    stageHighCourt: 'उच्च न्यायालय का निर्णय',
+    stageCurrent: 'वर्तमान मिसाल स्थिति',
+    askLexora: 'लेक्सोरा में इस मिसाल का विश्लेषण करें',
+    precedentsCount: 'निर्णय'
   },
   header: {
     tamilNaduMode: 'तमिलनाडु मोड',
@@ -89,7 +171,15 @@ export const hiTranslations: TranslationStructure = {
     employment: 'रोजगार एवं श्रम',
     criminal: 'आपराधिक एवं पुलिस',
     finance: 'वित्त एवं बैंकिंग',
-    government: 'सरकारी सेवाएं एवं आरटीआई'
+    government: 'सरकारी सेवाएं एवं आरटीआई',
+    cooperative_law: 'सहकारी समितियां कानून',
+    cooperative_governance: 'सहकारी संचालन एवं उप-नियम',
+    pacs: 'प्राथमिक कृषि ऋण समितियां (PACS)',
+    agriculture: 'कृषि एवं भूमि अधिकार',
+    government_schemes: 'सरकारी योजनाएं एवं सब्सिडी',
+    crop_insurance: 'फसल बीमा (PMFBY)',
+    financial_literacy: 'ग्रामीण ऋण एवं वित्तीय साक्षरता',
+    grievance: 'शिकायत निवारण प्रणाली'
   },
   quickPrompts: {
     title: 'त्वरित प्रश्न:',
@@ -218,6 +308,21 @@ export const hiTranslations: TranslationStructure = {
         label: 'सार्वजनिक शिकायत याचिका',
         labelTamil: 'அரசு குறைதீர் மனு',
         description: 'जिला कलेक्टर, तहसीलदार या निगम आयुक्त को औपचारिक प्रशासनिक याचिका।'
+      },
+      cooperative_grievance: {
+        label: 'सहकारी समिति विवाद याचिका (धारा 90)',
+        labelTamil: 'கூட்டுறவு சங்க தாவா மனு (பிரிவு 90)',
+        description: 'तमिलनाडु सहकारी समिति अधिनियम 1983 की धारा 90 के अंतर्गत डिप्टी रजिस्ट्रार को मध्यस्थता याचिका।'
+      },
+      pmfby_claim_appeal: {
+        label: 'पीएमएफबीवाई फसल बीमा अपील (डीजीआरसी)',
+        labelTamil: 'பயிர் காப்பீடு இழப்பீடு மேல்முறையீடு (DGRC)',
+        description: 'दावा अस्वीकृति के विरुद्ध जिला कलेक्टर की अध्यक्षता वाली जिला स्तरीय शिकायत समिति में अपील।'
+      },
+      pacs_membership_appeal: {
+        label: 'पीएसीएस सदस्यता प्रवेश याचिका',
+        labelTamil: 'PACS உறுப்பினர் சேர்க்கை மனு',
+        description: 'धारा 21 के तहत प्राथमिक कृषि ऋण समिति में सदस्यता अधिकार प्राप्ति हेतु याचिका।'
       }
     },
     jurisdictionSetting: 'अधिकार क्षेत्र निर्धारण',
@@ -250,6 +355,10 @@ export const hiTranslations: TranslationStructure = {
     searchPlaceholder: 'तमिलनाडु अधिनियम, पट्टा, आरटीआई, किरायेदारी, बीएनएस खोजें...',
     categories: {
       all: 'सभी श्रेणियां',
+      cooperativeLaws: 'सहकारी समितियां कानून',
+      cooperativeByLaws: 'पीएसीएस मॉडल उप-नियम एवं संचालन',
+      governmentSchemes: 'सरकारी योजनाएं एवं सब्सिडी',
+      cropInsurance: 'फसल बीमा (PMFBY)',
       tnLaws: 'तमिलनाडु कानून',
       centralActs: 'केंद्रीय अधिनियम',
       citizenRights: 'नागरिक अधिकार',

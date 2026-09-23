@@ -32,6 +32,10 @@ export interface TranslationStructure {
     verifiedReference: string;
     checked: string;
     loading: string;
+    themeToggle: string;
+    lightMode: string;
+    darkMode: string;
+    verifiedCorpus: string;
     legalDisclaimerTitle: string;
     legalDisclaimerText: string;
   };
@@ -53,15 +57,93 @@ export interface TranslationStructure {
     selectExplanationLevel: string;
   };
   nav: {
+    newQuery: string;
+    search: string;
+    workspace: string;
+    conversations: string;
     legalLibrary: string;
+    schemesDirectory: string;
+    hardwareAssist: string;
+    saved: string;
+    tools: string;
     draftGenerator: string;
     documentScrutiny: string;
+    caseExplorer: string;
+    legalDomains: string;
     filterByDomain: string;
     nlpPipeline: string;
     indicBert: string;
     indicBertDesc: string;
     grounding: string;
     groundingDesc: string;
+  };
+  hero: {
+    badge: string;
+    title: string;
+    subtitle: string;
+    searchPlaceholder: string;
+    whatCanHelp: string;
+    cardAskQuestion: string;
+    cardAskQuestionDesc: string;
+    cardAnalyzeDoc: string;
+    cardAnalyzeDocDesc: string;
+    cardDraftDoc: string;
+    cardDraftDocDesc: string;
+    cardFindCase: string;
+    cardFindCaseDesc: string;
+    cardGovServices: string;
+    cardGovServicesDesc: string;
+    cardExploreLibrary: string;
+    cardExploreLibraryDesc: string;
+    prompts: {
+      section420: string;
+      tenancyRights: string;
+      draftNotice: string;
+      checkDocument: string;
+      findJudgment: string;
+    };
+  };
+  researching: {
+    title: string;
+    stepQueryUnderstood: string;
+    stepDomainIdentified: string;
+    stepJurisdictionIdentified: string;
+    stepSearchingSources: string;
+    stepComparingProvisions: string;
+    stepVerifyingEvidence: string;
+  };
+  structuredCards: {
+    legalPosition: string;
+    relevantProvisions: string;
+    simpleExplanation: string;
+    sourcesTitle: string;
+    evidenceRelevance: string;
+    importantTitle: string;
+    proceduralSteps: string;
+  };
+  copilot: {
+    buttonLabel: string;
+    title: string;
+    subtitle: string;
+    analyzeDoc: string;
+    draftNotice: string;
+    findSection: string;
+    compareLaws: string;
+    govServices: string;
+  };
+  caseExplorer: {
+    title: string;
+    subtitle: string;
+    searchPlaceholder: string;
+    timelineTitle: string;
+    filterAll: string;
+    stageFiled: string;
+    stageLowerCourt: string;
+    stageAppeal: string;
+    stageHighCourt: string;
+    stageCurrent: string;
+    askLexora: string;
+    precedentsCount: string;
   };
   header: {
     tamilNaduMode: string;
@@ -88,6 +170,14 @@ export interface TranslationStructure {
     criminal: string;
     finance: string;
     government: string;
+    cooperative_law: string;
+    cooperative_governance: string;
+    pacs: string;
+    agriculture: string;
+    government_schemes: string;
+    crop_insurance: string;
+    financial_literacy: string;
+    grievance: string;
   };
   quickPrompts: {
     title: string;
@@ -193,6 +283,9 @@ export interface TranslationStructure {
       tenancy_notice: { label: string; labelTamil: string; description: string };
       legal_notice: { label: string; labelTamil: string; description: string };
       grievance_letter: { label: string; labelTamil: string; description: string };
+      cooperative_grievance: { label: string; labelTamil: string; description: string };
+      pmfby_claim_appeal: { label: string; labelTamil: string; description: string };
+      pacs_membership_appeal: { label: string; labelTamil: string; description: string };
     };
     jurisdictionSetting: string;
     draftLanguage: string;
@@ -224,6 +317,10 @@ export interface TranslationStructure {
     searchPlaceholder: string;
     categories: {
       all: string;
+      cooperativeLaws: string;
+      cooperativeByLaws: string;
+      governmentSchemes: string;
+      cropInsurance: string;
       tnLaws: string;
       centralActs: string;
       citizenRights: string;

@@ -7,7 +7,15 @@ import {
   ShieldAlert, 
   Coins, 
   Landmark, 
-  Scale 
+  Scale,
+  Building2,
+  Vote,
+  Store,
+  Sprout,
+  Award,
+  ShieldCheck,
+  Wallet,
+  AlertCircle
 } from 'lucide-react';
 import { LegalDomain } from '../types';
 import { useLanguage } from '../context/LanguageContext';
@@ -19,6 +27,14 @@ interface DomainSelectorProps {
 
 export const DOMAIN_ICONS: Record<LegalDomain, React.ComponentType<{ className?: string }>> = {
   general: Scale,
+  cooperative_law: Building2,
+  cooperative_governance: Vote,
+  pacs: Store,
+  crop_insurance: ShieldCheck,
+  government_schemes: Award,
+  financial_literacy: Wallet,
+  grievance: AlertCircle,
+  agriculture: Sprout,
   property: Home,
   consumer: ShoppingBag,
   family: Users,
@@ -33,6 +49,14 @@ export const DOMAINS: Array<{
   icon: React.ComponentType<{ className?: string }>;
 }> = [
   { id: 'general', icon: Scale },
+  { id: 'cooperative_law', icon: Building2 },
+  { id: 'pacs', icon: Store },
+  { id: 'crop_insurance', icon: ShieldCheck },
+  { id: 'cooperative_governance', icon: Vote },
+  { id: 'government_schemes', icon: Award },
+  { id: 'agriculture', icon: Sprout },
+  { id: 'financial_literacy', icon: Wallet },
+  { id: 'grievance', icon: AlertCircle },
   { id: 'property', icon: Home },
   { id: 'consumer', icon: ShoppingBag },
   { id: 'family', icon: Users },

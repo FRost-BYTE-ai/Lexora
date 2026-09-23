@@ -34,8 +34,12 @@ export const taTranslations: TranslationStructure = {
     verifiedReference: 'சரிபார்க்கப்பட்ட மேற்கோள்',
     checked: 'சரிபார்க்கப்பட்டது',
     loading: 'ஏற்றப்படுகிறது...',
+    themeToggle: 'தீம் மாற்று',
+    lightMode: 'பகல் பயன்முறை',
+    darkMode: 'இரவு பயன்முறை',
+    verifiedCorpus: 'சரிபார்க்கப்பட்ட இந்திய சட்டத் தரவு',
     legalDisclaimerTitle: 'சட்ட விழிப்புணர்வு அறிவிப்பு',
-    legalDisclaimerText: 'Lexora கல்வி மற்றும் சட்ட விழிப்புணர்வு நோக்கத்திற்காக சட்டத் தகவல்களை வழங்குகிறது. இது ஒரு தகுதிவாய்ந்த வழக்கறிஞரின் தொழில்முறை ஆலோசனைக்கு மாற்றாகாது.'
+    legalDisclaimerText: 'Lexora கல்வி மற்றும் தகவல் நோக்கங்களுக்காக சட்டத் தகவல்களை வழங்குகிறது. இது தொழில்முறை சட்ட ஆலோசனைக்கு மாற்றாகாது.'
   },
   accessibility: {
     sendMessage: 'சட்டக் கேள்வியை அனுப்பவும்',
@@ -55,15 +59,93 @@ export const taTranslations: TranslationStructure = {
     selectExplanationLevel: 'விளக்க நிலையைத் தேர்ந்தெடுக்கவும்'
   },
   nav: {
+    newQuery: 'புதிய வினவல்',
+    search: 'தேடல்',
+    workspace: 'பணியிடம்',
+    conversations: 'உரையாடல்கள்',
     legalLibrary: 'சட்ட நூலகம்',
+    schemesDirectory: 'அரசு நலத்திட்டங்கள் & மானியங்கள்',
+    hardwareAssist: 'ஸ்மார்ட் ஆவண & குரல் உதவி கியோஸ்க்',
+    saved: 'சேமிக்கப்பட்டவை',
+    tools: 'கருவிகள்',
     draftGenerator: 'மனு வரைவு உருவாக்கி',
     documentScrutiny: 'ஆவண ஆய்வு',
+    caseExplorer: 'வழக்கு ஆய்வு',
+    legalDomains: 'சட்டப் பிரிவுகள்',
     filterByDomain: 'சட்டப் பிரிவுகளின்படி வடிகட்டவும்',
     nlpPipeline: 'NLP & சட்டச் செயலாக்க கட்டமைப்பு',
     indicBert: 'IndicBERT + FastText',
     indicBertDesc: 'தமிழ் மொழி கண்டறிதல் & வகைப்படுத்துதல்',
     grounding: 'சென்னை உயர்நீதிமன்ற தீர்ப்புகள்',
     groundingDesc: 'Madras HC தீர்ப்புகள் & இந்திய சட்ட ஒத்திசைவு'
+  },
+  hero: {
+    badge: 'தமிழ் வழி சட்ட நுண்ணறிவு தளம்',
+    title: 'சட்டத்தின் அடிப்படையில் சரிபார்க்கப்பட்ட சட்ட விடைகள்.',
+    subtitle: 'தமிழ், ஆங்கிலம் அல்லது தங்கிலீஷில் கேளுங்கள். லெக்சோரா உரிய சட்ட ஆதாரங்களை கண்டறிந்து விளக்குகிறது.',
+    searchPlaceholder: 'சட்டம் தொடர்பான கேள்வியை தமிழ், ஆங்கிலம் அல்லது தங்கிலீஷில் கேளுங்கள்...',
+    whatCanHelp: 'லெக்சோரா எவற்றில் உதவ முடியும்?',
+    cardAskQuestion: 'சட்டக் கேள்வி கேட்க',
+    cardAskQuestionDesc: 'சட்டப்பிரிவுகளுடன் கூடிய நம்பகமான சட்ட விடைகள்',
+    cardAnalyzeDoc: 'ஆவணத்தை ஆய்வு செய்ய',
+    cardAnalyzeDocDesc: 'ஒப்பந்தங்கள், பத்திரங்களை பதிவேற்றி ஆபத்துகளை அறியவும்',
+    cardDraftDoc: 'சட்ட வரைவு உருவாக்க',
+    cardDraftDocDesc: 'சட்ட நோட்டீஸ், நுகர்வோர் புகார், RTI மனுக்களை உருவாக்கவும்',
+    cardFindCase: 'வழக்கு / பிரிவை தேட',
+    cardFindCaseDesc: 'சென்னை உயர்நீதிமன்ற தீர்ப்புகள் & சட்டப்பிரிவுகள்',
+    cardGovServices: 'அரசு சேவைகள்',
+    cardGovServicesDesc: 'பட்டா, வில்லங்கச் சான்று, TN மின்-சேவை வழிகாட்டி',
+    cardExploreLibrary: 'சட்ட நூலகம் உலாவ',
+    cardExploreLibraryDesc: 'சரிபார்க்கப்பட்ட தமிழ்நாடு சட்டங்கள் & மத்திய சட்டங்கள்',
+    prompts: {
+      section420: 'பிரிவு 420 IPC / BNS விளக்கம்',
+      tenancyRights: 'வாடகைதாரர் உரிமைகள் மற்றும் வாடகை சட்டம்',
+      draftNotice: 'அட்வான்ஸ் தொகை திரும்பப் பெற சட்ட நோட்டீஸ்',
+      checkDocument: 'எனது வாடகை ஒப்பந்தத்தை ஆய்வு செய்யவும்',
+      findJudgment: 'நில உரிமை தொடர்பான சென்னை உயர்நீதிமன்ற தீர்ப்பு'
+    }
+  },
+  researching: {
+    title: 'லெக்சோரா ஆய்வு செய்கிறது',
+    stepQueryUnderstood: 'வினவல் புரிந்து கொள்ளப்பட்டது',
+    stepDomainIdentified: 'சட்டப் பிரிவு அடையாளம் காணப்பட்டது',
+    stepJurisdictionIdentified: 'அதிகார வரம்பு உறுதிப்படுத்தப்பட்டது',
+    stepSearchingSources: 'சட்ட ஆதாரங்கள் தேடப்படுகின்றன...',
+    stepComparingProvisions: 'தொடர்புடைய சட்டப்பிரிவுகள் ஒப்பிடப்படுகின்றன...',
+    stepVerifyingEvidence: 'சட்ட ஆதாரங்கள் சரிபார்க்கப்படுகின்றன...'
+  },
+  structuredCards: {
+    legalPosition: 'சட்ட நிலைப்பாடு (LEGAL POSITION)',
+    relevantProvisions: 'பொருந்தக்கூடிய சட்டப்பிரிவுகள் (PROVISIONS)',
+    simpleExplanation: 'எளிய நேரடி விளக்கம் (SIMPLE EXPLANATION)',
+    sourcesTitle: 'சட்ட ஆதாரங்கள் & சான்றுகள் (SOURCES)',
+    evidenceRelevance: 'சான்று பொருத்தம்',
+    importantTitle: 'முக்கிய அறிவிப்பு (IMPORTANT)',
+    proceduralSteps: 'நடைமுறை செயல்பாட்டு படிகள் (ACTION STEPS)'
+  },
+  copilot: {
+    buttonLabel: '✦ லெக்சோரா வழிகாட்டி',
+    title: 'லெக்சோரா வழிகாட்டி',
+    subtitle: 'நீங்கள் என்ன செய்ய விரும்புகிறீர்கள்?',
+    analyzeDoc: 'ஆவணத்தை ஆய்வு செய்க',
+    draftNotice: 'நோட்டீஸ் வரைவு செய்க',
+    findSection: 'சட்டப் பிரிவை கண்டறிக',
+    compareLaws: 'சட்டங்களை ஒப்பிடுக',
+    govServices: 'TN மின்-சேவை வழிகாட்டி'
+  },
+  caseExplorer: {
+    title: 'வழக்கு காலவரிசை & முன்மாதிரி தீர்ப்புகள்',
+    subtitle: 'சென்னை உயர் நீதிமன்றம் மற்றும் உச்ச நீதிமன்ற தீர்ப்புகளின் காலவரிசை பகுப்பாய்வு',
+    searchPlaceholder: 'வழக்கு பெயர், மேற்கோள் அல்லது சட்ட பொருள் கொண்டு தேடவும்...',
+    timelineTitle: 'வழக்கு காலவரிசை (CASE TIMELINE)',
+    filterAll: 'அனைத்து பிரிவுகளும்',
+    stageFiled: 'புகார் / வழக்கு தாக்கல் செய்யப்பட்டது',
+    stageLowerCourt: 'கீழமை நீதிமன்ற உத்தரவு',
+    stageAppeal: 'மேல்முறையீடு தாக்கல்',
+    stageHighCourt: 'உயர்நீதிமன்ற தீர்ப்பு',
+    stageCurrent: 'தற்போதைய சட்ட நிலை',
+    askLexora: 'இந்த தீர்ப்பை லெக்சோராவில் ஆராயவும்',
+    precedentsCount: 'தீர்ப்புகள்'
   },
   header: {
     tamilNaduMode: 'தமிழ்நாடு முறை',
@@ -89,7 +171,15 @@ export const taTranslations: TranslationStructure = {
     employment: 'வேலை & தொழிலாளர் சட்டம்',
     criminal: 'குற்றவியல் & காவல்துறை',
     finance: 'நிதி & வங்கி',
-    government: 'அரசு சேவைகள் & RTI'
+    government: 'அரசு சேவைகள் & RTI',
+    cooperative_law: 'கூட்டுறவுச் சங்கங்கள் சட்டம்',
+    cooperative_governance: 'கூட்டுறவு நிர்வாகம் & துணை விதிகள்',
+    pacs: 'தொடக்க வேளாண் கூட்டுறவு கடன் சங்கம் (PACS)',
+    agriculture: 'வேளாண்மை & நில உரிமைகள்',
+    government_schemes: 'அரசு திட்டங்கள் & மானியங்கள்',
+    crop_insurance: 'பயிர் காப்பீடு (PMFBY)',
+    financial_literacy: 'கிராமப்புற கடன் & நிதி விழிப்புணர்வு',
+    grievance: 'குறைதீர்க்கும் அமைப்புகள்'
   },
   quickPrompts: {
     title: 'விரைவு வினாக்கள்:',
@@ -218,6 +308,21 @@ export const taTranslations: TranslationStructure = {
         label: 'அரசு குறைதீர் மனு',
         labelTamil: 'அரசு குறைதீர் மனு',
         description: 'மாவட்ட ஆட்சியர், வட்டாட்சியர் அல்லது மாநகராட்சி ஆணையருக்கு அனுப்பும் முறையான மனு.'
+      },
+      cooperative_grievance: {
+        label: 'கூட்டுறவு சங்க தாவா மனு (பிரிவு 90)',
+        labelTamil: 'கூட்டுறவு சங்க தாவா மனு (பிரிவு 90)',
+        description: 'தமிழ்நாடு கூட்டுறவுச் சங்கங்கள் சட்டம் 1983-ன் கீழ் வட்ட துணைப் பதிவாளரிடம் சமர்ப்பிக்கும் சட்டப்பூர்வ மனு.'
+      },
+      pmfby_claim_appeal: {
+        label: 'பயிர் காப்பீடு மறுப்பு மேல்முறையீடு (DGRC)',
+        labelTamil: 'பயிர் காப்பீடு மறுப்பு மேல்முறையீடு (DGRC)',
+        description: 'காப்பீட்டு நிறுவனம் கோரிக்கையை நிராகரித்தால் மாவட்ட ஆட்சியர் தலைமையிலான குறைதீர்க்கும் குழுவில் முறையிடுதல்.'
+      },
+      pacs_membership_appeal: {
+        label: 'PACS உறுப்பினர் சேர்க்கை உரிமை மனு',
+        labelTamil: 'PACS உறுப்பினர் சேர்க்கை உரிமை மனு',
+        description: 'பிரிவு 21-ன் கீழ் தொடக்க வேளாண் கூட்டுறவு கடன் சங்கத்தில் உறுப்பினர் சேர்க்கை உரிமையை கோரும் மனு.'
       }
     },
     jurisdictionSetting: 'அதிகார வரம்பு அமைப்பு',
@@ -250,6 +355,10 @@ export const taTranslations: TranslationStructure = {
     searchPlaceholder: 'தமிழ்நாடு சட்டங்கள், பட்டா, RTI, வாடகை, BNS ஆகியவற்றைத் தேடுங்கள்...',
     categories: {
       all: 'அனைத்துப் பிரிவுகளும்',
+      cooperativeLaws: 'கூட்டுறவுச் சங்கங்கள் சட்டங்கள்',
+      cooperativeByLaws: 'PACS மாதிரி துணை விதிகள் & நிர்வாகம்',
+      governmentSchemes: 'அரசு நலத்திட்டங்கள் & மானியங்கள்',
+      cropInsurance: 'பயிர் காப்பீடு (PMFBY)',
       tnLaws: 'தமிழ்நாடு சட்டங்கள்',
       centralActs: 'மத்திய சட்டங்கள்',
       citizenRights: 'குடிமக்கள் உரிமைகள்',

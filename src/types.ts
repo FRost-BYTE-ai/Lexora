@@ -1,6 +1,23 @@
-export type Category = 'Civil' | 'Criminal' | 'Property' | 'Consumer' | 'Family Law' | 'General';
+export type Category = 
+  | 'Civil' 
+  | 'Criminal' 
+  | 'Property' 
+  | 'Consumer' 
+  | 'Family Law' 
+  | 'Cooperative' 
+  | 'Agriculture & Schemes' 
+  | 'Finance & Credit' 
+  | 'General';
 
 export type LegalDomain = 
+  | 'cooperative_law'
+  | 'cooperative_governance'
+  | 'pacs'
+  | 'agriculture'
+  | 'government_schemes'
+  | 'crop_insurance'
+  | 'financial_literacy'
+  | 'grievance'
   | 'property' 
   | 'family' 
   | 'employment' 
@@ -74,7 +91,9 @@ export interface Message {
     fileName: string;
     fileSize: string;
     fileType: string;
+    ocrSource?: 'webcam_doc_cam' | 'upload_file' | 'kiosk_scanner';
   };
+  schemeData?: GovernmentScheme;
 }
 
 export interface LegalContext {
@@ -84,6 +103,9 @@ export interface LegalContext {
 }
 
 export type DraftType = 
+  | 'cooperative_grievance'
+  | 'pmfby_claim_appeal'
+  | 'pacs_membership_appeal'
   | 'rti' 
   | 'consumer_complaint' 
   | 'legal_notice' 
@@ -106,11 +128,57 @@ export interface LegalLibraryItem {
   id: string;
   title: string;
   titleTamil: string;
-  category: 'Constitution' | 'Acts' | 'Rules & Regulations' | 'Citizen Rights' | 'Court Procedures' | 'Government Services' | 'Legal FAQs' | 'Tamil Nadu Laws';
+  category: 
+    | 'Cooperative Laws'
+    | 'Cooperative By-laws'
+    | 'Government Schemes'
+    | 'Crop Insurance & PMFBY'
+    | 'Constitution' 
+    | 'Acts' 
+    | 'Rules & Regulations' 
+    | 'Citizen Rights' 
+    | 'Court Procedures' 
+    | 'Government Services' 
+    | 'Legal FAQs' 
+    | 'Tamil Nadu Laws';
   jurisdiction: Jurisdiction;
   summary: string;
   summaryTamil: string;
   keySections: string[];
   officialSource: string;
   url?: string;
+}
+
+export interface GovernmentScheme {
+  id: string;
+  name: string;
+  nameTamil: string;
+  category: 'Cooperative' | 'Agriculture' | 'Insurance' | 'Credit' | 'Storage & Infra';
+  eligibility: string;
+  eligibilityTamil: string;
+  requiredDocuments: string[];
+  requiredDocumentsTamil: string[];
+  applicationProcess: string;
+  applicationProcessTamil: string;
+  relevantAuthority: string;
+  relevantAuthorityTamil: string;
+  officialSource: string;
+  portalUrl?: string;
+  keyBenefits: string;
+  keyBenefitsTamil: string;
+  schemeStatus: 'Active' | 'Updated Guidelines 2024-25';
+}
+
+export interface HardwareAssistStatus {
+  deviceId: string;
+  deviceName: string;
+  cameraStatus: 'ready' | 'capturing' | 'standby' | 'error';
+  micStatus: 'ready' | 'listening' | 'idle';
+  speakerStatus: 'ready' | 'speaking' | 'muted';
+  edgeController: string;
+  connectionType: 'Wi-Fi 802.11 b/g/n' | 'USB Edge Link' | 'Local Rural Kiosk Hub';
+  cloudSyncStatus: 'Connected to Lexora Server' | 'Synchronizing' | 'Offline';
+  latencyMs: number;
+  mode: 'Hardware + Software Gateway';
+  developmentPhase: 'Existing Software Document Engine + Proposed Kiosk Enclosure';
 }

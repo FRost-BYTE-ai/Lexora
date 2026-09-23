@@ -34,8 +34,12 @@ export const enTranslations: TranslationStructure = {
     verifiedReference: 'Verified Reference',
     checked: 'Checked',
     loading: 'Loading...',
+    themeToggle: 'Toggle Theme',
+    lightMode: 'Light Mode',
+    darkMode: 'Dark Mode',
+    verifiedCorpus: 'Verified Indian Legal Corpus',
     legalDisclaimerTitle: 'Legal Literacy Disclaimer',
-    legalDisclaimerText: 'Lexora provides legal information for educational literacy. It is not a replacement for a practicing advocate.'
+    legalDisclaimerText: 'Lexora provides legal information for educational and informational purposes. It is not a substitute for professional legal advice.'
   },
   accessibility: {
     sendMessage: 'Send legal inquiry message',
@@ -55,15 +59,93 @@ export const enTranslations: TranslationStructure = {
     selectExplanationLevel: 'Select explanation complexity level'
   },
   nav: {
+    newQuery: 'New Query',
+    search: 'Search',
+    workspace: 'WORKSPACE',
+    conversations: 'Conversations',
     legalLibrary: 'Legal Library',
+    schemesDirectory: 'Government Schemes',
+    hardwareAssist: 'Smart Doc & Voice Assist',
+    saved: 'Saved',
+    tools: 'TOOLS',
     draftGenerator: 'Draft Generator',
-    documentScrutiny: 'Document Scrutiny',
+    documentScrutiny: 'Document Analysis',
+    caseExplorer: 'Case Explorer',
+    legalDomains: 'LEGAL DOMAINS',
     filterByDomain: 'Filter by Legal Domain',
     nlpPipeline: 'NLP & Legal Pipeline',
     indicBert: 'IndicBERT + FastText',
     indicBertDesc: 'Tamil language detection & domain tagging',
     grounding: 'Grounding & Precedent Match',
     groundingDesc: 'Madras HC citations & India Code sync'
+  },
+  hero: {
+    badge: 'TAMIL-FIRST MULTILINGUAL LEGAL INTELLIGENCE',
+    title: 'Legal answers, grounded in the law.',
+    subtitle: 'Ask in Tamil, English or Tanglish. Lexora finds, verifies and explains relevant legal sources.',
+    searchPlaceholder: 'Ask a legal question in Tamil, English, or Tanglish...',
+    whatCanHelp: 'What can Lexora help with?',
+    cardAskQuestion: 'Ask a Legal Question',
+    cardAskQuestionDesc: 'Source-grounded legal answers with statutory provisions',
+    cardAnalyzeDoc: 'Analyze a Document',
+    cardAnalyzeDocDesc: 'Drop contracts or legal notices for risk evaluation',
+    cardDraftDoc: 'Draft a Legal Document',
+    cardDraftDocDesc: 'Generate notices, complaints, and RTI applications',
+    cardFindCase: 'Find a Case / Section',
+    cardFindCaseDesc: 'Explore Madras High Court precedents & sections',
+    cardGovServices: 'Government Services',
+    cardGovServicesDesc: 'Patta, EC, TN e-Services & consumer grievance guide',
+    cardExploreLibrary: 'Explore Legal Library',
+    cardExploreLibraryDesc: 'Verified Tamil Nadu State Acts & Central Statutes',
+    prompts: {
+      section420: 'Find Section 420 IPC / BNS equivalent',
+      tenancyRights: 'Explain tenant rights under TN Rent Control',
+      draftNotice: 'Draft a legal notice for unpaid security deposit',
+      checkDocument: 'Check my rental agreement for hidden risks',
+      findJudgment: 'Find Madras High Court judgment on property easement'
+    }
+  },
+  researching: {
+    title: 'LEXORA IS RESEARCHING',
+    stepQueryUnderstood: 'Query understood',
+    stepDomainIdentified: 'Legal domain identified',
+    stepJurisdictionIdentified: 'Jurisdiction identified',
+    stepSearchingSources: 'Searching legal sources...',
+    stepComparingProvisions: 'Comparing relevant provisions...',
+    stepVerifyingEvidence: 'Verifying evidence...'
+  },
+  structuredCards: {
+    legalPosition: 'LEGAL POSITION',
+    relevantProvisions: 'RELEVANT PROVISIONS',
+    simpleExplanation: 'SIMPLE EXPLANATION',
+    sourcesTitle: 'SOURCES & EVIDENCE',
+    evidenceRelevance: 'Evidence relevance',
+    importantTitle: 'IMPORTANT',
+    proceduralSteps: 'ACTIONABLE PROCEDURAL STEPS'
+  },
+  copilot: {
+    buttonLabel: '✦ Lexora Copilot',
+    title: 'Lexora Copilot',
+    subtitle: 'What would you like to do?',
+    analyzeDoc: 'Analyze document',
+    draftNotice: 'Draft a notice',
+    findSection: 'Find a legal section',
+    compareLaws: 'Compare laws',
+    govServices: 'TN e-Services guide'
+  },
+  caseExplorer: {
+    title: 'Case Explorer & Judicial Precedents',
+    subtitle: 'Timeline analysis of landmark Madras High Court & Supreme Court rulings',
+    searchPlaceholder: 'Search cases by title, citation, or legal subject...',
+    timelineTitle: 'CASE TIMELINE',
+    filterAll: 'All Domains',
+    stageFiled: 'Complaint / Suit Filed',
+    stageLowerCourt: 'Lower Court Order',
+    stageAppeal: 'Appeal Filed',
+    stageHighCourt: 'High Court Judgment',
+    stageCurrent: 'Current Precedent Status',
+    askLexora: 'Research this Precedent in Lexora',
+    precedentsCount: 'Precedents'
   },
   header: {
     tamilNaduMode: 'Tamil Nadu Mode',
@@ -89,7 +171,15 @@ export const enTranslations: TranslationStructure = {
     employment: 'Employment & Labour',
     criminal: 'Criminal & Police',
     finance: 'Finance & Banking',
-    government: 'Government Services & RTI'
+    government: 'Government Services & RTI',
+    cooperative_law: 'Cooperative Societies Law',
+    cooperative_governance: 'Cooperative Governance & By-laws',
+    pacs: 'Primary Agricultural Credit Societies (PACS)',
+    agriculture: 'Agriculture & Land Rights',
+    government_schemes: 'Government Schemes & Subsidies',
+    crop_insurance: 'Crop Insurance (PMFBY)',
+    financial_literacy: 'Rural Credit & Financial Literacy',
+    grievance: 'Grievance Redressal'
   },
   quickPrompts: {
     title: 'Quick Prompts:',
@@ -218,6 +308,21 @@ export const enTranslations: TranslationStructure = {
         label: 'Public Grievance Petition',
         labelTamil: 'அரசு குறைதீர் மனு',
         description: 'Formal administrative representation to District Collector, Tahsildar, or Corporation Commissioner.'
+      },
+      cooperative_grievance: {
+        label: 'Cooperative Society Dispute (Sec 90)',
+        labelTamil: 'கூட்டுறவு சங்க தாவா மனு (பிரிவு 90)',
+        description: 'Statutory arbitration petition to Circle Deputy Registrar under Tamil Nadu Co-operative Societies Act 1983.'
+      },
+      pmfby_claim_appeal: {
+        label: 'PMFBY Crop Insurance Appeal (DGRC)',
+        labelTamil: 'பயிர் காப்பீடு இழப்பீடு மேல்முறையீடு (DGRC)',
+        description: 'Appeal to District Level Grievance Redressal Committee chaired by District Collector for delayed/rejected claim.'
+      },
+      pacs_membership_appeal: {
+        label: 'PACS Membership Admission Petition',
+        labelTamil: 'PACS உறுப்பினர் சேர்க்கை மேல்முறையீடு',
+        description: 'Enforcement petition for statutory membership admission rights under Section 21 of TN Co-op Act.'
       }
     },
     jurisdictionSetting: 'Jurisdiction Setting',
@@ -250,6 +355,10 @@ export const enTranslations: TranslationStructure = {
     searchPlaceholder: 'Search Tamil Nadu Acts, Patta, RTI, Tenancy, BNS in Tamil or English...',
     categories: {
       all: 'All Categories',
+      cooperativeLaws: 'Cooperative Societies Laws',
+      cooperativeByLaws: 'PACS Model By-laws & Governance',
+      governmentSchemes: 'Government Schemes & Subsidies',
+      cropInsurance: 'Crop Insurance (PMFBY)',
       tnLaws: 'Tamil Nadu Laws',
       centralActs: 'Central Acts',
       citizenRights: 'Citizen Rights',
