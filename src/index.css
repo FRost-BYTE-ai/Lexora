@@ -1,91 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+Tamil:wght@400;500;600;700&family=Mukta+Malar:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&family=Noto+Serif+Tamil:wght@400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&family=JetBrains+Mono:wght@400;500&display=swap');
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --font-sans: "Plus Jakarta Sans", "Noto Sans Tamil", "Mukta Malar", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", "Noto Sans Tamil", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Source Serif 4", "Noto Serif Tamil", Georgia, Cambria, "Times New Roman", serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 
-  --color-navy-950: #070B14;
-  --color-navy-900: #0B0F19;
-  --color-navy-850: #101726;
-  --color-navy-800: #162032;
-  --color-navy-700: #1E293B;
-  --color-navy-600: #334155;
-  --color-navy-500: #475569;
-
-  --color-primary-600: #2563EB;
-  --color-primary-700: #1D4ED8;
-  --color-primary-900: #1E1B4B;
-
-  --color-accent-amber: #D97706;
-  --color-accent-gold: #B45309;
+  --color-lexora-bg: #FAF9F6;
+  --color-lexora-surface: #FFFFFF;
+  --color-lexora-navy: #17244F;
+  --color-lexora-navy-muted: #42506F;
+  --color-lexora-indigo: #37318F;
+  --color-lexora-gold: #B88A25;
+  --color-lexora-border: #E4E1DA;
+  --color-lexora-muted: #73777F;
 }
 
 @variant dark (&:where(.dark, .dark *));
 
 @layer base {
   body {
-    @apply bg-[#FAFAFC] text-slate-900 font-sans antialiased dark:bg-[#0B0F19] dark:text-slate-100 transition-colors duration-200;
+    @apply bg-[#FAF9F6] text-[#17244F] font-sans antialiased dark:bg-[#000000] dark:text-[#F4F4F5] transition-colors duration-150 text-[14.5px] leading-normal;
+    font-family: var(--font-sans);
+  }
+
+  /* Headings inherit Source Serif 4 by default */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-feature-settings: "kern", "liga", "calt";
+  }
+
+  /* Form inputs & buttons stick to Inter for clean modern legibility */
+  input, button, select, textarea, label {
+    font-family: var(--font-sans);
   }
 }
 
-/* Scrollbar refinement */
+/* Custom font utilities */
+.font-serif-legal {
+  font-family: "Source Serif 4", "Noto Serif Tamil", Georgia, Cambria, serif;
+}
+
+.font-sans-ui {
+  font-family: "Inter", "Noto Sans Tamil", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Restrained scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
 }
 ::-webkit-scrollbar-track {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(148, 163, 184, 0.35);
-  border-radius: 9999px;
+  background: rgba(115, 119, 127, 0.25);
+  border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(148, 163, 184, 0.6);
+  background: rgba(115, 119, 127, 0.45);
 }
 
-/* Custom Markdown Styles targeting prose defaults */
+/* Legal text & document content formatting */
 .prose {
-  @apply max-w-none text-inherit leading-relaxed;
+  @apply max-w-none text-inherit leading-[1.68] text-[16px];
+  font-family: "Source Serif 4", "Noto Serif Tamil", Georgia, Cambria, "Times New Roman", serif;
+  font-feature-settings: "kern", "liga", "calt";
 }
 
 .prose p {
-  @apply my-2.5 first:mt-0 last:mb-0 text-slate-800 dark:text-slate-200;
+  @apply my-3 first:mt-0 last:mb-0 text-[#17244F] dark:text-[#EAECEF] text-[16px] leading-[1.68];
+  font-family: "Source Serif 4", "Noto Serif Tamil", Georgia, Cambria, "Times New Roman", serif;
 }
 
-.prose ul {
-  @apply list-disc list-outside ml-5 my-2.5 space-y-1 text-slate-800 dark:text-slate-200;
-}
-
-.prose ol {
-  @apply list-decimal list-outside ml-5 my-2.5 space-y-1 text-slate-800 dark:text-slate-200;
+.prose ul, .prose ol {
+  @apply my-3 pl-6 space-y-2 text-[#17244F] dark:text-[#EAECEF] text-[16px] leading-[1.68];
+  font-family: "Source Serif 4", "Noto Serif Tamil", Georgia, Cambria, "Times New Roman", serif;
 }
 
 .prose li {
-  @apply pl-1;
-}
-
-.prose table {
-  @apply w-full border-collapse border border-slate-200 dark:border-slate-800 my-4 text-xs rounded-xl overflow-hidden;
-}
-
-.prose th {
-  @apply bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 px-3.5 py-2.5 text-left font-bold text-slate-900 dark:text-slate-100;
-}
-
-.prose td {
-  @apply border border-slate-200 dark:border-slate-800 px-3.5 py-2 text-slate-700 dark:text-slate-300;
+  @apply text-[16px] leading-[1.68];
 }
 
 .prose strong {
-  @apply font-bold text-slate-900 dark:text-white;
+  @apply font-semibold text-[#17244F] dark:text-white;
+}
+
+.prose h1 {
+  @apply font-bold tracking-tight text-[#17244F] dark:text-white text-[26px] sm:text-[30px] mt-5 mb-3;
+  font-family: "Source Serif 4", "Noto Serif Tamil", Georgia, Cambria, serif;
+}
+
+.prose h2 {
+  @apply font-bold tracking-tight text-[#17244F] dark:text-white text-[21px] sm:text-[23px] mt-5 mb-2.5;
+  font-family: "Source Serif 4", "Noto Serif Tamil", Georgia, Cambria, serif;
+}
+
+.prose h3 {
+  @apply font-bold tracking-tight text-[#17244F] dark:text-white text-[18px] sm:text-[20px] mt-4 mb-2;
+  font-family: "Source Serif 4", "Noto Serif Tamil", Georgia, Cambria, serif;
+}
+
+.prose h4 {
+  @apply font-semibold tracking-tight text-[#17244F] dark:text-white text-[16.5px] mt-3.5 mb-1.5;
+  font-family: "Source Serif 4", "Noto Serif Tamil", Georgia, Cambria, serif;
 }
 
 .prose blockquote {
-  @apply border-l-4 border-indigo-600 dark:border-indigo-500 bg-indigo-50/50 dark:bg-indigo-950/30 pl-3.5 py-2 my-3 rounded-r-xl text-slate-700 dark:text-slate-300 text-xs;
+  @apply border-l-3 border-[#B88A25] pl-4 py-2 my-3.5 italic text-[#42506F] dark:text-slate-300 bg-[#FAF9F6]/90 dark:bg-slate-900/40 rounded-r text-[15.5px];
+  font-family: "Source Serif 4", "Noto Serif Tamil", Georgia, Cambria, serif;
 }
 
-
+/* Legal Citation Styling */
+.legal-citation {
+  font-family: "Source Serif 4", "Noto Serif Tamil", Georgia, Cambria, serif;
+}

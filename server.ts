@@ -39,17 +39,20 @@ async function startServer() {
   // Core Legal Chat Endpoint
   app.post("/api/chat", async (req, res) => {
     try {
-      const { query, language, domain, jurisdiction, explanation_level } = req.body;
+      const { conversation_id, user_id, query, language, domain, jurisdiction, explanation_level, history } = req.body;
       if (!query || typeof query !== 'string') {
         return res.status(400).json({ error: "Query is required" });
       }
 
       const responsePayload = await processLegalChat({
+        conversation_id,
+        user_id,
         query,
         language,
         domain,
         jurisdiction,
-        explanation_level
+        explanation_level,
+        history
       });
 
       res.json(responsePayload);
@@ -64,21 +67,24 @@ async function startServer() {
     try {
       const { text, targetLang } = req.body;
       if (!text || !targetLang) {
-        return res.status(400).json({ error: "text and targetLang ('ta' | 'en' | 'hi') are required" });
+        return res.status(400).json({ error: "text and targetLang ('ta' | 'en' | 'tanglish' | 'hi') are required" });
       }
 
-      const translated = await translateLegalContent(text, targetLang as 'ta' | 'en' | 'hi');
-      res.json({ translatedText: translated, targetLang });
+      const validLangs = ['ta', 'en', 'tanglish', 'hi'];
+      const safeLang = validLangs.includes(targetLang) ? targetLang : 'en';
+
+      const translated = await translateLegalContent(text, safeLang as 'ta' | 'en' | 'tanglish' | 'hi');
+      res.json({ translatedText: translated, targetLang: safeLang });
     } catch (error: any) {
       console.error("Error in /api/translate:", error);
       res.status(500).json({ error: "Translation failed", details: error?.message });
     }
   });
 
-  // Document Upload & Analysis Endpoint
+  // Document Upload & Analysis Endpoint (Supports Handwritten, Typed & Hybrid)
   app.post("/api/documents/upload", async (req, res) => {
     try {
-      const { fileName, fileType, fileSize, contentSnippet, language } = req.body;
+      const { fileName, fileType, fileSize, contentSnippet, language, imageData, scanMode } = req.body;
       if (!fileName) {
         return res.status(400).json({ error: "fileName is required" });
       }
@@ -88,7 +94,9 @@ async function startServer() {
         fileType || 'application/pdf', 
         fileSize || '1 MB', 
         contentSnippet || 'Standard tenancy agreement / legal notice document excerpt.',
-        language || 'ta'
+        language || 'ta',
+        imageData,
+        scanMode || 'auto'
       );
 
       res.json(result);

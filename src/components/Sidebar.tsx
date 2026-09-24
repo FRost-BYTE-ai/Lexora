@@ -82,6 +82,11 @@ export const Sidebar: React.FC<SidebarProps> = ({
   const { t, language } = useLanguage();
 
   const domainItems: Array<{ id: LegalDomain; label: string; icon: React.ComponentType<{ className?: string }> }> = [
+    { 
+      id: 'general', 
+      label: language === 'ta' ? '✨ தானியங்கு தேர்வு (Auto-Detect)' : '✨ Auto-Detect Legal Query', 
+      icon: Sparkles 
+    },
     { id: 'cooperative_law', label: t.domains.cooperative_law, icon: Building2 },
     { id: 'pacs', label: t.domains.pacs, icon: Store },
     { id: 'crop_insurance', label: t.domains.crop_insurance, icon: ShieldCheck },

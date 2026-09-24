@@ -16,13 +16,13 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
   const [language, setLanguageState] = useState<LanguageMode>(() => {
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
-      if (saved === 'ta' || saved === 'en' || saved === 'tanglish') {
+      if (saved === 'ta' || saved === 'en' || saved === 'tanglish' || saved === 'hi') {
         return saved;
       }
     } catch (e) {
       console.warn('Unable to read language preference from localStorage:', e);
     }
-    return 'ta'; // Tamil-first default
+    return 'en'; // Match reference image default (English selected)
   });
 
   const setLanguage = (lang: LanguageMode) => {

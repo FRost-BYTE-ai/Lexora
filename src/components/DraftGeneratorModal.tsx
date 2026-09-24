@@ -338,7 +338,7 @@ export const DraftGeneratorModal: React.FC<DraftGeneratorModalProps> = ({
                 </div>
               </div>
 
-              <div className="p-4 bg-slate-50 rounded-xl border border-slate-200 font-mono text-xs text-slate-800 leading-relaxed whitespace-pre-wrap max-h-[50vh] overflow-y-auto">
+              <div className="p-5 bg-slate-50 rounded-xl border border-slate-200 font-serif text-[14.5px] text-slate-900 leading-[1.7] whitespace-pre-wrap max-h-[50vh] overflow-y-auto">
                 {generatedDraft}
               </div>
 

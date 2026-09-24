@@ -30,18 +30,38 @@ interface SmartHardwareAssistModalProps {
 
 const SAMPLE_PHYSICAL_DOCS = [
   {
+    id: 'handwritten-land-grievance',
+    title: 'Handwritten Farmer Land Boundary & Irrigation Dispute Petition',
+    titleTamil: 'கையெழுத்து கிராம நில எல்லை & பாசன நீர் தாவா மனு',
+    category: 'Handwritten Petition',
+    scriptType: 'handwritten' as const,
+    sampleText: 'Handwritten petition submitted to Revenue Divisional Officer (RDO) / VAO by farmer regarding unauthorized canal blockage and field pathway obstruction in Thanjavur district. Involves Section 145/147 BNSS dispute prevention.',
+    imagePlaceholder: 'HANDWRITTEN-LAND-PETITION-TAMIL.JPG'
+  },
+  {
     id: 'pmfby-rejection',
     title: 'PMFBY Crop Loss Claim Disallowance Notice (DGRC)',
     titleTamil: 'பயிர் காப்பீடு இழப்பீட்டு மறுப்பு அறிவிக்கை (DGRC)',
     category: 'Crop Insurance',
+    scriptType: 'typed' as const,
     sampleText: 'Disallowance Notice from Agricultural Insurance Company under PMFBY Kharif season. Claim rejected citing 72-hour localized calamity intimation delay and survey discrepancy in Survey No. 142/3, Thanjavur District. Farmer appeals to District Collector DGRC.',
     imagePlaceholder: 'PMFBY-CLAIM-REJECTION-2024.JPG'
+  },
+  {
+    id: 'handwritten-advance-promissory',
+    title: 'Handwritten Village Promissory Note & Usurious Interest Receipt',
+    titleTamil: 'கையெழுத்து கிராம கடன் பத்திரம் & கந்துவட்டி ரசீது',
+    category: 'Finance & Usury',
+    scriptType: 'handwritten' as const,
+    sampleText: 'Handwritten acknowledgment on stamp paper claiming 36% annual interest for crop inputs. Subject to protection under Tamil Nadu Prohibition of Charging Exorbitant Interest Act 2003.',
+    imagePlaceholder: 'HANDWRITTEN-PROMISSORY-USURY.JPG'
   },
   {
     id: 'pacs-sec90-demand',
     title: 'PACS Section 90 Surcharge & Demand Notice',
     titleTamil: 'தொடக்க வேளாண் கூட்டுறவு சங்கம் பிரிவு 90 தீர்வு அறிவிப்பு',
     category: 'Cooperative Governance',
+    scriptType: 'typed' as const,
     sampleText: 'Notice issued by Primary Agricultural Credit Society under Section 90 of TN Cooperative Societies Act 1983 regarding loan arrears recovery and dispute reference to Circle Deputy Registrar of Co-operative Societies.',
     imagePlaceholder: 'PACS-SEC90-ARREARS-NOTICE.JPG'
   },
@@ -50,6 +70,7 @@ const SAMPLE_PHYSICAL_DOCS = [
     title: 'PACS Membership Denial Order under Section 21',
     titleTamil: 'கூட்டுறவு சங்க உறுப்பினர் சேர்க்கை மறுப்பு ஆணை (பிரிவு 21)',
     category: 'Member Rights',
+    scriptType: 'typed' as const,
     sampleText: 'Rejection of PACS Class-A membership application citing operational limits. Appeal lie to the Registrar/Deputy Registrar within 60 days under Section 21(3) for deemed admission and voting rights.',
     imagePlaceholder: 'PACS-MEMBERSHIP-DENIAL-SEC21.JPG'
   }

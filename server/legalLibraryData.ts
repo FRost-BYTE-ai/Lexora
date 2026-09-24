@@ -371,6 +371,59 @@ export const LEGAL_LIBRARY_DATA: LegalLibraryRecord[] = [
     url: 'https://rtionline.tn.gov.in/'
   },
   {
+    id: 'bns-criminal-assault-hurt',
+    title: 'Bharatiya Nyaya Sanhita, 2023 (BNS) - Offences Affecting the Human Body',
+    titleTamil: 'பாரதிய நியாய சன்ஹிதா, 2023 (BNS) - உடல் மீதான தாக்குதல் மற்றும் காயம் தொடர்பான குற்றங்கள்',
+    category: 'Acts',
+    jurisdiction: 'IN',
+    summary: 'Substantive criminal law governing assault, criminal force, voluntarily causing simple hurt, grievous hurt, and hurt by dangerous weapons/means across India.',
+    summaryTamil: 'இந்திய குற்றவியல் சட்டத்தில் உடல் மீதான தாக்குதல், காயம் ஏற்படுத்துதல், கடுமையான காயம் மற்றும் ஆயுதங்களால் தாக்குதல் தொடர்பான தண்டனை விதிகள்.',
+    keySections: [
+      'Section 130 & 131 (Assault / Criminal Force - Imprisonment up to 3 months or fine up to ₹1,000 or both)',
+      'Section 115(2) (Voluntarily Causing Simple Hurt - Imprisonment up to 1 year or fine up to ₹10,000 or both)',
+      'Section 117 (Voluntarily Causing Grievous Hurt - Imprisonment up to 7 years and fine)',
+      'Section 118 (Voluntarily Causing Hurt by Dangerous Weapon or Means - Imprisonment up to 3 years or fine or both)',
+      'Section 74 (Assault on Woman with intent to outrage modesty - Imprisonment 1 to 5 years and fine)',
+      'Section 121 & 132 (Assault or Criminal force to deter public servant from duty - Imprisonment up to 5 years and fine)'
+    ],
+    officialSource: 'Ministry of Law and Justice & Ministry of Home Affairs, Govt of India',
+    url: 'https://www.indiacode.nic.in/'
+  },
+  {
+    id: 'bnss-criminal-procedure',
+    title: 'Bharatiya Nagarik Suraksha Sanhita, 2023 (BNSS) - FIR, Investigation & Arrest',
+    titleTamil: 'பாரதிய நாகரிக சுரக்ஷா சன்ஹிதா, 2023 (BNSS) - முதல் தகவல் அறிக்கை (FIR) & விசாரணை',
+    category: 'Acts',
+    jurisdiction: 'IN',
+    summary: 'Procedural criminal code regulating mandatory FIR registration for cognizable offenses (Section 173), grievance before SP (Section 175(3)), and magistrate directions (Section 175(4)).',
+    summaryTamil: 'காவல்துறையில் கட்டாய முதல் தகவல் அறிக்கை (FIR) பதிவு செய்தல் மற்றும் காவல் கண்காணிப்பாளர் / நடுவர் நீதிமன்றத்தில் முறையிடும் நடைமுறைகள்.',
+    keySections: [
+      'Section 173 (Information in Cognizable Cases & Mandatory Zero FIR)',
+      'Section 175(3) (Representation to Superintendent of Police upon refusal)',
+      'Section 175(4) (Application to Judicial Magistrate to direct investigation)',
+      'Section 482 / 528 (Inherent powers of High Court)'
+    ],
+    officialSource: 'Ministry of Home Affairs, Government of India',
+    url: 'https://www.mha.gov.in/'
+  },
+  {
+    id: 'ni-act-1881-cheque-bounce',
+    title: 'Negotiable Instruments Act, 1881 - Dishonour of Cheques (Section 138)',
+    titleTamil: 'மாற்றுமுறை ஆவணச் சட்டம், 1881 - காசோலை நிராகரிப்பு (பிரிவு 138)',
+    category: 'Acts',
+    jurisdiction: 'IN',
+    summary: 'Statutory criminal framework for cheque bounce due to insufficient funds: 30-day statutory demand notice, 15-day cure period, 1-month court filing window, imprisonment up to 2 years or fine up to twice the cheque amount.',
+    summaryTamil: 'காசோலை பவுன்ஸ் வழக்குகளுக்கான 30 நாட்கள் சட்டப்பூர்வ நோட்டீஸ், 15 நாட்கள் தவணை, 1 மாதத்திற்குள் நடுவர் நீதிமன்றத்தில் வழக்கு தாக்கல் செய்யும் காலக்கெடு.',
+    keySections: [
+      'Section 138 (Dishonour of Cheque for Insufficiency of Funds)',
+      'Section 141 (Offences by Companies & Directors)',
+      'Section 142 (Cognizance of Offences & 30-day Limitation)',
+      'Section 143A (Power to direct interim compensation up to 20%)'
+    ],
+    officialSource: 'Ministry of Law and Justice, Government of India',
+    url: 'https://www.indiacode.nic.in/'
+  },
+  {
     id: 'bns-criminal-code',
     title: 'Bharatiya Nyaya Sanhita, 2023 (BNS) & Citizen Arrest Guidelines',
     titleTamil: 'பாரதிய நியாய சன்ஹிதா, 2023 மற்றும் குடிமக்கள் கைது வழிகாட்டுதல்கள்',

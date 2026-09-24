@@ -45,7 +45,7 @@ export const SourcePanel: React.FC<SourcePanelProps> = ({ sources = [] }) => {
           >
             <div>
               <div className="flex items-start justify-between gap-1.5 mb-1">
-                <span className="font-semibold text-xs text-slate-800 line-clamp-1">
+                <span className="font-semibold font-serif text-xs text-slate-900 line-clamp-1">
                   {source.title}
                 </span>
                 {source.url && (

@@ -172,24 +172,24 @@ export const DocumentAnalysisCard: React.FC<DocumentAnalysisCardProps> = ({
               {/* Expanded Detail Panel */}
               {isExpanded && (
                 <div className="px-3.5 pb-3.5 pt-1 border-t border-slate-100 dark:border-slate-800 text-xs space-y-2.5">
-                  <div className="p-2.5 rounded-lg bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 font-mono text-[11px] text-slate-700 dark:text-slate-300">
+                  <div className="p-2.5 rounded-lg bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 font-serif italic text-[13px] text-slate-700 dark:text-slate-300">
                     "{item.excerpt}"
                   </div>
 
                   <div>
-                    <span className="font-bold text-slate-800 dark:text-slate-200 block mb-0.5">
+                    <span className="font-sans font-bold text-slate-800 dark:text-slate-200 block mb-0.5">
                       Legal Impact:
                     </span>
-                    <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
+                    <p className="font-serif text-[13.5px] text-slate-600 dark:text-slate-300 leading-relaxed">
                       {item.impact}
                     </p>
                   </div>
 
                   <div>
-                    <span className="font-bold text-emerald-700 dark:text-emerald-400 block mb-0.5">
+                    <span className="font-sans font-bold text-emerald-700 dark:text-emerald-400 block mb-0.5">
                       Suggested Correction:
                     </span>
-                    <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
+                    <p className="font-serif text-[13.5px] text-slate-600 dark:text-slate-300 leading-relaxed">
                       {item.recommendation}
                     </p>
                   </div>
@@ -198,7 +198,7 @@ export const DocumentAnalysisCard: React.FC<DocumentAnalysisCardProps> = ({
                     <button
                       type="button"
                       onClick={() => onAskLexoraClause(item.clauseTitle, item.recommendation)}
-                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-900 text-white dark:bg-indigo-600 text-xs font-bold hover:bg-indigo-800 transition-colors cursor-pointer"
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-900 text-white dark:bg-indigo-600 font-sans text-xs font-bold hover:bg-indigo-800 transition-colors cursor-pointer"
                     >
                       <Sparkles className="w-3 h-3 text-amber-300" />
                       <span>Draft Counter-Clause in Lexora</span>

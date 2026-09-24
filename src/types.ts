@@ -65,6 +65,21 @@ export interface ExplainabilityData {
   keyFactors?: string[];
 }
 
+export type DocumentScanMode = 'handwritten' | 'typed' | 'auto';
+
+export interface DocumentAnalysisResponse {
+  success: boolean;
+  analysis: string;
+  extractedText?: string;
+  documentCategory?: string;
+  documentScriptType?: 'Handwritten' | 'Typed / Printed' | 'Hybrid (Form with Handwriting)';
+  confidenceScore?: number;
+  fileName: string;
+  fileType: string;
+  fileSize: string;
+  scanMode?: DocumentScanMode;
+}
+
 export interface Message {
   id: string;
   role: 'user' | 'assistant';
@@ -91,6 +106,9 @@ export interface Message {
     fileName: string;
     fileSize: string;
     fileType: string;
+    scanMode?: DocumentScanMode;
+    documentScriptType?: string;
+    extractedText?: string;
     ocrSource?: 'webcam_doc_cam' | 'upload_file' | 'kiosk_scanner';
   };
   schemeData?: GovernmentScheme;
@@ -98,8 +116,13 @@ export interface Message {
 
 export interface Conversation {
   id: string;
+  user_id?: string;
   title: string;
   timestamp: number;
+  created_at?: number;
+  updated_at?: number;
+  language?: LanguageMode;
+  jurisdiction?: Jurisdiction;
   messages: Message[];
   domain: LegalDomain;
 }

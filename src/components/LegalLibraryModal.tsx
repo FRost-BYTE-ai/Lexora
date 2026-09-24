@@ -198,14 +198,14 @@ export const LegalLibraryModal: React.FC<LegalLibraryModalProps> = ({
                       )}
                     </div>
 
-                    <h4 className="text-xs font-bold text-slate-800 mb-0.5 leading-snug">
+                    <h4 className="text-sm font-bold font-serif text-slate-900 mb-0.5 leading-snug">
                       {item.title}
                     </h4>
-                    <p className="text-[11px] text-blue-700 font-medium mb-2">
+                    <p className="text-[12px] font-serif text-blue-700 font-medium mb-2">
                       {item.titleTamil}
                     </p>
 
-                    <p className="text-xs text-slate-600 leading-relaxed mb-3">
+                    <p className="text-xs font-serif text-slate-600 leading-relaxed mb-3">
                       {item.summary}
                     </p>
 

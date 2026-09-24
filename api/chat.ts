@@ -7,17 +7,20 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   try {
-    const { query, language, domain, jurisdiction, explanation_level } = req.body || {};
+    const { conversation_id, user_id, query, language, domain, jurisdiction, explanation_level, history } = req.body || {};
     if (!query || typeof query !== 'string') {
       return res.status(400).json({ error: 'Query is required' });
     }
 
     const payload = await processLegalChat({
+      conversation_id,
+      user_id,
       query,
       language,
       domain,
       jurisdiction,
-      explanation_level
+      explanation_level,
+      history
     });
 
     return res.status(200).json(payload);

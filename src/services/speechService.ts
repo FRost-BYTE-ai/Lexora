@@ -199,7 +199,7 @@ export async function startSpeechRecognition(options: SpeechRecognitionHookOptio
   }
 }
 
-export function speakLegalText(text: string, language: LanguageMode = 'ta', onFinish?: () => void): () => void {
+export function speakLegalText(text: string, language: LanguageMode = 'ta', onFinish?: () => void, rate: number = 0.95): () => void {
   if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
     console.warn('Speech synthesis not supported');
     onFinish?.();
@@ -217,7 +217,7 @@ export function speakLegalText(text: string, language: LanguageMode = 'ta', onFi
     .slice(0, 800); // Speak first 800 chars comfortably
 
   const utterance = new SpeechSynthesisUtterance(cleanedText);
-  utterance.rate = 0.95; // Slightly measured pace for legal comprehension
+  utterance.rate = rate; // Measured pace for elder comprehension and accessibility
 
   const voices = window.speechSynthesis.getVoices();
   if (language === 'ta') {
@@ -255,3 +255,10 @@ export function speakLegalText(text: string, language: LanguageMode = 'ta', onFi
     window.speechSynthesis.cancel();
   };
 }
+
+export function stopSpeech(): void {
+  if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+  }
+}
+

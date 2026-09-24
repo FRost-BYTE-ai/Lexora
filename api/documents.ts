@@ -7,7 +7,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   try {
-    const { fileName, fileType, fileSize, contentSnippet } = req.body || {};
+    const { fileName, fileType, fileSize, contentSnippet, language, imageData, scanMode } = req.body || {};
     if (!fileName) {
       return res.status(400).json({ error: 'fileName is required' });
     }
@@ -16,7 +16,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       fileName,
       fileType || 'application/pdf',
       fileSize || '1 MB',
-      contentSnippet || 'Standard legal document excerpt'
+      contentSnippet || 'Standard legal document excerpt',
+      language || 'ta',
+      imageData,
+      scanMode || 'auto'
     );
 
     return res.status(200).json(result);
