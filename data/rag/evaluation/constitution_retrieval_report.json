@@ -1,0 +1,1277 @@
+{
+    "raw_results": {
+        "What is Article 21?": {
+            "dense": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__schedule_11__header__entry_21",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Eleventh Schedule \u2014 21",
+                    "short_text": "21. Cultural activities....",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8331",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__schedule_1__group_1_i_the_states__row_5",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "First Schedule \u2014 I. THE STATES \u2014 5",
+                    "short_text": "Areas (Reorganisation) Act, 1971 (81 of 1971), s. 9 (w.e.f. 21-1-1972)....",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8279",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__schedule_6__note_p340",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Sixth Schedule \u2014 footnote p340",
+                    "short_text": "1. Sub. by the Government of Union Territories (Amendment) Act, 1971 (83 of 1971), s. 13 for paragra...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8271",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__schedule_6__note_p337",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Sixth Schedule \u2014 footnote p337",
+                    "short_text": "1. Sub. by the Government of Union Territory (Amendment) Act, 1971 (83 of 1971), s. 13 for paragraph...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8247",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__article_363a__subclause_b",
+                    "article_number": "363A",
+                    "clause": null,
+                    "heading": "Article 363A(b)",
+                    "short_text": "on and from the commencement of the Constitution (Twenty-sixth Amendment) Act, 1971, privy purse is ...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8243",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                }
+            ],
+            "sparse": [],
+            "hybrid": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__schedule_11__header__entry_21",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Eleventh Schedule \u2014 21",
+                    "short_text": "21. Cultural activities....",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0164",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__schedule_1__group_1_i_the_states__row_5",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "First Schedule \u2014 I. THE STATES \u2014 5",
+                    "short_text": "Areas (Reorganisation) Act, 1971 (81 of 1971), s. 9 (w.e.f. 21-1-1972)....",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0161",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__schedule_6__note_p340",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Sixth Schedule \u2014 footnote p340",
+                    "short_text": "1. Sub. by the Government of Union Territories (Amendment) Act, 1971 (83 of 1971), s. 13 for paragra...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0159",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__schedule_6__note_p337",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Sixth Schedule \u2014 footnote p337",
+                    "short_text": "1. Sub. by the Government of Union Territory (Amendment) Act, 1971 (83 of 1971), s. 13 for paragraph...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0156",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__article_363a__subclause_b",
+                    "article_number": "363A",
+                    "clause": null,
+                    "heading": "Article 363A(b)",
+                    "short_text": "on and from the commencement of the Constitution (Twenty-sixth Amendment) Act, 1971, privy purse is ...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0154",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                }
+            ]
+        },
+        "What are the Fundamental Rights?": {
+            "dense": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__part_iii__header",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "PART III \u2014 FUNDAMENTAL RIGHTS",
+                    "short_text": "PART III \u2014 FUNDAMENTAL RIGHTS...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8539",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__article_13",
+                    "article_number": "13",
+                    "clause": null,
+                    "heading": "Article 13 \u2014 Laws inconsistent with or in derogation of the fundamental rights",
+                    "short_text": "[Laws inconsistent with or in derogation of the fundamental rights.] (Text constituted of the clause...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8438",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__article_26",
+                    "article_number": "26",
+                    "clause": null,
+                    "heading": "Article 26 \u2014 Freedom to manage religious affairs",
+                    "short_text": "Subject to public order, morality and health, every religious denomination or any section thereof sh...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8290",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__article_25__clause_1",
+                    "article_number": "25",
+                    "clause": "(1)",
+                    "heading": "Article 25(1)",
+                    "short_text": "Subject to public order, morality and health and to the other provisions of this Part, all persons a...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8235",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_4__x5",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 4",
+                    "short_text": "...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8202",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                }
+            ],
+            "sparse": [],
+            "hybrid": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__part_iii__header",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "PART III \u2014 FUNDAMENTAL RIGHTS",
+                    "short_text": "PART III \u2014 FUNDAMENTAL RIGHTS...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0164",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__article_13",
+                    "article_number": "13",
+                    "clause": null,
+                    "heading": "Article 13 \u2014 Laws inconsistent with or in derogation of the fundamental rights",
+                    "short_text": "[Laws inconsistent with or in derogation of the fundamental rights.] (Text constituted of the clause...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0161",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__article_26",
+                    "article_number": "26",
+                    "clause": null,
+                    "heading": "Article 26 \u2014 Freedom to manage religious affairs",
+                    "short_text": "Subject to public order, morality and health, every religious denomination or any section thereof sh...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0159",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__article_25__clause_1",
+                    "article_number": "25",
+                    "clause": "(1)",
+                    "heading": "Article 25(1)",
+                    "short_text": "Subject to public order, morality and health and to the other provisions of this Part, all persons a...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0156",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_4__x5",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 4",
+                    "short_text": "...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0154",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                }
+            ]
+        },
+        "What does Article 14 provide?": {
+            "dense": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__part_14__header",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "PART XIV \u2014 SERVICES UNDER THE UNION AND THE STATES",
+                    "short_text": "PART XIV \u2014 SERVICES UNDER THE UNION AND THE STATES...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8223",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__article_31a__clause_1",
+                    "article_number": "31A",
+                    "clause": "(1)",
+                    "heading": "Article 31A(1)",
+                    "short_text": "Notwithstanding anything contained in article 13, no law providing for\u2014...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8212",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__schedule_7__group_1_list_iii_concurrent_list__entry_14",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Seventh Schedule \u2014 List III\u2014Concurrent List \u2014 14",
+                    "short_text": "14. Contempt of court, but not including contempt of the Supreme Court....",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8202",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__article_137",
+                    "article_number": "137",
+                    "clause": null,
+                    "heading": "Article 137 \u2014 Review of judgments or orders by the Supreme Court",
+                    "short_text": "Subject to the provisions of any law made by Parliament or any rules made under article 145, the Sup...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8186",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__schedule_7__group_1_list_i_union_list__entry_14",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Seventh Schedule \u2014 List I\u2014Union List \u2014 14",
+                    "short_text": "14. Entering into treaties and agreements with foreign countries and implementing of treaties, agree...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8136",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                }
+            ],
+            "sparse": [],
+            "hybrid": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__part_14__header",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "PART XIV \u2014 SERVICES UNDER THE UNION AND THE STATES",
+                    "short_text": "PART XIV \u2014 SERVICES UNDER THE UNION AND THE STATES...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0164",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__article_31a__clause_1",
+                    "article_number": "31A",
+                    "clause": "(1)",
+                    "heading": "Article 31A(1)",
+                    "short_text": "Notwithstanding anything contained in article 13, no law providing for\u2014...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0161",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__schedule_7__group_1_list_iii_concurrent_list__entry_14",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Seventh Schedule \u2014 List III\u2014Concurrent List \u2014 14",
+                    "short_text": "14. Contempt of court, but not including contempt of the Supreme Court....",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0159",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__article_137",
+                    "article_number": "137",
+                    "clause": null,
+                    "heading": "Article 137 \u2014 Review of judgments or orders by the Supreme Court",
+                    "short_text": "Subject to the provisions of any law made by Parliament or any rules made under article 145, the Sup...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0156",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__schedule_7__group_1_list_i_union_list__entry_14",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Seventh Schedule \u2014 List I\u2014Union List \u2014 14",
+                    "short_text": "14. Entering into treaties and agreements with foreign countries and implementing of treaties, agree...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0154",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                }
+            ]
+        },
+        "Explain Article 32.": {
+            "dense": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__article_238",
+                    "article_number": "238",
+                    "clause": null,
+                    "heading": "[238. Omitted.]",
+                    "short_text": "[238. Omitted.]...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8782",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__part_5__chapter_2__header",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "CHAPTER II \u2014 PARLIAMENT General",
+                    "short_text": "CHAPTER II. \u2014 PARLIAMENT General...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8777",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__article_35__subclause_i",
+                    "article_number": "35",
+                    "clause": null,
+                    "heading": "Article 35(i)",
+                    "short_text": "with respect to any of the matters which under clause (3) of article 16, clause (3) of article 32, a...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8763",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__appendix_i__table_row_008",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Appendix I \u2014 annexed Schedule table row 8",
+                    "short_text": "Article2:...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8757",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__appendix_i__table_row_011",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Appendix I \u2014 annexed Schedule table row 11",
+                    "short_text": "Article2:...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8757",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                }
+            ],
+            "sparse": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__appendix_i__text_3297",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Appendix I \u2014 text",
+                    "short_text": "[See sections 2(a), 2(b) and 3] PA R T I The acquired territory in relation to Article 2 of the agre...",
+                    "retrieval_method": "sparse",
+                    "score_rank_info": "score: 2.0000",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__article_371__clause_2__subclause_a",
+                    "article_number": "371",
+                    "clause": "(2)",
+                    "heading": "Article 371(2)(a)",
+                    "short_text": "the establishment of separate development boards for Vidarbha, Marathwada, [and the rest of Maharash...",
+                    "retrieval_method": "sparse",
+                    "score_rank_info": "score: 1.0000",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__article_37",
+                    "article_number": "37",
+                    "clause": null,
+                    "heading": "Article 37 \u2014 Application of the principles contained in this Part",
+                    "short_text": "The provisions contained in this Part shall not be enforceable by any court, but the principles ther...",
+                    "retrieval_method": "sparse",
+                    "score_rank_info": "score: 1.0000",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                }
+            ],
+            "hybrid": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__article_238",
+                    "article_number": "238",
+                    "clause": null,
+                    "heading": "[238. Omitted.]",
+                    "short_text": "[238. Omitted.]...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0164",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__appendix_i__text_3297",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Appendix I \u2014 text",
+                    "short_text": "[See sections 2(a), 2(b) and 3] PA R T I The acquired territory in relation to Article 2 of the agre...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0164",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__part_5__chapter_2__header",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "CHAPTER II \u2014 PARLIAMENT General",
+                    "short_text": "CHAPTER II. \u2014 PARLIAMENT General...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0161",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__article_371__clause_2__subclause_a",
+                    "article_number": "371",
+                    "clause": "(2)",
+                    "heading": "Article 371(2)(a)",
+                    "short_text": "the establishment of separate development boards for Vidarbha, Marathwada, [and the rest of Maharash...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0161",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__article_35__subclause_i",
+                    "article_number": "35",
+                    "clause": null,
+                    "heading": "Article 35(i)",
+                    "short_text": "with respect to any of the matters which under clause (3) of article 16, clause (3) of article 32, a...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0159",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                }
+            ]
+        },
+        "What freedom of speech rights are protected by the Constitution?": {
+            "dense": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__article_19",
+                    "article_number": "19",
+                    "clause": null,
+                    "heading": "Article 19 \u2014 Protection of certain rights regarding freedom of speech, etc",
+                    "short_text": "[Protection of certain rights regarding freedom of speech, etc.] (Text constituted of the clauses, s...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8614",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__article_194__clause_1",
+                    "article_number": "194",
+                    "clause": "(1)",
+                    "heading": "Article 194(1)",
+                    "short_text": "Subject to the provisions of this Constitution and to the rules and standing orders regulating the p...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8607",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__article_105__clause_1",
+                    "article_number": "105",
+                    "clause": "(1)",
+                    "heading": "Article 105(1)",
+                    "short_text": "Subject to the provisions of this Constitution and to the rules and standing orders regulating the p...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8606",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__article_361a",
+                    "article_number": "361A",
+                    "clause": null,
+                    "heading": "Article 361A \u2014 Protection of publication of proceedings of Parliament and State Legislatures",
+                    "short_text": "[Protection of publication of proceedings of Parliament and State Legislatures.] (Text constituted o...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8236",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__schedule_10__note_2",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Tenth Schedule \u2014 footnote 2",
+                    "short_text": "Certain words omitted by the Constitution (Ninety-first Amendment) Act, 2003, s. 5 (w.e.f. 1-1-2004)...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8217",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                }
+            ],
+            "sparse": [],
+            "hybrid": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__article_19",
+                    "article_number": "19",
+                    "clause": null,
+                    "heading": "Article 19 \u2014 Protection of certain rights regarding freedom of speech, etc",
+                    "short_text": "[Protection of certain rights regarding freedom of speech, etc.] (Text constituted of the clauses, s...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0164",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__article_194__clause_1",
+                    "article_number": "194",
+                    "clause": "(1)",
+                    "heading": "Article 194(1)",
+                    "short_text": "Subject to the provisions of this Constitution and to the rules and standing orders regulating the p...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0161",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__article_105__clause_1",
+                    "article_number": "105",
+                    "clause": "(1)",
+                    "heading": "Article 105(1)",
+                    "short_text": "Subject to the provisions of this Constitution and to the rules and standing orders regulating the p...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0159",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__article_361a",
+                    "article_number": "361A",
+                    "clause": null,
+                    "heading": "Article 361A \u2014 Protection of publication of proceedings of Parliament and State Legislatures",
+                    "short_text": "[Protection of publication of proceedings of Parliament and State Legislatures.] (Text constituted o...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0156",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__schedule_10__note_2",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Tenth Schedule \u2014 footnote 2",
+                    "short_text": "Certain words omitted by the Constitution (Ninety-first Amendment) Act, 2003, s. 5 (w.e.f. 1-1-2004)...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0154",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                }
+            ]
+        },
+        "right to equality": {
+            "dense": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_27",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 27",
+                    "short_text": "...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8603",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_3__x2",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 3",
+                    "short_text": "...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8603",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_12__x2",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 12",
+                    "short_text": "...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8603",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_4__x5",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 4",
+                    "short_text": "...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8603",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_6__x2",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 6",
+                    "short_text": "...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8603",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                }
+            ],
+            "sparse": [],
+            "hybrid": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_27",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 27",
+                    "short_text": "...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0164",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_3__x2",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 3",
+                    "short_text": "...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0161",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_12__x2",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 12",
+                    "short_text": "...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0159",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_4__x5",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 4",
+                    "short_text": "...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0156",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_6__x2",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 6",
+                    "short_text": "...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0154",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                }
+            ]
+        },
+        "Article 19": {
+            "dense": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__schedule_7__group_1_list_ii_state_list__entry_19",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Seventh Schedule \u2014 List II\u2014State List \u2014 19",
+                    "short_text": "19*...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.9034",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_7__x3",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 7",
+                    "short_text": "19]]...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.9028",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__part_19__header",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "PART XIX \u2014 MISCELLANEOUS",
+                    "short_text": "PART XIX \u2014 MISCELLANEOUS...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8916",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__part_20__header",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "PART XX \u2014 AMENDMENT OF THE CONSTITUTION",
+                    "short_text": "PART XX \u2014 AMENDMENT OF THE CONSTITUTION...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8785",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__part_18__header",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "PART XVIII \u2014 EMERGENCY PROVISIONS",
+                    "short_text": "PART XVIII \u2014 EMERGENCY PROVISIONS...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8736",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                }
+            ],
+            "sparse": [],
+            "hybrid": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__schedule_7__group_1_list_ii_state_list__entry_19",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Seventh Schedule \u2014 List II\u2014State List \u2014 19",
+                    "short_text": "19*...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0164",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_7__x3",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 7",
+                    "short_text": "19]]...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0161",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__part_19__header",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "PART XIX \u2014 MISCELLANEOUS",
+                    "short_text": "PART XIX \u2014 MISCELLANEOUS...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0159",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__part_20__header",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "PART XX \u2014 AMENDMENT OF THE CONSTITUTION",
+                    "short_text": "PART XX \u2014 AMENDMENT OF THE CONSTITUTION...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0156",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__part_18__header",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "PART XVIII \u2014 EMERGENCY PROVISIONS",
+                    "short_text": "PART XVIII \u2014 EMERGENCY PROVISIONS...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0154",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                }
+            ]
+        },
+        "What are the constitutional remedies?": {
+            "dense": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__schedule_7__group_1_list_i_union_list__entry_77",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Seventh Schedule \u2014 List I\u2014Union List \u2014 77",
+                    "short_text": "77. Constitution, organisation, jurisdiction and powers of the Supreme Court (including contempt of ...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8366",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__article_72__clause_1",
+                    "article_number": "72",
+                    "clause": "(1)",
+                    "heading": "Article 72(1)",
+                    "short_text": "The President shall have the power to grant pardons, reprieves, respites or remissions of punishment...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8361",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__article_374__clause_2",
+                    "article_number": "374",
+                    "clause": "(2)",
+                    "heading": "Article 374(2)",
+                    "short_text": "All suits, appeals and proceedings, civil or criminal, pending in the Federal Court at the commencem...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8360",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__article_169__clause_2",
+                    "article_number": "169",
+                    "clause": "(2)",
+                    "heading": "Article 169(2)",
+                    "short_text": "Any law referred to in clause (1) shall contain such provisions for the amendment of this Constituti...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8359",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__article_363a",
+                    "article_number": "363A",
+                    "clause": null,
+                    "heading": "Article 363A \u2014 Recognition granted to Rulers of Indian States to cease and privy purses to be abolished",
+                    "short_text": "Notwithstanding anything in this Constitution or in any law for the time being in force\u2014...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8354",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                }
+            ],
+            "sparse": [],
+            "hybrid": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__schedule_7__group_1_list_i_union_list__entry_77",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Seventh Schedule \u2014 List I\u2014Union List \u2014 77",
+                    "short_text": "77. Constitution, organisation, jurisdiction and powers of the Supreme Court (including contempt of ...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0164",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__article_72__clause_1",
+                    "article_number": "72",
+                    "clause": "(1)",
+                    "heading": "Article 72(1)",
+                    "short_text": "The President shall have the power to grant pardons, reprieves, respites or remissions of punishment...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0161",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__article_374__clause_2",
+                    "article_number": "374",
+                    "clause": "(2)",
+                    "heading": "Article 374(2)",
+                    "short_text": "All suits, appeals and proceedings, civil or criminal, pending in the Federal Court at the commencem...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0159",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__article_169__clause_2",
+                    "article_number": "169",
+                    "clause": "(2)",
+                    "heading": "Article 169(2)",
+                    "short_text": "Any law referred to in clause (1) shall contain such provisions for the amendment of this Constituti...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0156",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__article_363a",
+                    "article_number": "363A",
+                    "clause": null,
+                    "heading": "Article 363A \u2014 Recognition granted to Rulers of Indian States to cease and privy purses to be abolished",
+                    "short_text": "Notwithstanding anything in this Constitution or in any law for the time being in force\u2014...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0154",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                }
+            ]
+        },
+        "What does Article 15 prohibit?": {
+            "dense": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__article_31a__clause_1",
+                    "article_number": "31A",
+                    "clause": "(1)",
+                    "heading": "Article 31A(1)",
+                    "short_text": "Notwithstanding anything contained in article 13, no law providing for\u2014...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8206",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__schedule_11__header__entry_15",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Eleventh Schedule \u2014 15",
+                    "short_text": "15. Non-conventional energy sources....",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8170",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__article_240__clause_1__subclause_e__subclause_e_proviso_1",
+                    "article_number": "240",
+                    "clause": "(1)",
+                    "heading": "Article 240 \u2014 Provided that (proviso 1)",
+                    "short_text": "when any body is created under article 239A to function as a Legislature for the Union territory of ...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8084",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__article_23__clause_1",
+                    "article_number": "23",
+                    "clause": "(1)",
+                    "heading": "Article 23(1)",
+                    "short_text": "Traffic in human beings and begar and other similar forms of forced labour are prohibited and any co...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8061",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__article_145__clause_4",
+                    "article_number": "145",
+                    "clause": "(4)",
+                    "heading": "Article 145(4)",
+                    "short_text": "No judgment shall be delivered by the Supreme Court save in open Court, and no report shall be made ...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8059",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                }
+            ],
+            "sparse": [],
+            "hybrid": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__article_31a__clause_1",
+                    "article_number": "31A",
+                    "clause": "(1)",
+                    "heading": "Article 31A(1)",
+                    "short_text": "Notwithstanding anything contained in article 13, no law providing for\u2014...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0164",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__schedule_11__header__entry_15",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Eleventh Schedule \u2014 15",
+                    "short_text": "15. Non-conventional energy sources....",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0161",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__article_240__clause_1__subclause_e__subclause_e_proviso_1",
+                    "article_number": "240",
+                    "clause": "(1)",
+                    "heading": "Article 240 \u2014 Provided that (proviso 1)",
+                    "short_text": "when any body is created under article 239A to function as a Legislature for the Union territory of ...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0159",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__article_23__clause_1",
+                    "article_number": "23",
+                    "clause": "(1)",
+                    "heading": "Article 23(1)",
+                    "short_text": "Traffic in human beings and begar and other similar forms of forced labour are prohibited and any co...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0156",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__article_145__clause_4",
+                    "article_number": "145",
+                    "clause": "(4)",
+                    "heading": "Article 145(4)",
+                    "short_text": "No judgment shall be delivered by the Supreme Court save in open Court, and no report shall be made ...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0154",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                }
+            ]
+        },
+        "Explain the protection of life and personal liberty.": {
+            "dense": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__article_25",
+                    "article_number": "25",
+                    "clause": null,
+                    "heading": "Article 25 \u2014 Freedom of conscience and free profession, practice and propagation of religion",
+                    "short_text": "[Freedom of conscience and free profession, practice and propagation of religion.] (Text constituted...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8766",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__article_25__clause_1",
+                    "article_number": "25",
+                    "clause": "(1)",
+                    "heading": "Article 25(1)",
+                    "short_text": "Subject to public order, morality and health and to the other provisions of this Part, all persons a...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8751",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__article_38__clause_1",
+                    "article_number": "38",
+                    "clause": "(1)",
+                    "heading": "Article 38(1)",
+                    "short_text": "] The State shall strive to promote the welfare of the people by securing and protecting as effectiv...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8738",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__article_19",
+                    "article_number": "19",
+                    "clause": null,
+                    "heading": "Article 19 \u2014 Protection of certain rights regarding freedom of speech, etc",
+                    "short_text": "[Protection of certain rights regarding freedom of speech, etc.] (Text constituted of the clauses, s...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8727",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__article_39__subclause_f",
+                    "article_number": "39",
+                    "clause": null,
+                    "heading": "Article 39(f)",
+                    "short_text": "that children are given opportunities and facilities to develop in a healthy manner and in condition...",
+                    "retrieval_method": "dense",
+                    "score_rank_info": "score: 0.8677",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                }
+            ],
+            "sparse": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__appendix_i__text_3297",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Appendix I \u2014 text",
+                    "short_text": "[See sections 2(a), 2(b) and 3] PA R T I The acquired territory in relation to Article 2 of the agre...",
+                    "retrieval_method": "sparse",
+                    "score_rank_info": "score: 2.0000",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__appendix_i__group_8_the_third_schedule_form_ii__table_row_1",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Appendix I \u2014 THE THIRD SCHEDULE / Form II \u2014 1",
+                    "short_text": "chhit without name & JL No. at the southern and of JL No. 38 & southern and of JL No. 39 (locally kn...",
+                    "retrieval_method": "sparse",
+                    "score_rank_info": "score: 2.0000",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__appendix_i__table_row_162",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Appendix I \u2014 annexed Schedule table row 162",
+                    "short_text": "30. | BansuaGitaldahaKhamar | Dinhata | Lalmonirhat | 1 | 24.54...",
+                    "retrieval_method": "sparse",
+                    "score_rank_info": "score: 1.0000",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__appendix_i__table_row_163",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Appendix I \u2014 annexed Schedule table row 163",
+                    "short_text": "31. | Poaturkuthi | Dinhata | Lalmonirhat | 37 | 589.94...",
+                    "retrieval_method": "sparse",
+                    "score_rank_info": "score: 1.0000",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                }
+            ],
+            "hybrid": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__article_25",
+                    "article_number": "25",
+                    "clause": null,
+                    "heading": "Article 25 \u2014 Freedom of conscience and free profession, practice and propagation of religion",
+                    "short_text": "[Freedom of conscience and free profession, practice and propagation of religion.] (Text constituted...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0164",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__appendix_i__text_3297",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Appendix I \u2014 text",
+                    "short_text": "[See sections 2(a), 2(b) and 3] PA R T I The acquired territory in relation to Article 2 of the agre...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0164",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__article_25__clause_1",
+                    "article_number": "25",
+                    "clause": "(1)",
+                    "heading": "Article 25(1)",
+                    "short_text": "Subject to public order, morality and health and to the other provisions of this Part, all persons a...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0161",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__appendix_i__group_8_the_third_schedule_form_ii__table_row_1",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Appendix I \u2014 THE THIRD SCHEDULE / Form II \u2014 1",
+                    "short_text": "chhit without name & JL No. at the southern and of JL No. 38 & southern and of JL No. 39 (locally kn...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0161",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__article_38__clause_1",
+                    "article_number": "38",
+                    "clause": "(1)",
+                    "heading": "Article 38(1)",
+                    "short_text": "] The State shall strive to promote the welfare of the people by securing and protecting as effectiv...",
+                    "retrieval_method": "hybrid",
+                    "score_rank_info": "rrf_score: 0.0159",
+                    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+                }
+            ]
+        }
+    },
+    "evaluation_summary": {
+        "dense": {
+            "top_1_relevant": 1,
+            "top_3_relevant": 2,
+            "top_5_relevant": 2,
+            "wrong_retrievals": 40,
+            "missing_retrievals": 8
+        },
+        "sparse": {
+            "top_1_relevant": 0,
+            "top_3_relevant": 0,
+            "top_5_relevant": 0,
+            "wrong_retrievals": 7,
+            "missing_retrievals": 10
+        },
+        "hybrid": {
+            "top_1_relevant": 1,
+            "top_3_relevant": 2,
+            "top_5_relevant": 2,
+            "wrong_retrievals": 40,
+            "missing_retrievals": 8
+        }
+    },
+    "conclusion": "Hybrid retrieval with RRF shows balanced performance."
+}

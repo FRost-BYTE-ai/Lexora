@@ -1,0 +1,130 @@
+{
+  "act": "Bharatiya Nyaya Sanhita, 2023",
+  "act_number": "45 of 2023",
+  "source_authority": "India Code",
+  "source_url": "https://www.indiacode.nic.in/indiacode/bitstream/123456789/20062/1/a2023-45.pdf",
+  "retrieval_url": "https://indiacode.gov.in/server/api/core/bitstreams/8007a80e-259b-429d-9ca4-1a2f474b5000/content",
+  "item_handle": "123456789/496548",
+  "source_note": "Original URL (www.indiacode.nic.in) now serves an official site-migration notice to indiacode.gov.in; the PDF was retrieved from the official migrated India Code repository (indiacode.gov.in, DSpace 9.1 REST API), same bitstream name a2023-45.pdf, item handle 123456789/496548. India Code item metadata: enact_date=2023-12-25, enforcement_date=1-7-2024, repealed=false.",
+  "cross_verification_sources": [
+    "data/legal/raw/india_bns_a2023-45.txt",
+    "uploads/BNS2023.pdf (india_code_export)"
+  ],
+  "act_id": "AC_CEN_5_23_00048_2023-45_1719292564123",
+  "enactment_date": "2023-12-25",
+  "enforcement_date": "2024-07-01",
+  "long_title": "An Act to consolidate and amend the provisions relating to offences and for matters connected therewith or incidental thereto.",
+  "chapter_count": 20,
+  "section_count": 358,
+  "subsection_count": 309,
+  "clause_count": 277,
+  "subclause_count": 45,
+  "proviso_count": 28,
+  "explanation_count": 117,
+  "illustration_count": 274,
+  "schedule_count": 0,
+  "arrangement_entry_count": 358,
+  "division_heading_count": 27,
+  "footnote_count": 1,
+  "form_count": 0,
+  "schedule_row_count": 0,
+  "schedule_page_raw_count": 0,
+  "record_count": 1847,
+  "expected_sections": 358,
+  "extracted_sections": 358,
+  "missing_sections": [],
+  "duplicate_sections": [],
+  "unexpected_sections": [],
+  "structural_errors": [],
+  "unresolved_extraction_errors": [],
+  "warnings": [],
+  "empty_text_records": [],
+  "duplicate_record_ids": [],
+  "duplicate_content_classification": [
+    {
+      "text_sha256": "d0a96523e20bf953271910013e7f32c1d625ef89ba38cf3b8d381aaf7a9697d5",
+      "count": 2,
+      "classification": "LEGITIMATE_REPETITION"
+    },
+    {
+      "text_sha256": "7b227ef1ff1ef47759128a9d657f81742b37242f8baf7428128e68b7445e766b",
+      "count": 2,
+      "classification": "LEGITIMATE_REPETITION"
+    },
+    {
+      "text_sha256": "a9b890de78ca7b5571f274134371ad9f28607ec1cce90166e93d58380fe93ad7",
+      "count": 2,
+      "classification": "LEGITIMATE_REPETITION"
+    },
+    {
+      "text_sha256": "962c74bc3bb15b10692e5d56a71687192cfcaee341273528d74837d350ff4943",
+      "count": 2,
+      "classification": "LEGITIMATE_REPETITION"
+    },
+    {
+      "text_sha256": "256668ca9e2346b16443e0ba69ad5b51ec4a419c8dfdfeca18ba689c2f26e86f",
+      "count": 4,
+      "classification": "LEGITIMATE_REPETITION"
+    },
+    {
+      "text_sha256": "75862c290c6846fe316bb1d2cde984de4ac06b86a01b79fa720c1e7989825707",
+      "count": 5,
+      "classification": "LEGITIMATE_REPETITION"
+    },
+    {
+      "text_sha256": "5be4a2518ecee039bfa3dff81851e30feb20d87e0f02313b14568c90c6b82057",
+      "count": 2,
+      "classification": "LEGITIMATE_REPETITION"
+    },
+    {
+      "text_sha256": "daf49033fb2a412a632c00e5bff7fa475a4ae4c556c2a21c155397f50b24ca42",
+      "count": 5,
+      "classification": "LEGITIMATE_REPETITION"
+    },
+    {
+      "text_sha256": "cfa95fb73da47d51753415abb1fb1131d01095e1d899c2a4c5fc3cb82a08ce87",
+      "count": 3,
+      "classification": "LEGITIMATE_REPETITION"
+    },
+    {
+      "text_sha256": "33ed74e58859869104b6f29a0cde47eb753afa2140cfddc0bf6fa34a1172ef9b",
+      "count": 2,
+      "classification": "LEGITIMATE_REPETITION"
+    },
+    {
+      "text_sha256": "b5291f699b7b33a8e3d5c7673099f128903828fa08cdadaa22818777e27a38f9",
+      "count": 2,
+      "classification": "LEGITIMATE_REPETITION"
+    }
+  ],
+  "document_sha256": "d4449e9995b21fd52627811d08f9d21feda6a3678b7e5355b651242d152167f5",
+  "dataset_bytes": 5069184,
+  "rag_dataset_bytes": 1555490,
+  "extraction_timestamp": "2026-09-27T20:18:06+00:00",
+  "completeness_gate": {
+    "official_source_downloaded": true,
+    "full_act_extracted": true,
+    "arrangement_of_sections_extracted": true,
+    "every_expected_section_present": true,
+    "no_unexpected_section_loss": true,
+    "no_duplicate_section_ids": true,
+    "chapter_mapping_validated": true,
+    "section_headings_validated": true,
+    "subsections_preserved": true,
+    "clauses_preserved": true,
+    "subclauses_preserved": true,
+    "provisos_preserved": true,
+    "explanations_preserved": true,
+    "illustrations_preserved": true,
+    "schedules_preserved": true,
+    "legally_meaningful_footnotes_preserved": true,
+    "page_references_preserved": true,
+    "source_hashes_generated": true,
+    "source_urls_preserved": true,
+    "no_unresolved_critical_extraction_errors": true,
+    "random_source_comparison_passed": true,
+    "retrieval_tests_passed": true,
+    "parent_child_hierarchy_intact": true
+  },
+  "completeness_status": "PASS"
+}

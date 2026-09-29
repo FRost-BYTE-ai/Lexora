@@ -1,0 +1,5555 @@
+{
+  "act": "Bharatiya Nyaya Sanhita, 2023",
+  "act_short": "BNS",
+  "act_number": "45 of 2023",
+  "source_authority": "India Code",
+  "source_url": "https://www.indiacode.nic.in/indiacode/bitstream/123456789/20062/1/a2023-45.pdf",
+  "extraction_timestamp": "2026-09-27T20:18:06+00:00",
+  "arrangement_of_sections": [
+    {
+      "number": "1",
+      "heading": "Short title, commencement and application.",
+      "chapter_number": "I",
+      "chapter_title": "PRELIMINARY",
+      "page_start": 3,
+      "page_end": 3
+    },
+    {
+      "number": "2",
+      "heading": "Definitions.",
+      "chapter_number": "I",
+      "chapter_title": "PRELIMINARY",
+      "page_start": 3,
+      "page_end": 3
+    },
+    {
+      "number": "3",
+      "heading": "General explanations.",
+      "chapter_number": "I",
+      "chapter_title": "PRELIMINARY",
+      "page_start": 3,
+      "page_end": 3
+    },
+    {
+      "number": "4",
+      "heading": "Punishments.",
+      "chapter_number": "II",
+      "chapter_title": "OF PUNISHMENTS",
+      "page_start": 3,
+      "page_end": 3
+    },
+    {
+      "number": "5",
+      "heading": "Commutation of sentence.",
+      "chapter_number": "II",
+      "chapter_title": "OF PUNISHMENTS",
+      "page_start": 3,
+      "page_end": 3
+    },
+    {
+      "number": "6",
+      "heading": "Fractions of terms of punishment.",
+      "chapter_number": "II",
+      "chapter_title": "OF PUNISHMENTS",
+      "page_start": 3,
+      "page_end": 3
+    },
+    {
+      "number": "7",
+      "heading": "Sentence may be (in certain cases of imprisonment) wholly or partly rigorous or simple.",
+      "chapter_number": "II",
+      "chapter_title": "OF PUNISHMENTS",
+      "page_start": 3,
+      "page_end": 3
+    },
+    {
+      "number": "8",
+      "heading": "Amount of fine, liability in default of payment of fine, etc.",
+      "chapter_number": "II",
+      "chapter_title": "OF PUNISHMENTS",
+      "page_start": 3,
+      "page_end": 3
+    },
+    {
+      "number": "9",
+      "heading": "Limit of punishment of offence made up of several offences.",
+      "chapter_number": "II",
+      "chapter_title": "OF PUNISHMENTS",
+      "page_start": 3,
+      "page_end": 3
+    },
+    {
+      "number": "10",
+      "heading": "Punishment of person guilty of one of several offences, judgment stating that it is doubtful of which.",
+      "chapter_number": "II",
+      "chapter_title": "OF PUNISHMENTS",
+      "page_start": 3,
+      "page_end": 3
+    },
+    {
+      "number": "11",
+      "heading": "Solitary confinement.",
+      "chapter_number": "II",
+      "chapter_title": "OF PUNISHMENTS",
+      "page_start": 3,
+      "page_end": 3
+    },
+    {
+      "number": "12",
+      "heading": "Limit of solitary confinement.",
+      "chapter_number": "II",
+      "chapter_title": "OF PUNISHMENTS",
+      "page_start": 3,
+      "page_end": 3
+    },
+    {
+      "number": "13",
+      "heading": "Enhanced punishment for certain offences after previous conviction.",
+      "chapter_number": "II",
+      "chapter_title": "OF PUNISHMENTS",
+      "page_start": 3,
+      "page_end": 3
+    },
+    {
+      "number": "14",
+      "heading": "Act done by a person bound, or by mistake of fact believing himself bound, by law.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 3,
+      "page_end": 3
+    },
+    {
+      "number": "15",
+      "heading": "Act of Judge when acting judicially.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 3,
+      "page_end": 3
+    },
+    {
+      "number": "16",
+      "heading": "Act done pursuant to judgment or order of Court.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 3,
+      "page_end": 3
+    },
+    {
+      "number": "17",
+      "heading": "Act done by a person justified, or by mistake of fact believing himself justified, by law.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 3,
+      "page_end": 3
+    },
+    {
+      "number": "18",
+      "heading": "Accident in doing a lawful act.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 3,
+      "page_end": 3
+    },
+    {
+      "number": "19",
+      "heading": "Act likely to cause harm, but done without criminal intent, and to prevent other harm.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 3,
+      "page_end": 3
+    },
+    {
+      "number": "20",
+      "heading": "Act of a child under seven years of age.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 3,
+      "page_end": 3
+    },
+    {
+      "number": "21",
+      "heading": "Act of a child above seven and under twelve years of age of immature understanding.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 3,
+      "page_end": 3
+    },
+    {
+      "number": "22",
+      "heading": "Act of a person of unsound mind.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 3,
+      "page_end": 3
+    },
+    {
+      "number": "23",
+      "heading": "Act of a person incapable of judgment by reason of intoxication caused against his will.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 3,
+      "page_end": 3
+    },
+    {
+      "number": "24",
+      "heading": "Offence requiring a particular intent or knowledge committed by one who is intoxicated.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 3,
+      "page_end": 3
+    },
+    {
+      "number": "25",
+      "heading": "Act not intended and not known to be likely to cause death or grievous hurt, done by consent.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "26",
+      "heading": "Act not intended to cause death, done by consent in good faith for person's benefit.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "27",
+      "heading": "Act done in good faith for benefit of child or person of unsound mind, by, or by consent of guardian.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "28",
+      "heading": "Consent known to be given under fear or misconception.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "29",
+      "heading": "Exclusion of acts which are offences independently of harm caused.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "30",
+      "heading": "Act done in good faith for benefit of a person without consent.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "31",
+      "heading": "Communication made in good faith.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "32",
+      "heading": "Act to which a person is compelled by threats.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "33",
+      "heading": "Act causing slight harm.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "34",
+      "heading": "Things done in private defence.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "35",
+      "heading": "Right of private defence of body and of property.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "36",
+      "heading": "Right of private defence against act of a person of unsound mind, etc.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "37",
+      "heading": "Acts against which there is no right of private defence.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "38",
+      "heading": "When right of private defence of body extends to causing death.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "39",
+      "heading": "When such right extends to causing any harm other than death.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "40",
+      "heading": "Commencement and continuance of right of private defence of body.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "41",
+      "heading": "When right of private defence of property extends to causing death.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "42",
+      "heading": "When such right extends to causing any harm other than death.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "43",
+      "heading": "Commencement and continuance of right of private defence of property.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "44",
+      "heading": "Right of private defence against deadly assault when there is risk of harm to innocent person.",
+      "chapter_number": "III",
+      "chapter_title": "GENERAL EXCEPTIONS",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "45",
+      "heading": "Abetment of a thing.",
+      "chapter_number": "IV",
+      "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "46",
+      "heading": "Abettor.",
+      "chapter_number": "IV",
+      "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "47",
+      "heading": "Abetment in India of offences outside India.",
+      "chapter_number": "IV",
+      "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "48",
+      "heading": "Abetment outside India for offence in India.",
+      "chapter_number": "IV",
+      "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "49",
+      "heading": "Punishment of abetment if act abetted is committed in consequence and where no express provision is made for its punishment.",
+      "chapter_number": "IV",
+      "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "50",
+      "heading": "Punishment of abetment if person abetted does act with different intention from that of abettor.",
+      "chapter_number": "IV",
+      "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "51",
+      "heading": "Liability of abettor when one act abetted and different act done.",
+      "chapter_number": "IV",
+      "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "52",
+      "heading": "Abettor when liable to cumulative punishment for act abetted and for act done.",
+      "chapter_number": "IV",
+      "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "53",
+      "heading": "Liability of abettor for an effect caused by act abetted different from that intended by abettor.",
+      "chapter_number": "IV",
+      "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "54",
+      "heading": "Abettor present when offence is committed.",
+      "chapter_number": "IV",
+      "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+      "page_start": 4,
+      "page_end": 4
+    },
+    {
+      "number": "55",
+      "heading": "Abetment of offence punishable with death or imprisonment for life.",
+      "chapter_number": "IV",
+      "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+      "page_start": 5,
+      "page_end": 5
+    },
+    {
+      "number": "56",
+      "heading": "Abetment of offence punishable with imprisonment.",
+      "chapter_number": "IV",
+      "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+      "page_start": 5,
+      "page_end": 5
+    },
+    {
+      "number": "57",
+      "heading": "Abetting commission of offence by public or by more than ten persons.",
+      "chapter_number": "IV",
+      "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+      "page_start": 5,
+      "page_end": 5
+    },
+    {
+      "number": "58",
+      "heading": "Concealing design to commit offence punishable with death or imprisonment for life.",
+      "chapter_number": "IV",
+      "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+      "page_start": 5,
+      "page_end": 5
+    },
+    {
+      "number": "59",
+      "heading": "Public servant concealing design to commit offence which it is his duty to prevent.",
+      "chapter_number": "IV",
+      "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+      "page_start": 5,
+      "page_end": 5
+    },
+    {
+      "number": "60",
+      "heading": "Concealing design to commit offence punishable with imprisonment.",
+      "chapter_number": "IV",
+      "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+      "page_start": 5,
+      "page_end": 5
+    },
+    {
+      "number": "61",
+      "heading": "Criminal conspiracy.",
+      "chapter_number": "IV",
+      "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+      "page_start": 5,
+      "page_end": 5
+    },
+    {
+      "number": "62",
+      "heading": "Punishment for attempting to commit offences punishable with imprisonment for life or other imprisonment.",
+      "chapter_number": "IV",
+      "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+      "page_start": 5,
+      "page_end": 5
+    },
+    {
+      "number": "63",
+      "heading": "Rape.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 5,
+      "page_end": 5
+    },
+    {
+      "number": "64",
+      "heading": "Punishment for rape.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 5,
+      "page_end": 5
+    },
+    {
+      "number": "65",
+      "heading": "Punishment for rape in certain cases.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 5,
+      "page_end": 5
+    },
+    {
+      "number": "66",
+      "heading": "Punishment for causing death or resulting in persistent vegetative state of victim.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 5,
+      "page_end": 5
+    },
+    {
+      "number": "67",
+      "heading": "Sexual intercourse by husband upon his wife during separation.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 5,
+      "page_end": 5
+    },
+    {
+      "number": "68",
+      "heading": "Sexual intercourse by a person in authority.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 5,
+      "page_end": 5
+    },
+    {
+      "number": "69",
+      "heading": "Sexual intercourse by employing deceitful means, etc.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 5,
+      "page_end": 5
+    },
+    {
+      "number": "70",
+      "heading": "Gang rape.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 5,
+      "page_end": 5
+    },
+    {
+      "number": "71",
+      "heading": "Punishment for repeat offenders.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 5,
+      "page_end": 5
+    },
+    {
+      "number": "72",
+      "heading": "Disclosure of identity of victim of certain offences, etc.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 5,
+      "page_end": 5
+    },
+    {
+      "number": "73",
+      "heading": "Printing or publishing any matter relating to Court proceedings without permission.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 5,
+      "page_end": 5
+    },
+    {
+      "number": "74",
+      "heading": "Assault or use of criminal force to woman with intent to outrage her modesty.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 5,
+      "page_end": 5
+    },
+    {
+      "number": "75",
+      "heading": "Sexual harassment.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 5,
+      "page_end": 5
+    },
+    {
+      "number": "76",
+      "heading": "Assault or use of criminal force to woman with intent to disrobe.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 5,
+      "page_end": 5
+    },
+    {
+      "number": "77",
+      "heading": "Voyeurism.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 5,
+      "page_end": 5
+    },
+    {
+      "number": "78",
+      "heading": "Stalking.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 5,
+      "page_end": 5
+    },
+    {
+      "number": "79",
+      "heading": "Word, gesture or act intended to insult modesty of a woman.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 5,
+      "page_end": 5
+    },
+    {
+      "number": "80",
+      "heading": "Dowry death.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 5,
+      "page_end": 5
+    },
+    {
+      "number": "81",
+      "heading": "Cohabitation caused by man deceitfully inducing belief of lawful marriage.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "82",
+      "heading": "Marrying again during lifetime of husband or wife.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "83",
+      "heading": "Marriage ceremony fraudulently gone through without lawful marriage.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "84",
+      "heading": "Enticing or taking away or detaining with criminal intent a married woman.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "85",
+      "heading": "Husband or relative of husband of a woman subjecting her to cruelty.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "86",
+      "heading": "Cruelty defined.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "87",
+      "heading": "Kidnapping, abducting or inducing woman to compel her marriage, etc.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "88",
+      "heading": "Causing miscarriage.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "89",
+      "heading": "Causing miscarriage without woman's consent.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "90",
+      "heading": "Death caused by act done with intent to cause miscarriage.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "91",
+      "heading": "Act done with intent to prevent child being born alive or to cause to die after birth.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "92",
+      "heading": "Causing death of quick unborn child by act amounting to culpable homicide.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "93",
+      "heading": "Exposure and abandonment of child under twelve years of age, by parent or person having care of it.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "94",
+      "heading": "Concealment of birth by secret disposal of dead body.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "95",
+      "heading": "Hiring, employing or engaging a child to commit an offence.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "96",
+      "heading": "Procuration of child.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "97",
+      "heading": "Kidnapping or abducting child under ten years of age with intent to steal from its person.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "98",
+      "heading": "Selling child for purposes of prostitution, etc.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "99",
+      "heading": "Buying child for purposes of prostitution, etc.",
+      "chapter_number": "V",
+      "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "100",
+      "heading": "Culpable homicide.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "101",
+      "heading": "Murder.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "102",
+      "heading": "Culpable homicide by causing death of person other than person whose death was intended.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "103",
+      "heading": "Punishment for murder.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "104",
+      "heading": "Punishment for murder by life-convict.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "105",
+      "heading": "Punishment for culpable homicide not amounting to murder.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "106",
+      "heading": "Causing death by negligence.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "107",
+      "heading": "Abetment of suicide of child or person of unsound mind.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "108",
+      "heading": "Abetment of suicide.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "109",
+      "heading": "Attempt to murder.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "110",
+      "heading": "Attempt to commit culpable homicide.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 6,
+      "page_end": 6
+    },
+    {
+      "number": "111",
+      "heading": "Organised crime.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "112",
+      "heading": "Petty organised crime.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "113",
+      "heading": "Terrorist act.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "114",
+      "heading": "Hurt.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "115",
+      "heading": "Voluntarily causing hurt.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "116",
+      "heading": "Grievous hurt.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "117",
+      "heading": "Voluntarily causing grievous hurt.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "118",
+      "heading": "Voluntarily causing hurt or grievous hurt by dangerous weapons or means.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "119",
+      "heading": "Voluntarily causing hurt or grievous hurt to extort property, or to constrain to an illegal act.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "120",
+      "heading": "Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of property.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "121",
+      "heading": "Voluntarily causing hurt or grievous hurt to deter public servant from his duty.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "122",
+      "heading": "Voluntarily causing hurt or grievous hurt on provocation.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "123",
+      "heading": "Causing hurt by means of poison, etc., with intent to commit an offence.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "124",
+      "heading": "Voluntarily causing grievous hurt by use of acid, etc.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "125",
+      "heading": "Act endangering life or personal safety of others.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "126",
+      "heading": "Wrongful restraint.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "127",
+      "heading": "Wrongful confinement.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "128",
+      "heading": "Force.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "129",
+      "heading": "Criminal force.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "130",
+      "heading": "Assault.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "131",
+      "heading": "Punishment for assault or criminal force otherwise than on grave provocation.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "132",
+      "heading": "Assault or criminal force to deter public servant from discharge of his duty.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "133",
+      "heading": "Assault or criminal force with intent to dishonour person, otherwise than on grave provocation.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "134",
+      "heading": "Assault or criminal force in attempt to commit theft of property carried by a person.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "135",
+      "heading": "Assault or criminal force in attempt to wrongfully confine a person.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "136",
+      "heading": "Assault or criminal force on grave provocation.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "137",
+      "heading": "Kidnapping.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "138",
+      "heading": "Abduction.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "139",
+      "heading": "Kidnapping or maiming a child for purposes of begging.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "140",
+      "heading": "Kidnapping or abducting in order to murder or for ransom, etc.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "141",
+      "heading": "Importation of girl or boy from foreign country.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 7,
+      "page_end": 7
+    },
+    {
+      "number": "142",
+      "heading": "Wrongfully concealing or keeping in confinement, kidnapped or abducted person.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 8,
+      "page_end": 8
+    },
+    {
+      "number": "143",
+      "heading": "Trafficking of person.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 8,
+      "page_end": 8
+    },
+    {
+      "number": "144",
+      "heading": "Exploitation of a trafficked person.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 8,
+      "page_end": 8
+    },
+    {
+      "number": "145",
+      "heading": "Habitual dealing in slaves.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 8,
+      "page_end": 8
+    },
+    {
+      "number": "146",
+      "heading": "Unlawful compulsory labour.",
+      "chapter_number": "VI",
+      "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+      "page_start": 8,
+      "page_end": 8
+    },
+    {
+      "number": "147",
+      "heading": "Waging, or attempting to wage war, or abetting waging of war, against Government of India.",
+      "chapter_number": "VII",
+      "chapter_title": "OF OFFENCES AGAINST THE STATE",
+      "page_start": 8,
+      "page_end": 8
+    },
+    {
+      "number": "148",
+      "heading": "Conspiracy to commit offences punishable by section 147.",
+      "chapter_number": "VII",
+      "chapter_title": "OF OFFENCES AGAINST THE STATE",
+      "page_start": 8,
+      "page_end": 8
+    },
+    {
+      "number": "149",
+      "heading": "Collecting arms, etc., with intention of waging war against Government of India.",
+      "chapter_number": "VII",
+      "chapter_title": "OF OFFENCES AGAINST THE STATE",
+      "page_start": 8,
+      "page_end": 8
+    },
+    {
+      "number": "150",
+      "heading": "Concealing with intent to facilitate design to wage war.",
+      "chapter_number": "VII",
+      "chapter_title": "OF OFFENCES AGAINST THE STATE",
+      "page_start": 8,
+      "page_end": 8
+    },
+    {
+      "number": "151",
+      "heading": "Assaulting President, Governor, etc., with intent to compel or restrain exercise of any lawful power.",
+      "chapter_number": "VII",
+      "chapter_title": "OF OFFENCES AGAINST THE STATE",
+      "page_start": 8,
+      "page_end": 8
+    },
+    {
+      "number": "152",
+      "heading": "Act endangering sovereignty, unity and integrity of India.",
+      "chapter_number": "VII",
+      "chapter_title": "OF OFFENCES AGAINST THE STATE",
+      "page_start": 8,
+      "page_end": 8
+    },
+    {
+      "number": "153",
+      "heading": "Waging war against Government of any foreign State at peace with Government of India.",
+      "chapter_number": "VII",
+      "chapter_title": "OF OFFENCES AGAINST THE STATE",
+      "page_start": 8,
+      "page_end": 8
+    },
+    {
+      "number": "154",
+      "heading": "Committing depredation on territories of foreign State at peace with Government of India.",
+      "chapter_number": "VII",
+      "chapter_title": "OF OFFENCES AGAINST THE STATE",
+      "page_start": 8,
+      "page_end": 8
+    },
+    {
+      "number": "155",
+      "heading": "Receiving property taken by war or depredation mentioned in sections 153 and 154.",
+      "chapter_number": "VII",
+      "chapter_title": "OF OFFENCES AGAINST THE STATE",
+      "page_start": 8,
+      "page_end": 8
+    },
+    {
+      "number": "156",
+      "heading": "Public servant voluntarily allowing prisoner of State or war to escape.",
+      "chapter_number": "VII",
+      "chapter_title": "OF OFFENCES AGAINST THE STATE",
+      "page_start": 8,
+      "page_end": 8
+    },
+    {
+      "number": "157",
+      "heading": "Public servant negligently suffering such prisoner to escape.",
+      "chapter_number": "VII",
+      "chapter_title": "OF OFFENCES AGAINST THE STATE",
+      "page_start": 8,
+      "page_end": 8
+    },
+    {
+      "number": "158",
+      "heading": "Aiding escape of, rescuing or harbouring such prisoner.",
+      "chapter_number": "VII",
+      "chapter_title": "OF OFFENCES AGAINST THE STATE",
+      "page_start": 8,
+      "page_end": 8
+    },
+    {
+      "number": "159",
+      "heading": "Abetting mutiny, or attempting to seduce a soldier, sailor or airman from his duty.",
+      "chapter_number": "VIII",
+      "chapter_title": "OF OFFENCES RELATING TO THE ARMY, NAVY AND AIR FORCE",
+      "page_start": 8,
+      "page_end": 8
+    },
+    {
+      "number": "160",
+      "heading": "Abetment of mutiny, if mutiny is committed in consequence thereof.",
+      "chapter_number": "VIII",
+      "chapter_title": "OF OFFENCES RELATING TO THE ARMY, NAVY AND AIR FORCE",
+      "page_start": 8,
+      "page_end": 8
+    },
+    {
+      "number": "161",
+      "heading": "Abetment of assault by soldier, sailor or airman on his superior officer, when in execution of his office.",
+      "chapter_number": "VIII",
+      "chapter_title": "OF OFFENCES RELATING TO THE ARMY, NAVY AND AIR FORCE",
+      "page_start": 8,
+      "page_end": 8
+    },
+    {
+      "number": "162",
+      "heading": "Abetment of such assault, if assault committed.",
+      "chapter_number": "VIII",
+      "chapter_title": "OF OFFENCES RELATING TO THE ARMY, NAVY AND AIR FORCE",
+      "page_start": 8,
+      "page_end": 8
+    },
+    {
+      "number": "163",
+      "heading": "Abetment of desertion of soldier, sailor or airman.",
+      "chapter_number": "VIII",
+      "chapter_title": "OF OFFENCES RELATING TO THE ARMY, NAVY AND AIR FORCE",
+      "page_start": 8,
+      "page_end": 8
+    },
+    {
+      "number": "164",
+      "heading": "Harbouring deserter.",
+      "chapter_number": "VIII",
+      "chapter_title": "OF OFFENCES RELATING TO THE ARMY, NAVY AND AIR FORCE",
+      "page_start": 8,
+      "page_end": 8
+    },
+    {
+      "number": "165",
+      "heading": "Deserter concealed on board merchant vessel through negligence of master.",
+      "chapter_number": "VIII",
+      "chapter_title": "OF OFFENCES RELATING TO THE ARMY, NAVY AND AIR FORCE",
+      "page_start": 8,
+      "page_end": 8
+    },
+    {
+      "number": "166",
+      "heading": "Abetment of act of insubordination by soldier, sailor or airman.",
+      "chapter_number": "VIII",
+      "chapter_title": "OF OFFENCES RELATING TO THE ARMY, NAVY AND AIR FORCE",
+      "page_start": 8,
+      "page_end": 8
+    },
+    {
+      "number": "167",
+      "heading": "Persons subject to certain Acts.",
+      "chapter_number": "VIII",
+      "chapter_title": "OF OFFENCES RELATING TO THE ARMY, NAVY AND AIR FORCE",
+      "page_start": 8,
+      "page_end": 8
+    },
+    {
+      "number": "168",
+      "heading": "Wearing garb or carrying token used by soldier, sailor or airman.",
+      "chapter_number": "VIII",
+      "chapter_title": "OF OFFENCES RELATING TO THE ARMY, NAVY AND AIR FORCE",
+      "page_start": 8,
+      "page_end": 8
+    },
+    {
+      "number": "169",
+      "heading": "Candidate, electoral right defined.",
+      "chapter_number": "IX",
+      "chapter_title": "OF OFFENCES RELATING TO ELECTIONS",
+      "page_start": 8,
+      "page_end": 8
+    },
+    {
+      "number": "170",
+      "heading": "Bribery.",
+      "chapter_number": "IX",
+      "chapter_title": "OF OFFENCES RELATING TO ELECTIONS",
+      "page_start": 9,
+      "page_end": 9
+    },
+    {
+      "number": "171",
+      "heading": "Undue influence at elections.",
+      "chapter_number": "IX",
+      "chapter_title": "OF OFFENCES RELATING TO ELECTIONS",
+      "page_start": 9,
+      "page_end": 9
+    },
+    {
+      "number": "172",
+      "heading": "Personation at elections.",
+      "chapter_number": "IX",
+      "chapter_title": "OF OFFENCES RELATING TO ELECTIONS",
+      "page_start": 9,
+      "page_end": 9
+    },
+    {
+      "number": "173",
+      "heading": "Punishment for bribery.",
+      "chapter_number": "IX",
+      "chapter_title": "OF OFFENCES RELATING TO ELECTIONS",
+      "page_start": 9,
+      "page_end": 9
+    },
+    {
+      "number": "174",
+      "heading": "Punishment for undue influence or personation at an election.",
+      "chapter_number": "IX",
+      "chapter_title": "OF OFFENCES RELATING TO ELECTIONS",
+      "page_start": 9,
+      "page_end": 9
+    },
+    {
+      "number": "175",
+      "heading": "False statement in connection with an election.",
+      "chapter_number": "IX",
+      "chapter_title": "OF OFFENCES RELATING TO ELECTIONS",
+      "page_start": 9,
+      "page_end": 9
+    },
+    {
+      "number": "176",
+      "heading": "Illegal payments in connection with an election.",
+      "chapter_number": "IX",
+      "chapter_title": "OF OFFENCES RELATING TO ELECTIONS",
+      "page_start": 9,
+      "page_end": 9
+    },
+    {
+      "number": "177",
+      "heading": "Failure to keep election accounts.",
+      "chapter_number": "IX",
+      "chapter_title": "OF OFFENCES RELATING TO ELECTIONS",
+      "page_start": 9,
+      "page_end": 9
+    },
+    {
+      "number": "178",
+      "heading": "Counterfeiting coin, Government stamps, currency-notes or bank-notes.",
+      "chapter_number": "X",
+      "chapter_title": "OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS",
+      "page_start": 9,
+      "page_end": 9
+    },
+    {
+      "number": "179",
+      "heading": "Using as genuine, forged or counterfeit coin, Government stamp, currency-notes or bank-notes.",
+      "chapter_number": "X",
+      "chapter_title": "OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS",
+      "page_start": 9,
+      "page_end": 9
+    },
+    {
+      "number": "180",
+      "heading": "Possession of forged or counterfeit coin, Government stamp, currency-notes or bank-notes.",
+      "chapter_number": "X",
+      "chapter_title": "OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS",
+      "page_start": 9,
+      "page_end": 9
+    },
+    {
+      "number": "181",
+      "heading": "Making or possessing instruments or materials for forging or counterfeiting coin, Government stamp, currency-notes or bank-notes.",
+      "chapter_number": "X",
+      "chapter_title": "OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS",
+      "page_start": 9,
+      "page_end": 9
+    },
+    {
+      "number": "182",
+      "heading": "Making or using documents resembling currency-notes or bank-notes.",
+      "chapter_number": "X",
+      "chapter_title": "OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS",
+      "page_start": 9,
+      "page_end": 9
+    },
+    {
+      "number": "183",
+      "heading": "Effacing writing from substance bearing Government stamp, or removing from document a stamp used for it, with intent to cause loss to Government.",
+      "chapter_number": "X",
+      "chapter_title": "OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS",
+      "page_start": 9,
+      "page_end": 9
+    },
+    {
+      "number": "184",
+      "heading": "Using Government stamp known to have been before used.",
+      "chapter_number": "X",
+      "chapter_title": "OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS",
+      "page_start": 9,
+      "page_end": 9
+    },
+    {
+      "number": "185",
+      "heading": "Erasure of mark denoting that stamp has been used.",
+      "chapter_number": "X",
+      "chapter_title": "OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS",
+      "page_start": 9,
+      "page_end": 9
+    },
+    {
+      "number": "186",
+      "heading": "Prohibition of fictitious stamps.",
+      "chapter_number": "X",
+      "chapter_title": "OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS",
+      "page_start": 9,
+      "page_end": 9
+    },
+    {
+      "number": "187",
+      "heading": "Person employed in mint causing coin to be of different weight or composition from that fixed by law.",
+      "chapter_number": "X",
+      "chapter_title": "OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS",
+      "page_start": 9,
+      "page_end": 9
+    },
+    {
+      "number": "188",
+      "heading": "Unlawfully taking coining instrument from mint.",
+      "chapter_number": "X",
+      "chapter_title": "OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS",
+      "page_start": 9,
+      "page_end": 9
+    },
+    {
+      "number": "189",
+      "heading": "Unlawful assembly.",
+      "chapter_number": "XI",
+      "chapter_title": "OF OFFENCES AGAINST THE PUBLIC TRANQUILLITY",
+      "page_start": 9,
+      "page_end": 9
+    },
+    {
+      "number": "190",
+      "heading": "Every member of unlawful assembly guilty of offence committed in prosecution of common object.",
+      "chapter_number": "XI",
+      "chapter_title": "OF OFFENCES AGAINST THE PUBLIC TRANQUILLITY",
+      "page_start": 9,
+      "page_end": 9
+    },
+    {
+      "number": "191",
+      "heading": "Rioting.",
+      "chapter_number": "XI",
+      "chapter_title": "OF OFFENCES AGAINST THE PUBLIC TRANQUILLITY",
+      "page_start": 9,
+      "page_end": 9
+    },
+    {
+      "number": "192",
+      "heading": "Wantonly giving provocation with intent to cause riot-if rioting be committed; if not committed.",
+      "chapter_number": "XI",
+      "chapter_title": "OF OFFENCES AGAINST THE PUBLIC TRANQUILLITY",
+      "page_start": 9,
+      "page_end": 9
+    },
+    {
+      "number": "193",
+      "heading": "Liability of owner, occupier, etc., of land on which an unlawful assembly or riot takes place.",
+      "chapter_number": "XI",
+      "chapter_title": "OF OFFENCES AGAINST THE PUBLIC TRANQUILLITY",
+      "page_start": 9,
+      "page_end": 9
+    },
+    {
+      "number": "194",
+      "heading": "Affray.",
+      "chapter_number": "XI",
+      "chapter_title": "OF OFFENCES AGAINST THE PUBLIC TRANQUILLITY",
+      "page_start": 9,
+      "page_end": 9
+    },
+    {
+      "number": "195",
+      "heading": "Assaulting or obstructing public servant when suppressing riot, etc.",
+      "chapter_number": "XI",
+      "chapter_title": "OF OFFENCES AGAINST THE PUBLIC TRANQUILLITY",
+      "page_start": 9,
+      "page_end": 9
+    },
+    {
+      "number": "196",
+      "heading": "Promoting enmity between different groups on grounds of religion, race, place of birth, residence, language, etc., and doing acts prejudicial to maintenance of harmony.",
+      "chapter_number": "XI",
+      "chapter_title": "OF OFFENCES AGAINST THE PUBLIC TRANQUILLITY",
+      "page_start": 9,
+      "page_end": 9
+    },
+    {
+      "number": "197",
+      "heading": "Imputations, assertions prejudicial to national integration.",
+      "chapter_number": "XI",
+      "chapter_title": "OF OFFENCES AGAINST THE PUBLIC TRANQUILLITY",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "198",
+      "heading": "Public servant disobeying law, with intent to cause injury to any person.",
+      "chapter_number": "XII",
+      "chapter_title": "OF OFFENCES BY OR RELATING TO PUBLIC SERVANTS",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "199",
+      "heading": "Public servant disobeying direction under law.",
+      "chapter_number": "XII",
+      "chapter_title": "OF OFFENCES BY OR RELATING TO PUBLIC SERVANTS",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "200",
+      "heading": "Punishment for non-treatment of victim.",
+      "chapter_number": "XII",
+      "chapter_title": "OF OFFENCES BY OR RELATING TO PUBLIC SERVANTS",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "201",
+      "heading": "Public servant framing an incorrect document with intent to cause injury.",
+      "chapter_number": "XII",
+      "chapter_title": "OF OFFENCES BY OR RELATING TO PUBLIC SERVANTS",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "202",
+      "heading": "Public servant unlawfully engaging in trade.",
+      "chapter_number": "XII",
+      "chapter_title": "OF OFFENCES BY OR RELATING TO PUBLIC SERVANTS",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "203",
+      "heading": "Public servant unlawfully buying or bidding for property.",
+      "chapter_number": "XII",
+      "chapter_title": "OF OFFENCES BY OR RELATING TO PUBLIC SERVANTS",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "204",
+      "heading": "Personating a public servant.",
+      "chapter_number": "XII",
+      "chapter_title": "OF OFFENCES BY OR RELATING TO PUBLIC SERVANTS",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "205",
+      "heading": "Wearing garb or carrying token used by public servant with fraudulent intent.",
+      "chapter_number": "XII",
+      "chapter_title": "OF OFFENCES BY OR RELATING TO PUBLIC SERVANTS",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "206",
+      "heading": "Absconding to avoid service of summons or other proceeding.",
+      "chapter_number": "XIII",
+      "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "207",
+      "heading": "Preventing service of summons or other proceeding, or preventing publication thereof.",
+      "chapter_number": "XIII",
+      "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "208",
+      "heading": "Non-attendance in obedience to an order from public servant.",
+      "chapter_number": "XIII",
+      "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "209",
+      "heading": "Non-appearance in response to a proclamation under section 84 of Bharatiya Nagarik Suraksha Sanhita, 2023.",
+      "chapter_number": "XIII",
+      "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "210",
+      "heading": "Omission to produce document or electronic record to public servant by person legally bound to produce it.",
+      "chapter_number": "XIII",
+      "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "211",
+      "heading": "Omission to give notice or information to public servant by person legally bound to give it.",
+      "chapter_number": "XIII",
+      "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "212",
+      "heading": "Furnishing false information.",
+      "chapter_number": "XIII",
+      "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "213",
+      "heading": "Refusing oath or affirmation when duly required by public servant to make it.",
+      "chapter_number": "XIII",
+      "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "214",
+      "heading": "Refusing to answer public servant authorised to question.",
+      "chapter_number": "XIII",
+      "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "215",
+      "heading": "Refusing to sign statement.",
+      "chapter_number": "XIII",
+      "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "216",
+      "heading": "False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation.",
+      "chapter_number": "XIII",
+      "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "217",
+      "heading": "False information, with intent to cause public servant to use his lawful power to injury of another person.",
+      "chapter_number": "XIII",
+      "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "218",
+      "heading": "Resistance to taking of property by lawful authority of a public servant.",
+      "chapter_number": "XIII",
+      "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "219",
+      "heading": "Obstructing sale of property offered for sale by authority of public servant.",
+      "chapter_number": "XIII",
+      "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "220",
+      "heading": "Illegal purchase or bid for property offered for sale by authority of public servant.",
+      "chapter_number": "XIII",
+      "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "221",
+      "heading": "Obstructing public servant in discharge of public functions.",
+      "chapter_number": "XIII",
+      "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "222",
+      "heading": "Omission to assist public servant when bound by law to give assistance.",
+      "chapter_number": "XIII",
+      "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "223",
+      "heading": "Disobedience to order duly promulgated by public servant.",
+      "chapter_number": "XIII",
+      "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "224",
+      "heading": "Threat of injury to public servant.",
+      "chapter_number": "XIII",
+      "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "225",
+      "heading": "Threat of injury to induce person to refrain from applying for protection to public servant.",
+      "chapter_number": "XIII",
+      "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+      "page_start": 10,
+      "page_end": 10
+    },
+    {
+      "number": "226",
+      "heading": "Attempt to commit suicide to compel or restrain exercise of lawful power.",
+      "chapter_number": "XIII",
+      "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "227",
+      "heading": "Giving false evidence.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "228",
+      "heading": "Fabricating false evidence.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "229",
+      "heading": "Punishment for false evidence.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "230",
+      "heading": "Giving or fabricating false evidence with intent to procure conviction of capital offence.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "231",
+      "heading": "Giving or fabricating false evidence with intent to procure conviction of offence punishable with imprisonment for life or imprisonment.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "232",
+      "heading": "Threatening any person to give false evidence.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "233",
+      "heading": "Using evidence known to be false.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "234",
+      "heading": "Issuing or signing false certificate.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "235",
+      "heading": "Using as true a certificate known to be false.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "236",
+      "heading": "False statement made in declaration which is by law receivable as evidence.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "237",
+      "heading": "Using as true such declaration knowing it to be false.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "238",
+      "heading": "Causing disappearance of evidence of offence, or giving false information to screen offender.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "239",
+      "heading": "Intentional omission to give information of offence by person bound to inform.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "240",
+      "heading": "Giving false information respecting an offence committed.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "241",
+      "heading": "Destruction of document or electronic record to prevent its production as evidence.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "242",
+      "heading": "False personation for purpose of act or proceeding in suit or prosecution.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "243",
+      "heading": "Fraudulent removal or concealment of property to prevent its seizure as forfeited or in execution.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "244",
+      "heading": "Fraudulent claim to property to prevent its seizure as forfeited or in execution.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "245",
+      "heading": "Fraudulently suffering decree for sum not due.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "246",
+      "heading": "Dishonestly making false claim in Court.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "247",
+      "heading": "Fraudulently obtaining decree for sum not due.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "248",
+      "heading": "False charge of offence made with intent to injure.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "249",
+      "heading": "Harbouring offender.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "250",
+      "heading": "Taking gift, etc., to screen an offender from punishment.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "251",
+      "heading": "Offering gift or restoration of property in consideration of screening offender.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "252",
+      "heading": "Taking gift to help to recover stolen property, etc.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "253",
+      "heading": "Harbouring offender who has escaped from custody or whose apprehension has been ordered.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "254",
+      "heading": "Penalty for harbouring robbers or dacoits.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "255",
+      "heading": "Public servant disobeying direction of law with intent to save person from punishment or property from forfeiture.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 11,
+      "page_end": 11
+    },
+    {
+      "number": "256",
+      "heading": "Public servant framing incorrect record or writing with intent to save person from punishment or property from forfeiture.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "257",
+      "heading": "Public servant in judicial proceeding corruptly making report, etc., contrary to law.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "258",
+      "heading": "Commitment for trial or confinement by person having authority who knows that he is acting contrary to law.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "259",
+      "heading": "Intentional omission to apprehend on part of public servant bound to apprehend.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "260",
+      "heading": "Intentional omission to apprehend on part of public servant bound to apprehend person under sentence or lawfully committed.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "261",
+      "heading": "Escape from confinement or custody negligently suffered by public servant.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "262",
+      "heading": "Resistance or obstruction by a person to his lawful apprehension.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "263",
+      "heading": "Resistance or obstruction to lawful apprehension of another person.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "264",
+      "heading": "Omission to apprehend, or sufferance of escape, on part of public servant, in cases not otherwise provided for.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "265",
+      "heading": "Resistance or obstruction to lawful apprehension or escape or rescue in cases not otherwise provided for.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "266",
+      "heading": "Violation of condition of remission of punishment.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "267",
+      "heading": "Intentional insult or interruption to public servant sitting in judicial proceeding.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "268",
+      "heading": "Personation of assessor.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "269",
+      "heading": "Failure by person released on bail bond or bond to appear in Court.",
+      "chapter_number": "XIV",
+      "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "270",
+      "heading": "Public nuisance.",
+      "chapter_number": "XV",
+      "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "271",
+      "heading": "Negligent act likely to spread infection of disease dangerous to life.",
+      "chapter_number": "XV",
+      "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "272",
+      "heading": "Malignant act likely to spread infection of disease dangerous to life.",
+      "chapter_number": "XV",
+      "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "273",
+      "heading": "Disobedience to quarantine rule.",
+      "chapter_number": "XV",
+      "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "274",
+      "heading": "Adulteration of food or drink intended for sale.",
+      "chapter_number": "XV",
+      "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "275",
+      "heading": "Sale of noxious food or drink.",
+      "chapter_number": "XV",
+      "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "276",
+      "heading": "Adulteration of drugs.",
+      "chapter_number": "XV",
+      "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "277",
+      "heading": "Sale of adulterated drugs.",
+      "chapter_number": "XV",
+      "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "278",
+      "heading": "Sale of drug as a different drug or preparation.",
+      "chapter_number": "XV",
+      "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "279",
+      "heading": "Fouling water of public spring or reservoir.",
+      "chapter_number": "XV",
+      "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "280",
+      "heading": "Making atmosphere noxious to health.",
+      "chapter_number": "XV",
+      "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "281",
+      "heading": "Rash driving or riding on a public way.",
+      "chapter_number": "XV",
+      "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "282",
+      "heading": "Rash navigation of vessel.",
+      "chapter_number": "XV",
+      "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "283",
+      "heading": "Exhibition of false light, mark or buoy.",
+      "chapter_number": "XV",
+      "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "284",
+      "heading": "Conveying person by water for hire in unsafe or overloaded vessel.",
+      "chapter_number": "XV",
+      "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "285",
+      "heading": "Danger or obstruction in public way or line of navigation.",
+      "chapter_number": "XV",
+      "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+      "page_start": 12,
+      "page_end": 12
+    },
+    {
+      "number": "286",
+      "heading": "Negligent conduct with respect to poisonous substance.",
+      "chapter_number": "XV",
+      "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+      "page_start": 13,
+      "page_end": 13
+    },
+    {
+      "number": "287",
+      "heading": "Negligent conduct with respect to fire or combustible matter.",
+      "chapter_number": "XV",
+      "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+      "page_start": 13,
+      "page_end": 13
+    },
+    {
+      "number": "288",
+      "heading": "Negligent conduct with respect to explosive substance.",
+      "chapter_number": "XV",
+      "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+      "page_start": 13,
+      "page_end": 13
+    },
+    {
+      "number": "289",
+      "heading": "Negligent conduct with respect to machinery.",
+      "chapter_number": "XV",
+      "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+      "page_start": 13,
+      "page_end": 13
+    },
+    {
+      "number": "290",
+      "heading": "Negligent conduct with respect to pulling down, repairing or constructing buildings, etc.",
+      "chapter_number": "XV",
+      "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+      "page_start": 13,
+      "page_end": 13
+    },
+    {
+      "number": "291",
+      "heading": "Negligent conduct with respect to animal.",
+      "chapter_number": "XV",
+      "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+      "page_start": 13,
+      "page_end": 13
+    },
+    {
+      "number": "292",
+      "heading": "Punishment for public nuisance in cases not otherwise provided for.",
+      "chapter_number": "XV",
+      "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+      "page_start": 13,
+      "page_end": 13
+    },
+    {
+      "number": "293",
+      "heading": "Continuance of nuisance after injunction to discontinue.",
+      "chapter_number": "XV",
+      "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+      "page_start": 13,
+      "page_end": 13
+    },
+    {
+      "number": "294",
+      "heading": "Sale, etc., of obscene books, etc.",
+      "chapter_number": "XV",
+      "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+      "page_start": 13,
+      "page_end": 13
+    },
+    {
+      "number": "295",
+      "heading": "Sale, etc., of obscene objects to child.",
+      "chapter_number": "XV",
+      "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+      "page_start": 13,
+      "page_end": 13
+    },
+    {
+      "number": "296",
+      "heading": "Obscene acts and songs.",
+      "chapter_number": "XV",
+      "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+      "page_start": 13,
+      "page_end": 13
+    },
+    {
+      "number": "297",
+      "heading": "Keeping lottery office.",
+      "chapter_number": "XV",
+      "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+      "page_start": 13,
+      "page_end": 13
+    },
+    {
+      "number": "298",
+      "heading": "Injuring or defiling place of worship with intent to insult religion of any class.",
+      "chapter_number": "XVI",
+      "chapter_title": "OF OFFENCES RELATING TO RELIGION",
+      "page_start": 13,
+      "page_end": 13
+    },
+    {
+      "number": "299",
+      "heading": "Deliberate and malicious acts, intended to outrage religious feelings of any class by insulting its religion or religious beliefs.",
+      "chapter_number": "XVI",
+      "chapter_title": "OF OFFENCES RELATING TO RELIGION",
+      "page_start": 13,
+      "page_end": 13
+    },
+    {
+      "number": "300",
+      "heading": "Disturbing religious assembly.",
+      "chapter_number": "XVI",
+      "chapter_title": "OF OFFENCES RELATING TO RELIGION",
+      "page_start": 13,
+      "page_end": 13
+    },
+    {
+      "number": "301",
+      "heading": "Trespassing on burial places, etc.",
+      "chapter_number": "XVI",
+      "chapter_title": "OF OFFENCES RELATING TO RELIGION",
+      "page_start": 13,
+      "page_end": 13
+    },
+    {
+      "number": "302",
+      "heading": "Uttering words, etc., with deliberate intent to wound religious feelings of any person.",
+      "chapter_number": "XVI",
+      "chapter_title": "OF OFFENCES RELATING TO RELIGION",
+      "page_start": 13,
+      "page_end": 13
+    },
+    {
+      "number": "303",
+      "heading": "Theft.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 13,
+      "page_end": 13
+    },
+    {
+      "number": "304",
+      "heading": "Snatching.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 13,
+      "page_end": 13
+    },
+    {
+      "number": "305",
+      "heading": "Theft in a dwelling house, or means of transportation or place of worship, etc.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 13,
+      "page_end": 13
+    },
+    {
+      "number": "306",
+      "heading": "Theft by clerk or servant of property in possession of master.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 13,
+      "page_end": 13
+    },
+    {
+      "number": "307",
+      "heading": "Theft after preparation made for causing death, hurt or restraint in order to committing of theft.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 13,
+      "page_end": 13
+    },
+    {
+      "number": "308",
+      "heading": "Extortion.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 13,
+      "page_end": 13
+    },
+    {
+      "number": "309",
+      "heading": "Robbery.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 13,
+      "page_end": 13
+    },
+    {
+      "number": "310",
+      "heading": "Dacoity.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 13,
+      "page_end": 13
+    },
+    {
+      "number": "311",
+      "heading": "Robbery, or dacoity, with attempt to cause death or grievous hurt.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 13,
+      "page_end": 13
+    },
+    {
+      "number": "312",
+      "heading": "Attempt to commit robbery or dacoity when armed with deadly weapon.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 13,
+      "page_end": 13
+    },
+    {
+      "number": "313",
+      "heading": "Punishment for belonging to gang of robbers, etc.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 13,
+      "page_end": 13
+    },
+    {
+      "number": "314",
+      "heading": "Dishonest misappropriation of property.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 14,
+      "page_end": 14
+    },
+    {
+      "number": "315",
+      "heading": "Dishonest misappropriation of property possessed by deceased person at the time of his death.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 14,
+      "page_end": 14
+    },
+    {
+      "number": "316",
+      "heading": "Criminal breach of trust.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 14,
+      "page_end": 14
+    },
+    {
+      "number": "317",
+      "heading": "Stolen property.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 14,
+      "page_end": 14
+    },
+    {
+      "number": "318",
+      "heading": "Cheating.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 14,
+      "page_end": 14
+    },
+    {
+      "number": "319",
+      "heading": "Cheating by personation.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 14,
+      "page_end": 14
+    },
+    {
+      "number": "320",
+      "heading": "Dishonest or fraudulent removal or concealment of property to prevent distribution among creditors.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 14,
+      "page_end": 14
+    },
+    {
+      "number": "321",
+      "heading": "Dishonestly or fraudulently preventing debt being available for creditors.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 14,
+      "page_end": 14
+    },
+    {
+      "number": "322",
+      "heading": "Dishonest or fraudulent execution of deed of transfer containing false statement of consideration.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 14,
+      "page_end": 14
+    },
+    {
+      "number": "323",
+      "heading": "Dishonest or fraudulent removal or concealment of property.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 14,
+      "page_end": 14
+    },
+    {
+      "number": "324",
+      "heading": "Mischief.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 14,
+      "page_end": 14
+    },
+    {
+      "number": "325",
+      "heading": "Mischief by killing or maiming animal.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 14,
+      "page_end": 14
+    },
+    {
+      "number": "326",
+      "heading": "Mischief by injury, inundation, fire or explosive substance, etc.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 14,
+      "page_end": 14
+    },
+    {
+      "number": "327",
+      "heading": "Mischief with intent to destroy or make unsafe a rail, aircraft, decked vessel or one of twenty tons burden.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 14,
+      "page_end": 14
+    },
+    {
+      "number": "328",
+      "heading": "Punishment for intentionally running vessel aground or ashore with intent to commit theft, etc.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 14,
+      "page_end": 14
+    },
+    {
+      "number": "329",
+      "heading": "Criminal trespass and house-trespass.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 14,
+      "page_end": 14
+    },
+    {
+      "number": "330",
+      "heading": "House-trespass and hous-ebreaking.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 14,
+      "page_end": 14
+    },
+    {
+      "number": "331",
+      "heading": "Punishment for house-trespass or house-breaking.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 14,
+      "page_end": 14
+    },
+    {
+      "number": "332",
+      "heading": "House-trespass in order to commit offence.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 14,
+      "page_end": 14
+    },
+    {
+      "number": "333",
+      "heading": "House-trespass after preparation for hurt, assault or wrongful restraint.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 14,
+      "page_end": 14
+    },
+    {
+      "number": "334",
+      "heading": "Dishonestly breaking open receptacle containing property.",
+      "chapter_number": "XVII",
+      "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+      "page_start": 14,
+      "page_end": 14
+    },
+    {
+      "number": "335",
+      "heading": "Making a false document.",
+      "chapter_number": "XVIII",
+      "chapter_title": "OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS",
+      "page_start": 14,
+      "page_end": 14
+    },
+    {
+      "number": "336",
+      "heading": "Forgery.",
+      "chapter_number": "XVIII",
+      "chapter_title": "OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS",
+      "page_start": 15,
+      "page_end": 15
+    },
+    {
+      "number": "337",
+      "heading": "Forgery of record of Court or of public register, etc.",
+      "chapter_number": "XVIII",
+      "chapter_title": "OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS",
+      "page_start": 15,
+      "page_end": 15
+    },
+    {
+      "number": "338",
+      "heading": "Forgery of valuable security, will, etc.",
+      "chapter_number": "XVIII",
+      "chapter_title": "OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS",
+      "page_start": 15,
+      "page_end": 15
+    },
+    {
+      "number": "339",
+      "heading": "Having possession of document described in section 337 or section 338, knowing it to be forged and intending to use it as genuine.",
+      "chapter_number": "XVIII",
+      "chapter_title": "OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS",
+      "page_start": 15,
+      "page_end": 15
+    },
+    {
+      "number": "340",
+      "heading": "Forged document or electronic record and using it as genuine.",
+      "chapter_number": "XVIII",
+      "chapter_title": "OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS",
+      "page_start": 15,
+      "page_end": 15
+    },
+    {
+      "number": "341",
+      "heading": "Making or possessing counterfeit seal, etc., with intent to commit forgery punishable under section 338.",
+      "chapter_number": "XVIII",
+      "chapter_title": "OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS",
+      "page_start": 15,
+      "page_end": 15
+    },
+    {
+      "number": "342",
+      "heading": "Counterfeiting device or mark used for authenticating documents described in section 338, or possessing counterfeit marked material.",
+      "chapter_number": "XVIII",
+      "chapter_title": "OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS",
+      "page_start": 15,
+      "page_end": 15
+    },
+    {
+      "number": "343",
+      "heading": "Fraudulent cancellation, destruction, etc., of will, authority to adopt, or valuable security.",
+      "chapter_number": "XVIII",
+      "chapter_title": "OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS",
+      "page_start": 15,
+      "page_end": 15
+    },
+    {
+      "number": "344",
+      "heading": "Falsification of accounts.",
+      "chapter_number": "XVIII",
+      "chapter_title": "OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS",
+      "page_start": 15,
+      "page_end": 15
+    },
+    {
+      "number": "345",
+      "heading": "Property mark.",
+      "chapter_number": "XVIII",
+      "chapter_title": "OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS",
+      "page_start": 15,
+      "page_end": 15
+    },
+    {
+      "number": "346",
+      "heading": "Tampering with property mark with intent to cause injury.",
+      "chapter_number": "XVIII",
+      "chapter_title": "OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS",
+      "page_start": 15,
+      "page_end": 15
+    },
+    {
+      "number": "347",
+      "heading": "Counterfeiting a property mark.",
+      "chapter_number": "XVIII",
+      "chapter_title": "OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS",
+      "page_start": 15,
+      "page_end": 15
+    },
+    {
+      "number": "348",
+      "heading": "Making or possession of any instrument for counterfeiting a property mark.",
+      "chapter_number": "XVIII",
+      "chapter_title": "OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS",
+      "page_start": 15,
+      "page_end": 15
+    },
+    {
+      "number": "349",
+      "heading": "Selling goods marked with a counterfeit property mark.",
+      "chapter_number": "XVIII",
+      "chapter_title": "OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS",
+      "page_start": 15,
+      "page_end": 15
+    },
+    {
+      "number": "350",
+      "heading": "Making a false mark upon any receptacle containing goods.",
+      "chapter_number": "XVIII",
+      "chapter_title": "OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS",
+      "page_start": 15,
+      "page_end": 15
+    },
+    {
+      "number": "351",
+      "heading": "Criminal intimidation.",
+      "chapter_number": "XIX",
+      "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+      "page_start": 15,
+      "page_end": 15
+    },
+    {
+      "number": "352",
+      "heading": "Intentional insult with intent to provoke breach of peace.",
+      "chapter_number": "XIX",
+      "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+      "page_start": 15,
+      "page_end": 15
+    },
+    {
+      "number": "353",
+      "heading": "Statements conducing to public mischief.",
+      "chapter_number": "XIX",
+      "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+      "page_start": 15,
+      "page_end": 15
+    },
+    {
+      "number": "354",
+      "heading": "Act caused by inducing person to believe that he will be rendered an object of Divine displeasure.",
+      "chapter_number": "XIX",
+      "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+      "page_start": 15,
+      "page_end": 15
+    },
+    {
+      "number": "355",
+      "heading": "Misconduct in public by a drunken person.",
+      "chapter_number": "XIX",
+      "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+      "page_start": 15,
+      "page_end": 15
+    },
+    {
+      "number": "356",
+      "heading": "Defamation.",
+      "chapter_number": "XIX",
+      "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+      "page_start": 15,
+      "page_end": 15
+    },
+    {
+      "number": "357",
+      "heading": "Breach of contract to attend on and supply wants of helpless person.",
+      "chapter_number": "XIX",
+      "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+      "page_start": 15,
+      "page_end": 15
+    },
+    {
+      "number": "358",
+      "heading": "Repeal and savings.",
+      "chapter_number": "XX",
+      "chapter_title": "REPEAL AND SAVINGS",
+      "page_start": 15,
+      "page_end": 15
+    }
+  ],
+  "body_sections": [
+    {
+      "number": "1",
+      "heading": "Short title, commencement and application",
+      "chapter_number": "I",
+      "page_start": 16,
+      "page_end": 16
+    },
+    {
+      "number": "2",
+      "heading": "Definitions",
+      "chapter_number": "I",
+      "page_start": 16,
+      "page_end": 20
+    },
+    {
+      "number": "3",
+      "heading": "General explanations",
+      "chapter_number": "I",
+      "page_start": 20,
+      "page_end": 21
+    },
+    {
+      "number": "4",
+      "heading": "Punishments",
+      "chapter_number": "II",
+      "page_start": 21,
+      "page_end": 22
+    },
+    {
+      "number": "5",
+      "heading": "Commutation of sentence",
+      "chapter_number": "II",
+      "page_start": 22,
+      "page_end": 22
+    },
+    {
+      "number": "6",
+      "heading": "Fractions of terms of punishment",
+      "chapter_number": "II",
+      "page_start": 22,
+      "page_end": 22
+    },
+    {
+      "number": "7",
+      "heading": "Sentence may be (in certain cases of imprisonment) wholly or partly rigorous or simple",
+      "chapter_number": "II",
+      "page_start": 22,
+      "page_end": 22
+    },
+    {
+      "number": "8",
+      "heading": "Amount of fine, liability in default of payment of fine, etc",
+      "chapter_number": "II",
+      "page_start": 22,
+      "page_end": 23
+    },
+    {
+      "number": "9",
+      "heading": "Limit of punishment of offence made up of several offences",
+      "chapter_number": "II",
+      "page_start": 23,
+      "page_end": 23
+    },
+    {
+      "number": "10",
+      "heading": "Punishment of person guilty of one of several offences, judgment stating that it is doubtful of which",
+      "chapter_number": "II",
+      "page_start": 23,
+      "page_end": 23
+    },
+    {
+      "number": "11",
+      "heading": "Solitary confinement",
+      "chapter_number": "II",
+      "page_start": 23,
+      "page_end": 24
+    },
+    {
+      "number": "12",
+      "heading": "Limit of solitary confinement",
+      "chapter_number": "II",
+      "page_start": 24,
+      "page_end": 24
+    },
+    {
+      "number": "13",
+      "heading": "Enhanced punishment for certain offences after previous conviction",
+      "chapter_number": "II",
+      "page_start": 24,
+      "page_end": 24
+    },
+    {
+      "number": "14",
+      "heading": "Act done by a person bound, or by mistake of fact believing himself bound, by law",
+      "chapter_number": "III",
+      "page_start": 24,
+      "page_end": 24
+    },
+    {
+      "number": "15",
+      "heading": "Act of Judge when acting judicially",
+      "chapter_number": "III",
+      "page_start": 24,
+      "page_end": 24
+    },
+    {
+      "number": "16",
+      "heading": "Act done pursuant to judgment or order of Court",
+      "chapter_number": "III",
+      "page_start": 24,
+      "page_end": 24
+    },
+    {
+      "number": "17",
+      "heading": "Act done by a person justified, or by mistake of fact believing himself justified, by law",
+      "chapter_number": "III",
+      "page_start": 24,
+      "page_end": 25
+    },
+    {
+      "number": "18",
+      "heading": "Accident in doing a lawful act",
+      "chapter_number": "III",
+      "page_start": 25,
+      "page_end": 25
+    },
+    {
+      "number": "19",
+      "heading": "Act likely to cause harm, but done without criminal intent, and to prevent other harm",
+      "chapter_number": "III",
+      "page_start": 25,
+      "page_end": 25
+    },
+    {
+      "number": "20",
+      "heading": "Act of a child under seven years of age",
+      "chapter_number": "III",
+      "page_start": 25,
+      "page_end": 25
+    },
+    {
+      "number": "21",
+      "heading": "Act of a child above seven and under twelve years of age of immature understanding",
+      "chapter_number": "III",
+      "page_start": 25,
+      "page_end": 25
+    },
+    {
+      "number": "22",
+      "heading": "Act of a person of unsound mind",
+      "chapter_number": "III",
+      "page_start": 25,
+      "page_end": 25
+    },
+    {
+      "number": "23",
+      "heading": "Act of a person incapable of judgment by reason of intoxication caused against his will",
+      "chapter_number": "III",
+      "page_start": 25,
+      "page_end": 25
+    },
+    {
+      "number": "24",
+      "heading": "Offence requiring a particular intent or knowledge committed by one who is intoxicated",
+      "chapter_number": "III",
+      "page_start": 25,
+      "page_end": 25
+    },
+    {
+      "number": "25",
+      "heading": "Act not intended and not known to be likely to cause death or grievous hurt, done by consent",
+      "chapter_number": "III",
+      "page_start": 26,
+      "page_end": 26
+    },
+    {
+      "number": "26",
+      "heading": "Act not intended to cause death, done by consent in good faith for person’s benefit",
+      "chapter_number": "III",
+      "page_start": 26,
+      "page_end": 26
+    },
+    {
+      "number": "27",
+      "heading": "Act done in good faith for benefit of child or person of unsound mind, by, or by consent of guardian",
+      "chapter_number": "III",
+      "page_start": 26,
+      "page_end": 26
+    },
+    {
+      "number": "28",
+      "heading": "Consent known to be given under fear or misconception",
+      "chapter_number": "III",
+      "page_start": 26,
+      "page_end": 26
+    },
+    {
+      "number": "29",
+      "heading": "Exclusion of acts which are offences independently of harm caused",
+      "chapter_number": "III",
+      "page_start": 27,
+      "page_end": 27
+    },
+    {
+      "number": "30",
+      "heading": "Act done in good faith for benefit of a person without consent",
+      "chapter_number": "III",
+      "page_start": 27,
+      "page_end": 27
+    },
+    {
+      "number": "31",
+      "heading": "Communication made in good faith",
+      "chapter_number": "III",
+      "page_start": 27,
+      "page_end": 28
+    },
+    {
+      "number": "32",
+      "heading": "Act to which a person is compelled by threats",
+      "chapter_number": "III",
+      "page_start": 28,
+      "page_end": 28
+    },
+    {
+      "number": "33",
+      "heading": "Act causing slight harm",
+      "chapter_number": "III",
+      "page_start": 28,
+      "page_end": 28
+    },
+    {
+      "number": "34",
+      "heading": "Things done in private defence",
+      "chapter_number": "III",
+      "page_start": 28,
+      "page_end": 28
+    },
+    {
+      "number": "35",
+      "heading": "Right of private defence of body and of property",
+      "chapter_number": "III",
+      "page_start": 28,
+      "page_end": 28
+    },
+    {
+      "number": "36",
+      "heading": "Right of private defence against act of a person of unsound mind, etc",
+      "chapter_number": "III",
+      "page_start": 28,
+      "page_end": 28
+    },
+    {
+      "number": "37",
+      "heading": "Acts against which there is no right of private defence",
+      "chapter_number": "III",
+      "page_start": 28,
+      "page_end": 29
+    },
+    {
+      "number": "38",
+      "heading": "When right of private defence of body extends to causing death",
+      "chapter_number": "III",
+      "page_start": 29,
+      "page_end": 29
+    },
+    {
+      "number": "39",
+      "heading": "When such right extends to causing any harm other than death",
+      "chapter_number": "III",
+      "page_start": 29,
+      "page_end": 29
+    },
+    {
+      "number": "40",
+      "heading": "Commencement and continuance of right of private defence of body",
+      "chapter_number": "III",
+      "page_start": 29,
+      "page_end": 29
+    },
+    {
+      "number": "41",
+      "heading": "When right of private defence of property extends to causing death",
+      "chapter_number": "III",
+      "page_start": 29,
+      "page_end": 30
+    },
+    {
+      "number": "42",
+      "heading": "When such right extends to causing any harm other than death",
+      "chapter_number": "III",
+      "page_start": 30,
+      "page_end": 30
+    },
+    {
+      "number": "43",
+      "heading": "Commencement and continuance of right of private defence of property",
+      "chapter_number": "III",
+      "page_start": 30,
+      "page_end": 30
+    },
+    {
+      "number": "44",
+      "heading": "Right of private defence against deadly assault when there is risk of harm to innocent person",
+      "chapter_number": "III",
+      "page_start": 30,
+      "page_end": 30
+    },
+    {
+      "number": "45",
+      "heading": "Abetment of a thing",
+      "chapter_number": "IV",
+      "page_start": 30,
+      "page_end": 31
+    },
+    {
+      "number": "46",
+      "heading": "Abettor",
+      "chapter_number": "IV",
+      "page_start": 31,
+      "page_end": 32
+    },
+    {
+      "number": "47",
+      "heading": "Abetment in India of offences outside India",
+      "chapter_number": "IV",
+      "page_start": 32,
+      "page_end": 32
+    },
+    {
+      "number": "48",
+      "heading": "Abetment outside India for offence in India",
+      "chapter_number": "IV",
+      "page_start": 32,
+      "page_end": 32
+    },
+    {
+      "number": "49",
+      "heading": "Punishment of abetment if act abetted is committed in consequence and where no express provision is made for its punishment",
+      "chapter_number": "IV",
+      "page_start": 32,
+      "page_end": 32
+    },
+    {
+      "number": "50",
+      "heading": "Punishment of abetment if person abetted does act with different intention from that of abettor",
+      "chapter_number": "IV",
+      "page_start": 32,
+      "page_end": 32
+    },
+    {
+      "number": "51",
+      "heading": "Liability of abettor when one act abetted and different act done",
+      "chapter_number": "IV",
+      "page_start": 32,
+      "page_end": 33
+    },
+    {
+      "number": "52",
+      "heading": "Abettor when liable to cumulative punishment for act abetted and for act done",
+      "chapter_number": "IV",
+      "page_start": 33,
+      "page_end": 33
+    },
+    {
+      "number": "53",
+      "heading": "Liability of abettor for an effect caused by act abetted different from that intended by abettor",
+      "chapter_number": "IV",
+      "page_start": 33,
+      "page_end": 33
+    },
+    {
+      "number": "54",
+      "heading": "Abettor present when offence is committed",
+      "chapter_number": "IV",
+      "page_start": 33,
+      "page_end": 33
+    },
+    {
+      "number": "55",
+      "heading": "Abetment of offence punishable with death or imprisonment for life",
+      "chapter_number": "IV",
+      "page_start": 33,
+      "page_end": 34
+    },
+    {
+      "number": "56",
+      "heading": "Abetment of offence punishable with imprisonment",
+      "chapter_number": "IV",
+      "page_start": 34,
+      "page_end": 34
+    },
+    {
+      "number": "57",
+      "heading": "Abetting commission of offence by public or by more than ten persons",
+      "chapter_number": "IV",
+      "page_start": 34,
+      "page_end": 34
+    },
+    {
+      "number": "58",
+      "heading": "Concealing design to commit offence punishable with death or imprisonment for life",
+      "chapter_number": "IV",
+      "page_start": 34,
+      "page_end": 34
+    },
+    {
+      "number": "59",
+      "heading": "Public servant concealing design to commit offence which it is his duty to prevent",
+      "chapter_number": "IV",
+      "page_start": 34,
+      "page_end": 35
+    },
+    {
+      "number": "60",
+      "heading": "Concealing design to commit offence punishable with imprisonment",
+      "chapter_number": "IV",
+      "page_start": 35,
+      "page_end": 35
+    },
+    {
+      "number": "61",
+      "heading": "Criminal conspiracy",
+      "chapter_number": "IV",
+      "page_start": 35,
+      "page_end": 35
+    },
+    {
+      "number": "62",
+      "heading": "Punishment for attempting to commit offences punishable with imprisonment for life or other imprisonment",
+      "chapter_number": "IV",
+      "page_start": 36,
+      "page_end": 36
+    },
+    {
+      "number": "63",
+      "heading": "Rape",
+      "chapter_number": "V",
+      "page_start": 36,
+      "page_end": 37
+    },
+    {
+      "number": "64",
+      "heading": "Punishment for rape",
+      "chapter_number": "V",
+      "page_start": 37,
+      "page_end": 38
+    },
+    {
+      "number": "65",
+      "heading": "Punishment for rape in certain cases",
+      "chapter_number": "V",
+      "page_start": 38,
+      "page_end": 38
+    },
+    {
+      "number": "66",
+      "heading": "Punishment for causing death or resulting in persistent vegetative state of victim",
+      "chapter_number": "V",
+      "page_start": 38,
+      "page_end": 38
+    },
+    {
+      "number": "67",
+      "heading": "Sexual intercourse by husband upon his wife during separation",
+      "chapter_number": "V",
+      "page_start": 38,
+      "page_end": 38
+    },
+    {
+      "number": "68",
+      "heading": "Sexual intercourse by a person in authority",
+      "chapter_number": "V",
+      "page_start": 38,
+      "page_end": 39
+    },
+    {
+      "number": "69",
+      "heading": "Sexual intercourse by employing deceitful means, etc",
+      "chapter_number": "V",
+      "page_start": 39,
+      "page_end": 39
+    },
+    {
+      "number": "70",
+      "heading": "Gang rape",
+      "chapter_number": "V",
+      "page_start": 39,
+      "page_end": 39
+    },
+    {
+      "number": "71",
+      "heading": "Punishment for repeat offenders",
+      "chapter_number": "V",
+      "page_start": 39,
+      "page_end": 39
+    },
+    {
+      "number": "72",
+      "heading": "Disclosure of identity of victim of certain offences, etc",
+      "chapter_number": "V",
+      "page_start": 39,
+      "page_end": 40
+    },
+    {
+      "number": "73",
+      "heading": "Printing or publishing any matter relating to Court proceedings without permission",
+      "chapter_number": "V",
+      "page_start": 40,
+      "page_end": 40
+    },
+    {
+      "number": "74",
+      "heading": "Assault or use of criminal force to woman with intent to outrage her modesty",
+      "chapter_number": "V",
+      "page_start": 40,
+      "page_end": 40
+    },
+    {
+      "number": "75",
+      "heading": "Sexual harassment",
+      "chapter_number": "V",
+      "page_start": 40,
+      "page_end": 40
+    },
+    {
+      "number": "76",
+      "heading": "Assault or use of criminal force to woman with intent to disrobe",
+      "chapter_number": "V",
+      "page_start": 40,
+      "page_end": 40
+    },
+    {
+      "number": "77",
+      "heading": "Voyeurism",
+      "chapter_number": "V",
+      "page_start": 40,
+      "page_end": 41
+    },
+    {
+      "number": "78",
+      "heading": "Stalking",
+      "chapter_number": "V",
+      "page_start": 41,
+      "page_end": 41
+    },
+    {
+      "number": "79",
+      "heading": "Word, gesture or act intended to insult modesty of a woman",
+      "chapter_number": "V",
+      "page_start": 41,
+      "page_end": 41
+    },
+    {
+      "number": "80",
+      "heading": "Dowry death",
+      "chapter_number": "V",
+      "page_start": 41,
+      "page_end": 41
+    },
+    {
+      "number": "81",
+      "heading": "Cohabitation caused by man deceitfully inducing belief of lawful marriage",
+      "chapter_number": "V",
+      "page_start": 41,
+      "page_end": 41
+    },
+    {
+      "number": "82",
+      "heading": "Marrying again during lifetime of husband or wife",
+      "chapter_number": "V",
+      "page_start": 41,
+      "page_end": 42
+    },
+    {
+      "number": "83",
+      "heading": "Marriage ceremony fraudulently gone through without lawful marriage",
+      "chapter_number": "V",
+      "page_start": 42,
+      "page_end": 42
+    },
+    {
+      "number": "84",
+      "heading": "Enticing or taking away or detaining with criminal intent a married woman",
+      "chapter_number": "V",
+      "page_start": 42,
+      "page_end": 42
+    },
+    {
+      "number": "85",
+      "heading": "Husband or relative of husband of a woman subjecting her to cruelty",
+      "chapter_number": "V",
+      "page_start": 42,
+      "page_end": 42
+    },
+    {
+      "number": "86",
+      "heading": "Cruelty defined",
+      "chapter_number": "V",
+      "page_start": 42,
+      "page_end": 42
+    },
+    {
+      "number": "87",
+      "heading": "Kidnapping, abducting or inducing woman to compel her marriage, etc",
+      "chapter_number": "V",
+      "page_start": 42,
+      "page_end": 42
+    },
+    {
+      "number": "88",
+      "heading": "Causing miscarriage",
+      "chapter_number": "V",
+      "page_start": 42,
+      "page_end": 42
+    },
+    {
+      "number": "89",
+      "heading": "Causing miscarriage without woman’s consent",
+      "chapter_number": "V",
+      "page_start": 42,
+      "page_end": 43
+    },
+    {
+      "number": "90",
+      "heading": "Death caused by act done with intent to cause miscarriage",
+      "chapter_number": "V",
+      "page_start": 43,
+      "page_end": 43
+    },
+    {
+      "number": "91",
+      "heading": "Act done with intent to prevent child being born alive or to cause to die after birth",
+      "chapter_number": "V",
+      "page_start": 43,
+      "page_end": 43
+    },
+    {
+      "number": "92",
+      "heading": "Causing death of quick unborn child by act amounting to culpable homicide",
+      "chapter_number": "V",
+      "page_start": 43,
+      "page_end": 43
+    },
+    {
+      "number": "93",
+      "heading": "Exposure and abandonment of child under twelve years of age, by parent or person having care of it",
+      "chapter_number": "V",
+      "page_start": 43,
+      "page_end": 43
+    },
+    {
+      "number": "94",
+      "heading": "Concealment of birth by secret disposal of dead body",
+      "chapter_number": "V",
+      "page_start": 43,
+      "page_end": 43
+    },
+    {
+      "number": "95",
+      "heading": "Hiring, employing or engaging a child to commit an offence",
+      "chapter_number": "V",
+      "page_start": 43,
+      "page_end": 43
+    },
+    {
+      "number": "96",
+      "heading": "Procuration of child",
+      "chapter_number": "V",
+      "page_start": 43,
+      "page_end": 44
+    },
+    {
+      "number": "97",
+      "heading": "Kidnapping or abducting child under ten years of age with intent to steal from its person",
+      "chapter_number": "V",
+      "page_start": 44,
+      "page_end": 44
+    },
+    {
+      "number": "98",
+      "heading": "Selling child for purposes of prostitution, etc",
+      "chapter_number": "V",
+      "page_start": 44,
+      "page_end": 44
+    },
+    {
+      "number": "99",
+      "heading": "Buying child for purposes of prostitution, etc",
+      "chapter_number": "V",
+      "page_start": 44,
+      "page_end": 44
+    },
+    {
+      "number": "100",
+      "heading": "Culpable homicide",
+      "chapter_number": "VI",
+      "page_start": 44,
+      "page_end": 45
+    },
+    {
+      "number": "101",
+      "heading": "Murder",
+      "chapter_number": "VI",
+      "page_start": 45,
+      "page_end": 46
+    },
+    {
+      "number": "102",
+      "heading": "Culpable homicide by causing death of person other than person whose death was intended",
+      "chapter_number": "VI",
+      "page_start": 46,
+      "page_end": 47
+    },
+    {
+      "number": "103",
+      "heading": "Punishment for murder",
+      "chapter_number": "VI",
+      "page_start": 47,
+      "page_end": 47
+    },
+    {
+      "number": "104",
+      "heading": "Punishment for murder by life-convict",
+      "chapter_number": "VI",
+      "page_start": 47,
+      "page_end": 47
+    },
+    {
+      "number": "105",
+      "heading": "Punishment for culpable homicide not amounting to murder",
+      "chapter_number": "VI",
+      "page_start": 47,
+      "page_end": 47
+    },
+    {
+      "number": "106",
+      "heading": "Causing death by negligence",
+      "chapter_number": "VI",
+      "page_start": 47,
+      "page_end": 47
+    },
+    {
+      "number": "107",
+      "heading": "Abetment of suicide of child or person of unsound mind",
+      "chapter_number": "VI",
+      "page_start": 47,
+      "page_end": 47
+    },
+    {
+      "number": "108",
+      "heading": "Abetment of suicide",
+      "chapter_number": "VI",
+      "page_start": 47,
+      "page_end": 47
+    },
+    {
+      "number": "109",
+      "heading": "Attempt to murder",
+      "chapter_number": "VI",
+      "page_start": 47,
+      "page_end": 48
+    },
+    {
+      "number": "110",
+      "heading": "Attempt to commit culpable homicide",
+      "chapter_number": "VI",
+      "page_start": 48,
+      "page_end": 48
+    },
+    {
+      "number": "111",
+      "heading": "Organised crime",
+      "chapter_number": "VI",
+      "page_start": 48,
+      "page_end": 49
+    },
+    {
+      "number": "112",
+      "heading": "Petty organised crime",
+      "chapter_number": "VI",
+      "page_start": 49,
+      "page_end": 49
+    },
+    {
+      "number": "113",
+      "heading": "Terrorist act",
+      "chapter_number": "VI",
+      "page_start": 49,
+      "page_end": 50
+    },
+    {
+      "number": "114",
+      "heading": "Hurt",
+      "chapter_number": "VI",
+      "page_start": 51,
+      "page_end": 51
+    },
+    {
+      "number": "115",
+      "heading": "Voluntarily causing hurt",
+      "chapter_number": "VI",
+      "page_start": 51,
+      "page_end": 51
+    },
+    {
+      "number": "116",
+      "heading": "Grievous hurt",
+      "chapter_number": "VI",
+      "page_start": 51,
+      "page_end": 51
+    },
+    {
+      "number": "117",
+      "heading": "Voluntarily causing grievous hurt",
+      "chapter_number": "VI",
+      "page_start": 51,
+      "page_end": 51
+    },
+    {
+      "number": "118",
+      "heading": "Voluntarily causing hurt or grievous hurt by dangerous weapons or means",
+      "chapter_number": "VI",
+      "page_start": 51,
+      "page_end": 52
+    },
+    {
+      "number": "119",
+      "heading": "Voluntarily causing hurt or grievous hurt to extort property, or to constrain to an illegal act",
+      "chapter_number": "VI",
+      "page_start": 52,
+      "page_end": 52
+    },
+    {
+      "number": "120",
+      "heading": "Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of property",
+      "chapter_number": "VI",
+      "page_start": 52,
+      "page_end": 52
+    },
+    {
+      "number": "121",
+      "heading": "Voluntarily causing hurt or grievous hurt to deter public servant from his duty",
+      "chapter_number": "VI",
+      "page_start": 52,
+      "page_end": 52
+    },
+    {
+      "number": "122",
+      "heading": "Voluntarily causing hurt or grievous hurt on provocation",
+      "chapter_number": "VI",
+      "page_start": 53,
+      "page_end": 53
+    },
+    {
+      "number": "123",
+      "heading": "Causing hurt by means of poison, etc., with intent to commit an offence",
+      "chapter_number": "VI",
+      "page_start": 53,
+      "page_end": 53
+    },
+    {
+      "number": "124",
+      "heading": "Voluntarily causing grievous hurt by use of acid, etc",
+      "chapter_number": "VI",
+      "page_start": 53,
+      "page_end": 53
+    },
+    {
+      "number": "125",
+      "heading": "Act endangering life or personal safety of others",
+      "chapter_number": "VI",
+      "page_start": 53,
+      "page_end": 53
+    },
+    {
+      "number": "126",
+      "heading": "Wrongful restraint",
+      "chapter_number": "VI",
+      "page_start": 54,
+      "page_end": 54
+    },
+    {
+      "number": "127",
+      "heading": "Wrongful confinement",
+      "chapter_number": "VI",
+      "page_start": 54,
+      "page_end": 55
+    },
+    {
+      "number": "128",
+      "heading": "Force",
+      "chapter_number": "VI",
+      "page_start": 55,
+      "page_end": 55
+    },
+    {
+      "number": "129",
+      "heading": "Criminal force",
+      "chapter_number": "VI",
+      "page_start": 55,
+      "page_end": 56
+    },
+    {
+      "number": "130",
+      "heading": "Assault",
+      "chapter_number": "VI",
+      "page_start": 56,
+      "page_end": 56
+    },
+    {
+      "number": "131",
+      "heading": "Punishment for assault or criminal force otherwise than on grave provocation",
+      "chapter_number": "VI",
+      "page_start": 56,
+      "page_end": 56
+    },
+    {
+      "number": "132",
+      "heading": "Assault or criminal force to deter public servant from discharge of his duty",
+      "chapter_number": "VI",
+      "page_start": 56,
+      "page_end": 56
+    },
+    {
+      "number": "133",
+      "heading": "Assault or criminal force with intent to dishonour person, otherwise than on grave provocation",
+      "chapter_number": "VI",
+      "page_start": 56,
+      "page_end": 56
+    },
+    {
+      "number": "134",
+      "heading": "Assault or criminal force in attempt to commit theft of property carried by a person",
+      "chapter_number": "VI",
+      "page_start": 57,
+      "page_end": 57
+    },
+    {
+      "number": "135",
+      "heading": "Assault or criminal force in attempt to wrongfully confine a person",
+      "chapter_number": "VI",
+      "page_start": 57,
+      "page_end": 57
+    },
+    {
+      "number": "136",
+      "heading": "Assault or criminal force on grave provocation",
+      "chapter_number": "VI",
+      "page_start": 57,
+      "page_end": 57
+    },
+    {
+      "number": "137",
+      "heading": "Kidnapping",
+      "chapter_number": "VI",
+      "page_start": 57,
+      "page_end": 57
+    },
+    {
+      "number": "138",
+      "heading": "Abduction",
+      "chapter_number": "VI",
+      "page_start": 57,
+      "page_end": 57
+    },
+    {
+      "number": "139",
+      "heading": "Kidnapping or maiming a child for purposes of begging",
+      "chapter_number": "VI",
+      "page_start": 57,
+      "page_end": 58
+    },
+    {
+      "number": "140",
+      "heading": "Kidnapping or abducting in order to murder or for ransom, etc",
+      "chapter_number": "VI",
+      "page_start": 58,
+      "page_end": 58
+    },
+    {
+      "number": "141",
+      "heading": "Importation of girl or boy from foreign country",
+      "chapter_number": "VI",
+      "page_start": 58,
+      "page_end": 58
+    },
+    {
+      "number": "142",
+      "heading": "Wrongfully concealing or keeping in confinement, kidnapped or abducted person",
+      "chapter_number": "VI",
+      "page_start": 58,
+      "page_end": 58
+    },
+    {
+      "number": "143",
+      "heading": "Trafficking of person",
+      "chapter_number": "VI",
+      "page_start": 58,
+      "page_end": 59
+    },
+    {
+      "number": "144",
+      "heading": "Exploitation of a trafficked person",
+      "chapter_number": "VI",
+      "page_start": 59,
+      "page_end": 59
+    },
+    {
+      "number": "145",
+      "heading": "Habitual dealing in slaves",
+      "chapter_number": "VI",
+      "page_start": 59,
+      "page_end": 59
+    },
+    {
+      "number": "146",
+      "heading": "Unlawful compulsory labour",
+      "chapter_number": "VI",
+      "page_start": 59,
+      "page_end": 59
+    },
+    {
+      "number": "147",
+      "heading": "Waging, or attempting to wage war, or abetting waging of war, against Government of India",
+      "chapter_number": "VII",
+      "page_start": 59,
+      "page_end": 60
+    },
+    {
+      "number": "148",
+      "heading": "Conspiracy to commit offences punishable by section 147",
+      "chapter_number": "VII",
+      "page_start": 60,
+      "page_end": 60
+    },
+    {
+      "number": "149",
+      "heading": "Collecting arms, etc., with intention of waging war against Government of India",
+      "chapter_number": "VII",
+      "page_start": 60,
+      "page_end": 60
+    },
+    {
+      "number": "150",
+      "heading": "Concealing with intent to facilitate design to wage war",
+      "chapter_number": "VII",
+      "page_start": 60,
+      "page_end": 60
+    },
+    {
+      "number": "151",
+      "heading": "Assaulting President, Governor, etc., with intent to compel or restrain exercise of any lawful power",
+      "chapter_number": "VII",
+      "page_start": 60,
+      "page_end": 60
+    },
+    {
+      "number": "152",
+      "heading": "Act endangering sovereignty, unity and integrity of India",
+      "chapter_number": "VII",
+      "page_start": 60,
+      "page_end": 60
+    },
+    {
+      "number": "153",
+      "heading": "Waging war against Government of any foreign State at peace with Government of India",
+      "chapter_number": "VII",
+      "page_start": 60,
+      "page_end": 60
+    },
+    {
+      "number": "154",
+      "heading": "Committing depredation on territories of foreign State at peace with Government of India",
+      "chapter_number": "VII",
+      "page_start": 60,
+      "page_end": 60
+    },
+    {
+      "number": "155",
+      "heading": "Receiving property taken by war or depredation mentioned in sections 153 and 154",
+      "chapter_number": "VII",
+      "page_start": 61,
+      "page_end": 61
+    },
+    {
+      "number": "156",
+      "heading": "Public servant voluntarily allowing prisoner of State or war to escape",
+      "chapter_number": "VII",
+      "page_start": 61,
+      "page_end": 61
+    },
+    {
+      "number": "157",
+      "heading": "Public servant negligently suffering such prisoner to escape",
+      "chapter_number": "VII",
+      "page_start": 61,
+      "page_end": 61
+    },
+    {
+      "number": "158",
+      "heading": "Aiding escape of, rescuing or harbouring such prisoner",
+      "chapter_number": "VII",
+      "page_start": 61,
+      "page_end": 61
+    },
+    {
+      "number": "159",
+      "heading": "Abetting mutiny, or attempting to seduce a soldier, sailor or airman from his duty",
+      "chapter_number": "VIII",
+      "page_start": 61,
+      "page_end": 61
+    },
+    {
+      "number": "160",
+      "heading": "Abetment of mutiny, if mutiny is committed in consequence thereof",
+      "chapter_number": "VIII",
+      "page_start": 61,
+      "page_end": 61
+    },
+    {
+      "number": "161",
+      "heading": "Abetment of assault by soldier, sailor or airman on his superior officer, when in execution of his office",
+      "chapter_number": "VIII",
+      "page_start": 61,
+      "page_end": 61
+    },
+    {
+      "number": "162",
+      "heading": "Abetment of such assault, if assault committed",
+      "chapter_number": "VIII",
+      "page_start": 61,
+      "page_end": 61
+    },
+    {
+      "number": "163",
+      "heading": "Abetment of desertion of soldier, sailor or airman",
+      "chapter_number": "VIII",
+      "page_start": 61,
+      "page_end": 61
+    },
+    {
+      "number": "164",
+      "heading": "Harbouring deserter",
+      "chapter_number": "VIII",
+      "page_start": 62,
+      "page_end": 62
+    },
+    {
+      "number": "165",
+      "heading": "Deserter concealed on board merchant vessel through negligence of master",
+      "chapter_number": "VIII",
+      "page_start": 62,
+      "page_end": 62
+    },
+    {
+      "number": "166",
+      "heading": "Abetment of act of insubordination by soldier, sailor or airman",
+      "chapter_number": "VIII",
+      "page_start": 62,
+      "page_end": 62
+    },
+    {
+      "number": "167",
+      "heading": "Persons subject to certain Acts",
+      "chapter_number": "VIII",
+      "page_start": 62,
+      "page_end": 62
+    },
+    {
+      "number": "168",
+      "heading": "Wearing garb or carrying token used by soldier, sailor or airman",
+      "chapter_number": "VIII",
+      "page_start": 62,
+      "page_end": 62
+    },
+    {
+      "number": "169",
+      "heading": "Candidate, electoral right defined",
+      "chapter_number": "IX",
+      "page_start": 62,
+      "page_end": 62
+    },
+    {
+      "number": "170",
+      "heading": "Bribery",
+      "chapter_number": "IX",
+      "page_start": 62,
+      "page_end": 62
+    },
+    {
+      "number": "171",
+      "heading": "Undue influence at elections",
+      "chapter_number": "IX",
+      "page_start": 63,
+      "page_end": 63
+    },
+    {
+      "number": "172",
+      "heading": "Personation at elections",
+      "chapter_number": "IX",
+      "page_start": 63,
+      "page_end": 63
+    },
+    {
+      "number": "173",
+      "heading": "Punishment for bribery",
+      "chapter_number": "IX",
+      "page_start": 63,
+      "page_end": 63
+    },
+    {
+      "number": "174",
+      "heading": "Punishment for undue influence or personation at an election",
+      "chapter_number": "IX",
+      "page_start": 63,
+      "page_end": 63
+    },
+    {
+      "number": "175",
+      "heading": "False statement in connection with an election",
+      "chapter_number": "IX",
+      "page_start": 63,
+      "page_end": 63
+    },
+    {
+      "number": "176",
+      "heading": "Illegal payments in connection with an election",
+      "chapter_number": "IX",
+      "page_start": 63,
+      "page_end": 63
+    },
+    {
+      "number": "177",
+      "heading": "Failure to keep election accounts",
+      "chapter_number": "IX",
+      "page_start": 63,
+      "page_end": 63
+    },
+    {
+      "number": "178",
+      "heading": "Counterfeiting coin, Government stamps, currency-notes or bank-notes",
+      "chapter_number": "X",
+      "page_start": 64,
+      "page_end": 64
+    },
+    {
+      "number": "179",
+      "heading": "Using as genuine, forged or counterfeit coin, Government stamp, currency-notes or bank- notes",
+      "chapter_number": "X",
+      "page_start": 64,
+      "page_end": 64
+    },
+    {
+      "number": "180",
+      "heading": "Possession of forged or counterfeit coin, Government stamp, currency-notes or bank- notes",
+      "chapter_number": "X",
+      "page_start": 64,
+      "page_end": 64
+    },
+    {
+      "number": "181",
+      "heading": "Making or possessing instruments or materials for forging or counterfeiting coin, Government stamp, currency-notes or bank-notes",
+      "chapter_number": "X",
+      "page_start": 64,
+      "page_end": 64
+    },
+    {
+      "number": "182",
+      "heading": "Making or using documents resembling currency-notes or bank-notes",
+      "chapter_number": "X",
+      "page_start": 64,
+      "page_end": 65
+    },
+    {
+      "number": "183",
+      "heading": "Effacing writing from substance bearing Government stamp, or removing from document a stamp used for it, with intent to cause loss to Government",
+      "chapter_number": "X",
+      "page_start": 65,
+      "page_end": 65
+    },
+    {
+      "number": "184",
+      "heading": "Using Government stamp known to have been before used",
+      "chapter_number": "X",
+      "page_start": 65,
+      "page_end": 65
+    },
+    {
+      "number": "185",
+      "heading": "Erasure of mark denoting that stamp has been used",
+      "chapter_number": "X",
+      "page_start": 65,
+      "page_end": 65
+    },
+    {
+      "number": "186",
+      "heading": "Prohibition of fictitious stamps",
+      "chapter_number": "X",
+      "page_start": 65,
+      "page_end": 65
+    },
+    {
+      "number": "187",
+      "heading": "Person employed in mint causing coin to be of different weight or composition from that fixed by law",
+      "chapter_number": "X",
+      "page_start": 65,
+      "page_end": 66
+    },
+    {
+      "number": "188",
+      "heading": "Unlawfully taking coining instrument from mint",
+      "chapter_number": "X",
+      "page_start": 66,
+      "page_end": 66
+    },
+    {
+      "number": "189",
+      "heading": "Unlawful assembly",
+      "chapter_number": "XI",
+      "page_start": 66,
+      "page_end": 67
+    },
+    {
+      "number": "190",
+      "heading": "Every member of unlawful assembly guilty of offence committed in prosecution of common object",
+      "chapter_number": "XI",
+      "page_start": 67,
+      "page_end": 67
+    },
+    {
+      "number": "191",
+      "heading": "Rioting",
+      "chapter_number": "XI",
+      "page_start": 67,
+      "page_end": 67
+    },
+    {
+      "number": "192",
+      "heading": "Wantonly giving provocation with intent to cause riot-if rioting be committed; if not committed",
+      "chapter_number": "XI",
+      "page_start": 67,
+      "page_end": 67
+    },
+    {
+      "number": "193",
+      "heading": "Liability of owner, occupier, etc., of land on which an unlawful assembly or riot takes place",
+      "chapter_number": "XI",
+      "page_start": 67,
+      "page_end": 68
+    },
+    {
+      "number": "194",
+      "heading": "Affray",
+      "chapter_number": "XI",
+      "page_start": 68,
+      "page_end": 68
+    },
+    {
+      "number": "195",
+      "heading": "Assaulting or obstructing public servant when suppressing riot, etc",
+      "chapter_number": "XI",
+      "page_start": 68,
+      "page_end": 68
+    },
+    {
+      "number": "196",
+      "heading": "Promoting enmity between different groups on grounds of religion, race, place of birth, residence, language, etc., and doing acts prejudicial to maintenance of harmony",
+      "chapter_number": "XI",
+      "page_start": 68,
+      "page_end": 68
+    },
+    {
+      "number": "197",
+      "heading": "Imputations, assertions prejudicial to national integration",
+      "chapter_number": "XI",
+      "page_start": 68,
+      "page_end": 69
+    },
+    {
+      "number": "198",
+      "heading": "Public servant disobeying law, with intent to cause injury to any person",
+      "chapter_number": "XII",
+      "page_start": 69,
+      "page_end": 69
+    },
+    {
+      "number": "199",
+      "heading": "Public servant disobeying direction under law",
+      "chapter_number": "XII",
+      "page_start": 69,
+      "page_end": 69
+    },
+    {
+      "number": "200",
+      "heading": "Punishment for non-treatment of victim",
+      "chapter_number": "XII",
+      "page_start": 69,
+      "page_end": 69
+    },
+    {
+      "number": "201",
+      "heading": "Public servant framing an incorrect document with intent to cause injury",
+      "chapter_number": "XII",
+      "page_start": 69,
+      "page_end": 69
+    },
+    {
+      "number": "202",
+      "heading": "Public servant unlawfully engaging in trade",
+      "chapter_number": "XII",
+      "page_start": 70,
+      "page_end": 70
+    },
+    {
+      "number": "203",
+      "heading": "Public servant unlawfully buying or bidding for property",
+      "chapter_number": "XII",
+      "page_start": 70,
+      "page_end": 70
+    },
+    {
+      "number": "204",
+      "heading": "Personating a public servant",
+      "chapter_number": "XII",
+      "page_start": 70,
+      "page_end": 70
+    },
+    {
+      "number": "205",
+      "heading": "Wearing garb or carrying token used by public servant with fraudulent intent",
+      "chapter_number": "XII",
+      "page_start": 70,
+      "page_end": 70
+    },
+    {
+      "number": "206",
+      "heading": "Absconding to avoid service of summons or other proceeding",
+      "chapter_number": "XIII",
+      "page_start": 70,
+      "page_end": 70
+    },
+    {
+      "number": "207",
+      "heading": "Preventing service of summons or other proceeding, or preventing publication thereof",
+      "chapter_number": "XIII",
+      "page_start": 70,
+      "page_end": 70
+    },
+    {
+      "number": "208",
+      "heading": "Non-attendance in obedience to an order from public servant",
+      "chapter_number": "XIII",
+      "page_start": 70,
+      "page_end": 71
+    },
+    {
+      "number": "209",
+      "heading": "Non-appearance in response to a proclamation under section 84 of Bharatiya Nagarik Suraksha Sanhita, 2023",
+      "chapter_number": "XIII",
+      "page_start": 71,
+      "page_end": 71
+    },
+    {
+      "number": "210",
+      "heading": "Omission to produce document or electronic record to public servant by person legally bound to produce it",
+      "chapter_number": "XIII",
+      "page_start": 71,
+      "page_end": 71
+    },
+    {
+      "number": "211",
+      "heading": "Omission to give notice or information to public servant by person legally bound to give it",
+      "chapter_number": "XIII",
+      "page_start": 71,
+      "page_end": 71
+    },
+    {
+      "number": "212",
+      "heading": "Furnishing false information",
+      "chapter_number": "XIII",
+      "page_start": 71,
+      "page_end": 72
+    },
+    {
+      "number": "213",
+      "heading": "Refusing oath or affirmation when duly required by public servant to make it",
+      "chapter_number": "XIII",
+      "page_start": 72,
+      "page_end": 72
+    },
+    {
+      "number": "214",
+      "heading": "Refusing to answer public servant authorised to question",
+      "chapter_number": "XIII",
+      "page_start": 72,
+      "page_end": 72
+    },
+    {
+      "number": "215",
+      "heading": "Refusing to sign statement",
+      "chapter_number": "XIII",
+      "page_start": 72,
+      "page_end": 72
+    },
+    {
+      "number": "216",
+      "heading": "False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation",
+      "chapter_number": "XIII",
+      "page_start": 72,
+      "page_end": 72
+    },
+    {
+      "number": "217",
+      "heading": "False information, with intent to cause public servant to use his lawful power to injury of another person",
+      "chapter_number": "XIII",
+      "page_start": 72,
+      "page_end": 73
+    },
+    {
+      "number": "218",
+      "heading": "Resistance to taking of property by lawful authority of a public servant",
+      "chapter_number": "XIII",
+      "page_start": 73,
+      "page_end": 73
+    },
+    {
+      "number": "219",
+      "heading": "Obstructing sale of property offered for sale by authority of public servant",
+      "chapter_number": "XIII",
+      "page_start": 73,
+      "page_end": 73
+    },
+    {
+      "number": "220",
+      "heading": "Illegal purchase or bid for property offered for sale by authority of public servant",
+      "chapter_number": "XIII",
+      "page_start": 73,
+      "page_end": 73
+    },
+    {
+      "number": "221",
+      "heading": "Obstructing public servant in discharge of public functions",
+      "chapter_number": "XIII",
+      "page_start": 73,
+      "page_end": 73
+    },
+    {
+      "number": "222",
+      "heading": "Omission to assist public servant when bound by law to give assistance",
+      "chapter_number": "XIII",
+      "page_start": 73,
+      "page_end": 73
+    },
+    {
+      "number": "223",
+      "heading": "Disobedience to order duly promulgated by public servant",
+      "chapter_number": "XIII",
+      "page_start": 74,
+      "page_end": 74
+    },
+    {
+      "number": "224",
+      "heading": "Threat of injury to public servant",
+      "chapter_number": "XIII",
+      "page_start": 74,
+      "page_end": 74
+    },
+    {
+      "number": "225",
+      "heading": "Threat of injury to induce person to refrain from applying for protection to public servant",
+      "chapter_number": "XIII",
+      "page_start": 74,
+      "page_end": 74
+    },
+    {
+      "number": "226",
+      "heading": "Attempt to commit suicide to compel or restrain exercise of lawful power",
+      "chapter_number": "XIII",
+      "page_start": 74,
+      "page_end": 74
+    },
+    {
+      "number": "227",
+      "heading": "Giving false evidence",
+      "chapter_number": "XIV",
+      "page_start": 74,
+      "page_end": 75
+    },
+    {
+      "number": "228",
+      "heading": "Fabricating false evidence",
+      "chapter_number": "XIV",
+      "page_start": 75,
+      "page_end": 75
+    },
+    {
+      "number": "229",
+      "heading": "Punishment for false evidence",
+      "chapter_number": "XIV",
+      "page_start": 75,
+      "page_end": 76
+    },
+    {
+      "number": "230",
+      "heading": "Giving or fabricating false evidence with intent to procure conviction of capital offence",
+      "chapter_number": "XIV",
+      "page_start": 76,
+      "page_end": 76
+    },
+    {
+      "number": "231",
+      "heading": "Giving or fabricating false evidence with intent to procure conviction of offence punishable with imprisonment for life or imprisonment",
+      "chapter_number": "XIV",
+      "page_start": 76,
+      "page_end": 76
+    },
+    {
+      "number": "232",
+      "heading": "Threatening any person to give false evidence",
+      "chapter_number": "XIV",
+      "page_start": 76,
+      "page_end": 76
+    },
+    {
+      "number": "233",
+      "heading": "Using evidence known to be false",
+      "chapter_number": "XIV",
+      "page_start": 76,
+      "page_end": 76
+    },
+    {
+      "number": "234",
+      "heading": "Issuing or signing false certificate",
+      "chapter_number": "XIV",
+      "page_start": 76,
+      "page_end": 76
+    },
+    {
+      "number": "235",
+      "heading": "Using as true a certificate known to be false",
+      "chapter_number": "XIV",
+      "page_start": 76,
+      "page_end": 76
+    },
+    {
+      "number": "236",
+      "heading": "False statement made in declaration which is by law receivable as evidence",
+      "chapter_number": "XIV",
+      "page_start": 76,
+      "page_end": 77
+    },
+    {
+      "number": "237",
+      "heading": "Using as true such declaration knowing it to be false",
+      "chapter_number": "XIV",
+      "page_start": 77,
+      "page_end": 77
+    },
+    {
+      "number": "238",
+      "heading": "Causing disappearance of evidence of offence, or giving false information to screen offender",
+      "chapter_number": "XIV",
+      "page_start": 77,
+      "page_end": 77
+    },
+    {
+      "number": "239",
+      "heading": "Intentional omission to give information of offence by person bound to inform",
+      "chapter_number": "XIV",
+      "page_start": 77,
+      "page_end": 77
+    },
+    {
+      "number": "240",
+      "heading": "Giving false information respecting an offence committed",
+      "chapter_number": "XIV",
+      "page_start": 77,
+      "page_end": 77
+    },
+    {
+      "number": "241",
+      "heading": "Destruction of document or electronic record to prevent its production as evidence",
+      "chapter_number": "XIV",
+      "page_start": 77,
+      "page_end": 77
+    },
+    {
+      "number": "242",
+      "heading": "False personation for purpose of act or proceeding in suit or prosecution",
+      "chapter_number": "XIV",
+      "page_start": 78,
+      "page_end": 78
+    },
+    {
+      "number": "243",
+      "heading": "Fraudulent removal or concealment of property to prevent its seizure as forfeited or in execution",
+      "chapter_number": "XIV",
+      "page_start": 78,
+      "page_end": 78
+    },
+    {
+      "number": "244",
+      "heading": "Fraudulent claim to property to prevent its seizure as forfeited or in execution",
+      "chapter_number": "XIV",
+      "page_start": 78,
+      "page_end": 78
+    },
+    {
+      "number": "245",
+      "heading": "Fraudulently suffering decree for sum not due",
+      "chapter_number": "XIV",
+      "page_start": 78,
+      "page_end": 78
+    },
+    {
+      "number": "246",
+      "heading": "Dishonestly making false claim in Court",
+      "chapter_number": "XIV",
+      "page_start": 78,
+      "page_end": 78
+    },
+    {
+      "number": "247",
+      "heading": "Fraudulently obtaining decree for sum not due",
+      "chapter_number": "XIV",
+      "page_start": 78,
+      "page_end": 78
+    },
+    {
+      "number": "248",
+      "heading": "False charge of offence made with intent to injure",
+      "chapter_number": "XIV",
+      "page_start": 78,
+      "page_end": 79
+    },
+    {
+      "number": "249",
+      "heading": "Harbouring offender",
+      "chapter_number": "XIV",
+      "page_start": 79,
+      "page_end": 79
+    },
+    {
+      "number": "250",
+      "heading": "Taking gift, etc., to screen an offender from punishment",
+      "chapter_number": "XIV",
+      "page_start": 79,
+      "page_end": 79
+    },
+    {
+      "number": "251",
+      "heading": "Offering gift or restoration of property in consideration of screening offender",
+      "chapter_number": "XIV",
+      "page_start": 79,
+      "page_end": 80
+    },
+    {
+      "number": "252",
+      "heading": "Taking gift to help to recover stolen property, etc",
+      "chapter_number": "XIV",
+      "page_start": 80,
+      "page_end": 80
+    },
+    {
+      "number": "253",
+      "heading": "Harbouring offender who has escaped from custody or whose apprehension has been ordered",
+      "chapter_number": "XIV",
+      "page_start": 80,
+      "page_end": 80
+    },
+    {
+      "number": "254",
+      "heading": "Penalty for harbouring robbers or dacoits",
+      "chapter_number": "XIV",
+      "page_start": 80,
+      "page_end": 80
+    },
+    {
+      "number": "255",
+      "heading": "Public servant disobeying direction of law with intent to save person from punishment or property from forfeiture",
+      "chapter_number": "XIV",
+      "page_start": 80,
+      "page_end": 81
+    },
+    {
+      "number": "256",
+      "heading": "Public servant framing incorrect record or writing with intent to save person from punishment or property from forfeiture",
+      "chapter_number": "XIV",
+      "page_start": 81,
+      "page_end": 81
+    },
+    {
+      "number": "257",
+      "heading": "Public servant in judicial proceeding corruptly making report, etc., contrary to law",
+      "chapter_number": "XIV",
+      "page_start": 81,
+      "page_end": 81
+    },
+    {
+      "number": "258",
+      "heading": "Commitment for trial or confinement by person having authority who knows that he is acting contrary to law",
+      "chapter_number": "XIV",
+      "page_start": 81,
+      "page_end": 81
+    },
+    {
+      "number": "259",
+      "heading": "Intentional omission to apprehend on part of public servant bound to apprehend",
+      "chapter_number": "XIV",
+      "page_start": 81,
+      "page_end": 81
+    },
+    {
+      "number": "260",
+      "heading": "Intentional omission to apprehend on part of public servant bound to apprehend person under sentence or lawfully committed",
+      "chapter_number": "XIV",
+      "page_start": 81,
+      "page_end": 82
+    },
+    {
+      "number": "261",
+      "heading": "Escape from confinement or custody negligently suffered by public servant",
+      "chapter_number": "XIV",
+      "page_start": 82,
+      "page_end": 82
+    },
+    {
+      "number": "262",
+      "heading": "Resistance or obstruction by a person to his lawful apprehension",
+      "chapter_number": "XIV",
+      "page_start": 82,
+      "page_end": 82
+    },
+    {
+      "number": "263",
+      "heading": "Resistance or obstruction to lawful apprehension of another person",
+      "chapter_number": "XIV",
+      "page_start": 82,
+      "page_end": 82
+    },
+    {
+      "number": "264",
+      "heading": "Omission to apprehend, or sufferance of escape, on part of public servant, in cases not otherwise provided for",
+      "chapter_number": "XIV",
+      "page_start": 82,
+      "page_end": 83
+    },
+    {
+      "number": "265",
+      "heading": "Resistance or obstruction to lawful apprehension or escape or rescue in cases not otherwise provided for",
+      "chapter_number": "XIV",
+      "page_start": 83,
+      "page_end": 83
+    },
+    {
+      "number": "266",
+      "heading": "Violation of condition of remission of punishment",
+      "chapter_number": "XIV",
+      "page_start": 83,
+      "page_end": 83
+    },
+    {
+      "number": "267",
+      "heading": "Intentional insult or interruption to public servant sitting in judicial proceeding",
+      "chapter_number": "XIV",
+      "page_start": 83,
+      "page_end": 83
+    },
+    {
+      "number": "268",
+      "heading": "Personation of assessor",
+      "chapter_number": "XIV",
+      "page_start": 83,
+      "page_end": 83
+    },
+    {
+      "number": "269",
+      "heading": "Failure by person released on bail bond or bond to appear in Court",
+      "chapter_number": "XIV",
+      "page_start": 83,
+      "page_end": 83
+    },
+    {
+      "number": "270",
+      "heading": "Public nuisance",
+      "chapter_number": "XV",
+      "page_start": 83,
+      "page_end": 83
+    },
+    {
+      "number": "271",
+      "heading": "Negligent act likely to spread infection of disease dangerous to life",
+      "chapter_number": "XV",
+      "page_start": 83,
+      "page_end": 83
+    },
+    {
+      "number": "272",
+      "heading": "Malignant act likely to spread infection of disease dangerous to life",
+      "chapter_number": "XV",
+      "page_start": 83,
+      "page_end": 84
+    },
+    {
+      "number": "273",
+      "heading": "Disobedience to quarantine rule",
+      "chapter_number": "XV",
+      "page_start": 84,
+      "page_end": 84
+    },
+    {
+      "number": "274",
+      "heading": "Adulteration of food or drink intended for sale",
+      "chapter_number": "XV",
+      "page_start": 84,
+      "page_end": 84
+    },
+    {
+      "number": "275",
+      "heading": "Sale of noxious food or drink",
+      "chapter_number": "XV",
+      "page_start": 84,
+      "page_end": 84
+    },
+    {
+      "number": "276",
+      "heading": "Adulteration of drugs",
+      "chapter_number": "XV",
+      "page_start": 84,
+      "page_end": 84
+    },
+    {
+      "number": "277",
+      "heading": "Sale of adulterated drugs",
+      "chapter_number": "XV",
+      "page_start": 84,
+      "page_end": 84
+    },
+    {
+      "number": "278",
+      "heading": "Sale of drug as a different drug or preparation",
+      "chapter_number": "XV",
+      "page_start": 84,
+      "page_end": 84
+    },
+    {
+      "number": "279",
+      "heading": "Fouling water of public spring or reservoir",
+      "chapter_number": "XV",
+      "page_start": 84,
+      "page_end": 84
+    },
+    {
+      "number": "280",
+      "heading": "Making atmosphere noxious to health",
+      "chapter_number": "XV",
+      "page_start": 84,
+      "page_end": 84
+    },
+    {
+      "number": "281",
+      "heading": "Rash driving or riding on a public way",
+      "chapter_number": "XV",
+      "page_start": 84,
+      "page_end": 84
+    },
+    {
+      "number": "282",
+      "heading": "Rash navigation of vessel",
+      "chapter_number": "XV",
+      "page_start": 84,
+      "page_end": 84
+    },
+    {
+      "number": "283",
+      "heading": "Exhibition of false light, mark or buoy",
+      "chapter_number": "XV",
+      "page_start": 85,
+      "page_end": 85
+    },
+    {
+      "number": "284",
+      "heading": "Conveying person by water for hire in unsafe or overloaded vessel",
+      "chapter_number": "XV",
+      "page_start": 85,
+      "page_end": 85
+    },
+    {
+      "number": "285",
+      "heading": "Danger or obstruction in public way or line of navigation",
+      "chapter_number": "XV",
+      "page_start": 85,
+      "page_end": 85
+    },
+    {
+      "number": "286",
+      "heading": "Negligent conduct with respect to poisonous substance",
+      "chapter_number": "XV",
+      "page_start": 85,
+      "page_end": 85
+    },
+    {
+      "number": "287",
+      "heading": "Negligent conduct with respect to fire or combustible matter",
+      "chapter_number": "XV",
+      "page_start": 85,
+      "page_end": 85
+    },
+    {
+      "number": "288",
+      "heading": "Negligent conduct with respect to explosive substance",
+      "chapter_number": "XV",
+      "page_start": 85,
+      "page_end": 85
+    },
+    {
+      "number": "289",
+      "heading": "Negligent conduct with respect to machinery",
+      "chapter_number": "XV",
+      "page_start": 85,
+      "page_end": 85
+    },
+    {
+      "number": "290",
+      "heading": "Negligent conduct with respect to pulling down, repairing or constructing buildings, etc",
+      "chapter_number": "XV",
+      "page_start": 85,
+      "page_end": 85
+    },
+    {
+      "number": "291",
+      "heading": "Negligent conduct with respect to animal",
+      "chapter_number": "XV",
+      "page_start": 85,
+      "page_end": 85
+    },
+    {
+      "number": "292",
+      "heading": "Punishment for public nuisance in cases not otherwise provided for",
+      "chapter_number": "XV",
+      "page_start": 86,
+      "page_end": 86
+    },
+    {
+      "number": "293",
+      "heading": "Continuance of nuisance after injunction to discontinue",
+      "chapter_number": "XV",
+      "page_start": 86,
+      "page_end": 86
+    },
+    {
+      "number": "294",
+      "heading": "Sale, etc., of obscene books, etc",
+      "chapter_number": "XV",
+      "page_start": 86,
+      "page_end": 86
+    },
+    {
+      "number": "295",
+      "heading": "Sale, etc., of obscene objects to child",
+      "chapter_number": "XV",
+      "page_start": 86,
+      "page_end": 87
+    },
+    {
+      "number": "296",
+      "heading": "Obscene acts and songs",
+      "chapter_number": "XV",
+      "page_start": 87,
+      "page_end": 87
+    },
+    {
+      "number": "297",
+      "heading": "Keeping lottery office",
+      "chapter_number": "XV",
+      "page_start": 87,
+      "page_end": 87
+    },
+    {
+      "number": "298",
+      "heading": "Injuring or defiling place of worship with intent to insult religion of any class",
+      "chapter_number": "XVI",
+      "page_start": 87,
+      "page_end": 87
+    },
+    {
+      "number": "299",
+      "heading": "Deliberate and malicious acts, intended to outrage religious feelings of any class by insulting its religion or religious beliefs",
+      "chapter_number": "XVI",
+      "page_start": 87,
+      "page_end": 87
+    },
+    {
+      "number": "300",
+      "heading": "Disturbing religious assembly",
+      "chapter_number": "XVI",
+      "page_start": 87,
+      "page_end": 87
+    },
+    {
+      "number": "301",
+      "heading": "Trespassing on burial places, etc",
+      "chapter_number": "XVI",
+      "page_start": 87,
+      "page_end": 87
+    },
+    {
+      "number": "302",
+      "heading": "Uttering words, etc., with deliberate intent to wound religious feelings of any person",
+      "chapter_number": "XVI",
+      "page_start": 87,
+      "page_end": 87
+    },
+    {
+      "number": "303",
+      "heading": "Theft",
+      "chapter_number": "XVII",
+      "page_start": 88,
+      "page_end": 89
+    },
+    {
+      "number": "304",
+      "heading": "Snatching",
+      "chapter_number": "XVII",
+      "page_start": 89,
+      "page_end": 89
+    },
+    {
+      "number": "305",
+      "heading": "Theft in a dwelling house, or means of transportation or place of worship, etc",
+      "chapter_number": "XVII",
+      "page_start": 89,
+      "page_end": 89
+    },
+    {
+      "number": "306",
+      "heading": "Theft by clerk or servant of property in possession of master",
+      "chapter_number": "XVII",
+      "page_start": 89,
+      "page_end": 90
+    },
+    {
+      "number": "307",
+      "heading": "Theft after preparation made for causing death, hurt or restraint in order to committing of theft",
+      "chapter_number": "XVII",
+      "page_start": 90,
+      "page_end": 90
+    },
+    {
+      "number": "308",
+      "heading": "Extortion",
+      "chapter_number": "XVII",
+      "page_start": 90,
+      "page_end": 91
+    },
+    {
+      "number": "309",
+      "heading": "Robbery",
+      "chapter_number": "XVII",
+      "page_start": 91,
+      "page_end": 91
+    },
+    {
+      "number": "310",
+      "heading": "Dacoity",
+      "chapter_number": "XVII",
+      "page_start": 91,
+      "page_end": 92
+    },
+    {
+      "number": "311",
+      "heading": "Robbery, or dacoity, with attempt to cause death or grievous hurt",
+      "chapter_number": "XVII",
+      "page_start": 92,
+      "page_end": 92
+    },
+    {
+      "number": "312",
+      "heading": "Attempt to commit robbery or dacoity when armed with deadly weapon",
+      "chapter_number": "XVII",
+      "page_start": 92,
+      "page_end": 92
+    },
+    {
+      "number": "313",
+      "heading": "Punishment for belonging to gang of robbers, etc",
+      "chapter_number": "XVII",
+      "page_start": 92,
+      "page_end": 92
+    },
+    {
+      "number": "314",
+      "heading": "Dishonest misappropriation of property",
+      "chapter_number": "XVII",
+      "page_start": 92,
+      "page_end": 93
+    },
+    {
+      "number": "315",
+      "heading": "Dishonest misappropriation of property possessed by deceased person at the time of his death",
+      "chapter_number": "XVII",
+      "page_start": 93,
+      "page_end": 93
+    },
+    {
+      "number": "316",
+      "heading": "Criminal breach of trust",
+      "chapter_number": "XVII",
+      "page_start": 93,
+      "page_end": 95
+    },
+    {
+      "number": "317",
+      "heading": "Stolen property",
+      "chapter_number": "XVII",
+      "page_start": 95,
+      "page_end": 95
+    },
+    {
+      "number": "318",
+      "heading": "Cheating",
+      "chapter_number": "XVII",
+      "page_start": 95,
+      "page_end": 96
+    },
+    {
+      "number": "319",
+      "heading": "Cheating by personation",
+      "chapter_number": "XVII",
+      "page_start": 96,
+      "page_end": 96
+    },
+    {
+      "number": "320",
+      "heading": "Dishonest or fraudulent removal or concealment of property to prevent distribution among creditors",
+      "chapter_number": "XVII",
+      "page_start": 96,
+      "page_end": 96
+    },
+    {
+      "number": "321",
+      "heading": "Dishonestly or fraudulently preventing debt being available for creditors",
+      "chapter_number": "XVII",
+      "page_start": 96,
+      "page_end": 96
+    },
+    {
+      "number": "322",
+      "heading": "Dishonest or fraudulent execution of deed of transfer containing false statement of consideration",
+      "chapter_number": "XVII",
+      "page_start": 96,
+      "page_end": 97
+    },
+    {
+      "number": "323",
+      "heading": "Dishonest or fraudulent removal or concealment of property",
+      "chapter_number": "XVII",
+      "page_start": 97,
+      "page_end": 97
+    },
+    {
+      "number": "324",
+      "heading": "Mischief",
+      "chapter_number": "XVII",
+      "page_start": 97,
+      "page_end": 98
+    },
+    {
+      "number": "325",
+      "heading": "Mischief by killing or maiming animal",
+      "chapter_number": "XVII",
+      "page_start": 98,
+      "page_end": 98
+    },
+    {
+      "number": "326",
+      "heading": "Mischief by injury, inundation, fire or explosive substance, etc",
+      "chapter_number": "XVII",
+      "page_start": 98,
+      "page_end": 98
+    },
+    {
+      "number": "327",
+      "heading": "Mischief with intent to destroy or make unsafe a rail, aircraft, decked vessel or one of twenty tons burden",
+      "chapter_number": "XVII",
+      "page_start": 98,
+      "page_end": 99
+    },
+    {
+      "number": "328",
+      "heading": "Punishment for intentionally running vessel aground or ashore with intent to commit theft, etc",
+      "chapter_number": "XVII",
+      "page_start": 99,
+      "page_end": 99
+    },
+    {
+      "number": "329",
+      "heading": "Criminal trespass and house-trespass",
+      "chapter_number": "XVII",
+      "page_start": 99,
+      "page_end": 99
+    },
+    {
+      "number": "330",
+      "heading": "House-trespass and house-breaking",
+      "chapter_number": "XVII",
+      "page_start": 99,
+      "page_end": 100
+    },
+    {
+      "number": "331",
+      "heading": "Punishment for house-trespass or house-breaking",
+      "chapter_number": "XVII",
+      "page_start": 100,
+      "page_end": 101
+    },
+    {
+      "number": "332",
+      "heading": "House-trespass in order to commit offence",
+      "chapter_number": "XVII",
+      "page_start": 101,
+      "page_end": 101
+    },
+    {
+      "number": "333",
+      "heading": "House-trespass after preparation for hurt, assault or wrongful restraint",
+      "chapter_number": "XVII",
+      "page_start": 101,
+      "page_end": 101
+    },
+    {
+      "number": "334",
+      "heading": "Dishonestly breaking open receptacle containing property",
+      "chapter_number": "XVII",
+      "page_start": 101,
+      "page_end": 101
+    },
+    {
+      "number": "335",
+      "heading": "Making a false document",
+      "chapter_number": "XVIII",
+      "page_start": 101,
+      "page_end": 103
+    },
+    {
+      "number": "336",
+      "heading": "Forgery",
+      "chapter_number": "XVIII",
+      "page_start": 103,
+      "page_end": 103
+    },
+    {
+      "number": "337",
+      "heading": "Forgery of record of Court or of public register, etc",
+      "chapter_number": "XVIII",
+      "page_start": 103,
+      "page_end": 104
+    },
+    {
+      "number": "338",
+      "heading": "Forgery of valuable security, will, etc",
+      "chapter_number": "XVIII",
+      "page_start": 104,
+      "page_end": 104
+    },
+    {
+      "number": "339",
+      "heading": "Having possession of document described in section 337 or section 338, knowing it to be forged and intending to use it as genuine",
+      "chapter_number": "XVIII",
+      "page_start": 104,
+      "page_end": 104
+    },
+    {
+      "number": "340",
+      "heading": "Forged document or electronic record and using it as genuine",
+      "chapter_number": "XVIII",
+      "page_start": 104,
+      "page_end": 104
+    },
+    {
+      "number": "341",
+      "heading": "Making or possessing counterfeit seal, etc., with intent to commit forgery punishable under section 338",
+      "chapter_number": "XVIII",
+      "page_start": 104,
+      "page_end": 104
+    },
+    {
+      "number": "342",
+      "heading": "Counterfeiting device or mark used for authenticating documents described in section 338, or possessing counterfeit marked material",
+      "chapter_number": "XVIII",
+      "page_start": 104,
+      "page_end": 105
+    },
+    {
+      "number": "343",
+      "heading": "Fraudulent cancellation, destruction, etc., of will, authority to adopt, or valuable security",
+      "chapter_number": "XVIII",
+      "page_start": 105,
+      "page_end": 105
+    },
+    {
+      "number": "344",
+      "heading": "Falsification of accounts",
+      "chapter_number": "XVIII",
+      "page_start": 105,
+      "page_end": 105
+    },
+    {
+      "number": "345",
+      "heading": "Property mark",
+      "chapter_number": "XVIII",
+      "page_start": 105,
+      "page_end": 105
+    },
+    {
+      "number": "346",
+      "heading": "Tampering with property mark with intent to cause injury",
+      "chapter_number": "XVIII",
+      "page_start": 105,
+      "page_end": 105
+    },
+    {
+      "number": "347",
+      "heading": "Counterfeiting a property mark",
+      "chapter_number": "XVIII",
+      "page_start": 105,
+      "page_end": 106
+    },
+    {
+      "number": "348",
+      "heading": "Making or possession of any instrument for counterfeiting a property mark",
+      "chapter_number": "XVIII",
+      "page_start": 106,
+      "page_end": 106
+    },
+    {
+      "number": "349",
+      "heading": "Selling goods marked with a counterfeit property mark",
+      "chapter_number": "XVIII",
+      "page_start": 106,
+      "page_end": 106
+    },
+    {
+      "number": "350",
+      "heading": "Making a false mark upon any receptacle containing goods",
+      "chapter_number": "XVIII",
+      "page_start": 106,
+      "page_end": 106
+    },
+    {
+      "number": "351",
+      "heading": "Criminal intimidation",
+      "chapter_number": "XIX",
+      "page_start": 106,
+      "page_end": 107
+    },
+    {
+      "number": "352",
+      "heading": "Intentional insult with intent to provoke breach of peace",
+      "chapter_number": "XIX",
+      "page_start": 107,
+      "page_end": 107
+    },
+    {
+      "number": "353",
+      "heading": "Statements conducing to public mischief",
+      "chapter_number": "XIX",
+      "page_start": 107,
+      "page_end": 107
+    },
+    {
+      "number": "354",
+      "heading": "Act caused by inducing person to believe that he will be rendered an object of Divine displeasure",
+      "chapter_number": "XIX",
+      "page_start": 107,
+      "page_end": 108
+    },
+    {
+      "number": "355",
+      "heading": "Misconduct in public by a drunken person",
+      "chapter_number": "XIX",
+      "page_start": 108,
+      "page_end": 108
+    },
+    {
+      "number": "356",
+      "heading": "Defamation",
+      "chapter_number": "XIX",
+      "page_start": 108,
+      "page_end": 110
+    },
+    {
+      "number": "357",
+      "heading": "Breach of contract to attend on and supply wants of helpless person",
+      "chapter_number": "XIX",
+      "page_start": 110,
+      "page_end": 110
+    },
+    {
+      "number": "358",
+      "heading": "Repeal and savings",
+      "chapter_number": "XX",
+      "page_start": 110,
+      "page_end": 111
+    }
+  ],
+  "expected_count": 358,
+  "extracted_count": 358,
+  "missing_sections": [],
+  "unexpected_sections": [],
+  "duplicate_sections": [],
+  "heading_mismatches": [],
+  "chapter_mapping_mismatches": [],
+  "arrangement_chapters": [
+    {
+      "number": "I",
+      "title": "PRELIMINARY"
+    },
+    {
+      "number": "II",
+      "title": "OF PUNISHMENTS"
+    },
+    {
+      "number": "III",
+      "title": "GENERAL EXCEPTIONS"
+    },
+    {
+      "number": "IV",
+      "title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT"
+    },
+    {
+      "number": "V",
+      "title": "OF OFFENCES AGAINST WOMAN AND CHILD"
+    },
+    {
+      "number": "VI",
+      "title": "OF OFFENCES AFFECTING THE HUMAN BODY"
+    },
+    {
+      "number": "VII",
+      "title": "OF OFFENCES AGAINST THE STATE"
+    },
+    {
+      "number": "VIII",
+      "title": "OF OFFENCES RELATING TO THE ARMY, NAVY AND AIR FORCE"
+    },
+    {
+      "number": "IX",
+      "title": "OF OFFENCES RELATING TO ELECTIONS"
+    },
+    {
+      "number": "X",
+      "title": "OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS"
+    },
+    {
+      "number": "XI",
+      "title": "OF OFFENCES AGAINST THE PUBLIC TRANQUILLITY"
+    },
+    {
+      "number": "XII",
+      "title": "OF OFFENCES BY OR RELATING TO PUBLIC SERVANTS"
+    },
+    {
+      "number": "XIII",
+      "title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS"
+    },
+    {
+      "number": "XIV",
+      "title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE"
+    },
+    {
+      "number": "XV",
+      "title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,"
+    },
+    {
+      "number": "XVI",
+      "title": "OF OFFENCES RELATING TO RELIGION"
+    },
+    {
+      "number": "XVII",
+      "title": "OF OFFENCES AGAINST PROPERTY"
+    },
+    {
+      "number": "XVIII",
+      "title": "OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS"
+    },
+    {
+      "number": "XIX",
+      "title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC."
+    },
+    {
+      "number": "XX",
+      "title": "REPEAL AND SAVINGS"
+    }
+  ],
+  "body_chapters": [
+    {
+      "number": "I",
+      "title": "PRELIMINARY"
+    },
+    {
+      "number": "II",
+      "title": "OF PUNISHMENTS"
+    },
+    {
+      "number": "III",
+      "title": "GENERAL EXCEPTIONS"
+    },
+    {
+      "number": "IV",
+      "title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT"
+    },
+    {
+      "number": "V",
+      "title": "OF OFFENCES AGAINST WOMAN AND CHILD"
+    },
+    {
+      "number": "VI",
+      "title": "OF OFFENCES AFFECTING THE HUMAN BODY"
+    },
+    {
+      "number": "VII",
+      "title": "OF OFFENCES AGAINST THE STATE"
+    },
+    {
+      "number": "VIII",
+      "title": "OF OFFENCES RELATING TO THE ARMY, NAVY AND AIR FORCE"
+    },
+    {
+      "number": "IX",
+      "title": "OF OFFENCES RELATING TO ELECTIONS"
+    },
+    {
+      "number": "X",
+      "title": "OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS"
+    },
+    {
+      "number": "XI",
+      "title": "OF OFFENCES AGAINST THE PUBLIC TRANQUILLITY"
+    },
+    {
+      "number": "XII",
+      "title": "OF OFFENCES BY OR RELATING TO PUBLIC SERVANTS"
+    },
+    {
+      "number": "XIII",
+      "title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS"
+    },
+    {
+      "number": "XIV",
+      "title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE"
+    },
+    {
+      "number": "XV",
+      "title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE, DECENCY AND MORALS"
+    },
+    {
+      "number": "XVI",
+      "title": "OF OFFENCES RELATING TO RELIGION"
+    },
+    {
+      "number": "XVII",
+      "title": "OF OFFENCES AGAINST PROPERTY"
+    },
+    {
+      "number": "XVIII",
+      "title": "OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS"
+    },
+    {
+      "number": "XIX",
+      "title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC."
+    },
+    {
+      "number": "XX",
+      "title": "REPEAL AND SAVINGS"
+    }
+  ],
+  "schedules_in_arrangement": [],
+  "form_numbers": null
+}

@@ -1,0 +1,830 @@
+[
+    {
+        "query": "What is Article 21?",
+        "group": "constitution",
+        "scope": "LEGAL",
+        "rewritten_query": "What is Article 21?",
+        "expanded_concepts": [],
+        "matched_colloquial_keys": [],
+        "retrieval_confidence": "Sufficient",
+        "response": "Article 21 is a provision in the Indian Constitution that guarantees the protection of life and personal liberty. It states that no person shall be deprived of their life or personal liberty except according to procedure established by law.",
+        "retrieved_records": 1,
+        "source_metadata": [
+            {
+                "title": "The Constitution of India",
+                "article_or_section": "21",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            }
+        ],
+        "evidence_passed": "Article: 21\nHeading: Article 21 — Protection of life and personal liberty\nText: No person shall be deprived of his life or personal liberty except according to procedure established by law.\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "concept_expansion_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.09087777137756348,
+            "qdrant_retrieval_time": 0.3540208339691162,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.06984734535217285,
+            "first_token_latency": 1.434950351715088,
+            "total_generation_time": 12.855889320373535,
+            "total_time": 13.370635271072388
+        },
+        "new_session": true
+    },
+    {
+        "query": "Explain Article 14.",
+        "group": "constitution",
+        "scope": "LEGAL",
+        "rewritten_query": "Explain Article 14.",
+        "expanded_concepts": [],
+        "matched_colloquial_keys": [],
+        "retrieval_confidence": "Sufficient",
+        "response": "Article 14 of the Indian Constitution guarantees the principle of equality before the law. It states that the State shall not deny to any person equality before the law or the equal protection of the laws within the territory of India. This means that all individuals, regardless of their background, status, or circumstances, are entitled to the same legal rights and protections under the law. The State is obligated to ensure that no one is discriminated against or treated unfairly based on their",
+        "retrieved_records": 1,
+        "source_metadata": [
+            {
+                "title": "The Constitution of India",
+                "article_or_section": "14",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            }
+        ],
+        "evidence_passed": "Article: 14\nHeading: Article 14 — Equality before law\nText: The State shall not deny to any person equality before the law or the equal protection of the laws within the territory of India.\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "concept_expansion_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.04648423194885254,
+            "qdrant_retrieval_time": 0.32263851165771484,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.002002239227294922,
+            "first_token_latency": 1.4293060302734375,
+            "total_generation_time": 36.18878531455994,
+            "total_time": 36.5599102973938
+        },
+        "new_session": true
+    },
+    {
+        "query": "What does Article 19(1)(a) protect?",
+        "group": "constitution",
+        "scope": "LEGAL",
+        "rewritten_query": "What does Article 19(1)(a) protect?",
+        "expanded_concepts": [],
+        "matched_colloquial_keys": [],
+        "retrieval_confidence": "Sufficient",
+        "response": "Article 19(1)(a) protects freedom of speech and expression. ⚆",
+        "retrieved_records": 1,
+        "source_metadata": [
+            {
+                "title": "The Constitution of India",
+                "article_or_section": "19",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            }
+        ],
+        "evidence_passed": "Article: 19\nHeading: Article 19(1)(a)\nText: to freedom of speech and expression;\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "concept_expansion_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.048455238342285156,
+            "qdrant_retrieval_time": 0.3894221782684326,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.002001047134399414,
+            "first_token_latency": 1.3162164688110352,
+            "total_generation_time": 6.206490516662598,
+            "total_time": 6.646368980407715
+        },
+        "new_session": true
+    },
+    {
+        "query": "Article 19 (1) (a)",
+        "group": "constitution",
+        "scope": "LEGAL",
+        "rewritten_query": "Article 19 (1) (a)",
+        "expanded_concepts": [],
+        "matched_colloquial_keys": [],
+        "retrieval_confidence": "Sufficient",
+        "response": "The evidence does not directly address the user's specific question about Article 19 (1) (a). However, it does provide the context for Article 19, which is the freedom of speech and expression. Therefore, the assistant can conclude that Article 19 (1) (a)�权 is the freedom of speech and expression.",
+        "retrieved_records": 1,
+        "source_metadata": [
+            {
+                "title": "The Constitution of India",
+                "article_or_section": "19",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            }
+        ],
+        "evidence_passed": "Article: 19\nHeading: Article 19(1)(a)\nText: to freedom of speech and expression;\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "concept_expansion_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.045745849609375,
+            "qdrant_retrieval_time": 0.33103418350219727,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.004000425338745117,
+            "first_token_latency": 1.3073961734771729,
+            "total_generation_time": 19.299211502075195,
+            "total_time": 19.679991960525513
+        },
+        "new_session": true
+    },
+    {
+        "query": "What are the Fundamental Rights?",
+        "group": "constitution",
+        "scope": "LEGAL",
+        "rewritten_query": "What are the Fundamental Rights?",
+        "expanded_concepts": [],
+        "matched_colloquial_keys": [],
+        "retrieval_confidence": "Sufficient",
+        "response": "The Fundamental Rights are the core rights guaranteed by the Constitution of India, as outlined in Article 13. These rights are essential for the protection of individual liberties and the functioning of a democratic society. The specific rights mentioned in Article 13 include:\n\n1. **Freedom to manage religious affairs**: This right allows religious denominations or sections thereof to manage their affairs without interference from the state. It ensures that religious institutions can operate fr",
+        "retrieved_records": 4,
+        "source_metadata": [
+            {
+                "title": "The Constitution of India",
+                "article_or_section": null,
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article_or_section": "243ZK",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article_or_section": "13",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article_or_section": "26",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            }
+        ],
+        "evidence_passed": "Article: None\nHeading: PART III — FUNDAMENTAL RIGHTS\nText: PART III — FUNDAMENTAL RIGHTS\n\nArticle: 243ZK\nHeading: Article 243ZK(1)\nText: Notwithstanding anything contained in any law made by the Legislature of a State, the election of a board shall be conducted before the expiry of the term of the board so as to ensure that the newly elected members of the board assume office immediately on the expiry of the office of members of the outgoing board.\n\nArticle: 13\nHeading: Article 13 — Laws inconsistent with or in derogation of the fundamental rights\nText: [Laws inconsistent with or in derogation of the fundamental rights.] (Text constituted of the clauses, sub-clauses, provisos and explanations listed as child records.)\n\nArticle: 26\nHeading: Article 26 — Freedom to manage religious affairs\nT",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "concept_expansion_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.05217623710632324,
+            "qdrant_retrieval_time": 0.12919282913208008,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.007354736328125,
+            "first_token_latency": 2.7561752796173096,
+            "total_generation_time": 70.89470839500427,
+            "total_time": 71.0834321975708
+        },
+        "new_session": true
+    },
+    {
+        "query": "What is the right to equality?",
+        "group": "constitution",
+        "scope": "LEGAL",
+        "rewritten_query": "What is the right to equality?",
+        "expanded_concepts": [],
+        "matched_colloquial_keys": [],
+        "retrieval_confidence": "Sufficient",
+        "response": "The right to equality is a fundamental principle enshrined in Article 13(4) of the Constitution, which states that nothing in this article shall apply to any amendment of this Constitution made under Article 368. This article ensures that all individuals are equally entitled to freedom of conscience and the right freely to profess, practice, and propagate religion, subject to public order, morality, and health, and to the other provisions of this Part.",
+        "retrieved_records": 4,
+        "source_metadata": [
+            {
+                "title": "The Constitution of India",
+                "article_or_section": "13",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article_or_section": "25",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article_or_section": "26",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article_or_section": "38",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            }
+        ],
+        "evidence_passed": "Article: 13\nHeading: Article 13(4)\nText: Nothing in this article shall apply to any amendment of this Constitution made under article 368.] Right to Equality\n\nArticle: 25\nHeading: Article 25(1)\nText: Subject to public order, morality and health and to the other provisions of this Part, all persons are equally entitled to freedom of conscience and the right freely to profess, practice and propagate religion.\n\nArticle: 26\nHeading: Article 26 — Freedom to manage religious affairs\nText: Subject to public order, morality and health, every religious denomination or any section thereof shall have the right—\n\nArticle: 38\nHeading: Article 38(2)\nText: The State shall, in particular, strive to minimise the inequalities in income, and endeavour to eliminate inequalities in status, facilities and oppor",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "concept_expansion_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.055054426193237305,
+            "qdrant_retrieval_time": 0.13299942016601562,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.0062944889068603516,
+            "first_token_latency": 2.665259599685669,
+            "total_generation_time": 26.02039361000061,
+            "total_time": 26.214741945266724
+        },
+        "new_session": true
+    },
+    {
+        "query": "Explain Article 32.",
+        "group": "constitution",
+        "scope": "LEGAL",
+        "rewritten_query": "Explain Article 32.",
+        "expanded_concepts": [],
+        "matched_colloquial_keys": [],
+        "retrieval_confidence": "Sufficient",
+        "response": "Article 32 empowers any other court to exercise the powers of the Supreme Court under clause (2) of Article 32(3). This means that the Supreme Court can issue directions or orders, including writs like habeas corpus, mandamus, prohibition, quo warranto, and certiorari, to enforce the rights conferred by this Part. The right guaranteed by Article 32 is not suspended except as provided by the Constitution.",
+        "retrieved_records": 4,
+        "source_metadata": [
+            {
+                "title": "The Constitution of India",
+                "article_or_section": "32",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article_or_section": "32",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article_or_section": "32",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article_or_section": "32",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            }
+        ],
+        "evidence_passed": "Article: 32\nHeading: Article 32 — Remedies for enforcement of rights conferred by this Part\nText: [Remedies for enforcement of rights conferred by this Part.] (Text constituted of the clauses, sub-clauses, provisos and explanations listed as child records.)\n\nArticle: 32\nHeading: Article 32(3)\nText: Without prejudice to the powers conferred on the Supreme Court by clauses (1) and (2), Parliament may by law empower any other court to exercise within the local limits of its jurisdiction all or any of the powers exercisable by the Supreme Court under clause (2).\n\nArticle: 32\nHeading: Article 32(2)\nText: The Supreme Court shall have power to issue directions or orders or writs, including writs in the nature of habeas corpus, mandamus, prohibition, quo warranto and certiorari, whichever may be a",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "concept_expansion_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.045361995697021484,
+            "qdrant_retrieval_time": 0.3387637138366699,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.002998828887939453,
+            "first_token_latency": 2.992027521133423,
+            "total_generation_time": 26.76234745979309,
+            "total_time": 27.14947199821472
+        },
+        "new_session": true
+    },
+    {
+        "query": "What is BNS Section 303?",
+        "group": "bns_exact",
+        "scope": "LEGAL",
+        "rewritten_query": "What is BNS Section 303?",
+        "expanded_concepts": [],
+        "matched_colloquial_keys": [],
+        "retrieval_confidence": "Sufficient",
+        "response": "Evidence:\nSection: 303\nHeading: Section 303\nText: (1) Whoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft. Explanation 1.—A thing so long as it is attached to the earth, not being movable property, is not the subject of theft; but it becomes capable of being the subject of theft as soon as it is severed from the earth. Explanation 2.—A moving effected by",
+        "retrieved_records": 1,
+        "source_metadata": [
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "303",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            }
+        ],
+        "evidence_passed": "Section: 303\nHeading: Section 303\nText: (1) Whoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft. Explanation 1.—A thing so long as it is attached to the earth, not being movable property, is not the subject of theft; but it becomes capable of being the subject of theft as soon as it is severed from the earth. Explanation 2.—A moving effected by the same act which affects the severance may be a theft. Explanation 3.—A person is said to cause a thing to move by removing an obstacle which prevented it from moving or by separating it from any other thing, as well as by actually moving it. Explanation 4.—A person, who by any means causes an animal to mo",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "concept_expansion_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.0861666202545166,
+            "qdrant_retrieval_time": 0.06777310371398926,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.021553754806518555,
+            "first_token_latency": 14.26547884941101,
+            "total_generation_time": 106.44463610649109,
+            "total_time": 106.62012958526611
+        },
+        "new_session": true
+    },
+    {
+        "query": "Explain Section 303.",
+        "group": "bns_exact",
+        "scope": "LEGAL",
+        "rewritten_query": "Explain Section 303.",
+        "expanded_concepts": [],
+        "matched_colloquial_keys": [],
+        "retrieval_confidence": "Sufficient",
+        "response": "Section 303 is a provision in the Indian Penal Code that defines theft. It outlines the elements and circumstances under which a person can be charged with theft. Here's a concise explanation of Section 303:\n\n**Definition of Theft:**\n- Theft is defined as the dishonest taking of movable property out of the possession of another person without their consent.\n\n**Elements of Theft:**\n1. **Intention:** The thief must have the intention to take the property dishonestly.\n2. **Action:** The thief must ",
+        "retrieved_records": 1,
+        "source_metadata": [
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "303",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            }
+        ],
+        "evidence_passed": "Section: 303\nHeading: Section 303\nText: (1) Whoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft. Explanation 1.—A thing so long as it is attached to the earth, not being movable property, is not the subject of theft; but it becomes capable of being the subject of theft as soon as it is severed from the earth. Explanation 2.—A moving effected by the same act which affects the severance may be a theft. Explanation 3.—A person is said to cause a thing to move by removing an obstacle which prevented it from moving or by separating it from any other thing, as well as by actually moving it. Explanation 4.—A person, who by any means causes an animal to mo",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "concept_expansion_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.05299091339111328,
+            "qdrant_retrieval_time": 0.07561492919921875,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.0205838680267334,
+            "first_token_latency": 14.325907468795776,
+            "total_generation_time": 127.6863067150116,
+            "total_time": 127.83549642562866
+        },
+        "new_session": true
+    },
+    {
+        "query": "What is the punishment for pickpocketing?",
+        "group": "theft_nl",
+        "scope": "LEGAL",
+        "rewritten_query": "What is the punishment for pickpocketing? theft snatching dishonestly takes movable property stealing from person",
+        "expanded_concepts": [
+            "theft",
+            "snatching",
+            "dishonestly takes movable property",
+            "stealing from person"
+        ],
+        "matched_colloquial_keys": [
+            "pickpocketing"
+        ],
+        "retrieval_confidence": "Sufficient",
+        "response": "The punishment for pickpocketing is imprisonment for a term which may extend to three years, and a fine.",
+        "retrieved_records": 4,
+        "source_metadata": [
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "304",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "1",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "303",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "2",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            }
+        ],
+        "evidence_passed": "Section: 304\nHeading: Section 304\nText: (1) Theft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession any movable property. (2) Whoever commits snatching, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine.\n\nSection: 1\nHeading: Section 1\nText: (1) This Act may be called the Bharatiya Nyaya Sanhita, 2023. (2) It shall come into force on such date as the Central Government may, by notification in the Official Gazette, appoint, and different dates may be appointed for different provisions of this Sanhita. Short title, commencement and application. vlk/kkj.k EXTRAORDINARY Hkkx  II — [k.M 1 PART II",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "concept_expansion_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.0769357681274414,
+            "qdrant_retrieval_time": 0.04518532752990723,
+            "reranking_time": 0.0010008811950683594,
+            "prompt_construction_time": 0.06898999214172363,
+            "first_token_latency": 66.38368463516235,
+            "total_generation_time": 79.8813009262085,
+            "total_time": 80.07341289520264
+        },
+        "new_session": true
+    },
+    {
+        "query": "Someone stole my phone from my pocket.",
+        "group": "theft_nl",
+        "scope": "LEGAL",
+        "rewritten_query": "Someone stole my phone from my pocket. theft dishonestly takes movable property",
+        "expanded_concepts": [
+            "theft",
+            "dishonestly takes movable property"
+        ],
+        "matched_colloquial_keys": [
+            "stole"
+        ],
+        "retrieval_confidence": "Sufficient",
+        "response": "Evidence:\nSection: 303\nHeading: Section 303\nText: (1) Whoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft. Explanation 1.—A thing so long as it is attached to the earth, not being movable property, is not the subject of theft; but it becomes capable of being the subject of theft as soon as it is severed from the earth. Explanation 2.—A moving effected by",
+        "retrieved_records": 4,
+        "source_metadata": [
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "303",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "2",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "320",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "304",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            }
+        ],
+        "evidence_passed": "Section: 303\nHeading: Section 303\nText: (1) Whoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft. Explanation 1.—A thing so long as it is attached to the earth, not being movable property, is not the subject of theft; but it becomes capable of being the subject of theft as soon as it is severed from the earth. Explanation 2.—A moving effected by the same act which affects the severance may be a theft. Explanation 3.—A person is said to cause a thing to move by removing an obstacle which prevented it from moving or by separating it from any other thing, as well as by actually moving it. Explanation 4.—A person, who by any means causes an animal to mo",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "concept_expansion_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.06240034103393555,
+            "qdrant_retrieval_time": 0.04518747329711914,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.05746912956237793,
+            "first_token_latency": 56.08456373214722,
+            "total_generation_time": 185.01960563659668,
+            "total_time": 185.1846625804901
+        },
+        "new_session": true
+    },
+    {
+        "query": "What offence is taking someone's wallet from their pocket?",
+        "group": "theft_nl",
+        "scope": "LEGAL",
+        "rewritten_query": "What offence is taking someone's wallet from their pocket?",
+        "expanded_concepts": [],
+        "matched_colloquial_keys": [],
+        "retrieval_confidence": "Sufficient",
+        "response": "The offence taking someone's wallet from their pocket is **criminal misappropriation of property**. This is explicitly defined in **Section 187** of the Indian Penal Code (IPC), which states that anyone who, being employed in a mint lawfully established in India, commits any act, or omits what he is legally bound to do, with the intention of causing any coin issued from that mint to be of a different weight or composition from the weight or composition fixed by law, shall be punished with impris",
+        "retrieved_records": 4,
+        "source_metadata": [
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "313",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "187",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "185",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "307",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            }
+        ],
+        "evidence_passed": "Section: 313\nHeading: Section 313\nText: Whoever belongs to any gang of persons associated in habitually committing theft or robbery, and not being a gang of dacoits, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine. Of criminal misappropriation of property\n\nSection: 187\nHeading: Section 187\nText: Whoever, being employed in any mint lawfully established in India, does any act, or omits what he is legally bound to do, with the intention of causing any coin issued from that mint to be of a different weight or composition from the weight or composition fixed by law, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.\n\nSection: 185\nHeading:",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "concept_expansion_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.05248546600341797,
+            "qdrant_retrieval_time": 0.03939390182495117,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.009186506271362305,
+            "first_token_latency": 5.517914056777954,
+            "total_generation_time": 51.362300872802734,
+            "total_time": 51.463366746902466
+        },
+        "new_session": true
+    },
+    {
+        "query": "What is the punishment for theft?",
+        "group": "theft_nl",
+        "scope": "LEGAL",
+        "rewritten_query": "What is the punishment for theft?",
+        "expanded_concepts": [],
+        "matched_colloquial_keys": [],
+        "retrieval_confidence": "Sufficient",
+        "response": "The punishment for theft, as per the evidence provided, is imprisonment for a term which may extend to seven years, and also liable to fine.",
+        "retrieved_records": 4,
+        "source_metadata": [
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "305",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "304",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "134",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "306",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            }
+        ],
+        "evidence_passed": "Section: 305\nHeading: Section 305\nText: Whoever commits theft— (a) in any building, tent or vessel used as a human dwelling or used for the custody of property; or (b) of any means of transport used for the transport of goods or passengers; or (c) of any article or goods from any means of transport used for the transport of goods or passengers; or (d) of idol or icon in any place of worship; or (e) of any property of the Government or of a local authority, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.\n\nSection: 304\nHeading: Section 304\nText: (1) Theft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "concept_expansion_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.04832005500793457,
+            "qdrant_retrieval_time": 0.034540653228759766,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.008271455764770508,
+            "first_token_latency": 4.189308404922485,
+            "total_generation_time": 11.81727647781372,
+            "total_time": 11.908408641815186
+        },
+        "new_session": true
+    },
+    {
+        "query": "What is the punishment for robbery?",
+        "group": "theft_nl",
+        "scope": "LEGAL",
+        "rewritten_query": "What is the punishment for robbery?",
+        "expanded_concepts": [],
+        "matched_colloquial_keys": [],
+        "retrieval_confidence": "Sufficient",
+        "response": "The punishment for robbery is rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+        "retrieved_records": 4,
+        "source_metadata": [
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "254",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "312",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "311",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "313",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            }
+        ],
+        "evidence_passed": "Section: 254\nHeading: Section 254\nText: Whoever, knowing or having reason to believe that any persons are about to commit or have recently committed robbery or dacoity, harbours them or any of them, with the intention of facilitating the commission of such robbery or dacoity, or of screening them or any of them from punishment, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine. Explanation.—For the purposes of this section it is immaterial whether the robbery or dacoity is intended to be committed, or has been committed, within or without India. Exception.—The provisions of this section do not extend to the case in which the harbour is by the spouse of the offender.\n\nSection: 312\nHeading: Section 312\nText: If, at the t",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "concept_expansion_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.05046391487121582,
+            "qdrant_retrieval_time": 0.03522753715515137,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.00800776481628418,
+            "first_token_latency": 4.592454671859741,
+            "total_generation_time": 11.42677092552185,
+            "total_time": 11.520470142364502
+        },
+        "new_session": true
+    },
+    {
+        "query": "What is the punishment for criminal intimidation?",
+        "group": "theft_nl",
+        "scope": "LEGAL",
+        "rewritten_query": "What is the punishment for criminal intimidation?",
+        "expanded_concepts": [],
+        "matched_colloquial_keys": [],
+        "retrieval_confidence": "Sufficient",
+        "response": "The punishment for criminal intimidation is imprisonment for a term which may extend to two years, or with fine, or with both.",
+        "retrieved_records": 4,
+        "source_metadata": [
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "351",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "134",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "133",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "355",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            }
+        ],
+        "evidence_passed": "Section: 351\nHeading: Section 351\nText: (1) Whoever threatens another by any means, with any injury to his person, reputation or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation. Tampering with property mark with intent to cause injury. Counterfeiting a property mark. Making or possession of any instrument for counterfeiting a property mark. Selling goods marked with a counterfeit property mark. Making a false mark upon any receptacle containing goods. Criminal intimidation. Sec. 1] T",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "concept_expansion_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.05026674270629883,
+            "qdrant_retrieval_time": 0.03445935249328613,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.012217521667480469,
+            "first_token_latency": 6.866390228271484,
+            "total_generation_time": 14.133552312850952,
+            "total_time": 14.230495929718018
+        },
+        "new_session": true
+    },
+    {
+        "query": "Tell me a chicken recipe.",
+        "group": "edge",
+        "scope": "NON_LEGAL",
+        "rewritten_query": null,
+        "expanded_concepts": [],
+        "matched_colloquial_keys": [],
+        "retrieval_confidence": null,
+        "response": "I only help with legal queries.",
+        "retrieved_records": 0,
+        "source_metadata": [],
+        "evidence_passed": "",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "total_time": 0.0
+        },
+        "new_session": true
+    },
+    {
+        "query": "I have a problem with my neighbour.",
+        "group": "edge",
+        "scope": "LEGAL",
+        "rewritten_query": "I have a problem with my neighbour.",
+        "expanded_concepts": [],
+        "matched_colloquial_keys": [],
+        "retrieval_confidence": "Sufficient",
+        "response": "Section 280 of the Indian Penal Code (IPC) applies to the case of a person voluntarily vitiating the atmosphere in any place so as to make it noxious to the health of persons in general dwelling or carrying on business in the neighbourhood or passing along a public way. The punishment for this offense is a fine which may extend to one thousand rupees. \n\nIf the evidence does not directly address your specific question, it is insufficient to provide a detailed answer. However, the relevant section",
+        "retrieved_records": 4,
+        "source_metadata": [
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "280",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "203",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "333",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "33",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            }
+        ],
+        "evidence_passed": "Section: 280\nHeading: Section 280\nText: Whoever voluntarily vitiates the atmosphere in any place so as to make it noxious to the health of persons in general dwelling or carrying on business in the neighbourhood or passing along a public way, shall be punished with fine which may extend to one thousand rupees.\n\nSection: 203\nHeading: Section 203\nText: Whoever, being a public servant, and being legally bound as such public servant, not to purchase or bid for certain property, purchases or bids for that property, either in his own name or in the name of another, or jointly, or in shares with others, shall be punished with simple imprisonment for a term which may extend to two years, or with fine, or with both; and the property, if purchased, shall be confiscated.\n\nSection: 333\nHeading: Sectio",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "concept_expansion_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.046910762786865234,
+            "qdrant_retrieval_time": 0.043117523193359375,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.005292415618896484,
+            "first_token_latency": 3.8574395179748535,
+            "total_generation_time": 35.59360122680664,
+            "total_time": 35.68892192840576
+        },
+        "new_session": true
+    },
+    {
+        "query": "They keep threatening me.",
+        "group": "edge",
+        "scope": "LEGAL",
+        "rewritten_query": "Section 280 of the Indian Penal Code (IPC) applies to the case of a person voluntarily vitiating the atmosphere in any place so as to make it noxious to the health of persons in general dwelling or carrying on business in the neighbourhood or passing along a public way. The punishment for this offense is a fine which may extend to one thousand rupees. \n\nIf the evidence does not directly address your specific question, it is insufficient to provide a detailed answer. However, the relevant sections of the IPC are Section 280 and Section 203. | They keep threatening me. criminal intimidation threat extortion",
+        "expanded_concepts": [
+            "criminal intimidation",
+            "threat",
+            "extortion"
+        ],
+        "matched_colloquial_keys": [
+            "threatening"
+        ],
+        "retrieval_confidence": "Sufficient",
+        "response": "Section 280 of the Indian Penal Code (IPC) applies to the case of a person voluntarily vitiating the atmosphere in any place so as to make it noxious to the health of persons in general dwelling or carrying on business in the neighbourhood or passing along a public way. The punishment for this offense is a fine which may extend to one thousand rupees. ◆�",
+        "retrieved_records": 1,
+        "source_metadata": [
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "280",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            }
+        ],
+        "evidence_passed": "Section: 280\nHeading: Section 280\nText: Whoever voluntarily vitiates the atmosphere in any place so as to make it noxious to the health of persons in general dwelling or carrying on business in the neighbourhood or passing along a public way, shall be punished with fine which may extend to one thousand rupees.\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "concept_expansion_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.10625362396240234,
+            "qdrant_retrieval_time": 0.10767078399658203,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.003997087478637695,
+            "first_token_latency": 2.6733741760253906,
+            "total_generation_time": 22.766372680664062,
+            "total_time": 22.984294176101685
+        },
+        "new_session": false
+    },
+    {
+        "query": "Why is the neighbour bothering me?",
+        "group": "edge",
+        "scope": "LEGAL",
+        "rewritten_query": "Why is the neighbour bothering me?",
+        "expanded_concepts": [],
+        "matched_colloquial_keys": [],
+        "retrieval_confidence": "Sufficient",
+        "response": "The evidence provided does not directly address the specific question of why the neighbor is bothering you. It discusses the legal principles related to abetment, voluntary vitiating the atmosphere, and the limitations on punishment for multiple offenses. However, it does not provide a clear or direct answer to your question. If you have a specific legal issue or concern, it would be best to consult a legal professional for a tailored response.",
+        "retrieved_records": 4,
+        "source_metadata": [
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "51",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "280",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "9",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "33",
+                "authority": "Ministry of Law and Justice / Government of India",
+                "url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+            }
+        ],
+        "evidence_passed": "Section: 51\nHeading: Section 51\nText: When an act is abetted and a different act is done, the abettor is liable for the act done, in the same manner and to the same extent as if he had directly abetted it: Provided that the act done was a probable consequence of the abetment, and was committed under the influence of the instigation, or with the aid or in pursuance of the conspiracy which constituted the abetment. Illustrations. (a) A instigates a child to put poison into the food of Z, and gives him poison for that purpose. The child, in consequence of the instigation, by mistake puts the poison into the food of Y, which is by the side of that of Z. Here, if the child was acting under the influence of A’s instigation, and the act done was under the circumstances a probable consequence of t",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "concept_expansion_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.05969667434692383,
+            "qdrant_retrieval_time": 0.033043861389160156,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.011416196823120117,
+            "first_token_latency": 8.222642660140991,
+            "total_generation_time": 33.693981409072876,
+            "total_time": 33.79813814163208
+        },
+        "new_session": true
+    }
+]

@@ -1,0 +1,42 @@
+{
+  "environment": {
+    "python_version": "3.11.9",
+    "pytorch_version": "2.13.0+cpu",
+    "transformers_version": "5.14.1",
+    "peft_version": "Not installed",
+    "trl_version": "Not installed",
+    "bitsandbytes_availability": "Not installed. Natively requires NVIDIA/CUDA for Windows, or ROCm for Linux. Unsupported on AMD Windows out-of-the-box."
+  },
+  "hardware_and_backend": {
+    "gpu_detected": "AMD Radeon RX 6500M (4 GB VRAM)",
+    "system_ram": "16 GB",
+    "cpu": "Ryzen 5 5600H",
+    "backend_available": "CPU only (installed PyTorch is +cpu; torch_directml is missing; ROCm is unsupported natively on Windows)"
+  },
+  "feasibility_analysis": {
+    "qlora_feasible": false,
+    "qlora_explanation": "QLoRA relies on bitsandbytes for 4-bit NormalFloat quantization, which is heavily optimized for NVIDIA CUDA. It does not support AMD GPUs on Windows.",
+    "lora_without_4bit_safer": true,
+    "lora_explanation": "Standard LoRA on CPU (using System RAM) is the safest route to avoid 4 GB VRAM OOM errors and driver incompatibility. A 0.6B model trained on CPU will be slow but will successfully fit within the 16 GB system RAM.",
+    "expected_vram_ram_requirements": "CPU RAM: ~8-10 GB (Model + Optimizer States + Gradients + Activations). VRAM: N/A (Using CPU). If AMD DirectML were forced, 4 GB VRAM would almost certainly OOM during training.",
+    "risk_of_oom": "Low risk of RAM OOM (16 GB is sufficient). High risk of VRAM OOM if GPU training were attempted."
+  },
+  "recommendations": {
+    "precision": "float32 (or bfloat16 if CPU supports it efficiently)",
+    "batch_size": 1,
+    "gradient_accumulation_steps": 8,
+    "sequence_length": 512,
+    "learning_rate": "2e-4",
+    "number_of_epochs": 1,
+    "gradient_checkpointing": true,
+    "optimizer": "adamw_torch"
+  },
+  "estimates": {
+    "training_time_for_900_examples": "10 - 24 hours (CPU training is significantly slower than GPU)",
+    "expected_checkpoint_size": "~10-30 MB (PEFT LoRA adapter weights only)"
+  },
+  "conclusion": {
+    "summary": "Standard QLoRA is not feasible due to AMD/Windows limitations. The safest alternative is standard LoRA running on the CPU.",
+    "next_steps": "Install PEFT and TRL, and execute a CPU-based LoRA training loop to avoid driver/VRAM issues."
+  }
+}

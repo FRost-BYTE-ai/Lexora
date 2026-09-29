@@ -1,0 +1,37 @@
+{
+  "metrics": {
+    "original_pilot_count": 1000,
+    "CURRENT_OR_GENERAL_count": 935,
+    "HISTORICAL_OR_TRANSITIONAL_count": 5,
+    "NEEDS_REVIEW_count": 60,
+    "ipc_count": 36,
+    "crpc_count": 19,
+    "iea_count": 13,
+    "bns_count": 0,
+    "bnss_count": 0,
+    "bsa_count": 0
+  },
+  "examples": {
+    "CURRENT_OR_GENERAL": {
+      "record": {
+        "prompt": "What powers do District Councils and Regional Councils have under sub-paragraph (7)?...",
+        "response": "The question as posed is incomplete because it refers to \"sub-paragraph (7)\" without specifying which document, law, or constitution contains this sub..."
+      },
+      "reason": "No dependence on repealed criminal laws detected in context."
+    },
+    "HISTORICAL_OR_TRANSITIONAL": {
+      "record": {
+        "prompt": "Explain the procedure for conducting a trial before a Court of Session under the CrPC. What are the roles and responsibilities of the Public Prosecuto...",
+        "response": "The procedure for a trial in a Court of Session under the Code of Criminal Procedure (CrPC) in India is a structured process designed to ensure fairne..."
+      },
+      "reason": "Mentions repealed criminal law but context includes historical/transitional keywords (e.g. repealed, replaced, before)."
+    },
+    "NEEDS_REVIEW": {
+      "record": {
+        "prompt": "Aishwarya witnesses a crime and reports it to the police in Patna, but the police refuse to register the FIR. What legal remedies are available to Ais...",
+        "response": "**The Law beliefs**\n\nTo address your concern regarding the refusal of the police to register an FIR (First Information Report) in Patna after witnessi..."
+      },
+      "reason": "Legal answer depends on old statutes (IPC/CrPC/IEA) presented as current law without historical context."
+    }
+  }
+}

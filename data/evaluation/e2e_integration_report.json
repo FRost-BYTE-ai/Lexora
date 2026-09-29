@@ -1,0 +1,130 @@
+{
+  "health": {
+    "status": "healthy",
+    "model": "qwen3-0.6b-base",
+    "adapter": "lexora_lora",
+    "rag": "enabled",
+    "eos_token_id": [
+      151643,
+      151645
+    ],
+    "corpora": [
+      "constitution",
+      "bns",
+      "bnss",
+      "bsa",
+      "tamilnadu"
+    ],
+    "features": {
+      "legal_library": "active",
+      "government_schemes": "active",
+      "case_explorer": "active",
+      "translation": "active",
+      "tts": "active",
+      "ocr": "active",
+      "saved": "active",
+      "drafts": "active",
+      "diagnostics": "active"
+    },
+    "timestamp": 1790573683.6232882
+  },
+  "ram_startup_gb": 0,
+  "tests": [
+    {
+      "desc": "A. Basic legal",
+      "query": "What is Article 21?",
+      "response": "Article 21 of the Constitution of India is a fundamental right that guarantees the protection of life and personal liberty. It states that no person shall be deprived of his life or personal liberty except according to procedure established by law. This means that the government must follow a legal process to remove an individual from their life or personal liberty, ensuring that any deprivation is justified and carried out by a fair and legal means. kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje",
+      "scope": "LEGAL",
+      "sufficient": true,
+      "sources_count": 1,
+      "ram_gb": 0,
+      "latency_s": 43.16555166244507
+    },
+    {
+      "desc": "B. BNS",
+      "query": "What is the punishment for theft?",
+      "response": "The punishment for theft, as defined in the Bharatiya Nyaya Sanhita, 2023, is as follows:\n\n1. **Robbery**:\n   - **Punishment**: Imprisonment of either description for a term which may extend to seven years, or fine, or both. - **Explanation**: Theft is robbery if, in order to the committing of the theft, or in committing the theft, or in carrying away or attempting to carry away property obtained by the theft, the offender, for that end voluntarily causes or attempts to cause to any person death or hurt or wrongful restraint, or",
+      "scope": "LEGAL",
+      "sufficient": true,
+      "sources_count": 5,
+      "ram_gb": 0,
+      "latency_s": 136.19599962234497
+    },
+    {
+      "desc": "C. Natural language",
+      "query": "Someone stole my phone from my pocket.",
+      "response": "The user's question is about the legal consequences of stealing someone else's phone from their pocket. The legal evidence provided is from the **Bharatiya Nyaya Sanhita, 2023** section **303**, which defines theft as the dishonest taking of movable property out of the possession of another person without their consent. The user's phone, being a movable property, is subject to this definition. The user's phone is not in their pocket, so it is not in their possession. Therefore, the user is not guilty of theft. The legal evidence does not mention any specific punishment for stealing someone else's",
+      "scope": "LEGAL",
+      "sufficient": true,
+      "sources_count": 5,
+      "ram_gb": 0,
+      "latency_s": 132.48710989952087
+    },
+    {
+      "desc": "D1. Follow-up 1",
+      "query": "My neighbour threatened me.",
+      "response": "The user's question is about the legal consequences of a neighbour threatening them. The legal evidence provided is from the **Bharatiya Nyaya Sanhita, 2023** section **303**, which defines theft as the dishonest taking of movable property out of the possession of another person without their consent. The user's neighbour is not in the user's possession, so the user is not guilty of theft. The legal evidence does not mention any specific punishment for a neighbour threatening someone else. \u05d4\u05d0\u05e9\n.final\nThe user's question is about the legal consequences of a neighbour threatening them. The legal evidence provided is from",
+      "scope": "LEGAL",
+      "sufficient": true,
+      "sources_count": 5,
+      "ram_gb": 0,
+      "latency_s": 128.05102372169495
+    },
+    {
+      "desc": "D2. Follow-up 2",
+      "query": "He said he would kill me.",
+      "response": "I only help with legal queries.",
+      "scope": "NON_LEGAL",
+      "sufficient": true,
+      "sources_count": 0,
+      "ram_gb": 0,
+      "latency_s": 0.013333559036254883
+    },
+    {
+      "desc": "D3. Follow-up 3",
+      "query": "What can I do legally?",
+      "response": "I only help with legal queries.",
+      "scope": "NON_LEGAL",
+      "sufficient": true,
+      "sources_count": 0,
+      "ram_gb": 0,
+      "latency_s": 0.008770942687988281
+    },
+    {
+      "desc": "E. Tanglish",
+      "query": "En phone ah pocket la irundhu thiruditaanga, enna legal action?",
+      "response": "The legal action for extortion is based on the Indian Penal Code (IPC), specifically Section 307. This section defines extortion as the act of taking money or property by threat or intimidation, with the intent to extort it. The user's question is about the legal consequences of extortion, which is a criminal offense under the IPC. The legal action for extortion involves imprisonment for a term of ten years and a fine, as defined in Section 307 of the IPC. The user's question is about the legal consequences of extortion, which is a criminal offense under the IPC. The legal action for extortion involves imprisonment for a term",
+      "scope": "LEGAL",
+      "sufficient": true,
+      "sources_count": 5,
+      "ram_gb": 0,
+      "latency_s": 124.9935052394867
+    },
+    {
+      "desc": "F. Non-legal",
+      "query": "Tell me a chicken recipe.",
+      "response": "I only help with legal queries.",
+      "scope": "NON_LEGAL",
+      "sufficient": true,
+      "sources_count": 0,
+      "ram_gb": 0,
+      "latency_s": 0.009071588516235352
+    },
+    {
+      "desc": "I. Insufficient evidence",
+      "query": "What is the punishment for flying a drone on Mars?",
+      "response": "The punishment for flying a drone on Mars is not explicitly defined in the provided legal evidence. However, based on the general principles of criminal law and the nature of drone operations, the punishment would likely fall under the category of a serious offense, such as a crime of violence or a serious breach of public order. The specific punishment would depend on the gravity of the offense, the intent behind the drone operation, and the potential harm caused. For precise details, one would need to refer to the specific legal provisions or statutes that address drone operations in the context of Mars. Prostitutas\nThe punishment for flying a drone on Mars is not explicitly defined in",
+      "scope": "LEGAL",
+      "sufficient": true,
+      "sources_count": 5,
+      "ram_gb": 0,
+      "latency_s": 119.9679856300354
+    },
+    {
+      "desc": "G. New consultation isolation",
+      "query": "What did I just say about my neighbour?",
+      "response": "You are Lexora, an authoritative and helpful AI legal assistant. Answer the user's question directly, clearly, and concisely based strictly on the provided legal evidence. State the exact Act and Section or Article number when answering. Do not invent laws, case names, punishments, section numbers, or citations. Do not use generic disclaimers or rigid repetitive headings. Answer in a natural, professional legal advisory style.\u4fdd\u9a7e\u62a4\n\u4fdd\u9a7e\u62a4\nThe user's question about their neighbour is not directly addressed in the provided legal evidence. The evidence primarily focuses on the constitutional and legal framework governing the functions of Governors, Presidents, and Vice-Presidents",
+      "ram_gb": 0
+    }
+  ]
+}

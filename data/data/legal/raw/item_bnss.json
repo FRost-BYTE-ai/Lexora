@@ -1,0 +1,264 @@
+{
+  "id" : "72592ac7-d084-4545-95d3-0c98dc49fac3",
+  "uuid" : "72592ac7-d084-4545-95d3-0c98dc49fac3",
+  "name" : "The Bharatiya Nagarik Suraksha Sanhita, 2023",
+  "handle" : "123456789/496550",
+  "metadata" : {
+    "dc.date.accessioned" : [ {
+      "value" : "2026-07-10T20:12:33Z",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.date.act_year" : [ {
+      "value" : "2023",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.date.enact_date" : [ {
+      "value" : "2023-12-25",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.date.enforcement_date" : [ {
+      "value" : "01-07-2024",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.date.entry_date" : [ {
+      "value" : "2024-06-28",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.date.issued" : [ {
+      "value" : "2023-12-25",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.date.last_modified" : [ {
+      "value" : "2024-07-01",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.description.abstract" : [ {
+      "value" : "Summary of Bharatiya Nagarik Suraksha Sanhita, 2023\n1. Preliminary\nTitle, Commencement, and Application: Applies to all persons in India and beyond under specific conditions.\n2. Summary Trials\nEligible Offences: Not punishable by death, life imprisonment, or imprisonment over 3 years.\nProcedure:\nMagistrate's Powers: Try summarily with the accused's opportunity to be heard.\nRecord and Judgment: In the language of the Court, with substance of evidence and brief reasons.\n3. Punishments for Offences \n•\tCognizable, Non-Bailable, Non-Compoundable:\n•\tUnfair Means in Exams: 3-5 years’ imprisonment, up to ₹10 lakh fine.\n•\tService Providers: Up to ₹1 crore fine, 4-year ban from exam responsibilities.\n•\tSenior Management Involvement: 3-10 years’ imprisonment, ₹1 crore fine.\n4. Other Procedural Aspects \nArrest and Summons Procedures\nPowers of Police and Magistrates\nPublic Responsibilities",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.act_id" : [ {
+      "value" : "AC_CEN_5_23_00049_202346_1719552320687",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.act_number" : [ {
+      "value" : "46",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.collection" : [ {
+      "value" : "ACT",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.department_id" : [ {
+      "value" : "23",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.department_name" : [ {
+      "value" : "Department of Internal Security",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.givenid" : [ {
+      "value" : "202346",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.ministry_id" : [ {
+      "value" : "5",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.ministry_name" : [ {
+      "value" : "Ministry of Home Affairs",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.no_of_chapter" : [ {
+      "value" : "0",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.no_of_section" : [ {
+      "value" : "0",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.preamble_description" : [ {
+      "value" : "<center style=\"font-size: 17px;\">THE BHARATIYA NAGARIK SURAKSHA SANHITA, 2023</center> <center style=\"font-size: 17px;\">ACT NO. 46 OF 2023</center> <p style=\"text-align:right;\">[<i>25th December, 2023.</i>]</p> <span style=\"margin-left: 15px;\"></span>An Act to consolidate and amend the law relating to Criminal Procedure.<br/><hr style=\"border: none; margin-bottom: 8px; margin-top: 0;\"/> <span style=\"margin-left: 15px;\"></span>BE it enacted by Parliament in the Seventy-fourth Year of the Republic of India as follows:---<br/><hr style=\"border: none; margin-bottom: 8px; margin-top: 0;\"/>",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.refact" : [ {
+      "value" : "0",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.reference_sites" : [ {
+      "value" : "Ministry of Home Affairs https://www.mha.gov.in/en",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    }, {
+      "value" : "Department of Internal Security https://www.mha.gov.in/en/departments/department-internal-security",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 1
+    }, {
+      "value" : "Concerned Ministry/Department Acts and Rules https://www.mha.gov.in/en/commoncontent/new-criminal-laws",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 2
+    } ],
+    "dc.identifier.repealed" : [ {
+      "value" : "false",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.state_id" : [ {
+      "value" : "1",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.state_name" : [ {
+      "value" : "CENTRAL",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.uri" : [ {
+      "value" : "http://test1.indiacode.nic.in/handle/123456789/496550",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.legislation.history" : [ {
+      "value" : "Legislative History: \nThe Bharatiya Nyaya Sanhita, 2023  \n\nSource: Official Record of Parliament, India Code, and Ministry of Home Affairs  \n\nAct Title - The Bharatiya Nagarik Suraksha Sanhita, 2023 \nAct Number - Act No. 46 of 2023 \nAct ID (India Code) - 202346 \n Presidential Assent date\tDecember 25, 2023 \n Enforcement Date\tJuly 01, 2024 \nNodal Ministry\tMinistry of Home Affairs \n\nPrecedent & Historical Rationale\n\n●\tRepeal of the Code of Criminal Procedure, 1973: Repeals the Code of Criminal Procedure, 1973 (2 of 1974) to establish a modern, technology-driven procedural framework focused on speedy trial timelines and citizen-centric rights.\n●\tMandatory Timelines & Tech Integration: Mandates electronic submission of evidence and summonses, introduces Zero FIR and mandatory forensic visits for serious offences (punishable by 7+ years), and imposes strict statutory deadlines for investigation, charge sheet filing, and judgment delivery.\n \nParliamentary Trajectory & Enactment\n●\tFormulation: Introduced by the Union Minister of Home Affairs, Shri Amit Shah, as part of the core legislative package to replace colonial-era criminal procedural laws.\n●\tParliamentary Passage: Introduced in the Lok Sabha on August 11, 2023; referred to the Parliamentary Standing Committee on Home Affairs; re-introduced as Bill No. 174 of 2023 on December 12, 2023; passed by the Lok Sabha on December 20, 2023; and passed by the Rajya Sabha on December 21, 2023.\n●\tPresidential Assent: Received the assent of the President of India on December 25, 2023.\n●\tEnforcement: Enforced on July 01, 2024.",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.title" : [ {
+      "value" : "The Bharatiya Nagarik Suraksha Sanhita, 2023",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.title.long_title" : [ {
+      "value" : "An Act to consolidate and amend the law relating to Criminal Procedure.",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.type" : [ {
+      "value" : "Developmental",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ]
+  },
+  "inArchive" : true,
+  "discoverable" : true,
+  "withdrawn" : false,
+  "lastModified" : "2026-09-12T18:08:15.398126Z",
+  "entityType" : null,
+  "type" : "item",
+  "_links" : {
+    "accessStatus" : {
+      "href" : "https://indiacode.gov.in/server/api/core/items/72592ac7-d084-4545-95d3-0c98dc49fac3/accessStatus"
+    },
+    "bundles" : {
+      "href" : "https://indiacode.gov.in/server/api/core/items/72592ac7-d084-4545-95d3-0c98dc49fac3/bundles"
+    },
+    "identifiers" : {
+      "href" : "https://indiacode.gov.in/server/api/core/items/72592ac7-d084-4545-95d3-0c98dc49fac3/identifiers"
+    },
+    "mappedCollections" : {
+      "href" : "https://indiacode.gov.in/server/api/core/items/72592ac7-d084-4545-95d3-0c98dc49fac3/mappedCollections"
+    },
+    "owningCollection" : {
+      "href" : "https://indiacode.gov.in/server/api/core/items/72592ac7-d084-4545-95d3-0c98dc49fac3/owningCollection"
+    },
+    "relationships" : {
+      "href" : "https://indiacode.gov.in/server/api/core/items/72592ac7-d084-4545-95d3-0c98dc49fac3/relationships"
+    },
+    "version" : {
+      "href" : "https://indiacode.gov.in/server/api/core/items/72592ac7-d084-4545-95d3-0c98dc49fac3/version"
+    },
+    "templateItemOf" : {
+      "href" : "https://indiacode.gov.in/server/api/core/items/72592ac7-d084-4545-95d3-0c98dc49fac3/templateItemOf"
+    },
+    "thumbnail" : {
+      "href" : "https://indiacode.gov.in/server/api/core/items/72592ac7-d084-4545-95d3-0c98dc49fac3/thumbnail"
+    },
+    "submitter" : {
+      "href" : "https://indiacode.gov.in/server/api/core/items/72592ac7-d084-4545-95d3-0c98dc49fac3/submitter"
+    },
+    "self" : {
+      "href" : "https://indiacode.gov.in/server/api/core/items/72592ac7-d084-4545-95d3-0c98dc49fac3"
+    }
+  }
+}

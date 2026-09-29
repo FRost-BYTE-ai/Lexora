@@ -1,0 +1,986 @@
+{
+  "act": "Bharatiya Nyaya Sanhita, 2023",
+  "act_short": "BNS",
+  "extraction_timestamp": "2026-09-27T20:18:06+00:00",
+  "inventory_comparison": {
+    "expected_count": 358,
+    "extracted_count": 358,
+    "missing": [],
+    "unexpected": [],
+    "duplicates": [],
+    "heading_mismatches": [],
+    "chapter_mapping_mismatches": []
+  },
+  "hierarchy": {
+    "total_records": 1847,
+    "broken_parents": [],
+    "broken_chains": [],
+    "field_inconsistencies": [],
+    "empty_text_records": [],
+    "duplicate_record_ids": []
+  },
+  "segmentation_flags": {},
+  "cross_source": {
+    "dspace_text_bitstream": {
+      "expected": 358,
+      "parsed": 358,
+      "compared": 358,
+      "match_ge_0.99": 358,
+      "warn_0.97_0.99": 0,
+      "jaccard_ge_0.99": 358,
+      "mismatch_lt_0.97": []
+    },
+    "india_code_export": {
+      "expected": 358,
+      "parsed": 358,
+      "kind": "india_code_export",
+      "compared": 358,
+      "match_ge_0.99": 354,
+      "warn_0.97_0.99": 3,
+      "jaccard_ge_0.99": 352,
+      "mismatch_lt_0.97": []
+    },
+    "samples": [
+      {
+        "kind": "random",
+        "section": "331",
+        "heading": "Punishment for house-trespass or house-breaking",
+        "pages": [
+          100,
+          101
+        ],
+        "subsections": 8,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "ab9eb0ac46af9ddb75b315946cf1f64fa8286d881a28001f9e5857a2dc24eef2",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "61",
+        "heading": "Criminal conspiracy",
+        "pages": [
+          35,
+          35
+        ],
+        "subsections": 2,
+        "clauses": 4,
+        "provisos": 1,
+        "explanations": 1,
+        "illustrations": 0,
+        "text_sha256": "502b5a23ca50f403791bc8a26f79cf5e2055977d81078aafac710edf661978e5",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "15",
+        "heading": "Act of Judge when acting judicially",
+        "pages": [
+          24,
+          24
+        ],
+        "subsections": 0,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "7a41ea4524b60b6c3f69305a48cbd594b712b79752b620f783355c9c50ad18c0",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "144",
+        "heading": "Exploitation of a trafficked person",
+        "pages": [
+          59,
+          59
+        ],
+        "subsections": 2,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "8005f8d542f9c69c1713c09ad45e1745bb96da17dbdeedfe170d2a22f8c9da57",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "129",
+        "heading": "Criminal force",
+        "pages": [
+          55,
+          56
+        ],
+        "subsections": 0,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 9,
+        "text_sha256": "38c960e6233d144e297bac8acbb6b036ea28e1267ffa5c84c73b9aaa9638fc2f",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "118",
+        "heading": "Voluntarily causing hurt or grievous hurt by dangerous weapons or means",
+        "pages": [
+          51,
+          52
+        ],
+        "subsections": 2,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "874a430b5d6a3d559e0f70ba4c2eab2ef3b85d356772ef1db733c1a1adbacc3f",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "75",
+        "heading": "Sexual harassment",
+        "pages": [
+          40,
+          40
+        ],
+        "subsections": 3,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "12eaf4178ba0c067c565835196f22fd7b1e99e021cde0191bb8dcad12dd5f227",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "56",
+        "heading": "Abetment of offence punishable with imprisonment",
+        "pages": [
+          34,
+          34
+        ],
+        "subsections": 0,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 4,
+        "text_sha256": "b69deeea5a00d0fc5cfa17465c2046750225b01a65837e0db4355cfe20798169",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "350",
+        "heading": "Making a false mark upon any receptacle containing goods",
+        "pages": [
+          106,
+          106
+        ],
+        "subsections": 2,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "b669f527c797ad6e04e12755c558b15375bc4306430af5f6b40ac852d25a0404",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "283",
+        "heading": "Exhibition of false light, mark or buoy",
+        "pages": [
+          85,
+          85
+        ],
+        "subsections": 0,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "df511cb5e25279d0818a928c4b8768a887eb7edb9e5e5ef120c1826ff780f939",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "48",
+        "heading": "Abetment outside India for offence in India",
+        "pages": [
+          32,
+          32
+        ],
+        "subsections": 0,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 1,
+        "text_sha256": "eb7ad9d4bc6d0effed53d2069ad5c84cdd85207f2fdc5305c89633e09738e901",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "306",
+        "heading": "Theft by clerk or servant of property in possession of master",
+        "pages": [
+          89,
+          90
+        ],
+        "subsections": 0,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "8e3b01b90a97285e82e1d6413951e5cb7a63a246e47d34d3b218333809d6a737",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "220",
+        "heading": "Illegal purchase or bid for property offered for sale by authority of public servant",
+        "pages": [
+          73,
+          73
+        ],
+        "subsections": 0,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "7a2c1aacff0f8434f94b8a34c0937468c7510fb2e80232b5c35f947f9946a77f",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "19",
+        "heading": "Act likely to cause harm, but done without criminal intent, and to prevent other harm",
+        "pages": [
+          25,
+          25
+        ],
+        "subsections": 0,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 1,
+        "illustrations": 3,
+        "text_sha256": "81708ea470db223e5af0db547470df5e601de40089c260dbd108c0c229665392",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "18",
+        "heading": "Accident in doing a lawful act",
+        "pages": [
+          25,
+          25
+        ],
+        "subsections": 0,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 1,
+        "text_sha256": "2bab2add9735cc4fb0ae18cc08195b8974c6a71de44b8213b4d72df696dff51e",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 0.9762,
+        "upload_jaccard": 0.9434,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "51",
+        "heading": "Liability of abettor when one act abetted and different act done",
+        "pages": [
+          32,
+          33
+        ],
+        "subsections": 0,
+        "clauses": 0,
+        "provisos": 1,
+        "explanations": 0,
+        "illustrations": 4,
+        "text_sha256": "c12bd8f754d08f8b54ccf9a89e948c90d371cb6cb3111925510b1343a2c388af",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "115",
+        "heading": "Voluntarily causing hurt",
+        "pages": [
+          51,
+          51
+        ],
+        "subsections": 2,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "8a97614bd839fdca736d6c08df25b8ef6c0404e2a85086a0988246dab8548884",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "123",
+        "heading": "Causing hurt by means of poison, etc., with intent to commit an offence",
+        "pages": [
+          53,
+          53
+        ],
+        "subsections": 0,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "0767aee9187454c9c28f9357f2c6447d127c43e045fb239d5c2f8936a3c76c4f",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "262",
+        "heading": "Resistance or obstruction by a person to his lawful apprehension",
+        "pages": [
+          82,
+          82
+        ],
+        "subsections": 0,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 1,
+        "illustrations": 0,
+        "text_sha256": "5edcda51148c351e5ed3a30eb238ff239325722d1fcbe6dc7f4279d98acf7d73",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "312",
+        "heading": "Attempt to commit robbery or dacoity when armed with deadly weapon",
+        "pages": [
+          92,
+          92
+        ],
+        "subsections": 0,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "f2ad0cf7fe5b495a19b491330de4950d9ccec724fe53dba5cd689bb501271c66",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "first_section",
+        "section": "1",
+        "heading": "Short title, commencement and application",
+        "pages": [
+          16,
+          16
+        ],
+        "subsections": 6,
+        "clauses": 3,
+        "provisos": 0,
+        "explanations": 1,
+        "illustrations": 1,
+        "text_sha256": "f0e2033762c7688dcfdbb031c5112b76564af0171312a732e5b5165e0fcc5794",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 0.9997,
+        "upload_jaccard": 0.9831,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "last_section",
+        "section": "358",
+        "heading": "Repeal and savings",
+        "pages": [
+          110,
+          111
+        ],
+        "subsections": 4,
+        "clauses": 5,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "b8f0044d19343f30adbed37a28dbebf450ce4f21b8361323f62ab67cc78dc419",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "longest_section",
+        "section": "2",
+        "heading": "Definitions",
+        "pages": [
+          16,
+          20
+        ],
+        "subsections": 39,
+        "clauses": 21,
+        "provisos": 0,
+        "explanations": 6,
+        "illustrations": 5,
+        "text_sha256": "4a8d7070b4687683f67181b250c8e28a9c251dec2d8e572c9825a9faa5464fa6",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "section_with_subsections",
+        "section": "1",
+        "heading": "Short title, commencement and application",
+        "pages": [
+          16,
+          16
+        ],
+        "subsections": 6,
+        "clauses": 3,
+        "provisos": 0,
+        "explanations": 1,
+        "illustrations": 1,
+        "text_sha256": "f0e2033762c7688dcfdbb031c5112b76564af0171312a732e5b5165e0fcc5794",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 0.9997,
+        "upload_jaccard": 0.9831,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "section_with_clauses",
+        "section": "1",
+        "heading": "Short title, commencement and application",
+        "pages": [
+          16,
+          16
+        ],
+        "subsections": 6,
+        "clauses": 3,
+        "provisos": 0,
+        "explanations": 1,
+        "illustrations": 1,
+        "text_sha256": "f0e2033762c7688dcfdbb031c5112b76564af0171312a732e5b5165e0fcc5794",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 0.9997,
+        "upload_jaccard": 0.9831,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "section_with_proviso",
+        "section": "27",
+        "heading": "Act done in good faith for benefit of child or person of unsound mind, by, or by consent of guardian",
+        "pages": [
+          26,
+          26
+        ],
+        "subsections": 0,
+        "clauses": 4,
+        "provisos": 1,
+        "explanations": 0,
+        "illustrations": 1,
+        "text_sha256": "dbcc75feea0904181b67a1f2312fc4e74ebd851dae9fc43fc498e85dbe58db2c",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "section_with_explanation",
+        "section": "1",
+        "heading": "Short title, commencement and application",
+        "pages": [
+          16,
+          16
+        ],
+        "subsections": 6,
+        "clauses": 3,
+        "provisos": 0,
+        "explanations": 1,
+        "illustrations": 1,
+        "text_sha256": "f0e2033762c7688dcfdbb031c5112b76564af0171312a732e5b5165e0fcc5794",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 0.9997,
+        "upload_jaccard": 0.9831,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "section_with_illustration",
+        "section": "1",
+        "heading": "Short title, commencement and application",
+        "pages": [
+          16,
+          16
+        ],
+        "subsections": 6,
+        "clauses": 3,
+        "provisos": 0,
+        "explanations": 1,
+        "illustrations": 1,
+        "text_sha256": "f0e2033762c7688dcfdbb031c5112b76564af0171312a732e5b5165e0fcc5794",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 0.9997,
+        "upload_jaccard": 0.9831,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "multi_page_section",
+        "section": "2",
+        "heading": "Definitions",
+        "pages": [
+          16,
+          20
+        ],
+        "subsections": 39,
+        "clauses": 21,
+        "provisos": 0,
+        "explanations": 6,
+        "illustrations": 5,
+        "text_sha256": "4a8d7070b4687683f67181b250c8e28a9c251dec2d8e572c9825a9faa5464fa6",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      }
+    ],
+    "sample_pass": true,
+    "supplemented_sections": [],
+    "supplemented_note": "supplemented sections are sourced from the Gazette of India as-enacted print with per-record provenance; see source_note",
+    "random_sample_count": 20,
+    "special_sample_count": 9
+  },
+  "retrieval_tests": [
+    {
+      "query": "BNS Section 303",
+      "target_section": "303",
+      "target_heading": "Theft.",
+      "top5": [
+        {
+          "rag_id": "BNS-RAG-BNS-S303-SUB1-EXP2",
+          "section": "303",
+          "score": 5.654
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S303-SUB1-ILLU1-d",
+          "section": "303",
+          "score": 5.438
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S303-SUB1-ILLU1-g",
+          "section": "303",
+          "score": 5.404
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S303-SUB1-ILLU1-f",
+          "section": "303",
+          "score": 5.404
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S303-SUB1-EXP5",
+          "section": "303",
+          "score": 5.37
+        }
+      ],
+      "target_rank": 1,
+      "status": "PASS"
+    },
+    {
+      "query": "What is theft under BNS?",
+      "target_section": "303",
+      "target_heading": "Theft.",
+      "top5": [
+        {
+          "rag_id": "BNS-RAG-BNS-S307",
+          "section": "307",
+          "score": 4.92
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S303-SUB1-EXP2",
+          "section": "303",
+          "score": 4.896
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S303-SUB1-EXP1",
+          "section": "303",
+          "score": 4.865
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S112",
+          "section": "112",
+          "score": 4.826
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S303-SUB1-ILLU1-d",
+          "section": "303",
+          "score": 4.789
+        }
+      ],
+      "target_rank": 2,
+      "status": "PASS"
+    },
+    {
+      "query": "Section 103 BNS",
+      "target_section": "103",
+      "target_heading": "Punishment for murder.",
+      "top5": [
+        {
+          "rag_id": "BNS-RAG-BNS-S103",
+          "section": "103",
+          "score": 8.032
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S240",
+          "section": "240",
+          "score": 4.36
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S249",
+          "section": "249",
+          "score": 3.046
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S212",
+          "section": "212",
+          "score": 2.872
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-FN1",
+          "section": "1",
+          "score": 0.006
+        }
+      ],
+      "target_rank": 1,
+      "status": "PASS"
+    },
+    {
+      "query": "Section 106 BNS",
+      "target_section": "106",
+      "target_heading": "Causing death by negligence.",
+      "top5": [
+        {
+          "rag_id": "BNS-RAG-BNS-FN1",
+          "section": "1",
+          "score": 9.478
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S106",
+          "section": "106",
+          "score": 7.702
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S71",
+          "section": "71",
+          "score": 0.006
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S2-SUB24",
+          "section": "2",
+          "score": 0.006
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S335-EXP3",
+          "section": "335",
+          "score": 0.006
+        }
+      ],
+      "target_rank": 2,
+      "status": "PASS"
+    },
+    {
+      "query": "Section 152 BNS",
+      "target_section": "152",
+      "target_heading": "Act endangering sovereignty, unity and integrity of India.",
+      "top5": [
+        {
+          "rag_id": "BNS-RAG-BNS-S152",
+          "section": "152",
+          "score": 8.943
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-FN1",
+          "section": "1",
+          "score": 0.006
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S71",
+          "section": "71",
+          "score": 0.006
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S2-SUB24",
+          "section": "2",
+          "score": 0.006
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S335-EXP3",
+          "section": "335",
+          "score": 0.006
+        }
+      ],
+      "target_rank": 1,
+      "status": "PASS"
+    },
+    {
+      "query": "Section 303(1)",
+      "target_section": "303",
+      "target_heading": "Theft.",
+      "top5": [
+        {
+          "rag_id": "BNS-RAG-BNS-S303-SUB1-EXP2",
+          "section": "303",
+          "score": 5.652
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S303-SUB1-ILLU1-d",
+          "section": "303",
+          "score": 5.437
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S303-SUB1-ILLU1-g",
+          "section": "303",
+          "score": 5.403
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S303-SUB1-ILLU1-f",
+          "section": "303",
+          "score": 5.403
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S303-SUB1-EXP5",
+          "section": "303",
+          "score": 5.369
+        }
+      ],
+      "target_rank": 1,
+      "status": "PASS"
+    },
+    {
+      "query": "Section 303",
+      "target_section": "303",
+      "target_heading": "Theft.",
+      "top5": [
+        {
+          "rag_id": "BNS-RAG-BNS-S303-SUB1-EXP2",
+          "section": "303",
+          "score": 5.652
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S303-SUB1-ILLU1-d",
+          "section": "303",
+          "score": 5.437
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S303-SUB1-ILLU1-g",
+          "section": "303",
+          "score": 5.403
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S303-SUB1-ILLU1-f",
+          "section": "303",
+          "score": 5.403
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S303-SUB1-EXP5",
+          "section": "303",
+          "score": 5.369
+        }
+      ],
+      "target_rank": 1,
+      "status": "PASS"
+    },
+    {
+      "query": "What is murder under BNS?",
+      "target_section": "101",
+      "target_heading": "Murder.",
+      "top5": [
+        {
+          "rag_id": "BNS-RAG-BNS-S101-P0",
+          "section": "101",
+          "score": 5.097
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S101-PROV1-EXP1",
+          "section": "101",
+          "score": 4.963
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S104",
+          "section": "104",
+          "score": 4.962
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S103",
+          "section": "103",
+          "score": 4.894
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S101-PROV1-EXC5",
+          "section": "101",
+          "score": 4.867
+        }
+      ],
+      "target_rank": 1,
+      "status": "PASS"
+    },
+    {
+      "query": "punishment for cheating under BNS",
+      "target_section": "318",
+      "target_heading": "Cheating.",
+      "top5": [
+        {
+          "rag_id": "BNS-RAG-BNS-S319",
+          "section": "319",
+          "score": 8.347
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S318-SUB3",
+          "section": "318",
+          "score": 7.955
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S318-SUB2",
+          "section": "318",
+          "score": 7.907
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S318-SUB1-ILLU1",
+          "section": "318",
+          "score": 7.481
+        },
+        {
+          "rag_id": "BNS-RAG-BNS-S318-SUB4",
+          "section": "318",
+          "score": 7.366
+        }
+      ],
+      "target_rank": 2,
+      "status": "PASS"
+    }
+  ],
+  "counts": {
+    "act": 1,
+    "aos_entry": 358,
+    "arrangement_of_sections": 1,
+    "back_matter": 1,
+    "chapter": 20,
+    "clause": 277,
+    "division_heading": 27,
+    "exception": 27,
+    "explanation": 117,
+    "footnote": 1,
+    "front_matter": 2,
+    "illustration": 274,
+    "preamble": 1,
+    "proviso": 28,
+    "section": 358,
+    "subclause": 45,
+    "subsection": 309
+  },
+  "completeness_gate": {
+    "official_source_downloaded": true,
+    "full_act_extracted": true,
+    "arrangement_of_sections_extracted": true,
+    "every_expected_section_present": true,
+    "no_unexpected_section_loss": true,
+    "no_duplicate_section_ids": true,
+    "chapter_mapping_validated": true,
+    "section_headings_validated": true,
+    "subsections_preserved": true,
+    "clauses_preserved": true,
+    "subclauses_preserved": true,
+    "provisos_preserved": true,
+    "explanations_preserved": true,
+    "illustrations_preserved": true,
+    "schedules_preserved": true,
+    "legally_meaningful_footnotes_preserved": true,
+    "page_references_preserved": true,
+    "source_hashes_generated": true,
+    "source_urls_preserved": true,
+    "no_unresolved_critical_extraction_errors": true,
+    "random_source_comparison_passed": true,
+    "retrieval_tests_passed": true,
+    "parent_child_hierarchy_intact": true
+  },
+  "completeness_status": "PASS",
+  "unresolved_critical": [],
+  "warnings": []
+}

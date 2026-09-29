@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "peft": "0.21.0",
+    "trl": "1.14.0",
+    "transformers": "5.14.1",
+    "torch": "2.13.0+cpu"
+  },
+  "configuration": {
+    "sequence_length": 1024,
+    "batch_size": 1,
+    "gradient_accumulation_steps": 2,
+    "epochs": 1,
+    "gradient_checkpointing": true,
+    "cpu_only": true
+  },
+  "results": {
+    "status": "Success",
+    "training_time_seconds": 261.3595495223999,
+    "time_per_step_seconds": 26.13595495223999,
+    "peak_ram_mb": 2961.2890625,
+    "final_loss": 2.1393471717834474,
+    "checkpoint_size_mb": 4.3951263427734375,
+    "optimizer_steps": 10
+  },
+  "warnings_errors": [],
+  "safety_assessment": "The 900-example pilot is safe to launch. The smoke test completed successfully without OOM or NaN loss."
+}

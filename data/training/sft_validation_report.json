@@ -1,0 +1,37 @@
+{
+  "validation_summary": {
+    "total_records": 47703,
+    "valid_records": 47703,
+    "invalid_records": 0,
+    "duplicate_records": 0,
+    "empty_records": 0,
+    "complex_cot_found": 0,
+    "unusually_long_records": 478
+  },
+  "length_statistics_characters": {
+    "min_length": 43,
+    "max_length": 151948,
+    "average_length": 2075.19,
+    "distribution": {
+      "<500": 2673,
+      "500-1000": 6893,
+      "1000-2000": 15345,
+      "2000-4000": 19705,
+      "4000-6000": 2608,
+      ">6000": 479
+    }
+  },
+  "random_50_inspection": {
+    "samples_checked": 50,
+    "prompt_is_legal_question_scenario": 46,
+    "response_is_present": 50,
+    "response_is_coherent": 50,
+    "formatting_corruption_detected": 0,
+    "obvious_non_legal_or_malformed": 4
+  },
+  "technical_readiness": {
+    "recommended_max_sequence_length": 2048,
+    "is_ready_for_qwen3_0_6b_sft": true,
+    "disclaimer": "Technical readiness does NOT mean legal correctness. The dataset remains non-authoritative and must not be used as the legal evidence layer for Lexora RAG."
+  }
+}

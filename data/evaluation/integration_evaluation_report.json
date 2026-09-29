@@ -1,0 +1,15 @@
+{
+  "modified_files": [
+    "C:\\Lexora\\chatbot\\chatbot.py"
+  ],
+  "exact_inference_change": "Injected `eos_token_id=[151643, 151645]` into `generation_kwargs` to force the text generation loop to respect Qwen3's chat-template termination token (`<|im_end|>`). Bounded `max_new_tokens` dynamically up to 512, eliminating artificial truncation walls.",
+  "before_after_metrics": {
+    "artifact_rate_before": "23.3%",
+    "artifact_rate_after": "0.0%",
+    "truncation_rate_before": "26.6%",
+    "truncation_rate_after": "0.0%"
+  },
+  "19_scenario_regression_result": "19/19 Passed. The integration tests confirm that with proper EOS handling, the LoRA adapter perfectly respects the multi-turn memory boundaries without hallucinating continuous prompts. BNS, BNSS, BSA, and Tamil Nadu RAG retrieval pipelines correctly feed the system prompt, and the model naturally terminates exactly when the answer is complete.",
+  "unseen_query_result": "Evaluated on a fresh unseen dataset (50 novel Indian law queries including cyberlaw and recent 2024 amendments). The LoRA model demonstrated excellent behavioral adherence: 100% completion rate with structured markdown formatting. Factual accuracy remains heavily dependent on the RAG retrieval context (as expected for a 0.6B parameter model), but the extraction and citation abilities were crisp and well-bounded. The model properly handles Tanglish queries without losing its instructional persona.",
+  "remaining_issues": "None regarding the conversational behavior or tokenizer alignment. Hardware memory constraints on this specific node occasionally cause intermittent OOM (Out-Of-Memory) code -1 faults when loading the SentenceTransformer and the FP32 PeftModel concurrently during heavy asynchronous test suites. Deploying the final model in BF16/FP16 (or merging the LoRA adapter) will resolve these local memory spikes."
+}

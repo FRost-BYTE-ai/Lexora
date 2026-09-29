@@ -1,0 +1,428 @@
+{
+    "use_lora_load_success": true,
+    "lora_model_class": "PeftModelForCausalLM",
+    "base_model_class": "Qwen3ForCausalLM",
+    "total_tests": 11,
+    "results": [
+        {
+            "test_id": 1,
+            "query": "What is Article 21?",
+            "scope": "LEGAL",
+            "records": 1,
+            "response": "Article 21 of the Constitution of India is a fundamental right that guarantees the protection of life and personal liberty. It states that no person shall be deprived of his life or personal liberty except according to procedure established by law. This means that the government must follow a legal process to remove an individual from their life or personal liberty, ensuring that any deprivation is justified and carried out by a fair and legal means. kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje\n kutje",
+            "sources": [
+                {
+                    "act_name": "Constitution of India",
+                    "article_or_section": "Article 21",
+                    "heading": "Article 21 — Protection of life and personal liberty",
+                    "document_title": "The Constitution of India",
+                    "authority": "Government of India / India Code",
+                    "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf",
+                    "is_official": true,
+                    "text_excerpt": "No person shall be deprived of his life or personal liberty except according to procedure established by law."
+                }
+            ],
+            "evidence_passed": "[Document: The Constitution of India | Article: 21 | Heading: Article 21 — Protection of life and personal liberty]\nNo person shall be deprived of his life or personal liberty except according to procedure established by law.\n\n",
+            "metrics": {
+                "query_understanding_time": 0.0076847076416015625,
+                "retrieval_time": 0.6815958023071289,
+                "prompt_construction_time": 0.03180670738220215,
+                "first_token_latency": 0.5,
+                "generation_time": 68.6056718826294,
+                "total_time": 69.32675909996033
+            },
+            "elapsed_s": 69.32980370521545
+        },
+        {
+            "test_id": 2,
+            "query": "What is BNS Section 303?",
+            "scope": "LEGAL",
+            "records": 1,
+            "response": "Bharatiya Nyaya Sanhita, 2023, Section 303, is a legal provision in India that defines theft as the act of taking or concealing movable property out of the possession of another person without their consent, with the intent to take it dishonestly. The section outlines the legal consequences for such actions, including imprisonment and fines, depending on the value of the stolen property and the circumstances of the offense. The section emphasizes that theft is a serious offense, punishable by law, and that the intent to take the property dishonestly is a key factor in determining the severity of the punishment. kutje\n.LEADING\nThe legal provision in Bharatiya Nyaya Sanhita, 2023, Section 303, defines theft as the act of taking or concealing movable property out of the possession of another person without their consent, with the intent to take it dishonestly. The section outlines the legal consequences for such actions, including imprisonment and fines, depending on the value of the stolen property and the circumstances of the offense. The section emphasizes that theft is a serious offense, punishable by law, and that the intent to take the property dishonestly is a key factor in determining the severity of the punishment. kutje",
+            "sources": [
+                {
+                    "act_name": "Bharatiya Nyaya Sanhita, 2023",
+                    "article_or_section": "Section 303",
+                    "heading": "Section 303",
+                    "document_title": "Bharatiya Nyaya Sanhita, 2023",
+                    "authority": "Ministry of Law and Justice / Government of India",
+                    "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf",
+                    "is_official": true,
+                    "text_excerpt": "(1) Whoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft. Explanation 1.—A thing so long as it is attached to the earth, not being movable property, is not t..."
+                }
+            ],
+            "evidence_passed": "[Document: Bharatiya Nyaya Sanhita, 2023 | Section: 303 | Heading: Section 303]\n(1) Whoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft. Explanation 1.—A th",
+            "metrics": {
+                "query_understanding_time": 0.0,
+                "retrieval_time": 0.07917952537536621,
+                "prompt_construction_time": 0.018161773681640625,
+                "first_token_latency": 0.5,
+                "generation_time": 101.78261852264404,
+                "total_time": 101.87995982170105
+            },
+            "elapsed_s": 101.87995982170105
+        },
+        {
+            "test_id": 3,
+            "query": "What is the punishment for pickpocketing?",
+            "scope": "LEGAL",
+            "records": 5,
+            "response": "The punishment for pickpocketing, as defined in the Bharatiya Nyaya Sanhita, 2023, is as follows:\n\n(1) Whoever, having made preparation for causing death, or hurt, or restraint, or fear of death, or of hurt, or of restraint, to any person, in order to the committing of such theft, or in order to the effecting of his escape after the committing of such theft, or in order to the retaining of property taken by such theft, shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.\n\nThis means that if someone is involved in pickpocketing and has prepared to harm or harm someone in order to commit theft, they will face a long prison sentence (up to ten years) and may also be fined. The punishment is severe because it involves a serious threat to the victim's life or safety, which is a key element of the offence. The punishment is designed to deter such crimes and protect the public from harm. Prostitutas\nThe punishment for pickpocketing, as defined in the Bharatiya Nyaya Sanhita, 2023, is as follows:\n\n(1) Whoever, having made",
+            "sources": [
+                {
+                    "act_name": "Bharatiya Nyaya Sanhita, 2023",
+                    "article_or_section": "Section 303",
+                    "heading": "Section 303",
+                    "document_title": "Bharatiya Nyaya Sanhita, 2023",
+                    "authority": "Ministry of Law and Justice / Government of India",
+                    "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf",
+                    "is_official": true,
+                    "text_excerpt": "(1) Whoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft. Explanation 1.—A thing so long as it is attached to the earth, not being movable property, is not t..."
+                },
+                {
+                    "act_name": "Bharatiya Nyaya Sanhita, 2023",
+                    "article_or_section": "Section 304",
+                    "heading": "Section 304",
+                    "document_title": "Bharatiya Nyaya Sanhita, 2023",
+                    "authority": "Ministry of Law and Justice / Government of India",
+                    "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf",
+                    "is_official": true,
+                    "text_excerpt": "(1) Theft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession any movable property. (2) Whoever commits snatching, shall be punished with imprisonment of either description for a term ..."
+                },
+                {
+                    "act_name": "Bharatiya Nyaya Sanhita, 2023",
+                    "article_or_section": "Section 334",
+                    "heading": "Section 334",
+                    "document_title": "Bharatiya Nyaya Sanhita, 2023",
+                    "authority": "Ministry of Law and Justice / Government of India",
+                    "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf",
+                    "is_official": true,
+                    "text_excerpt": "(1) Whoever dishonestly or with intent to commit mischief, breaks open or unfastens any closed receptacle which contains or which he believes to contain property, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. (2) Whoev..."
+                },
+                {
+                    "act_name": "Bharatiya Nyaya Sanhita, 2023",
+                    "article_or_section": "Section 307",
+                    "heading": "Section 307",
+                    "document_title": "Bharatiya Nyaya Sanhita, 2023",
+                    "authority": "Ministry of Law and Justice / Government of India",
+                    "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf",
+                    "is_official": true,
+                    "text_excerpt": "Whoever commits theft, having made preparation for causing death, or hurt, or restraint, or fear of death, or of hurt, or of restraint, to any person, in order to the committing of such theft, or in order to the effecting of his escape after the committing of such theft, or in order to the retaining..."
+                },
+                {
+                    "act_name": "Bharatiya Nyaya Sanhita, 2023",
+                    "article_or_section": "Section 313",
+                    "heading": "Section 313",
+                    "document_title": "Bharatiya Nyaya Sanhita, 2023",
+                    "authority": "Ministry of Law and Justice / Government of India",
+                    "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf",
+                    "is_official": true,
+                    "text_excerpt": "Whoever belongs to any gang of persons associated in habitually committing theft or robbery, and not being a gang of dacoits, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine. Of criminal misappropriation of property"
+                }
+            ],
+            "evidence_passed": "[Document: Bharatiya Nyaya Sanhita, 2023 | Section: 303 | Heading: Section 303]\n(1) Whoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft. Explanation 1.—A th",
+            "metrics": {
+                "query_understanding_time": 0.0,
+                "retrieval_time": 0.06728768348693848,
+                "prompt_construction_time": 0.017824411392211914,
+                "first_token_latency": 0.5,
+                "generation_time": 118.85871458053589,
+                "total_time": 118.94382667541504
+            },
+            "elapsed_s": 118.94587969779968
+        },
+        {
+            "test_id": 4,
+            "query": "Someone stole my phone from my pocket.",
+            "scope": "LEGAL",
+            "records": 5,
+            "response": "The user's phone was stolen from their pocket. The theft was committed by someone who used a false property mark on the phone, which is a violation of Section 334 of the Indian Penal Code. The person who stole the phone was punished with imprisonment for a term of two years, or with fine, or with both. The user should report the theft to the police and take necessary steps to recover the phone. 98 THE GAZETTE OF INDIA EXTRAORDINARY [Part II— ____________________________________________________________ _____________________________________________________________ ____________________________________________________________ ___________________________________________________________ ________________________________________________________ _____________________________________________________________ ⚠️  WARNING: This is a legal question and should be handled by a legal professional. ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠",
+            "sources": [
+                {
+                    "act_name": "Bharatiya Nyaya Sanhita, 2023",
+                    "article_or_section": "Section 304",
+                    "heading": "Section 304",
+                    "document_title": "Bharatiya Nyaya Sanhita, 2023",
+                    "authority": "Ministry of Law and Justice / Government of India",
+                    "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf",
+                    "is_official": true,
+                    "text_excerpt": "(1) Theft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession any movable property. (2) Whoever commits snatching, shall be punished with imprisonment of either description for a term ..."
+                },
+                {
+                    "act_name": "Bharatiya Nyaya Sanhita, 2023",
+                    "article_or_section": "Section 316",
+                    "heading": "Section 316",
+                    "document_title": "Bharatiya Nyaya Sanhita, 2023",
+                    "authority": "Ministry of Law and Justice / Government of India",
+                    "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf",
+                    "is_official": true,
+                    "text_excerpt": "(1) Whoever, being in any manner entrusted with property, or with any dominion over property, dishonestly misappropriates or converts to his own use that property, or dishonestly uses or disposes of that property in violation of any direction of law prescribing the mode in which such trust is to be ..."
+                },
+                {
+                    "act_name": "Bharatiya Nyaya Sanhita, 2023",
+                    "article_or_section": "Section 303",
+                    "heading": "Section 303",
+                    "document_title": "Bharatiya Nyaya Sanhita, 2023",
+                    "authority": "Ministry of Law and Justice / Government of India",
+                    "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf",
+                    "is_official": true,
+                    "text_excerpt": "(1) Whoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft. Explanation 1.—A thing so long as it is attached to the earth, not being movable property, is not t..."
+                },
+                {
+                    "act_name": "Bharatiya Nyaya Sanhita, 2023",
+                    "article_or_section": "Section 345",
+                    "heading": "Section 345",
+                    "document_title": "Bharatiya Nyaya Sanhita, 2023",
+                    "authority": "Ministry of Law and Justice / Government of India",
+                    "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf",
+                    "is_official": true,
+                    "text_excerpt": "(1) A mark used for denoting that movable property belongs to a particular person is called a property mark. (2) Whoever marks any movable property or goods or any case, package or other receptacle containing movable property or goods, or uses any case, package or other receptacle having any mark th..."
+                },
+                {
+                    "act_name": "Bharatiya Nyaya Sanhita, 2023",
+                    "article_or_section": "Section 334",
+                    "heading": "Section 334",
+                    "document_title": "Bharatiya Nyaya Sanhita, 2023",
+                    "authority": "Ministry of Law and Justice / Government of India",
+                    "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf",
+                    "is_official": true,
+                    "text_excerpt": "(1) Whoever dishonestly or with intent to commit mischief, breaks open or unfastens any closed receptacle which contains or which he believes to contain property, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. (2) Whoev..."
+                }
+            ],
+            "evidence_passed": "[Document: Bharatiya Nyaya Sanhita, 2023 | Section: 304 | Heading: Section 304]\n(1) Theft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession any movable property. (2) Whoever commits ",
+            "metrics": {
+                "query_understanding_time": 0.0,
+                "retrieval_time": 0.08147501945495605,
+                "prompt_construction_time": 0.03158116340637207,
+                "first_token_latency": 0.5,
+                "generation_time": 152.15277695655823,
+                "total_time": 152.26783895492554
+            },
+            "elapsed_s": 152.2780945301056
+        },
+        {
+            "test_id": 5,
+            "query": "Article 19 (1) (a)",
+            "scope": "LEGAL",
+            "records": 1,
+            "response": "The correct answer is: Article 19(1)(a). kutje\nThe correct answer is: Article 19(1)(a). kutje\nThe correct answer is: Article 19(1)(a). kutje\nThe correct answer is: Article 19(1)(a). kutje\nThe correct answer is: Article 19(1)(a). kutje\nThe correct answer is: Article 19(1)(a). kutje\nThe correct answer is: Article 19(1)(a). kutje\nThe correct answer is: Article 19(1)(a). kutje\nThe correct answer is: Article 19(1)(a). kutje\nThe correct answer is: Article 19(1)(a). kutje\nThe correct answer is: Article 19(1)(a). kutje\nThe correct answer is: Article 19(1)(a). kutje\nThe correct answer is: Article 19(1)(a). kutje\nThe correct answer is: Article 19(1)(a). kutje\nThe correct answer is: Article 19(1)(a). kutje\nThe correct answer is: Article 19(1)(a). kutje",
+            "sources": [
+                {
+                    "act_name": "Constitution of India",
+                    "article_or_section": "Article 19",
+                    "heading": "Article 19(1)(a)",
+                    "document_title": "The Constitution of India",
+                    "authority": "Government of India / India Code",
+                    "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf",
+                    "is_official": true,
+                    "text_excerpt": "to freedom of speech and expression;"
+                }
+            ],
+            "evidence_passed": "[Document: The Constitution of India | Article: 19 | Heading: Article 19(1)(a)]\nto freedom of speech and expression;\n\n",
+            "metrics": {
+                "query_understanding_time": 0.002010822296142578,
+                "retrieval_time": 0.32883501052856445,
+                "prompt_construction_time": 0.0,
+                "first_token_latency": 0.5,
+                "generation_time": 66.93525695800781,
+                "total_time": 67.26610279083252
+            },
+            "elapsed_s": 67.26811146736145
+        },
+        {
+            "test_id": 6,
+            "query": "சட்டம் பிரிவு 303 என்றால் என்ன?",
+            "scope": "NON_LEGAL",
+            "records": 0,
+            "response": "I only help with legal queries.",
+            "sources": [],
+            "evidence_passed": "",
+            "metrics": {
+                "query_understanding_time": 0.00906825065612793,
+                "total_time": 0.00906825065612793
+            },
+            "elapsed_s": 0.00906825065612793
+        },
+        {
+            "test_id": 7,
+            "query": "En phone thiruttupoachu, enna section panradhu?",
+            "scope": "LEGAL",
+            "records": 5,
+            "response": "The user's question is: \"En phone thiruttupoachu, enna section panradhu?\" The assistant's response is: \"Enna section panradhu.\" The assistant's response is a direct answer to the user's question, without any legal citations or disclaimers. The assistant's response is concise and professional, answering the user's question directly and accurately. The assistant's response is not a legal citation or disclaimers, and does not use generic disclaimers or rigid repetitive headings. The assistant's response is a natural, professional legal advisory style, answering the user's question directly and accurately. The assistant's response is not a legal citation or disclaimers, and does not use generic disclaimers or rigid repetitive headings. The assistant's response is a natural, professional legal advisory style, answering the user's question directly and accurately. The assistant's response is not a legal citation or disclaimers, and does not use generic disclaimers or rigid repetitive headings. The assistant's response is a natural, professional legal advisory style, answering the user's question directly and accurately. The assistant's response is not a legal citation or disclaimers, and does not use generic disclaimers or rigid repetitive headings. The assistant's response is",
+            "sources": [
+                {
+                    "act_name": "Bharatiya Nyaya Sanhita, 2023",
+                    "article_or_section": "Section 252",
+                    "heading": "Section 252",
+                    "document_title": "Bharatiya Nyaya Sanhita, 2023",
+                    "authority": "Ministry of Law and Justice / Government of India",
+                    "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf",
+                    "is_official": true,
+                    "text_excerpt": "Whoever takes or agrees or consents to take any gratification under pretence or on account of helping any person to recover any movable property of which he shall have been deprived by any offence punishable under this Sanhita, shall, unless he uses all means in his power to cause the offender to be..."
+                },
+                {
+                    "act_name": "Bharatiya Nyaya Sanhita, 2023",
+                    "article_or_section": "Section 345",
+                    "heading": "Section 345",
+                    "document_title": "Bharatiya Nyaya Sanhita, 2023",
+                    "authority": "Ministry of Law and Justice / Government of India",
+                    "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf",
+                    "is_official": true,
+                    "text_excerpt": "(1) A mark used for denoting that movable property belongs to a particular person is called a property mark. (2) Whoever marks any movable property or goods or any case, package or other receptacle containing movable property or goods, or uses any case, package or other receptacle having any mark th..."
+                },
+                {
+                    "act_name": "Bharatiya Nyaya Sanhita, 2023",
+                    "article_or_section": "Section 303",
+                    "heading": "Section 303",
+                    "document_title": "Bharatiya Nyaya Sanhita, 2023",
+                    "authority": "Ministry of Law and Justice / Government of India",
+                    "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf",
+                    "is_official": true,
+                    "text_excerpt": "(1) Whoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft. Explanation 1.—A thing so long as it is attached to the earth, not being movable property, is not t..."
+                },
+                {
+                    "act_name": "Bharatiya Nyaya Sanhita, 2023",
+                    "article_or_section": "Section 308",
+                    "heading": "Section 308",
+                    "document_title": "Bharatiya Nyaya Sanhita, 2023",
+                    "authority": "Ministry of Law and Justice / Government of India",
+                    "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf",
+                    "is_official": true,
+                    "text_excerpt": "(1) Whoever intentionally puts any person in fear of any injury to that person, or to any other, and thereby dishonestly induces the person so put in fear to deliver to any person any property, or valuable security or anything signed or sealed which may be converted into a valuable security, commits..."
+                },
+                {
+                    "act_name": "Bharatiya Nyaya Sanhita, 2023",
+                    "article_or_section": "Section 322",
+                    "heading": "Section 322",
+                    "document_title": "Bharatiya Nyaya Sanhita, 2023",
+                    "authority": "Ministry of Law and Justice / Government of India",
+                    "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf",
+                    "is_official": true,
+                    "text_excerpt": "Whoever dishonestly or fraudulently signs, executes or becomes a party to any deed or instrument which purports to transfer or subject to any charge any property, or any interest therein, and which contains any false statement relating to the consideration for such transfer or charge, or relating to..."
+                }
+            ],
+            "evidence_passed": "[Document: Bharatiya Nyaya Sanhita, 2023 | Section: 252 | Heading: Section 252]\nWhoever takes or agrees or consents to take any gratification under pretence or on account of helping any person to recover any movable property of which he shall have been deprived by any offence punishable under this S",
+            "metrics": {
+                "query_understanding_time": 0.0,
+                "retrieval_time": 0.3268136978149414,
+                "prompt_construction_time": 0.03806304931640625,
+                "first_token_latency": 0.5,
+                "generation_time": 144.75220012664795,
+                "total_time": 145.1170768737793
+            },
+            "elapsed_s": 145.11907482147217
+        },
+        {
+            "test_id": 8,
+            "query": "My neighbour is threatening to hurt me.",
+            "scope": "LEGAL",
+            "records": 5,
+            "response": "The legal evidence provided in the Bharatiya Nyaya Sanhita, 2023, specifically Section 115, Section 206, Section 119, Section 122, and Section 280, outlines the legal framework for addressing threats of harm. Section 115 addresses the voluntary act of causing hurt, which is a direct threat of harm. Section 206 deals with the act of absconding to avoid service, which is a threat of harm. Section 119 addresses the voluntary act of causing grievous hurt, which is a serious threat of harm. Section 122 addresses the voluntary act of causing hurt on grave and sudden provocation, which is a severe threat of harm. Section 280 addresses the threat of making the atmosphere noxious to health, which is a serious threat of harm.\n\nIn the context of your neighbour's threat, the legal framework would likely involve the following steps:\n\n1. **Immediate Response**: The immediate response would be to take reasonable steps to protect yourself, such as calling the police or seeking emergency assistance. This is a critical first step to prevent further harm.\n\n2. **Legal Action**: If the threat is serious enough, you",
+            "sources": [
+                {
+                    "act_name": "Bharatiya Nyaya Sanhita, 2023",
+                    "article_or_section": "Section 115",
+                    "heading": "Section 115",
+                    "document_title": "Bharatiya Nyaya Sanhita, 2023",
+                    "authority": "Ministry of Law and Justice / Government of India",
+                    "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf",
+                    "is_official": true,
+                    "text_excerpt": "(1) Whoever does any act with the intention of thereby causing hurt to any person, or with the knowledge that he is likely thereby to cause hurt to any person, and does thereby cause hurt to any person, is said “voluntarily to cause hurt”. (2) Whoever, except in the case provided for by sub-section ..."
+                },
+                {
+                    "act_name": "Bharatiya Nyaya Sanhita, 2023",
+                    "article_or_section": "Section 206",
+                    "heading": "Section 206",
+                    "document_title": "Bharatiya Nyaya Sanhita, 2023",
+                    "authority": "Ministry of Law and Justice / Government of India",
+                    "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf",
+                    "is_official": true,
+                    "text_excerpt": "Whoever absconds in order to avoid being served with a summons, notice or order proceeding from any public servant legally competent, as such public servant, to issue such summons, notice or order,–– (a) shall be punished with simple imprisonment for a term which may extend to one month, or with fin..."
+                },
+                {
+                    "act_name": "Bharatiya Nyaya Sanhita, 2023",
+                    "article_or_section": "Section 119",
+                    "heading": "Section 119",
+                    "document_title": "Bharatiya Nyaya Sanhita, 2023",
+                    "authority": "Ministry of Law and Justice / Government of India",
+                    "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf",
+                    "is_official": true,
+                    "text_excerpt": "(1) Whoever voluntarily causes hurt for the purpose of extorting from the sufferer, or from any person interested in the sufferer, any property or valuable security, or of constraining the sufferer or any person interested in such sufferer to do anything which is illegal or which may facilitate the ..."
+                },
+                {
+                    "act_name": "Bharatiya Nyaya Sanhita, 2023",
+                    "article_or_section": "Section 122",
+                    "heading": "Section 122",
+                    "document_title": "Bharatiya Nyaya Sanhita, 2023",
+                    "authority": "Ministry of Law and Justice / Government of India",
+                    "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf",
+                    "is_official": true,
+                    "text_excerpt": "(1) Whoever voluntarily causes hurt on grave and sudden provocation, if he neither intends nor knows himself to be likely to cause hurt to any person other than the person who gave the provocation, shall be punished with imprisonment of either description for a term which may extend to one month, or..."
+                },
+                {
+                    "act_name": "Bharatiya Nyaya Sanhita, 2023",
+                    "article_or_section": "Section 280",
+                    "heading": "Section 280",
+                    "document_title": "Bharatiya Nyaya Sanhita, 2023",
+                    "authority": "Ministry of Law and Justice / Government of India",
+                    "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf",
+                    "is_official": true,
+                    "text_excerpt": "Whoever voluntarily vitiates the atmosphere in any place so as to make it noxious to the health of persons in general dwelling or carrying on business in the neighbourhood or passing along a public way, shall be punished with fine which may extend to one thousand rupees."
+                }
+            ],
+            "evidence_passed": "[Document: Bharatiya Nyaya Sanhita, 2023 | Section: 115 | Heading: Section 115]\n(1) Whoever does any act with the intention of thereby causing hurt to any person, or with the knowledge that he is likely thereby to cause hurt to any person, and does thereby cause hurt to any person, is said “voluntar",
+            "metrics": {
+                "query_understanding_time": 0.0009984970092773438,
+                "retrieval_time": 0.0992879867553711,
+                "prompt_construction_time": 0.009216070175170898,
+                "first_token_latency": 0.5,
+                "generation_time": 80.68187022209167,
+                "total_time": 80.7913727760315
+            },
+            "elapsed_s": 80.79237532615662
+        },
+        {
+            "test_id": 8.1,
+            "query": "He also dumped garbage in front of my door.",
+            "scope": "NON_LEGAL",
+            "records": 0,
+            "response": "I only help with legal queries.",
+            "sources": [],
+            "evidence_passed": "",
+            "metrics": {
+                "query_understanding_time": 0.0010004043579101562,
+                "total_time": 0.0010004043579101562
+            },
+            "elapsed_s": 0.0010004043579101562
+        },
+        {
+            "test_id": 9,
+            "query": "How to bake a chocolate cake?",
+            "scope": "NON_LEGAL",
+            "records": 0,
+            "response": "I only help with legal queries.",
+            "sources": [],
+            "evidence_passed": "",
+            "metrics": {
+                "query_understanding_time": 0.0005104541778564453,
+                "total_time": 0.0005104541778564453
+            },
+            "elapsed_s": 0.0005104541778564453
+        },
+        {
+            "test_id": 10,
+            "query": "What is the sentence for quantum hacking under Section 999 of BNS?",
+            "scope": "LEGAL",
+            "records": 0,
+            "response": "The available authoritative legal corpus does not contain sufficient material to answer this question reliably. Reason: No authoritative legal provisions retrieved from the corpus.\n\nLexora does not speculate or formulate legal conclusions when direct statutory evidence is absent.",
+            "sources": [],
+            "evidence_passed": "",
+            "metrics": {
+                "query_understanding_time": 0.0010004043579101562,
+                "retrieval_time": 0.11609816551208496,
+                "total_time": 0.11709856986999512
+            },
+            "elapsed_s": 0.11709856986999512
+        }
+    ]
+}

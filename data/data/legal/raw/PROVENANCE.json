@@ -1,0 +1,39 @@
+{
+  "extraction_timestamp": "2026-09-27T20:18:06+00:00",
+  "primary_source_authority": "India Code",
+  "note": "India Code (www.indiacode.nic.in) migrated to indiacode.gov.in; the official DSpace 9.1 REST API on indiacode.gov.in was used to retrieve the bitstreams referenced by the original URLs. See each manifest source_url/retrieval_url.",
+  "acts": {
+    "BNS": {
+      "source_url": "https://www.indiacode.nic.in/indiacode/bitstream/123456789/20062/1/a2023-45.pdf",
+      "retrieval_url": "https://indiacode.gov.in/server/api/core/bitstreams/8007a80e-259b-429d-9ca4-1a2f474b5000/content",
+      "item_handle": "123456789/496548",
+      "source_note": "Original URL (www.indiacode.nic.in) now serves an official site-migration notice to indiacode.gov.in; the PDF was retrieved from the official migrated India Code repository (indiacode.gov.in, DSpace 9.1 REST API), same bitstream name a2023-45.pdf, item handle 123456789/496548. India Code item metadata: enact_date=2023-12-25, enforcement_date=1-7-2024, repealed=false.",
+      "pdf_sha256": "d4449e9995b21fd52627811d08f9d21feda6a3678b7e5355b651242d152167f5",
+      "pdf_path": "/home/user/data/legal/raw/india_bns_a2023-45.pdf",
+      "cross_sources": [
+        "/home/user/data/legal/raw/india_bns_a2023-45.txt",
+        "/home/user/uploads/BNS2023.pdf"
+      ],
+      "cross_source_kinds": [
+        "dspaces_text_bitstream",
+        "india_code_export"
+      ]
+    },
+    "BNSS": {
+      "source_url": "https://www.indiacode.nic.in/bitstream/123456789/20335/1/a2023-46.pdf",
+      "retrieval_url": "https://indiacode.gov.in/server/api/core/bitstreams/73f93470-5f6a-4f0f-bc23-1309e32b9554/content",
+      "item_handle": "123456789/496550",
+      "source_note": "Original URL (www.indiacode.nic.in) now serves an official site-migration notice to indiacode.gov.in; the PDF was retrieved from the official migrated India Code repository (indiacode.gov.in, DSpace 9.1 REST API), bitstream A2023-46.pdf, item handle 123456789/496550. India Code item metadata: enact_date=2023-12-25, enforcement_date=01-07-2024, repealed=false.",
+      "pdf_sha256": "572c79880b9f8effc8fa6e39b864101835a0fb5d85b194b90a99d170121a0562",
+      "pdf_path": "/home/user/data/legal/raw/india_bnss_A2023-46.pdf",
+      "cross_sources": [
+        "/home/user/data/legal/raw/india_bnss_a2023-46.txt",
+        "/home/user/uploads/250884_2_english_01042024.pdf"
+      ],
+      "cross_source_kinds": [
+        "dspaces_text_bitstream",
+        "gazette"
+      ]
+    }
+  }
+}

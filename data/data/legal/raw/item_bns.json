@@ -1,0 +1,264 @@
+{
+  "id" : "4bb3e636-ed67-4731-8fb1-7ebfd83e1584",
+  "uuid" : "4bb3e636-ed67-4731-8fb1-7ebfd83e1584",
+  "name" : "The Bharatiya Nyaya Sanhita, 2023",
+  "handle" : "123456789/496548",
+  "metadata" : {
+    "dc.date.accessioned" : [ {
+      "value" : "2026-07-10T20:12:32Z",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.date.act_year" : [ {
+      "value" : "2023",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.date.enact_date" : [ {
+      "value" : "2023-12-25",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.date.enforcement_date" : [ {
+      "value" : "1-7-2024",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.date.entry_date" : [ {
+      "value" : "2024-06-25",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.date.issued" : [ {
+      "value" : "2023-12-25",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.date.last_modified" : [ {
+      "value" : "2025-11-07",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.description.abstract" : [ {
+      "value" : "Summary of Bharatiya Nyaya Sanhita, 2023:\n1. Jurisdiction and Procedure\n*Applicability: Every person liable under this Sanhita for acts within India or beyond, with specific provisions for citizens abroad and offenses targeting Indian computer resources (Section 1). \n*Trial Procedure: Governed by the Bharatiya Nyaya Sanhita, 2023, for all offences under it and other laws, unless specified otherwise. \n2. Court Structure\n*Classes of Criminal Courts: Courts of Session, Judicial Magistrates (1st & 2nd class), and Executive Magistrates in every State. \n*Court of Session: Establishment, composition, and operational provisions. \n3. Offences and Punishments\n*Punishment Nature: All offences under the Act are cognizable, non-bailable, and non-compoundable. \n*Specific Punishments:\n•\tUnfair Means: 3-5 years’ imprisonment and up to 10 lakh rupees fine, with additional penalties . \n•\tOrganised Crimes: 5-10 years’ imprisonment, significant fines, and asset forfeiture.\n•\tDefamation (Section 222): Special conditions for prosecuting public officials.\n4. Compoundable Offences\n*List and Conditions: Specified offences can be compounded with Court permission, detailing who can compound them.\n*Special Cases: Provisions for minors, persons of unsound mind, etc. \n\n5. General Exceptions\n*Acts Covered: Includes acts done under law, by mistake, accident, by children, persons of unsound mind, etc. (Chapter III) \n6. Prosecution Conditions\n*Offences Against State & Public Servants: Requires previous sanction from Central/State Government or District Magistrate for prosecution \n *Defamation Against Public Officials: Specific conditions for prosecution",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.act_id" : [ {
+      "value" : "AC_CEN_5_23_00048_2023-45_1719292564123",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.act_number" : [ {
+      "value" : "45",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.collection" : [ {
+      "value" : "ACT",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.department_id" : [ {
+      "value" : "23",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.department_name" : [ {
+      "value" : "Department of Internal Security",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.givenid" : [ {
+      "value" : "2023-45",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.ministry_id" : [ {
+      "value" : "5",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.ministry_name" : [ {
+      "value" : "Ministry of Home Affairs",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.no_of_chapter" : [ {
+      "value" : "0",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.no_of_section" : [ {
+      "value" : "0",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.preamble_description" : [ {
+      "value" : "<center style=\"font-size: 17px;\">THE BHARATIYA NYAYA SANHITA, 2023</center> <center style=\"font-size: 16px;\">ACT NO. 45 OF 2023</center> <p style=\"text-align:right;\">[<i>25th December, 2023.</i>]<p style=\"text-align:right;\"><br/><hr style=\"border: none; margin-bottom: 8px; margin-top: 0;\"/> An Act to consolidate and amend the provisions relating to offences and for matters connected therewith or incidental thereto.<br/><hr style=\"border: none; margin-bottom: 8px; margin-top: 0;\"/> <span style=\"margin-left: 15px;\"></span>BE it enacted by Parliament in the Seventy-fourth Year of the Republic of India as follows:---<br/><hr style=\"border: none; margin-bottom: 8px; margin-top: 0;\"/>",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.refact" : [ {
+      "value" : "0",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.reference_sites" : [ {
+      "value" : "Ministry of Home Affairs https://www.mha.gov.in/en",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    }, {
+      "value" : "Department of Internal Security https://www.mha.gov.in/en/departments/department-internal-security",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 1
+    }, {
+      "value" : "Concerned Ministry/Department Acts and Rules https://www.mha.gov.in/en/commoncontent/new-criminal-laws",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 2
+    } ],
+    "dc.identifier.repealed" : [ {
+      "value" : "false",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.state_id" : [ {
+      "value" : "1",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.state_name" : [ {
+      "value" : "CENTRAL",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.uri" : [ {
+      "value" : "http://test1.indiacode.nic.in/handle/123456789/496548",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.legislation.history" : [ {
+      "value" : "Legislative History: \nThe Bharatiya Nyaya Sanhita, 2023 \n\nSource: Official Record of Parliament, India Code, and Ministry of Home Affairs  \n\nAct Title - The Bharatiya Nyaya Sanhita, 2023 \nAct Number - Act No. 45 of 2023 \nAct ID (India Code) - 202345 \nPresidential Assent date - December 25, 2023 \nEnforcement Date - July 01, 2024 \nNodal Ministry - Ministry of Home Affairs \n\nPrecedent & Historical Rationale\n\n●\tRepeal of the Indian Penal Code, 1860: Repeals the 163-year-old colonial Indian Penal Code (45 of 1860) to shift the focus of substantive criminal law from colonial punitive control to citizen-centric justice (Nyaya).\n●\tModernization & Reform of Penal Provisions: Decriminalizes sedition while penalizing acts threatening the sovereignty and integrity of India, introduces community service as a formal punishment, and adds distinct statutory definitions for organized crime, terrorism, and mob lynching.\n \nParliamentary Trajectory & Enactment\n●\tFormulation: Introduced by the Union Minister of Home Affairs, Shri Amit Shah, as part of the trilogy of bills aimed at overhauling India's criminal justice system.\n●\tParliamentary Passage: Introduced in the Lok Sabha on August 11, 2023; referred to the Parliamentary Standing Committee on Home Affairs; re-introduced as Bill No. 173 of 2023 on December 12, 2023; passed by the Lok Sabha on December 20, 2023; and passed by the Rajya Sabha on December 21, 2023.\n●\tPresidential Assent: Received the assent of the President of India on December 25, 2023.\n●\tEnforcement: Enforced on July 01, 2024.",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.title" : [ {
+      "value" : "The Bharatiya Nyaya Sanhita, 2023",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.title.long_title" : [ {
+      "value" : "An Act to consolidate and amend the provisions relating to offences and for matters connected therewith or incidental thereto.",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.type" : [ {
+      "value" : "Developmental",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ]
+  },
+  "inArchive" : true,
+  "discoverable" : true,
+  "withdrawn" : false,
+  "lastModified" : "2026-08-24T19:05:28.276237Z",
+  "entityType" : null,
+  "type" : "item",
+  "_links" : {
+    "accessStatus" : {
+      "href" : "https://indiacode.gov.in/server/api/core/items/4bb3e636-ed67-4731-8fb1-7ebfd83e1584/accessStatus"
+    },
+    "bundles" : {
+      "href" : "https://indiacode.gov.in/server/api/core/items/4bb3e636-ed67-4731-8fb1-7ebfd83e1584/bundles"
+    },
+    "identifiers" : {
+      "href" : "https://indiacode.gov.in/server/api/core/items/4bb3e636-ed67-4731-8fb1-7ebfd83e1584/identifiers"
+    },
+    "mappedCollections" : {
+      "href" : "https://indiacode.gov.in/server/api/core/items/4bb3e636-ed67-4731-8fb1-7ebfd83e1584/mappedCollections"
+    },
+    "owningCollection" : {
+      "href" : "https://indiacode.gov.in/server/api/core/items/4bb3e636-ed67-4731-8fb1-7ebfd83e1584/owningCollection"
+    },
+    "relationships" : {
+      "href" : "https://indiacode.gov.in/server/api/core/items/4bb3e636-ed67-4731-8fb1-7ebfd83e1584/relationships"
+    },
+    "version" : {
+      "href" : "https://indiacode.gov.in/server/api/core/items/4bb3e636-ed67-4731-8fb1-7ebfd83e1584/version"
+    },
+    "templateItemOf" : {
+      "href" : "https://indiacode.gov.in/server/api/core/items/4bb3e636-ed67-4731-8fb1-7ebfd83e1584/templateItemOf"
+    },
+    "thumbnail" : {
+      "href" : "https://indiacode.gov.in/server/api/core/items/4bb3e636-ed67-4731-8fb1-7ebfd83e1584/thumbnail"
+    },
+    "submitter" : {
+      "href" : "https://indiacode.gov.in/server/api/core/items/4bb3e636-ed67-4731-8fb1-7ebfd83e1584/submitter"
+    },
+    "self" : {
+      "href" : "https://indiacode.gov.in/server/api/core/items/4bb3e636-ed67-4731-8fb1-7ebfd83e1584"
+    }
+  }
+}

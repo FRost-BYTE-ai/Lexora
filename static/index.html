@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexora — Tamil-First Legal Desk</title>
+    <link rel="icon" type="image/jpeg" href="/static/lexora-logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app-layout" id="app-layout">
+        <!-- LEFT SIDEBAR -->
+        <aside class="sidebar" id="sidebar">
+            <!-- Brand & Header -->
+            <div class="sidebar-header">
+                <div class="brand">
+                    <div class="brand-crest">
+                        <img src="/static/lexora-logo.jpg" alt="Lexora" width="32" height="32" style="border-radius:6px; object-fit:cover;">
+                    </div>
+                    <div class="brand-text">
+                        <h1 class="brand-title" data-i18n="brand_title">LEXORA</h1>
+                        <span class="brand-subtitle" data-i18n="brand_subtitle">TAMIL-FIRST LEGAL</span>
+                    </div>
+                </div>
+                <button class="btn-icon-ghost" id="btn-toggle-sidebar" title="Collapse Sidebar">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+                </button>
+            </div>
+
+            <!-- Primary Action -->
+            <div class="sidebar-action">
+                <button id="btn-new-query" class="btn btn-primary-navy btn-block">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"/></svg>
+                    <span data-i18n="btn_new_query">+ New Query</span>
+                </button>
+            </div>
+
+            <!-- Search Field -->
+            <div class="sidebar-search">
+                <div class="search-input-wrap">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-icon"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    <input type="text" id="search-conversations" placeholder="Search" data-i18n-placeholder="search_conversations_ph" />
+                    <span class="kbd-shortcut">⌘K</span>
+                </div>
+            </div>
+
+            <!-- Conversations Section -->
+            <div class="sidebar-section conversations-section">
+                <div class="section-header">
+                    <span class="section-title" data-i18n="sec_conversations">CONVERSATIONS</span>
+                    <span class="section-badge" id="conversation-count">0</span>
+                </div>
+                <div class="session-list" id="session-list">
+                    <!-- Loaded dynamically -->
+                </div>
+            </div>
+
+            <!-- Tools Section -->
+            <div class="sidebar-section tools-section">
+                <div class="section-header">
+                    <span class="section-title" data-i18n="sec_tools">TOOLS</span>
+                </div>
+                <nav class="tools-list">
+                    <a href="#" class="tool-item" data-tool="library">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6.5 6H20"/></svg>
+                        <span data-i18n="tool_library">Legal Library</span>
+                    </a>
+                    <a href="#" class="tool-item" data-tool="saved">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>
+                        <span data-i18n="tool_saved">Saved</span>
+                    </a>
+                    <a href="#" class="tool-item" data-tool="draft">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                        <span data-i18n="tool_draft">Draft Generator</span>
+                    </a>
+                    <a href="#" class="tool-item" id="btn-tool-upload" data-tool="doc">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+                        <span data-i18n="tool_doc">Document Analysis</span>
+                    </a>
+                    <a href="#" class="tool-item" data-tool="explorer">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h18"/></svg>
+                        <span data-i18n="tool_explorer">Case Explorer</span>
+                    </a>
+                    <a href="#" class="tool-item" data-tool="schemes">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                        <span data-i18n="tool_schemes">Government Schemes</span>
+                    </a>
+                    <a href="#" class="tool-item" id="btn-tool-voice" data-tool="voice">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
+                        <span data-i18n="tool_voice">Smart Doc & Voice Assist</span>
+                    </a>
+                    <a href="#" class="tool-item" data-tool="diagnostics">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                        <span data-i18n="tool_diagnostics">RAG Diagnostics</span>
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Hidden File Input for Document Upload -->
+            <input type="file" id="file-input" accept=".pdf,.txt" style="display:none;">
+
+            <!-- Active Document Badge (when doc is uploaded) -->
+            <div id="uploaded-doc-badge" class="uploaded-doc-badge" style="display:none;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57a4 4 0 1 1 5.66 5.66l-8.59 8.58a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
+                <span id="doc-filename" class="doc-name">document.pdf</span>
+                <button id="btn-remove-doc" class="btn-icon-xs" title="Remove Document">×</button>
+            </div>
+
+            <!-- Quiet Footer -->
+            <div class="sidebar-footer">
+                <span class="footer-left">v2.5 · TN & IN</span>
+                <span class="footer-right">Secure Core</span>
+            </div>
+        </aside>
+
+        <!-- MAIN APPLICATION AREA -->
+        <main class="main-desk">
+            <!-- TOP NAVIGATION (Compact ~50px) -->
+            <header class="top-nav">
+                <div class="nav-left">
+                    <button class="btn-mobile-menu" id="btn-mobile-menu" title="Toggle Sidebar">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                    </button>
+                    <!-- Jurisdiction Selector Segment -->
+                    <div class="jurisdiction-segment">
+                        <button class="segment-btn active" id="btn-tn-jurisdiction" data-i18n="jur_tn">Tamil Nadu</button>
+                        <button class="segment-btn" id="btn-in-jurisdiction" data-i18n="jur_in">All India</button>
+                    </div>
+
+                    <!-- Small Action Links -->
+                    <div class="nav-action-group">
+                        <button class="nav-action-btn">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            <span data-i18n="nav_schemes">Schemes</span>
+                        </button>
+                        <button class="nav-action-btn">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            <span data-i18n="nav_kiosk">Kiosk</span>
+                        </button>
+                        <button class="nav-action-btn btn-gold-outline" id="btn-top-voice">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#B58A2A" stroke-width="1.8"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/></svg>
+                            <span data-i18n="nav_voice">Voice Consultation</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="nav-right">
+                    <!-- User Type Dropdown -->
+                    <div class="dropdown-wrap">
+                        <button class="dropdown-btn">
+                            <span data-i18n="user_citizen">Citizen</span>
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                    </div>
+
+                    <!-- Language Selector -->
+                    <div class="lang-selector">
+                        <button class="lang-btn" data-lang="ta">தமிழ்</button>
+                        <button class="lang-btn active" data-lang="en">English</button>
+                        <button class="lang-btn" data-lang="tanglish">Tanglish</button>
+                        <button class="lang-btn" data-lang="hi">हिन्दी</button>
+                    </div>
+
+                    <!-- Theme Toggle -->
+                    <button class="nav-icon-btn" title="Toggle Dark/Light Theme">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    </button>
+
+                    <!-- TN Jurisdiction Badge -->
+                    <div class="tn-badge">TN</div>
+                </div>
+            </header>
+
+            <!-- MAIN WORKSPACE VIEW CONTAINER -->
+            <div class="workspace-scroll-area" id="workspace-scroll-area">
+                <!-- 4. MAIN EMPTY STATE (Centered Vertically/Horizontally) -->
+                <div class="empty-state-container" id="empty-state">
+                    <div class="empty-state-content">
+                        <!-- Lexora Emblem Badge -->
+                        <div class="lexora-landing-crest">
+                            <img src="/static/lexora-logo.jpg" alt="Lexora" width="44" height="44" style="border-radius:10px; object-fit:cover;">
+                        </div>
+
+                        <h2 class="landing-heading" data-i18n="landing_heading">Legal answers, grounded in the law.</h2>
+                        <p class="landing-subheading" data-i18n="landing_subheading">
+                            Ask in Tamil, English or Tanglish. Lexora finds, verifies and explains relevant legal sources.
+                        </p>
+
+                        <!-- 5. RECOMMENDED PROMPT -->
+                        <div class="recommended-prompt-box">
+                            <div class="rec-header">
+                                <div class="rec-title">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#B58A2A" stroke-width="2"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3z"/></svg>
+                                    <span data-i18n="rec_header_title">RECOMMENDED PROMPT</span>
+                                </div>
+                                <button class="btn-try-another" id="btn-try-another">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>
+                                    <span data-i18n="btn_try_another">Try Another</span>
+                                </button>
+                            </div>
+
+                            <div class="recommendation-card" id="recommendation-card">
+                                <div class="card-text">
+                                    <div class="rec-card-title" id="rec-title">Find Section 420 IPC / BNS equivalent</div>
+                                    <div class="rec-card-sub" id="rec-sub">"What is the punishment for physical assault under Indian criminal law?"</div>
+                                </div>
+                                <button class="rec-arrow-btn" id="btn-run-rec" title="Run Query">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. CHAT RESPONSE UI (Active Conversation Stream) -->
+                <div class="chat-stream-container" id="chat-stream" style="display: none;">
+                    <div class="messages-list" id="messages-list">
+                        <!-- Messages dynamically rendered -->
+                    </div>
+                </div>
+
+                <!-- 9. DYNAMIC TOOL WORKSPACE CONTAINER -->
+                <div class="tool-workspace" id="tool-workspace-container" style="display: none;">
+                    <!-- Tool views rendered dynamically: Library, Schemes, Cases, Saved, Drafts, Camera OCR, Voice Assist, Diagnostics -->
+                </div>
+            </div>
+
+            <!-- 6. CHAT COMPOSER (Bottom Centered) -->
+            <div class="composer-outer-wrap">
+                <div class="composer-container">
+                    <div class="voice-listening-bar" id="voice-listening-bar" style="display: none;">
+                        <div class="pulse-dot"></div>
+                        <span id="voice-live-transcript">Listening to your legal inquiry...</span>
+                        <button id="btn-stop-voice" class="btn-xs-outline">Stop</button>
+                    </div>
+
+                    <form id="chat-form" class="composer-form">
+                        <textarea 
+                            id="user-input" 
+                            class="composer-textarea" 
+                            placeholder="Ask any legal question in Tamil, English, or Tanglish..." 
+                            data-i18n-placeholder="input_placeholder"
+                            rows="1"
+                        ></textarea>
+                        
+                        <div class="composer-bottom-bar">
+                            <div class="composer-left-actions">
+                                <button type="button" class="composer-pill-btn" id="btn-composer-attach">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57a4 4 0 1 1 5.66 5.66l-8.59 8.58a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
+                                    <span data-i18n="btn_attach">Attach</span>
+                                </button>
+                                <button type="button" class="composer-pill-btn" id="btn-composer-voice">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#B58A2A" stroke-width="1.8"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
+                                    <span data-i18n="btn_voice_mode">Voice Mode</span>
+                                </button>
+                                <button type="button" class="composer-pill-btn" id="btn-composer-tn-mode">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#B58A2A" stroke-width="1.8"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h18"/></svg>
+                                    <span data-i18n="btn_tn_mode">Tamil Nadu Mode</span>
+                                </button>
+                            </div>
+
+                            <button type="submit" id="btn-send" class="composer-send-btn" title="Send Legal Inquiry">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- 7. DISCLAIMER -->
+                <div class="composer-disclaimer" data-i18n="disclaimer">
+                    Lexora provides informational legal & cooperative literacy. Always verify with official gazettes and practicing advocates.
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- 9. SOURCE DRAWER -->
+    <div id="source-modal" class="source-modal" style="display:none;">
+        <div class="source-drawer-content">
+            <div class="source-drawer-header">
+                <h3>Authoritative Legal Sources & Citations</h3>
+                <button id="btn-close-source-modal" class="btn-close">×</button>
+            </div>
+            <div id="source-modal-body" class="source-drawer-body">
+                <!-- Sources list rendered dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 10. REUSABLE ITEM DETAIL & ACTION MODAL -->
+    <div id="item-modal" class="modal-overlay" style="display:none;">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 id="item-modal-title">Item Details</h3>
+                <button id="btn-close-item-modal" class="btn-close">×</button>
+            </div>
+            <div id="item-modal-body" class="modal-body">
+                <!-- Body populated dynamically -->
+            </div>
+            <div id="item-modal-footer" class="modal-footer">
+                <!-- Actions populated dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 11. VOICE-TO-VOICE CONSULTATION MODAL -->
+    <div id="voice-overlay" class="modal-overlay voice-overlay" style="display:none;">
+        <div class="voice-modal-card">
+            <div class="voice-modal-header">
+                <div class="voice-brand">
+                    <div class="voice-crest">
+                        <img src="/static/lexora-logo.jpg" alt="Lexora" width="24" height="24" style="border-radius:4px; object-fit:cover; display:block;">
+                    </div>
+                    <div>
+                        <div class="voice-title">Lexora Voice Consultation</div>
+                        <div class="voice-subtitle" id="voice-status-pill">Assistant Ready</div>
+                    </div>
+                </div>
+                <button id="btn-close-voice-modal" class="btn-close" title="Close Voice Mode">×</button>
+            </div>
+
+            <div class="voice-visualizer-container">
+                <div class="voice-orb" id="voice-orb">
+                    <div class="voice-wave-ring r1"></div>
+                    <div class="voice-wave-ring r2"></div>
+                    <div class="voice-wave-ring r3"></div>
+                    <div class="voice-orb-core">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/>
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                            <line x1="12" y1="19" x2="12" y2="22"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="voice-state-label" id="voice-state-label">TAP TO SPEAK OR START SPEAKING</div>
+            </div>
+
+            <div class="voice-transcript-area">
+                <div class="voice-transcript-label">Live Spoken Inquiry:</div>
+                <div class="voice-transcript-text" id="voice-modal-transcript">"வணக்கம் Lexora, எனக்கு நில தகராறு சம்பந்தமாக உதவி வேண்டும்..." / "What is Section 303 BNS?"</div>
+            </div>
+
+            <div class="voice-summary-area" id="voice-summary-area" style="display:none;">
+                <div class="voice-summary-label">Lexora Spoken Response:</div>
+                <div class="voice-summary-text" id="voice-modal-response"></div>
+            </div>
+
+            <div class="voice-modal-footer">
+                <button class="voice-btn-mic" id="voice-modal-mic-toggle">
+                    <span id="voice-mic-icon">🎙️</span>
+                    <span id="voice-mic-label">Start Listening</span>
+                </button>
+                <button class="voice-btn-stop" id="voice-modal-audio-stop" style="display:none;">
+                    <span>⏹ Stop Audio</span>
+                </button>
+                <button class="workspace-btn-outline" id="voice-modal-view-chat">
+                    <span>View in Full Desk ↗</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

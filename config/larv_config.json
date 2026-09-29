@@ -1,0 +1,51 @@
+{
+  "enabled": true,
+  "top_k_candidates": 30,
+  "top_k_ranked": 10,
+  "final_evidence_k": 5,
+  "min_confidence_threshold": 0.25,
+  "domains": {
+    "legal": {
+      "semantic": 0.25,
+      "keyword": 0.15,
+      "authority": 0.20,
+      "jurisdiction": 0.10,
+      "structural": 0.15,
+      "recency": 0.05,
+      "intent": 0.10,
+      "conflict": 0.15
+    },
+    "scheme": {
+      "semantic": 0.20,
+      "keyword": 0.20,
+      "authority": 0.15,
+      "jurisdiction": 0.10,
+      "structural": 0.10,
+      "recency": 0.10,
+      "intent": 0.15,
+      "conflict": 0.10
+    },
+
+    "case": {
+      "semantic": 0.20,
+      "keyword": 0.15,
+      "authority": 0.25,
+      "jurisdiction": 0.10,
+      "structural": 0.15,
+      "recency": 0.05,
+      "intent": 0.10,
+      "conflict": 0.15
+    }
+  },
+  "authority_weights": {
+    "constitution": 1.0,
+    "statute_primary": 0.95,
+    "gazette": 0.95,
+    "supreme_court": 0.90,
+    "high_court": 0.85,
+    "official_government": 0.85,
+    "official_scheme_portal": 0.85,
+    "secondary_legal": 0.50,
+    "unverified": 0.30
+  }
+}

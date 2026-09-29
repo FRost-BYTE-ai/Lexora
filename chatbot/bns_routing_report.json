@@ -1,0 +1,718 @@
+[
+    {
+        "query": "What is Article 21?",
+        "scope": "LEGAL",
+        "rewritten_query": "What is Article 21?",
+        "response": "Article 21 is a provision in the Indian Constitution that guarantees the protection of life and personal liberty of individuals. It states that no person shall be deprived of their life or personal liberty except according to procedure established by law.",
+        "retrieved_records": 1,
+        "source_metadata": [
+            {
+                "title": "The Constitution of India",
+                "article_or_section": "21",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            }
+        ],
+        "evidence_passed": "Article: 21\nHeading: Article 21 \u2014 Protection of life and personal liberty\nText: No person shall be deprived of his life or personal liberty except according to procedure established by law.\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.12781572341918945,
+            "qdrant_retrieval_time": 0.3782191276550293,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.06800293922424316,
+            "first_token_latency": 1.7583239078521729,
+            "total_generation_time": 16.4784197807312,
+            "total_time": 17.052457571029663
+        },
+        "new_session": true
+    },
+    {
+        "query": "Explain Article 14.",
+        "scope": "LEGAL",
+        "rewritten_query": "Explain Article 14.",
+        "response": "Article 14 of the Indian Constitution guarantees the principle of equality before the law. It states that the State shall not deny to any person equality before the law or the equal protection of the laws within the territory of India. This means that all individuals, regardless of their background, status, or circumstances, are entitled to the same legal rights and protections under the law. The State is obligated to ensure that no one is discriminated against or treated unfairly based on their identity, race, religion, caste, sex, or any other characteristic. This article is a fundamental part of the Indian legal framework, ensuring that all citizens are treated equally and have equal access to justice.",
+        "retrieved_records": 1,
+        "source_metadata": [
+            {
+                "title": "The Constitution of India",
+                "article_or_section": "14",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            }
+        ],
+        "evidence_passed": "Article: 14\nHeading: Article 14 \u2014 Equality before law\nText: The State shall not deny to any person equality before the law or the equal protection of the laws within the territory of India.\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.06879377365112305,
+            "qdrant_retrieval_time": 0.3291609287261963,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.0029947757720947266,
+            "first_token_latency": 2.0004162788391113,
+            "total_generation_time": 44.922465324401855,
+            "total_time": 45.32341480255127
+        },
+        "new_session": true
+    },
+    {
+        "query": "What does Article 19(1)(a) protect?",
+        "scope": "LEGAL",
+        "rewritten_query": "What does Article 19(1)(a) protect?",
+        "response": "Article 19(1)(a) protects freedom of speech and expression. \u2686",
+        "retrieved_records": 1,
+        "source_metadata": [
+            {
+                "title": "The Constitution of India",
+                "article_or_section": "19",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            }
+        ],
+        "evidence_passed": "Article: 19\nHeading: Article 19(1)(a)\nText: to freedom of speech and expression;\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.06771087646484375,
+            "qdrant_retrieval_time": 0.33542466163635254,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.002326488494873047,
+            "first_token_latency": 1.3660712242126465,
+            "total_generation_time": 7.420326232910156,
+            "total_time": 7.825788259506226
+        },
+        "new_session": true
+    },
+    {
+        "query": "Article 19 (1) (a)",
+        "scope": "LEGAL",
+        "rewritten_query": "Article 19 (1) (a)",
+        "response": "Article 19 (1) (a) \u2690\ufffd",
+        "retrieved_records": 1,
+        "source_metadata": [
+            {
+                "title": "The Constitution of India",
+                "article_or_section": "19",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            }
+        ],
+        "evidence_passed": "Article: 19\nHeading: Article 19(1)(a)\nText: to freedom of speech and expression;\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.05069088935852051,
+            "qdrant_retrieval_time": 0.32118916511535645,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.0020024776458740234,
+            "first_token_latency": 1.3511600494384766,
+            "total_generation_time": 5.822780132293701,
+            "total_time": 6.196662664413452
+        },
+        "new_session": true
+    },
+    {
+        "query": "What are the Fundamental Rights?",
+        "scope": "LEGAL",
+        "rewritten_query": "What are the Fundamental Rights?",
+        "response": "The Fundamental Rights are the core rights guaranteed by the Constitution of India, ensuring that all citizens have certain basic freedoms and protections. These rights are enshrined in Articles 13, 25, and 26 of the Constitution. \n\n- **Article 13**: This article prohibits laws that are inconsistent with or in derogation of the fundamental rights. It ensures that no law can infringe upon these rights. \n\n- **Article 25(1)**: This article guarantees that all persons are equally entitled to freedom of conscience and the right freely to profess, practice, and propagate religion, subject to public order, morality, and health. \n\n- **Article 26**: This article allows for the freedom of religious affairs, ensuring that religious denominations or sections thereof have the right to manage their affairs, provided they do not violate public order, morality, or health. \n\nThese rights are fundamental to the protection of individual liberties and the promotion of social harmony in India.",
+        "retrieved_records": 4,
+        "source_metadata": [
+            {
+                "title": "The Constitution of India",
+                "article_or_section": null,
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article_or_section": "13",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article_or_section": "26",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article_or_section": "25",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            }
+        ],
+        "evidence_passed": "Article: None\nHeading: PART III \u2014 FUNDAMENTAL RIGHTS\nText: PART III \u2014 FUNDAMENTAL RIGHTS\n\nArticle: 13\nHeading: Article 13 \u2014 Laws inconsistent with or in derogation of the fundamental rights\nText: [Laws inconsistent with or in derogation of the fundamental rights.] (Text constituted of the clauses, sub-clauses, provisos and explanations listed as child records.)\n\nArticle: 26\nHeading: Article 26 \u2014 Freedom to manage religious affairs\nText: Subject to public order, morality and health, every religious denomination or any section thereof shall have the right\u2014\n\nArticle: 25\nHeading: Article 25(1)\nText: Subject to public order, morality and health and to the other provisions of this Part, all persons are equally entitled to freedom of conscience and the right freely to profess, practice and propagate religion.\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.0512239933013916,
+            "qdrant_retrieval_time": 0.14206528663635254,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.005271434783935547,
+            "first_token_latency": 2.5107483863830566,
+            "total_generation_time": 68.666668176651,
+            "total_time": 68.86522889137268
+        },
+        "new_session": true
+    },
+    {
+        "query": "What is the right to equality?",
+        "scope": "LEGAL",
+        "rewritten_query": "What is the right to equality?",
+        "response": "The right to equality is the fundamental principle that all individuals are equal before the law and have equal rights and opportunities. It is enshrined in Article 13(4) of the Constitution, which states that nothing in this article shall apply to any amendment of the Constitution made under Article 368. This ensures that the right to equality is not compromised by changes to the Constitution.",
+        "retrieved_records": 4,
+        "source_metadata": [
+            {
+                "title": "The Constitution of India",
+                "article_or_section": "13",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article_or_section": null,
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article_or_section": "25",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article_or_section": null,
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            }
+        ],
+        "evidence_passed": "Article: 13\nHeading: Article 13(4)\nText: Nothing in this article shall apply to any amendment of this Constitution made under article 368.] Right to Equality\n\nArticle: None\nHeading: Eighth Schedule \u2014 Languages 1. Assamese.\nText: Eighth Schedule [Articles 344(1) and 351] Languages 1. Assamese.\n\nArticle: 25\nHeading: Article 25(1)\nText: Subject to public order, morality and health and to the other provisions of this Part, all persons are equally entitled to freedom of conscience and the right freely to profess, practice and propagate religion.\n\nArticle: None\nHeading: Eighth Schedule \u2014 introductory text\nText: EIGHTH SCHEDULE [Articles 344(1) and 351] Languages\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.057608842849731445,
+            "qdrant_retrieval_time": 0.1147010326385498,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.0060367584228515625,
+            "first_token_latency": 2.348524332046509,
+            "total_generation_time": 28.775880336761475,
+            "total_time": 28.954226970672607
+        },
+        "new_session": true
+    },
+    {
+        "query": "Explain Article 32.",
+        "scope": "LEGAL",
+        "rewritten_query": "Explain Article 32.",
+        "response": "Article 32 empowers any other court to exercise the powers of the Supreme Court under clause (2) of Article 32(3). This means that the Supreme Court can issue directions or orders, including writs like habeas corpus, mandamus, prohibition, quo warranto, and certiorari, to enforce the rights conferred by this Part. The Supreme Court has the authority to issue writs in the nature of habeas corpus, mandamus, prohibition, quo warranto, and certiorari, whichever may be appropriate, to enforce the rights conferred by this Part. The right guaranteed by this article shall not be suspended except as otherwise provided for by this Constitution.",
+        "retrieved_records": 4,
+        "source_metadata": [
+            {
+                "title": "The Constitution of India",
+                "article_or_section": "32",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article_or_section": "32",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article_or_section": "32",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article_or_section": "32",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            }
+        ],
+        "evidence_passed": "Article: 32\nHeading: Article 32 \u2014 Remedies for enforcement of rights conferred by this Part\nText: [Remedies for enforcement of rights conferred by this Part.] (Text constituted of the clauses, sub-clauses, provisos and explanations listed as child records.)\n\nArticle: 32\nHeading: Article 32(3)\nText: Without prejudice to the powers conferred on the Supreme Court by clauses (1) and (2), Parliament may by law empower any other court to exercise within the local limits of its jurisdiction all or any of the powers exercisable by the Supreme Court under clause (2).\n\nArticle: 32\nHeading: Article 32(2)\nText: The Supreme Court shall have power to issue directions or orders or writs, including writs in the nature of habeas corpus, mandamus, prohibition, quo warranto and certiorari, whichever may be appropriate, for the enforcement of any of the rights conferred by this Part.\n\nArticle: 32\nHeading: Article 32(4)\nText: The right guaranteed by this article shall not be suspended except as otherwise provided for by this Constitution.\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.04825305938720703,
+            "qdrant_retrieval_time": 0.3243367671966553,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.005001068115234375,
+            "first_token_latency": 3.24836802482605,
+            "total_generation_time": 48.2454617023468,
+            "total_time": 48.6230525970459
+        },
+        "new_session": true
+    },
+    {
+        "query": "What is the punishment for theft?",
+        "scope": "LEGAL",
+        "rewritten_query": "What is the punishment for theft?",
+        "response": "The punishment for theft is imprisonment for a term which may extend to seven years, and shall also be liable to fine. \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \u2680 \ufffd",
+        "retrieved_records": 4,
+        "source_metadata": [
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "305",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "124",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "304",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "64",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            }
+        ],
+        "evidence_passed": "Section: 305\nHeading: Section 305\nText: Whoever commits theft\u2014 (a) in any building, tent or vessel used as a human dwelling or used for the custody of property; or (b) of any means of transport used for the transport of goods or passengers; or (c) of any article or goods from any means of transport used for the transport of goods or passengers; or (d) of idol or icon in any place of worship; or (e) of any property of the Government or of a local authority, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.\n\nSection: 124\nHeading: Section 124\nText: (1) Whoever causes permanent or partial damage or deformity to, or burns or maims or disfigures or disables, any part or parts of the body of a person or causes grievous hurt by throwing acid on or by administering acid to that person, or by using any other means with the intention of causing or with the knowledge that he is likely to cause such injury or hurt or causes a person to be in a permanent vegetative state shall be punished with imprisonment of either description for a term which shall not be less than ten years but which may extend to imprisonment for life, and with fine: Provided that such fine shall be just and reasonable to meet the medical expenses of the treatment of the victim: Voluntarily causing hurt or grievous hurt to deter public servant from his duty. Voluntarily causing hurt or grievous hurt on provocation. Causing hurt by means of poison, etc., with intent to commit an offence. Voluntarily causing grievous hurt by use of acid, etc. 40 THE GAZETTE OF INDIA EXTRAORDINARY [Part II\u2014 ____________________________________________________________ _____________________________________________________________ ____________________________________________________________ ___________________________________________________________ ________________________________________________________ _____________________________________________________________ Provided further that any fine imposed under this sub-section shall be paid to the victim. (2) Whoever throws or attempts to throw acid on any person or attempts to administer acid to any person, or attempts to use any other means, with the intention of causing permanent or partial damage or deformity or burns or maiming or disfigurement or disability or grievous hurt to that person, shall be punished with imprisonment of either description for a term which shall not be less than five years but which may extend to seven years, and shall also be liable to fine. Explanation 1.\u2014For the purposes of this section, \u201cacid\u201d includes any substance which has acidic or corrosive character or burning nature, that is capable of causing bodily injury leading to scars or disfigurement or temporary or permanent disability. Explanation 2.\u2014For the purposes of this section, permanent or partial damage or deformity or permanent vegetative state shall not be required to be irreversible.\n\nSection: 304\nHeading: Section 304\nText: (1) Theft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession any movable property. (2) Whoever commits snatching, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine.\n\nSection: 64\nHeading: Section 64\nText: (1) Whoever, except in the cases provided for in sub-section (2), commits rape, shall be punished with rigorous imprisonment of either description for a term which shall not be less than ten years, but which may extend to imprisonment for life, and shall also be liable to fine. (2) Whoever,\u2014 (a) being a police officer, commits rape,\u2014 Rape. Punishment for rape. Sec. 1] THE GAZETTE OF INDIA EXTRAORDINARY 23 ____________________________________________________________ _____________________________________________________________ ____________________________________________________________ ___________________________________________________________ ________________________________________________________ _____________________________________________________________ (i) within the limits of the police station to which such police officer is appointed; or (ii) in the premises of any station house; or (iii) on a woman in such police officer\u2019s custody or in the custody of a police officer subordinate to such police officer; or (b) being a public servant, commits rape on a woman in such public servant\u2019s custody or in the custody of a public servant subordinate to such public servant; or (c) being a member of the armed forces deployed in an area by the Central Government or a State Government commits rape in such area; or (d) being on the management or on the staff of a jail, remand home or other place of custody established by or under any law for the time being in force or of a women\u2019s or children\u2019s institution, commits rape on any inmate of such jail, remand home, place or institution; or (e) being on the management or on the staff of a hospital, commits rape on a woman in that hospital; or (f) being a relative, guardian or teacher of, or a person in a position of trust or authority towards the woman, commits rape on such woman; or (g) commits rape during communal or sectarian violence; or (h) commits rape on a woman knowing her to be pregnant; or (i) commits rape, on a woman incapable of giving consent; or (j) being in a position of control or dominance over a woman, commits rape on such woman; or (k) commits rape on a woman suffering from mental or physical disability; or (l) while committing rape causes grievous bodily harm or maims or disfigures or endangers the life of a woman; or (m) commits rape repeatedly on the same woman, shall be punished with rigorous imprisonment for a term which shall not be less than ten years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person\u2019s natural life, and shall also be liable to fine. Explanation.\u2014For the purposes of this sub-section,\u2014 (a) \u201carmed forces\u201d means the naval, army and air forces and includes any member of the Armed Forces constituted under any law for the time being in force, including the paramilitary forces and any auxiliary forces that are under the control of the Central Government or the State Government; (b) \u201chospital\u201d means the precincts of the hospital and includes the precincts of any institution for the reception and treatment of persons during convalescence or of persons requiring medical attention or rehabilitation; (c) \u201cpolice officer\u201d shall have the same meaning as assigned to the expression \u201cpolice\u201d under the Police Act, 1861; (d) \u201cwomen\u2019s or children\u2019s institution\u201d means an institution, whether called an orphanage or a home for neglected women or children or a widow\u2019s home or an institution called by any other name, which is established and maintained for the reception and care of women or children. 5 of 1861. 24 THE GAZETTE OF INDIA EXTRAORDINARY [Part II\u2014 ____________________________________________________________ _____________________________________________________________ ____________________________________________________________ ___________________________________________________________ ________________________________________________________ _____________________________________________________________\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.06058502197265625,
+            "qdrant_retrieval_time": 0.0349884033203125,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.02160024642944336,
+            "first_token_latency": 15.350874662399292,
+            "total_generation_time": 130.27131462097168,
+            "total_time": 130.3884882926941
+        },
+        "new_session": true
+    },
+    {
+        "query": "What is the punishment for robbery?",
+        "scope": "LEGAL",
+        "rewritten_query": "What is the punishment for robbery?",
+        "response": "The punishment for robbery is as follows:\n\nSection: 254\nHeading: Section 254\nText: Whoever, knowing or having reason to believe that any persons are about to commit or have recently committed robbery or dacoity, harbours them or any of them, with the intention of facilitating the commission of such robbery or dacoity, or of screening them or any of them from punishment, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine. Explanation.\u2014For the purposes of this section it is immaterial whether the robbery or dacoity is intended to be committed, or has been committed, within or without India. Exception.\u2014The provisions of this section do not extend to the case in which the harbour is by the spouse of the offender.\n\nSection: 124\nHeading: Section 124\nText: (1) Whoever causes permanent or partial damage or deformity to, or burns or maims or disfigures or disables, any part or parts of the body of a person or causes grievous hurt by throwing acid on or by administering acid to that person, or by using any other means with the intention of causing or with the knowledge that he is likely",
+        "retrieved_records": 4,
+        "source_metadata": [
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "254",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "124",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "312",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "64",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            }
+        ],
+        "evidence_passed": "Section: 254\nHeading: Section 254\nText: Whoever, knowing or having reason to believe that any persons are about to commit or have recently committed robbery or dacoity, harbours them or any of them, with the intention of facilitating the commission of such robbery or dacoity, or of screening them or any of them from punishment, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine. Explanation.\u2014For the purposes of this section it is immaterial whether the robbery or dacoity is intended to be committed, or has been committed, within or without India. Exception.\u2014The provisions of this section do not extend to the case in which the harbour is by the spouse of the offender.\n\nSection: 124\nHeading: Section 124\nText: (1) Whoever causes permanent or partial damage or deformity to, or burns or maims or disfigures or disables, any part or parts of the body of a person or causes grievous hurt by throwing acid on or by administering acid to that person, or by using any other means with the intention of causing or with the knowledge that he is likely to cause such injury or hurt or causes a person to be in a permanent vegetative state shall be punished with imprisonment of either description for a term which shall not be less than ten years but which may extend to imprisonment for life, and with fine: Provided that such fine shall be just and reasonable to meet the medical expenses of the treatment of the victim: Voluntarily causing hurt or grievous hurt to deter public servant from his duty. Voluntarily causing hurt or grievous hurt on provocation. Causing hurt by means of poison, etc., with intent to commit an offence. Voluntarily causing grievous hurt by use of acid, etc. 40 THE GAZETTE OF INDIA EXTRAORDINARY [Part II\u2014 ____________________________________________________________ _____________________________________________________________ ____________________________________________________________ ___________________________________________________________ ________________________________________________________ _____________________________________________________________ Provided further that any fine imposed under this sub-section shall be paid to the victim. (2) Whoever throws or attempts to throw acid on any person or attempts to administer acid to any person, or attempts to use any other means, with the intention of causing permanent or partial damage or deformity or burns or maiming or disfigurement or disability or grievous hurt to that person, shall be punished with imprisonment of either description for a term which shall not be less than five years but which may extend to seven years, and shall also be liable to fine. Explanation 1.\u2014For the purposes of this section, \u201cacid\u201d includes any substance which has acidic or corrosive character or burning nature, that is capable of causing bodily injury leading to scars or disfigurement or temporary or permanent disability. Explanation 2.\u2014For the purposes of this section, permanent or partial damage or deformity or permanent vegetative state shall not be required to be irreversible.\n\nSection: 312\nHeading: Section 312\nText: If, at the time of attempting to commit robbery or dacoity, the offender is armed with any deadly weapon, the imprisonment with which such offender shall be punished shall not be less than seven years. Dacoity. Robbery, or dacoity, with attempt to cause death or grievous hurt. Attempt to commit robbery or dacoity when armed with deadly weapon. 82 THE GAZETTE OF INDIA EXTRAORDINARY [Part II\u2014 ____________________________________________________________ _____________________________________________________________ ____________________________________________________________ ___________________________________________________________ ________________________________________________________ _____________________________________________________________\n\nSection: 64\nHeading: Section 64\nText: (1) Whoever, except in the cases provided for in sub-section (2), commits rape, shall be punished with rigorous imprisonment of either description for a term which shall not be less than ten years, but which may extend to imprisonment for life, and shall also be liable to fine. (2) Whoever,\u2014 (a) being a police officer, commits rape,\u2014 Rape. Punishment for rape. Sec. 1] THE GAZETTE OF INDIA EXTRAORDINARY 23 ____________________________________________________________ _____________________________________________________________ ____________________________________________________________ ___________________________________________________________ ________________________________________________________ _____________________________________________________________ (i) within the limits of the police station to which such police officer is appointed; or (ii) in the premises of any station house; or (iii) on a woman in such police officer\u2019s custody or in the custody of a police officer subordinate to such police officer; or (b) being a public servant, commits rape on a woman in such public servant\u2019s custody or in the custody of a public servant subordinate to such public servant; or (c) being a member of the armed forces deployed in an area by the Central Government or a State Government commits rape in such area; or (d) being on the management or on the staff of a jail, remand home or other place of custody established by or under any law for the time being in force or of a women\u2019s or children\u2019s institution, commits rape on any inmate of such jail, remand home, place or institution; or (e) being on the management or on the staff of a hospital, commits rape on a woman in that hospital; or (f) being a relative, guardian or teacher of, or a person in a position of trust or authority towards the woman, commits rape on such woman; or (g) commits rape during communal or sectarian violence; or (h) commits rape on a woman knowing her to be pregnant; or (i) commits rape, on a woman incapable of giving consent; or (j) being in a position of control or dominance over a woman, commits rape on such woman; or (k) commits rape on a woman suffering from mental or physical disability; or (l) while committing rape causes grievous bodily harm or maims or disfigures or endangers the life of a woman; or (m) commits rape repeatedly on the same woman, shall be punished with rigorous imprisonment for a term which shall not be less than ten years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person\u2019s natural life, and shall also be liable to fine. Explanation.\u2014For the purposes of this sub-section,\u2014 (a) \u201carmed forces\u201d means the naval, army and air forces and includes any member of the Armed Forces constituted under any law for the time being in force, including the paramilitary forces and any auxiliary forces that are under the control of the Central Government or the State Government; (b) \u201chospital\u201d means the precincts of the hospital and includes the precincts of any institution for the reception and treatment of persons during convalescence or of persons requiring medical attention or rehabilitation; (c) \u201cpolice officer\u201d shall have the same meaning as assigned to the expression \u201cpolice\u201d under the Police Act, 1861; (d) \u201cwomen\u2019s or children\u2019s institution\u201d means an institution, whether called an orphanage or a home for neglected women or children or a widow\u2019s home or an institution called by any other name, which is established and maintained for the reception and care of women or children. 5 of 1861. 24 THE GAZETTE OF INDIA EXTRAORDINARY [Part II\u2014 ____________________________________________________________ _____________________________________________________________ ____________________________________________________________ ___________________________________________________________ ________________________________________________________ _____________________________________________________________\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.07087230682373047,
+            "qdrant_retrieval_time": 0.03397989273071289,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.01757359504699707,
+            "first_token_latency": 15.365455865859985,
+            "total_generation_time": 131.36339664459229,
+            "total_time": 131.48582243919373
+        },
+        "new_session": true
+    },
+    {
+        "query": "What is the punishment for criminal intimidation?",
+        "scope": "LEGAL",
+        "rewritten_query": "What is the punishment for criminal intimidation?",
+        "response": "The punishment for criminal intimidation is imprisonment for a term which may extend to two years, or with fine, or with both.",
+        "retrieved_records": 4,
+        "source_metadata": [
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "351",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "124",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "134",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "64",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            }
+        ],
+        "evidence_passed": "Section: 351\nHeading: Section 351\nText: (1) Whoever threatens another by any means, with any injury to his person, reputation or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation. Tampering with property mark with intent to cause injury. Counterfeiting a property mark. Making or possession of any instrument for counterfeiting a property mark. Selling goods marked with a counterfeit property mark. Making a false mark upon any receptacle containing goods. Criminal intimidation. Sec. 1] THE GAZETTE OF INDIA EXTRAORDINARY 97 ____________________________________________________________ _____________________________________________________________ ____________________________________________________________ ___________________________________________________________ ________________________________________________________ _____________________________________________________________ Explanation.\u2014A threat to injure the reputation of any deceased person in whom the person threatened is interested, is within this section. Illustration. A, for the purpose of inducing B to resist from prosecuting a civil suit, threatens to burn B\u2019s house. A is guilty of criminal intimidation. (2) Whoever commits the offence of criminal intimidation shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. (3) Whoever commits the offence of criminal intimidation by threatening to cause death or grievous hurt, or to cause the destruction of any property by fire, or to cause an offence punishable with death or imprisonment for life, or with imprisonment for a term which may extend to seven years, or to impute unchastity to a woman, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both. (4) Whoever commits the offence of criminal intimidation by an anonymous communication, or having taken precaution to conceal the name or abode of the person from whom the threat comes, shall be punished with imprisonment of either description for a term which may extend to two years, in addition to the punishment provided for the offence under sub-section (1).\n\nSection: 124\nHeading: Section 124\nText: (1) Whoever causes permanent or partial damage or deformity to, or burns or maims or disfigures or disables, any part or parts of the body of a person or causes grievous hurt by throwing acid on or by administering acid to that person, or by using any other means with the intention of causing or with the knowledge that he is likely to cause such injury or hurt or causes a person to be in a permanent vegetative state shall be punished with imprisonment of either description for a term which shall not be less than ten years but which may extend to imprisonment for life, and with fine: Provided that such fine shall be just and reasonable to meet the medical expenses of the treatment of the victim: Voluntarily causing hurt or grievous hurt to deter public servant from his duty. Voluntarily causing hurt or grievous hurt on provocation. Causing hurt by means of poison, etc., with intent to commit an offence. Voluntarily causing grievous hurt by use of acid, etc. 40 THE GAZETTE OF INDIA EXTRAORDINARY [Part II\u2014 ____________________________________________________________ _____________________________________________________________ ____________________________________________________________ ___________________________________________________________ ________________________________________________________ _____________________________________________________________ Provided further that any fine imposed under this sub-section shall be paid to the victim. (2) Whoever throws or attempts to throw acid on any person or attempts to administer acid to any person, or attempts to use any other means, with the intention of causing permanent or partial damage or deformity or burns or maiming or disfigurement or disability or grievous hurt to that person, shall be punished with imprisonment of either description for a term which shall not be less than five years but which may extend to seven years, and shall also be liable to fine. Explanation 1.\u2014For the purposes of this section, \u201cacid\u201d includes any substance which has acidic or corrosive character or burning nature, that is capable of causing bodily injury leading to scars or disfigurement or temporary or permanent disability. Explanation 2.\u2014For the purposes of this section, permanent or partial damage or deformity or permanent vegetative state shall not be required to be irreversible.\n\nSection: 134\nHeading: Section 134\nText: Whoever assaults or uses criminal force to any person, in attempting to commit theft on any property which that person is then wearing or carrying, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both.\n\nSection: 64\nHeading: Section 64\nText: (1) Whoever, except in the cases provided for in sub-section (2), commits rape, shall be punished with rigorous imprisonment of either description for a term which shall not be less than ten years, but which may extend to imprisonment for life, and shall also be liable to fine. (2) Whoever,\u2014 (a) being a police officer, commits rape,\u2014 Rape. Punishment for rape. Sec. 1] THE GAZETTE OF INDIA EXTRAORDINARY 23 ____________________________________________________________ _____________________________________________________________ ____________________________________________________________ ___________________________________________________________ ________________________________________________________ _____________________________________________________________ (i) within the limits of the police station to which such police officer is appointed; or (ii) in the premises of any station house; or (iii) on a woman in such police officer\u2019s custody or in the custody of a police officer subordinate to such police officer; or (b) being a public servant, commits rape on a woman in such public servant\u2019s custody or in the custody of a public servant subordinate to such public servant; or (c) being a member of the armed forces deployed in an area by the Central Government or a State Government commits rape in such area; or (d) being on the management or on the staff of a jail, remand home or other place of custody established by or under any law for the time being in force or of a women\u2019s or children\u2019s institution, commits rape on any inmate of such jail, remand home, place or institution; or (e) being on the management or on the staff of a hospital, commits rape on a woman in that hospital; or (f) being a relative, guardian or teacher of, or a person in a position of trust or authority towards the woman, commits rape on such woman; or (g) commits rape during communal or sectarian violence; or (h) commits rape on a woman knowing her to be pregnant; or (i) commits rape, on a woman incapable of giving consent; or (j) being in a position of control or dominance over a woman, commits rape on such woman; or (k) commits rape on a woman suffering from mental or physical disability; or (l) while committing rape causes grievous bodily harm or maims or disfigures or endangers the life of a woman; or (m) commits rape repeatedly on the same woman, shall be punished with rigorous imprisonment for a term which shall not be less than ten years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person\u2019s natural life, and shall also be liable to fine. Explanation.\u2014For the purposes of this sub-section,\u2014 (a) \u201carmed forces\u201d means the naval, army and air forces and includes any member of the Armed Forces constituted under any law for the time being in force, including the paramilitary forces and any auxiliary forces that are under the control of the Central Government or the State Government; (b) \u201chospital\u201d means the precincts of the hospital and includes the precincts of any institution for the reception and treatment of persons during convalescence or of persons requiring medical attention or rehabilitation; (c) \u201cpolice officer\u201d shall have the same meaning as assigned to the expression \u201cpolice\u201d under the Police Act, 1861; (d) \u201cwomen\u2019s or children\u2019s institution\u201d means an institution, whether called an orphanage or a home for neglected women or children or a widow\u2019s home or an institution called by any other name, which is established and maintained for the reception and care of women or children. 5 of 1861. 24 THE GAZETTE OF INDIA EXTRAORDINARY [Part II\u2014 ____________________________________________________________ _____________________________________________________________ ____________________________________________________________ ___________________________________________________________ ________________________________________________________ _____________________________________________________________\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.054962873458862305,
+            "qdrant_retrieval_time": 0.03596329689025879,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.021854877471923828,
+            "first_token_latency": 17.396283864974976,
+            "total_generation_time": 28.8519926071167,
+            "total_time": 28.964773654937744
+        },
+        "new_session": true
+    },
+    {
+        "query": "What section deals with theft?",
+        "scope": "LEGAL",
+        "rewritten_query": "What section deals with theft?",
+        "response": "The section that deals with theft is **Section 305**.",
+        "retrieved_records": 4,
+        "source_metadata": [
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "305",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "304",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "306",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "307",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            }
+        ],
+        "evidence_passed": "Section: 305\nHeading: Section 305\nText: Whoever commits theft\u2014 (a) in any building, tent or vessel used as a human dwelling or used for the custody of property; or (b) of any means of transport used for the transport of goods or passengers; or (c) of any article or goods from any means of transport used for the transport of goods or passengers; or (d) of idol or icon in any place of worship; or (e) of any property of the Government or of a local authority, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.\n\nSection: 304\nHeading: Section 304\nText: (1) Theft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession any movable property. (2) Whoever commits snatching, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine.\n\nSection: 306\nHeading: Section 306\nText: Whoever, being a clerk or servant, or being employed in the capacity of a clerk or servant, commits theft in respect of any property in the possession of his master or employer, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.\n\nSection: 307\nHeading: Section 307\nText: Whoever commits theft, having made preparation for causing death, or hurt, or restraint, or fear of death, or of hurt, or of restraint, to any person, in order to the committing of such theft, or in order to the effecting of his escape after the committing of such theft, or in order to the retaining of property taken by such theft, shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Illustrations. (a) A commits theft on property in Z\u2019s possession; and while committing this theft, he has a loaded pistol under his garment, having provided this pistol for the purpose of hurting Z in case Z should resist. A has committed the offence defined in this section. (b) A picks Z\u2019s pocket, having posted several of his companions near him, in order that they may restrain Z, if Z should perceive what is passing and should resist, or should attempt to apprehend A. A has committed the offence defined in this section. Of extortion\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.0701148509979248,
+            "qdrant_retrieval_time": 0.027399063110351562,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.007999658584594727,
+            "first_token_latency": 5.806561231613159,
+            "total_generation_time": 10.972469091415405,
+            "total_time": 11.077982664108276
+        },
+        "new_session": true
+    },
+    {
+        "query": "Explain the offence of theft.",
+        "scope": "LEGAL",
+        "rewritten_query": "Explain the offence of theft.",
+        "response": "The offence of theft is defined in Section 304 of the Indian Penal Code (IPC), which outlines the act of snatching or seizing movable property from another person without their consent. The key elements of this offence include:\n\n1. **Sudden or Quick Action**: The offender must act suddenly or quickly to seize the property.\n2. **Forceful Seizure**: The property must be seized or secured forcibly.\n3. **Intent to Commit Theft**: The act must be motivated by the intent to commit theft.\n\nThe punishment for theft, as per the IPC, is imprisonment for a term of up to three years, along with a fine. This offence is particularly serious and carries significant legal consequences.",
+        "retrieved_records": 4,
+        "source_metadata": [
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "304",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "306",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "134",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "305",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            }
+        ],
+        "evidence_passed": "Section: 304\nHeading: Section 304\nText: (1) Theft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession any movable property. (2) Whoever commits snatching, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine.\n\nSection: 306\nHeading: Section 306\nText: Whoever, being a clerk or servant, or being employed in the capacity of a clerk or servant, commits theft in respect of any property in the possession of his master or employer, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.\n\nSection: 134\nHeading: Section 134\nText: Whoever assaults or uses criminal force to any person, in attempting to commit theft on any property which that person is then wearing or carrying, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both.\n\nSection: 305\nHeading: Section 305\nText: Whoever commits theft\u2014 (a) in any building, tent or vessel used as a human dwelling or used for the custody of property; or (b) of any means of transport used for the transport of goods or passengers; or (c) of any article or goods from any means of transport used for the transport of goods or passengers; or (d) of idol or icon in any place of worship; or (e) of any property of the Government or of a local authority, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.09964156150817871,
+            "qdrant_retrieval_time": 0.03615856170654297,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.0059986114501953125,
+            "first_token_latency": 4.954226732254028,
+            "total_generation_time": 54.10653638839722,
+            "total_time": 54.248335123062134
+        },
+        "new_session": true
+    },
+    {
+        "query": "What is the punishment for pickpocketing?",
+        "scope": "LEGAL",
+        "rewritten_query": "What is the punishment for pickpocketing?",
+        "response": "The punishment for pickpocketing is imprisonment for life or imprisonment, or causing such an offence to be committed, and in such attempt does any act towards the commission of the offence, shall be punished with imprisonment of any description provided for the offence, for a term which may extend to one-half of the imprisonment for life or, as the case may be, one-half of the longest term of imprisonment provided for that offence, or with such fine as is provided for the offence, or with both.",
+        "retrieved_records": 4,
+        "source_metadata": [
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "62",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "124",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "289",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "64",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            }
+        ],
+        "evidence_passed": "Section: 62\nHeading: Section 62\nText: Whoever attempts to commit an offence punishable by this Sanhita with imprisonment for life or imprisonment, or to cause such an offence to be committed, and in such attempt does any act towards the commission of the offence, shall, where no express provision is made by this Sanhita for the punishment of such attempt, be punished with imprisonment of any description provided for the offence, for a term which may extend to one-half of the imprisonment for life or, as the case may be, one-half of the longest term of imprisonment provided for that offence, or with such fine as is provided for the offence, or with both. Illustrations. (a) A makes an attempt to steal some jewels by breaking open a box, and finds after so opening the box, that there is no jewel in it. He has done an act towards the commission of theft, and therefore is guilty under this section. (b) A makes an attempt to pick the pocket of Z by thrusting his hand into Z\u2019s pocket. A fails in the attempt in consequence of Z\u2019s having nothing in his pocket. A is guilty under this section. Concealing design to commit offence punishable with imprisonment. Criminal conspiracy. Punishment for attempting to commit offences punishable with imprisonment for life or other imprisonment. 22 THE GAZETTE OF INDIA EXTRAORDINARY [Part II\u2014 ____________________________________________________________ _____________________________________________________________ ____________________________________________________________ ___________________________________________________________ ________________________________________________________ _____________________________________________________________\n\nSection: 124\nHeading: Section 124\nText: (1) Whoever causes permanent or partial damage or deformity to, or burns or maims or disfigures or disables, any part or parts of the body of a person or causes grievous hurt by throwing acid on or by administering acid to that person, or by using any other means with the intention of causing or with the knowledge that he is likely to cause such injury or hurt or causes a person to be in a permanent vegetative state shall be punished with imprisonment of either description for a term which shall not be less than ten years but which may extend to imprisonment for life, and with fine: Provided that such fine shall be just and reasonable to meet the medical expenses of the treatment of the victim: Voluntarily causing hurt or grievous hurt to deter public servant from his duty. Voluntarily causing hurt or grievous hurt on provocation. Causing hurt by means of poison, etc., with intent to commit an offence. Voluntarily causing grievous hurt by use of acid, etc. 40 THE GAZETTE OF INDIA EXTRAORDINARY [Part II\u2014 ____________________________________________________________ _____________________________________________________________ ____________________________________________________________ ___________________________________________________________ ________________________________________________________ _____________________________________________________________ Provided further that any fine imposed under this sub-section shall be paid to the victim. (2) Whoever throws or attempts to throw acid on any person or attempts to administer acid to any person, or attempts to use any other means, with the intention of causing permanent or partial damage or deformity or burns or maiming or disfigurement or disability or grievous hurt to that person, shall be punished with imprisonment of either description for a term which shall not be less than five years but which may extend to seven years, and shall also be liable to fine. Explanation 1.\u2014For the purposes of this section, \u201cacid\u201d includes any substance which has acidic or corrosive character or burning nature, that is capable of causing bodily injury leading to scars or disfigurement or temporary or permanent disability. Explanation 2.\u2014For the purposes of this section, permanent or partial damage or deformity or permanent vegetative state shall not be required to be irreversible.\n\nSection: 289\nHeading: Section 289\nText: Whoever does, with any machinery, any act so rashly or negligently as to endanger human life or to be likely to cause hurt or injury to any other person or knowingly or negligently omits to take such order with any machinery in his possession or under his care as is sufficient to guard against any probable danger to human life from such machinery, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both.\n\nSection: 64\nHeading: Section 64\nText: (1) Whoever, except in the cases provided for in sub-section (2), commits rape, shall be punished with rigorous imprisonment of either description for a term which shall not be less than ten years, but which may extend to imprisonment for life, and shall also be liable to fine. (2) Whoever,\u2014 (a) being a police officer, commits rape,\u2014 Rape. Punishment for rape. Sec. 1] THE GAZETTE OF INDIA EXTRAORDINARY 23 ____________________________________________________________ _____________________________________________________________ ____________________________________________________________ ___________________________________________________________ ________________________________________________________ _____________________________________________________________ (i) within the limits of the police station to which such police officer is appointed; or (ii) in the premises of any station house; or (iii) on a woman in such police officer\u2019s custody or in the custody of a police officer subordinate to such police officer; or (b) being a public servant, commits rape on a woman in such public servant\u2019s custody or in the custody of a public servant subordinate to such public servant; or (c) being a member of the armed forces deployed in an area by the Central Government or a State Government commits rape in such area; or (d) being on the management or on the staff of a jail, remand home or other place of custody established by or under any law for the time being in force or of a women\u2019s or children\u2019s institution, commits rape on any inmate of such jail, remand home, place or institution; or (e) being on the management or on the staff of a hospital, commits rape on a woman in that hospital; or (f) being a relative, guardian or teacher of, or a person in a position of trust or authority towards the woman, commits rape on such woman; or (g) commits rape during communal or sectarian violence; or (h) commits rape on a woman knowing her to be pregnant; or (i) commits rape, on a woman incapable of giving consent; or (j) being in a position of control or dominance over a woman, commits rape on such woman; or (k) commits rape on a woman suffering from mental or physical disability; or (l) while committing rape causes grievous bodily harm or maims or disfigures or endangers the life of a woman; or (m) commits rape repeatedly on the same woman, shall be punished with rigorous imprisonment for a term which shall not be less than ten years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person\u2019s natural life, and shall also be liable to fine. Explanation.\u2014For the purposes of this sub-section,\u2014 (a) \u201carmed forces\u201d means the naval, army and air forces and includes any member of the Armed Forces constituted under any law for the time being in force, including the paramilitary forces and any auxiliary forces that are under the control of the Central Government or the State Government; (b) \u201chospital\u201d means the precincts of the hospital and includes the precincts of any institution for the reception and treatment of persons during convalescence or of persons requiring medical attention or rehabilitation; (c) \u201cpolice officer\u201d shall have the same meaning as assigned to the expression \u201cpolice\u201d under the Police Act, 1861; (d) \u201cwomen\u2019s or children\u2019s institution\u201d means an institution, whether called an orphanage or a home for neglected women or children or a widow\u2019s home or an institution called by any other name, which is established and maintained for the reception and care of women or children. 5 of 1861. 24 THE GAZETTE OF INDIA EXTRAORDINARY [Part II\u2014 ____________________________________________________________ _____________________________________________________________ ____________________________________________________________ ___________________________________________________________ ________________________________________________________ _____________________________________________________________\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.0693204402923584,
+            "qdrant_retrieval_time": 0.034363746643066406,
+            "reranking_time": 0.0010006427764892578,
+            "prompt_construction_time": 0.019992828369140625,
+            "first_token_latency": 16.696836709976196,
+            "total_generation_time": 63.28397727012634,
+            "total_time": 63.4086549282074
+        },
+        "new_session": true
+    },
+    {
+        "query": "BNS section 303",
+        "scope": "LEGAL",
+        "rewritten_query": "BNS section 303",
+        "response": "Evidence:\nSection: 303\nHeading: Section 303\nText: (1) Whoever, intending to take dishonestly any movable property out of the possession of any person without that person\u2019s consent, moves that property in order to such taking, is said to commit theft. Explanation 1.\u2014A thing so long as it is attached to the earth, not being movable property, is not the subject of theft; but it becomes capable of being the subject of theft as soon as it is severed from the earth. Explanation 2.\u2014A moving effected by the same act which affects the severance may be a theft. Explanation 3.\u2014A person is said to cause a thing to move by removing an obstacle which prevented it from moving or by separating it from any other thing, as well as by actually moving it. Explanation 4.\u2014A person, who by any means causes an animal to move, is said to move that animal, and to move everything which, in consequence of the motion so caused, is moved by that animal. Explanation 5.\u2014The consent mentioned in this section may be express or implied, and may be given either by the person in possession, or by any person having for that purpose authority either express or implied. Illustrations",
+        "retrieved_records": 1,
+        "source_metadata": [
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "303",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            }
+        ],
+        "evidence_passed": "Section: 303\nHeading: Section 303\nText: (1) Whoever, intending to take dishonestly any movable property out of the possession of any person without that person\u2019s consent, moves that property in order to such taking, is said to commit theft. Explanation 1.\u2014A thing so long as it is attached to the earth, not being movable property, is not the subject of theft; but it becomes capable of being the subject of theft as soon as it is severed from the earth. Explanation 2.\u2014A moving effected by the same act which affects the severance may be a theft. Explanation 3.\u2014A person is said to cause a thing to move by removing an obstacle which prevented it from moving or by separating it from any other thing, as well as by actually moving it. Explanation 4.\u2014A person, who by any means causes an animal to move, is said to move that animal, and to move everything which, in consequence of the motion so caused, is moved by that animal. Explanation 5.\u2014The consent mentioned in this section may be express or implied, and may be given either by the person in possession, or by any person having for that purpose authority either express or implied. Illustrations. (a) A cuts down a tree on Z\u2019s ground, with the intention of dishonestly taking the tree out of Z\u2019s possession without Z\u2019s consent. Here, as soon as A has severed the tree in order to such taking, he has committed theft. (b) A puts a bait for dogs in his pocket, and thus induces Z\u2019s dog to follow it. Here, if A\u2019s intention be dishonestly to take the dog out of Z\u2019s possession without Z\u2019s consent. A has committed theft as soon as Z\u2019s dog has begun to follow A. (c) A meets a bullock carrying a box of treasure. He drives the bullock in a certain direction, in order that he may dishonestly take the treasure. As soon as the bullock begins to move, A has committed theft of the treasure. (d) A being Z\u2019s servant, and entrusted by Z with the care of Z\u2019s plate, dishonestly runs away with the plate, without Z\u2019s consent. A has committed theft. (e) Z, going on a journey, entrusts his plate to A, the keeper of a warehouse, till Z shall return. A carries the plate to a goldsmith and sells it. Here the plate was not in Z\u2019s possession. It could not therefore be taken out of Z\u2019s possession, and A has not committed theft, though he may have committed criminal breach of trust. Trespassing on burial places, etc. Uttering words, etc., with deliberate intent to wound religious feelings of any person. Theft. 78 THE GAZETTE OF INDIA EXTRAORDINARY [Part II\u2014 ____________________________________________________________ _____________________________________________________________ ____________________________________________________________ ___________________________________________________________ ________________________________________________________ _____________________________________________________________ (f) A finds a ring belonging to Z on a table in the house which Z occupies. Here the ring is in Z\u2019s possession, and if A dishonestly removes it, A commits theft. (g) A finds a ring lying on the highroad, not in the possession of any person. A, by taking it, commits no theft, though he may commit criminal misappropriation of property. (h) A sees a ring belonging to Z lying on a table in Z\u2019s house. Not venturing to misappropriate the ring immediately for fear of search and detection,  A hides the ring in a place where it is highly improbable that it will ever be found by Z, with the intention of taking the ring from the hiding place and selling it when the loss is forgotten. Here A, at the time of first moving the ring, commits theft. (i) A delivers his watch to Z, a jeweler, to be regulated. Z carries it to his shop. A, not owing to the jeweler any debt for which the jeweler might lawfully detain the watch as a security, enters the shop openly, takes his watch by force out of Z\u2019s hand, and carries it away. Here A, though he may have committed criminal trespass and assault, has not committed theft, in as much as what he did was not done dishonestly. (j) If A owes money to Z for repairing the watch, and if Z retains the watch lawfully as a security for the debt, and A takes the watch out of Z\u2019s possession, with the intention of depriving Z of the property as a security for his debt, he commits theft, in as much as he takes it dishonestly. (k) Again, if A, having pawned his watch to Z, takes it out of Z\u2019s possession without Z\u2019s consent, not having paid what he borrowed on the watch, he commits theft, though the watch is his own property in as much as he takes it dishonestly. (l) A takes an article belonging to Z out of Z\u2019s possession without Z\u2019s consent, with the intention of keeping it until he obtains money from Z as a reward for its restoration. Here A takes dishonestly; A has therefore committed theft. (m) A, being on friendly terms with Z, goes into Z\u2019s library in Z\u2019s absence, and takes away a book without Z\u2019s express consent for the purpose merely of reading it, and with the intention of returning it. Here, it is probable that A may have conceived that he had Z\u2019s implied consent to use Z\u2019s book. If this was A\u2019s impression, A has not committed theft. (n) A asks charity from Z\u2019s wife. She gives A money, food and clothes, which A knows to belong to Z her husband. Here it is probable that A may conceive that Z\u2019s wife is authorised to give away alms. If this was A\u2019s impression, A has not committed theft. (o) A is the paramour of Z\u2019s wife. She gives a valuable property, which A knows to belong to her husband Z, and to be such property as she has no authority from Z to give. If A takes the property dishonestly, he commits theft. (p) A, in good faith, believing property belonging to Z to be A\u2019s own property, takes that property out of Z\u2019s possession. Here, as A does not take dishonestly, he does not commit theft. (2) Whoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both and  in case of second or subsequent conviction of any person under this section, he shall be punished with rigorous imprisonment for a term which shall not be less than one year but which may extend to five years and with fine: Provided that in cases of theft where the value of the stolen property is less than five thousand rupees, and a person is convicted for the first time, shall upon return of the value of property or restoration of the stolen property, shall be punished with community service. Sec. 1] THE GAZETTE OF INDIA EXTRAORDINARY 79 ____________________________________________________________ _____________________________________________________________ ____________________________________________________________ ___________________________________________________________ ________________________________________________________ _____________________________________________________________\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.04950523376464844,
+            "qdrant_retrieval_time": 0.06120920181274414,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.019632339477539062,
+            "first_token_latency": 14.854794263839722,
+            "total_generation_time": 133.90276670455933,
+            "total_time": 134.03311347961426
+        },
+        "new_session": true
+    },
+    {
+        "query": "BNS section 351",
+        "scope": "LEGAL",
+        "rewritten_query": "BNS section 351",
+        "response": "Section 351 of the Indian Penal Code (IPC) deals with criminal intimidation. It outlines the offense of threatening another person with any means to cause injury to their person, reputation, or property, with the intent to cause alarm or to prevent them from performing their legal duties. The offense is punishable by imprisonment for a term of up to two years, or by fine, or both. The section also provides for the punishment of those who commit the offense by threatening to cause death, grievous hurt, destruction of property by fire, or imputing unchastity to a woman. Additionally, those who commit the offense by an anonymous communication or taking precaution to conceal the name or abode of the person from whom the threat comes are also punishable by imprisonment for a term of up to two years, in addition to the punishment provided for the offense under sub-section (1).",
+        "retrieved_records": 1,
+        "source_metadata": [
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "351",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            }
+        ],
+        "evidence_passed": "Section: 351\nHeading: Section 351\nText: (1) Whoever threatens another by any means, with any injury to his person, reputation or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation. Tampering with property mark with intent to cause injury. Counterfeiting a property mark. Making or possession of any instrument for counterfeiting a property mark. Selling goods marked with a counterfeit property mark. Making a false mark upon any receptacle containing goods. Criminal intimidation. Sec. 1] THE GAZETTE OF INDIA EXTRAORDINARY 97 ____________________________________________________________ _____________________________________________________________ ____________________________________________________________ ___________________________________________________________ ________________________________________________________ _____________________________________________________________ Explanation.\u2014A threat to injure the reputation of any deceased person in whom the person threatened is interested, is within this section. Illustration. A, for the purpose of inducing B to resist from prosecuting a civil suit, threatens to burn B\u2019s house. A is guilty of criminal intimidation. (2) Whoever commits the offence of criminal intimidation shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. (3) Whoever commits the offence of criminal intimidation by threatening to cause death or grievous hurt, or to cause the destruction of any property by fire, or to cause an offence punishable with death or imprisonment for life, or with imprisonment for a term which may extend to seven years, or to impute unchastity to a woman, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both. (4) Whoever commits the offence of criminal intimidation by an anonymous communication, or having taken precaution to conceal the name or abode of the person from whom the threat comes, shall be punished with imprisonment of either description for a term which may extend to two years, in addition to the punishment provided for the offence under sub-section (1).\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.07584547996520996,
+            "qdrant_retrieval_time": 0.06119179725646973,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.008283138275146484,
+            "first_token_latency": 5.454867601394653,
+            "total_generation_time": 69.32966470718384,
+            "total_time": 69.47498512268066
+        },
+        "new_session": true
+    },
+    {
+        "query": "Tell me a chicken recipe.",
+        "scope": "NON_LEGAL",
+        "rewritten_query": null,
+        "response": "I only help with legal queries.",
+        "retrieved_records": 0,
+        "source_metadata": [],
+        "evidence_passed": "",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "total_time": 0.0
+        },
+        "new_session": true
+    },
+    {
+        "query": "I have a problem with my neighbour.",
+        "scope": "LEGAL",
+        "rewritten_query": "I have a problem with my neighbour.",
+        "response": "The evidence provided does not directly address the issue of your neighbor's problem. However, it does mention Section 280 of the Indian Penal Code, which deals with the punishment for voluntarily vitiating the atmosphere in any place so as to make it noxious to the health of persons in general dwelling or carrying on business in the neighbourhood or passing along a public way. This could potentially be relevant if the issue involves causing harm to the health of others, such as through negligence or intentional actions that lead to health risks.\n\nIf you have a specific issue with your neighbor, it would be best to address it directly with them. If the issue involves health concerns, you might consider consulting a healthcare professional or seeking legal advice to ensure that your actions are in compliance with the law. If the issue is not related to health, you can try to resolve it through communication and negotiation.",
+        "retrieved_records": 4,
+        "source_metadata": [
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "280",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "345",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "203",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "343",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            }
+        ],
+        "evidence_passed": "Section: 280\nHeading: Section 280\nText: Whoever voluntarily vitiates the atmosphere in any place so as to make it noxious to the health of persons in general dwelling or carrying on business in the neighbourhood or passing along a public way, shall be punished with fine which may extend to one thousand rupees.\n\nSection: 345\nHeading: Section 345\nText: (1) A mark used for denoting that movable property belongs to a particular person is called a property mark. (2) Whoever marks any movable property or goods or any case, package or other receptacle containing movable property or goods, or uses any case, package or other receptacle having any mark thereon, in a manner reasonably calculated to cause it to be believed that the property or goods so marked, or any property or goods contained in any such receptacle so marked, belong to a person to whom they do not belong, is said to use a false property mark. (3) Whoever uses any false property mark shall, unless he proves that he acted without intent to defraud, be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both. Counterfeiting device or mark used for authenticating documents described in section 338, or possessing counterfeit marked material. Fraudulent cancellation, destruction, etc., of will, authority to adopt, or valuable security. Falsification of accounts. Property mark. 96 THE GAZETTE OF INDIA EXTRAORDINARY [Part II\u2014 ____________________________________________________________ _____________________________________________________________ ____________________________________________________________ ___________________________________________________________ ________________________________________________________ _____________________________________________________________\n\nSection: 203\nHeading: Section 203\nText: Whoever, being a public servant, and being legally bound as such public servant, not to purchase or bid for certain property, purchases or bids for that property, either in his own name or in the name of another, or jointly, or in shares with others, shall be punished with simple imprisonment for a term which may extend to two years, or with fine, or with both; and the property, if purchased, shall be confiscated.\n\nSection: 343\nHeading: Section 343\nText: Whoever fraudulently or dishonestly, or with intent to cause damage or injury to the public or to any person, cancels, destroys or defaces, or attempts to cancel, destroy or deface, or secretes or attempts to secrete any document which is or purports to be a will, or an authority to adopt a son, or any valuable security, or commits mischief in respect of such document, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.08181643486022949,
+            "qdrant_retrieval_time": 0.039325714111328125,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.009407520294189453,
+            "first_token_latency": 6.006188154220581,
+            "total_generation_time": 68.89785242080688,
+            "total_time": 69.02840209007263
+        },
+        "new_session": true
+    },
+    {
+        "query": "They keep threatening me.",
+        "scope": "LEGAL",
+        "rewritten_query": "The evidence provided does not directly address the issue of your neighbor's problem. However, it does mention Section 280 of the Indian Penal Code, which deals with the punishment for voluntarily vitiating the atmosphere in any place so as to make it noxious to the health of persons in general dwelling or carrying on business in the neighbourhood or passing along a public way. This could potentially be relevant if the issue involves causing harm to the health of others, such as through negligence or intentional actions that lead to health risks.\n\nIf you have a specific issue with your neighbor, it would be best to address it directly with them. If the issue involves health concerns, you might consider consulting a healthcare professional or seeking legal advice to ensure that your actions are in compliance with the law. If the issue is not related to health, you can try to resolve it through communication and negotiation. | They keep threatening me.",
+        "response": "The evidence provided does not directly address the issue of your neighbor's threats. However, it does mention Section 280 of the Indian Penal Code, which deals with the punishment for voluntarily vitiating the atmosphere in any place so as to make it noxious to the health of persons in general dwelling or carrying on business in the neighbourhood or passing along a public way. This could potentially be relevant if the issue involves causing harm to the health of others, such as through negligence or intentional actions that lead to health risks.\n\nIf you have a specific issue with your neighbor, it would be best to address it directly with them. If the issue involves health concerns, you might consider consulting a healthcare professional or seeking legal advice to ensure that your actions are in compliance with the law. If the issue is not related to health, you can try to resolve it through communication and negotiation. \u2690\ufffd",
+        "retrieved_records": 1,
+        "source_metadata": [
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "280",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            }
+        ],
+        "evidence_passed": "Section: 280\nHeading: Section 280\nText: Whoever voluntarily vitiates the atmosphere in any place so as to make it noxious to the health of persons in general dwelling or carrying on business in the neighbourhood or passing along a public way, shall be punished with fine which may extend to one thousand rupees.\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.30741333961486816,
+            "qdrant_retrieval_time": 0.1005856990814209,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.006322145462036133,
+            "first_token_latency": 3.5727431774139404,
+            "total_generation_time": 63.35788822174072,
+            "total_time": 63.77220940589905
+        },
+        "new_session": false
+    },
+    {
+        "query": "Why is the neighbour bothering me?",
+        "scope": "LEGAL",
+        "rewritten_query": "Why is the neighbour bothering me?",
+        "response": "The evidence provided does not directly address the specific issue of the neighbour bothering you. However, it does mention several offenses that could potentially be relevant to the situation. Here\u2019s a breakdown of the relevant sections:\n\n1. **Section 280**: This section deals with the voluntary vitiating of the atmosphere in any place to make it noxious to the health of persons in general dwelling or carrying on business in the neighbourhood or passing along a public way. This could apply if the neighbour is causing health issues in your home or business.\n\n2. **Section 33**: This section states that nothing is an offense by reason that it causes, or that it is intended to cause, or that it is known to be likely to cause, any harm, if that harm is so slight that no person of ordinary sense and temper would complain of such harm. This could apply if the neighbour is causing minor health issues that you are not aware of.\n\n3. **Section 352**: This section deals with insulting in any manner, and thereby giving provocation to any person, intending or knowing it to be likely that such provocation will cause him to break the public peace, or to commit any other offense. This could apply if the neighbour is insulting you in a way",
+        "retrieved_records": 4,
+        "source_metadata": [
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "280",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "33",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "352",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            },
+            {
+                "title": "Bharatiya Nyaya Sanhita, 2023",
+                "article_or_section": "302",
+                "authority": "India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            }
+        ],
+        "evidence_passed": "Section: 280\nHeading: Section 280\nText: Whoever voluntarily vitiates the atmosphere in any place so as to make it noxious to the health of persons in general dwelling or carrying on business in the neighbourhood or passing along a public way, shall be punished with fine which may extend to one thousand rupees.\n\nSection: 33\nHeading: Section 33\nText: Nothing is an offence by reason that it causes, or that it is intended to cause, or that it is known to be likely to cause, any harm, if that harm is so slight that no person of ordinary sense and temper would complain of such harm. Of  right  of  private defence\n\nSection: 352\nHeading: Section 352\nText: Whoever intentionally insults in any manner, and thereby gives provocation to any person, intending or knowing it to be likely that such provocation will cause him to break the public peace, or to commit any other offence, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both.\n\nSection: 302\nHeading: Section 302\nText: Whoever, with the deliberate intention of wounding the religious feelings of any person, utters any word or makes any sound in the hearing of that person or makes any gesture in the sight of that person or places any object in the sight of that person, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both. CHAPTER  XVII OF OFFENCES AGAINST PROPERTY Of theft\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.05810236930847168,
+            "qdrant_retrieval_time": 0.0415346622467041,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.007003307342529297,
+            "first_token_latency": 4.3870909214019775,
+            "total_generation_time": 93.23187685012817,
+            "total_time": 93.33851718902588
+        },
+        "new_session": true
+    }
+]

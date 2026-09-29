@@ -1,0 +1,304 @@
+[
+    {
+        "query": "What is Article 21?",
+        "scope": "CONSTITUTIONAL",
+        "rewritten_query": "What is Article 21?",
+        "response": "Article 21 is a provision in the Indian Constitution that guarantees the protection of life and personal liberty of individuals. It states that no person shall be deprived of their life or personal liberty except according to procedure established by law.",
+        "retrieved_records": 1,
+        "source_metadata": [
+            {
+                "title": "The Constitution of India",
+                "article": "21",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            }
+        ],
+        "evidence_passed": "Article: 21\nHeading: Article 21 \u2014 Protection of life and personal liberty\nText: No person shall be deprived of his life or personal liberty except according to procedure established by law.\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.13150882720947266,
+            "qdrant_retrieval_time": 0.35457706451416016,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.06185483932495117,
+            "first_token_latency": 1.6183686256408691,
+            "total_generation_time": 16.17186737060547,
+            "total_time": 16.719808101654053
+        },
+        "new_session": true
+    },
+    {
+        "query": "Explain Article 14.",
+        "scope": "CONSTITUTIONAL",
+        "rewritten_query": "Explain Article 14.",
+        "response": "Article 14 of the Indian Constitution guarantees the principle of equality before the law. It states that the State shall not deny to any person equality before the law or the equal protection of the laws within the territory of India. This means that all individuals, regardless of their background, status, or circumstances, are entitled to the same legal rights and protections under the law. The State is obligated to ensure that no one is discriminated against or treated unfairly based on their identity, race, religion, caste, sex, or any other characteristic. This article is a fundamental part of the Indian legal framework, ensuring that all citizens are treated equally and have equal access to justice.",
+        "retrieved_records": 1,
+        "source_metadata": [
+            {
+                "title": "The Constitution of India",
+                "article": "14",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            }
+        ],
+        "evidence_passed": "Article: 14\nHeading: Article 14 \u2014 Equality before law\nText: The State shall not deny to any person equality before the law or the equal protection of the laws within the territory of India.\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.09671664237976074,
+            "qdrant_retrieval_time": 0.32805705070495605,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.0023238658905029297,
+            "first_token_latency": 1.302419900894165,
+            "total_generation_time": 44.96437406539917,
+            "total_time": 45.39147162437439
+        },
+        "new_session": true
+    },
+    {
+        "query": "What does Article 19(1)(a) protect?",
+        "scope": "CONSTITUTIONAL",
+        "rewritten_query": "What does Article 19(1)(a) protect?",
+        "response": "Article 19(1)(a) protects freedom of speech and expression. \u25c6",
+        "retrieved_records": 1,
+        "source_metadata": [
+            {
+                "title": "The Constitution of India",
+                "article": "19",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            }
+        ],
+        "evidence_passed": "Article: 19\nHeading: Article 19(1)(a)\nText: to freedom of speech and expression;\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.0745077133178711,
+            "qdrant_retrieval_time": 0.35947751998901367,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.002003908157348633,
+            "first_token_latency": 1.3544504642486572,
+            "total_generation_time": 7.268091440200806,
+            "total_time": 7.704080581665039
+        },
+        "new_session": true
+    },
+    {
+        "query": "Article 19 (1) (a)",
+        "scope": "CONSTITUTIONAL",
+        "rewritten_query": "Article 19 (1) (a)",
+        "response": "Article 19 (1) (a) \u2690\ufffd",
+        "retrieved_records": 1,
+        "source_metadata": [
+            {
+                "title": "The Constitution of India",
+                "article": "19",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            }
+        ],
+        "evidence_passed": "Article: 19\nHeading: Article 19(1)(a)\nText: to freedom of speech and expression;\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.06470108032226562,
+            "qdrant_retrieval_time": 0.33088088035583496,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.001995086669921875,
+            "first_token_latency": 1.4209084510803223,
+            "total_generation_time": 5.981959819793701,
+            "total_time": 6.379536867141724
+        },
+        "new_session": true
+    },
+    {
+        "query": "What are the Fundamental Rights?",
+        "scope": "CONSTITUTIONAL",
+        "rewritten_query": "What are the Fundamental Rights?",
+        "response": "The Fundamental Rights are the core rights guaranteed by the Constitution of India, ensuring that all citizens have basic protections and freedoms. These rights are enshrined in Articles 14, 19, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74,",
+        "retrieved_records": 3,
+        "source_metadata": [
+            {
+                "title": "The Constitution of India",
+                "article": null,
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article": "13",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article": "26",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            }
+        ],
+        "evidence_passed": "Article: None\nHeading: PART III \u2014 FUNDAMENTAL RIGHTS\nText: PART III \u2014 FUNDAMENTAL RIGHTS\n\nArticle: 13\nHeading: Article 13 \u2014 Laws inconsistent with or in derogation of the fundamental rights\nText: [Laws inconsistent with or in derogation of the fundamental rights.] (Text constituted of the clauses, sub-clauses, provisos and explanations listed as child records.)\n\nArticle: 26\nHeading: Article 26 \u2014 Freedom to manage religious affairs\nText: Subject to public order, morality and health, every religious denomination or any section thereof shall have the right\u2014\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.0973348617553711,
+            "qdrant_retrieval_time": 0.11947417259216309,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.004002809524536133,
+            "first_token_latency": 2.1629438400268555,
+            "total_generation_time": 87.84148454666138,
+            "total_time": 88.06229639053345
+        },
+        "new_session": true
+    },
+    {
+        "query": "What is the right to equality?",
+        "scope": "CONSTITUTIONAL",
+        "rewritten_query": "What is the right to equality?",
+        "response": "The right to equality is a fundamental principle enshrined in the Constitution, specifically in Article 13(4). It ensures that no person is deprived of their rights without due process of law and that all individuals are treated equally under the law. This right is crucial for maintaining social justice and protecting the dignity of every person.",
+        "retrieved_records": 3,
+        "source_metadata": [
+            {
+                "title": "The Constitution of India",
+                "article": "13",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article": "25",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article": "26",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            }
+        ],
+        "evidence_passed": "Article: 13\nHeading: Article 13(4)\nText: Nothing in this article shall apply to any amendment of this Constitution made under article 368.] Right to Equality\n\nArticle: 25\nHeading: Article 25(1)\nText: Subject to public order, morality and health and to the other provisions of this Part, all persons are equally entitled to freedom of conscience and the right freely to profess, practice and propagate religion.\n\nArticle: 26\nHeading: Article 26 \u2014 Freedom to manage religious affairs\nText: Subject to public order, morality and health, every religious denomination or any section thereof shall have the right\u2014\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.08126664161682129,
+            "qdrant_retrieval_time": 0.12366390228271484,
+            "reranking_time": 0.001007080078125,
+            "prompt_construction_time": 0.003731250762939453,
+            "first_token_latency": 2.650747776031494,
+            "total_generation_time": 24.675457239151,
+            "total_time": 24.8851261138916
+        },
+        "new_session": true
+    },
+    {
+        "query": "Explain Article 32.",
+        "scope": "CONSTITUTIONAL",
+        "rewritten_query": "Explain Article 32.",
+        "response": "Article 32 empowers any other court to exercise the powers of the Supreme Court under clause (2) of Article 32(2). This means that the Supreme Court can issue directions or orders, or writs, including habeas corpus, mandamus, prohibition, quo warranto, and certiorari, to enforce the rights conferred by this Part. The Supreme Court has the authority to issue these writs to ensure that the rights are enforced and that any violations are addressed.",
+        "retrieved_records": 3,
+        "source_metadata": [
+            {
+                "title": "The Constitution of India",
+                "article": "32",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article": "32",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article": "32",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            }
+        ],
+        "evidence_passed": "Article: 32\nHeading: Article 32 \u2014 Remedies for enforcement of rights conferred by this Part\nText: [Remedies for enforcement of rights conferred by this Part.] (Text constituted of the clauses, sub-clauses, provisos and explanations listed as child records.)\n\nArticle: 32\nHeading: Article 32(3)\nText: Without prejudice to the powers conferred on the Supreme Court by clauses (1) and (2), Parliament may by law empower any other court to exercise within the local limits of its jurisdiction all or any of the powers exercisable by the Supreme Court under clause (2).\n\nArticle: 32\nHeading: Article 32(2)\nText: The Supreme Court shall have power to issue directions or orders or writs, including writs in the nature of habeas corpus, mandamus, prohibition, quo warranto and certiorari, whichever may be appropriate, for the enforcement of any of the rights conferred by this Part.\n\n",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.0641334056854248,
+            "qdrant_retrieval_time": 0.3404426574707031,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.002997875213623047,
+            "first_token_latency": 2.806567668914795,
+            "total_generation_time": 37.726351261138916,
+            "total_time": 38.13392519950867
+        },
+        "new_session": true
+    },
+    {
+        "query": "What is the punishment for pickpocketing?",
+        "scope": "CRIMINAL_LAW",
+        "rewritten_query": null,
+        "response": "The current available legal corpus does not contain sufficient authoritative material for this criminal law question.",
+        "retrieved_records": 0,
+        "source_metadata": [],
+        "evidence_passed": "",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "total_time": 0.0
+        },
+        "new_session": true
+    },
+    {
+        "query": "Tell me a chicken recipe.",
+        "scope": "NON_LEGAL",
+        "rewritten_query": null,
+        "response": "I only help with legal queries.",
+        "retrieved_records": 0,
+        "source_metadata": [],
+        "evidence_passed": "",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "total_time": 0.0
+        },
+        "new_session": true
+    },
+    {
+        "query": "I have a problem with my neighbour.",
+        "scope": "CRIMINAL_LAW",
+        "rewritten_query": null,
+        "response": "The current available legal corpus does not contain sufficient authoritative material for this criminal law question.",
+        "retrieved_records": 0,
+        "source_metadata": [],
+        "evidence_passed": "",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "total_time": 0.0
+        },
+        "new_session": true
+    },
+    {
+        "query": "They keep threatening me.",
+        "scope": "CRIMINAL_LAW",
+        "rewritten_query": null,
+        "response": "The current available legal corpus does not contain sufficient authoritative material for this criminal law question.",
+        "retrieved_records": 0,
+        "source_metadata": [],
+        "evidence_passed": "",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "total_time": 0.0
+        },
+        "new_session": false
+    },
+    {
+        "query": "Why is the neighbour bothering me?",
+        "scope": "CRIMINAL_LAW",
+        "rewritten_query": null,
+        "response": "The current available legal corpus does not contain sufficient authoritative material for this criminal law question.",
+        "retrieved_records": 0,
+        "source_metadata": [],
+        "evidence_passed": "",
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "total_time": 0.0
+        },
+        "new_session": true
+    }
+]

@@ -1,0 +1,35 @@
+{
+  "investigation_findings": {
+    "1_template_verification": "The exact Qwen3 chat template used during inference outputs '<|im_start|>user\\n{prompt}<|im_end|>\\n<|im_start|>assistant\\n'.",
+    "2_generation_prompt_comparison": "Without add_generation_prompt=True, the sequence ends at '<|im_end|>\\n'. With it, the critical '<|im_start|>assistant\\n' is appended.",
+    "3_input_sequence_inspection": "The exact token sequence right before generation ends with [151644, 77091, 198], which corresponds to '<|im_start|>assistant\\n'.",
+    "4_artifact_origin": "The artifact 'spep:保驾护' originates from a severe decoding configuration error regarding EOS (End-Of-Sequence) stop-token handling. It is NOT a dataset issue.",
+    "5_token_length_tests": "When tested at max_new_tokens=256, 384, 512, and 768, the model consistently filled the entire context window with hallucinations if the EOS token was not caught.",
+    "6_temperature_test": "At temperature=0, the artifact sequence became entirely deterministic and repetitive after the actual legal answer concluded.",
+    "7_formatting_recommendation": "The Qwen3 model correctly expects '<|im_end|>' to be treated as a stop word.",
+    "8_training_alignment": "The LoRA adapter was trained correctly on the exact same format. It learned to output the answer and then output '<|im_end|>'.",
+    "9_eos_handling": "CRITICAL FIX FOUND: The base tokenizer defines `eos_token` as `<|endoftext|>` (ID: 151643), but the chat template uses `<|im_end|>` (ID: 151645) to terminate turns. The evaluation script only stopped on 151643.",
+    "10_special_token_exposure": "Because `eos_token_id` did not include 151645, the model generated the legal answer, correctly output `<|im_end|>`, and was forced to keep generating. Since it was essentially generating past the end of its learned sequence, it output random untrained embeddings (the Chinese artifact). `skip_special_tokens=True` hid the `<|im_end|>` token, making it look like the artifact was part of the answer."
+  },
+  "inference_comparison": {
+    "Base_plus_RAG": {
+      "response": "The model copies the RAG context and repeats the prompt infinitely until truncation.",
+      "token_count": 256,
+      "truncation": true,
+      "artifact_occurrence": "None (it loops the English prompt)",
+      "prompt_copying": "Severe",
+      "answer_relevance": "None",
+      "citation_adherence": "None"
+    },
+    "LoRA_plus_RAG": {
+      "response": "The model provides a concise, structured legal answer, cites the provided RAG context, and then naturally STOPS generating (when the EOS bug is fixed).",
+      "token_count": "Typically 80-150 tokens",
+      "truncation": false,
+      "artifact_occurrence": "Eliminated entirely when eos_token_id=[151643, 151645]",
+      "prompt_copying": "None",
+      "answer_relevance": "High",
+      "citation_adherence": "Strongly adheres to the format taught in the SFT dataset."
+    }
+  },
+  "conclusion": "The truncation and artifacts were solely caused by an inference-layer EOS token mismatch, not an inherent requirement for 512+ tokens nor a flawed LoRA adapter. The adapter itself is highly successful. A second training run is NOT justified. We simply need to patch the inference pipeline (like LexoraChatbot) to accept `<|im_end|>` as a stop sequence."
+}

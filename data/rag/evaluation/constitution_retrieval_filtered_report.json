@@ -1,0 +1,574 @@
+{
+    "metrics": {
+        "baseline": {
+            "top_1": 0,
+            "top_3": 1,
+            "top_5": 1,
+            "wrong": 25,
+            "missing": 5
+        },
+        "filtered": {
+            "top_1": 3,
+            "top_3": 4,
+            "top_5": 4,
+            "wrong": 10,
+            "missing": 2
+        },
+        "explicit_queries": 3,
+        "non_explicit_queries": 3
+    },
+    "query_details": {
+        "What is Article 21?": {
+            "has_filter": true,
+            "extracted": {
+                "article": "21",
+                "clause": null,
+                "subclause": null
+            },
+            "baseline_results": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__schedule_11__header__entry_21",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Eleventh Schedule \u2014 21",
+                    "short_text": "21. Cultural activities....",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0164"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__schedule_1__group_1_i_the_states__row_5",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "First Schedule \u2014 I. THE STATES \u2014 5",
+                    "short_text": "Areas (Reorganisation) Act, 1971 (81 of 1971), s. 9 (w.e.f. 21-1-1972)....",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0161"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__schedule_6__note_p340",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Sixth Schedule \u2014 footnote p340",
+                    "short_text": "1. Sub. by the Government of Union Territories (Amendment) Act, 1971 (83 of 1971), s. 13 for paragra...",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0159"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__schedule_6__note_p337",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Sixth Schedule \u2014 footnote p337",
+                    "short_text": "1. Sub. by the Government of Union Territory (Amendment) Act, 1971 (83 of 1971), s. 13 for paragraph...",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0156"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__article_363a__subclause_b",
+                    "article_number": "363A",
+                    "clause": null,
+                    "heading": "Article 363A(b)",
+                    "short_text": "on and from the commencement of the Constitution (Twenty-sixth Amendment) Act, 1971, privy purse is ...",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0154"
+                }
+            ],
+            "filtered_results": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__article_21",
+                    "article_number": "21",
+                    "clause": null,
+                    "heading": "Article 21 \u2014 Protection of life and personal liberty",
+                    "short_text": "No person shall be deprived of his life or personal liberty except according to procedure establishe...",
+                    "retrieval_method": "hybrid_filtered",
+                    "score_rank_info": "score: 0.0164"
+                }
+            ]
+        },
+        "Explain Article 14": {
+            "has_filter": true,
+            "extracted": {
+                "article": "14",
+                "clause": null,
+                "subclause": null
+            },
+            "baseline_results": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__part_14__header",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "PART XIV \u2014 SERVICES UNDER THE UNION AND THE STATES",
+                    "short_text": "PART XIV \u2014 SERVICES UNDER THE UNION AND THE STATES...",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0164"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__appendix_i__table_row_012",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Appendix I \u2014 annexed Schedule table row 12",
+                    "short_text": "follows:\u2014(II)Article1Clause12ofthe1974Agreementshallbeimplementedas...",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0161"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__schedule_7__group_1_list_iii_concurrent_list__entry_14",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Seventh Schedule \u2014 List III\u2014Concurrent List \u2014 14",
+                    "short_text": "14. Contempt of court, but not including contempt of the Supreme Court....",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0159"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_4__x5",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 4",
+                    "short_text": "...",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0156"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_12__x2",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 12",
+                    "short_text": "...",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0154"
+                }
+            ],
+            "filtered_results": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__article_14",
+                    "article_number": "14",
+                    "clause": null,
+                    "heading": "Article 14 \u2014 Equality before law",
+                    "short_text": "The State shall not deny to any person equality before the law or the equal protection of the laws w...",
+                    "retrieval_method": "hybrid_filtered",
+                    "score_rank_info": "score: 0.0164"
+                }
+            ]
+        },
+        "Article 19(1)(a)": {
+            "has_filter": true,
+            "extracted": {
+                "article": "19",
+                "clause": "(1)",
+                "subclause": "(a)"
+            },
+            "baseline_results": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__schedule_7__group_1_list_ii_state_list__entry_19",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Seventh Schedule \u2014 List II\u2014State List \u2014 19",
+                    "short_text": "19*...",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0164"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_7__x3",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 7",
+                    "short_text": "19]]...",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0161"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__schedule_5__group_1_part_a",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fifth Schedule \u2014 PART A",
+                    "short_text": "PART A...",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0159"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__schedule_2__group_1_part_a",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Second Schedule \u2014 PART A",
+                    "short_text": "PART A...",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0156"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__part_19__header",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "PART XIX \u2014 MISCELLANEOUS",
+                    "short_text": "PART XIX \u2014 MISCELLANEOUS...",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0154"
+                }
+            ],
+            "filtered_results": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__article_19__clause_1__subclause_a",
+                    "article_number": "19",
+                    "clause": "(1)",
+                    "heading": "Article 19(1)(a)",
+                    "short_text": "to freedom of speech and expression;...",
+                    "retrieval_method": "hybrid_filtered",
+                    "score_rank_info": "score: 0.0164"
+                }
+            ]
+        },
+        "What are the Fundamental Rights?": {
+            "has_filter": false,
+            "extracted": {
+                "article": null,
+                "clause": null,
+                "subclause": null
+            },
+            "baseline_results": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__part_iii__header",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "PART III \u2014 FUNDAMENTAL RIGHTS",
+                    "short_text": "PART III \u2014 FUNDAMENTAL RIGHTS...",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0164"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__article_13",
+                    "article_number": "13",
+                    "clause": null,
+                    "heading": "Article 13 \u2014 Laws inconsistent with or in derogation of the fundamental rights",
+                    "short_text": "[Laws inconsistent with or in derogation of the fundamental rights.] (Text constituted of the clause...",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0161"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__article_26",
+                    "article_number": "26",
+                    "clause": null,
+                    "heading": "Article 26 \u2014 Freedom to manage religious affairs",
+                    "short_text": "Subject to public order, morality and health, every religious denomination or any section thereof sh...",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0159"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__article_25__clause_1",
+                    "article_number": "25",
+                    "clause": "(1)",
+                    "heading": "Article 25(1)",
+                    "short_text": "Subject to public order, morality and health and to the other provisions of this Part, all persons a...",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0156"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_4__x5",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 4",
+                    "short_text": "...",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0154"
+                }
+            ],
+            "filtered_results": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__part_iii__header",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "PART III \u2014 FUNDAMENTAL RIGHTS",
+                    "short_text": "PART III \u2014 FUNDAMENTAL RIGHTS...",
+                    "retrieval_method": "hybrid_filtered",
+                    "score_rank_info": "score: 0.0164"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__article_13",
+                    "article_number": "13",
+                    "clause": null,
+                    "heading": "Article 13 \u2014 Laws inconsistent with or in derogation of the fundamental rights",
+                    "short_text": "[Laws inconsistent with or in derogation of the fundamental rights.] (Text constituted of the clause...",
+                    "retrieval_method": "hybrid_filtered",
+                    "score_rank_info": "score: 0.0161"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__article_26",
+                    "article_number": "26",
+                    "clause": null,
+                    "heading": "Article 26 \u2014 Freedom to manage religious affairs",
+                    "short_text": "Subject to public order, morality and health, every religious denomination or any section thereof sh...",
+                    "retrieval_method": "hybrid_filtered",
+                    "score_rank_info": "score: 0.0159"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__article_25__clause_1",
+                    "article_number": "25",
+                    "clause": "(1)",
+                    "heading": "Article 25(1)",
+                    "short_text": "Subject to public order, morality and health and to the other provisions of this Part, all persons a...",
+                    "retrieval_method": "hybrid_filtered",
+                    "score_rank_info": "score: 0.0156"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_4__x5",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 4",
+                    "short_text": "...",
+                    "retrieval_method": "hybrid_filtered",
+                    "score_rank_info": "score: 0.0154"
+                }
+            ]
+        },
+        "right to equality": {
+            "has_filter": false,
+            "extracted": {
+                "article": null,
+                "clause": null,
+                "subclause": null
+            },
+            "baseline_results": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_27",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 27",
+                    "short_text": "...",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0164"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_3__x2",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 3",
+                    "short_text": "...",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0161"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_12__x2",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 12",
+                    "short_text": "...",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0159"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_4__x5",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 4",
+                    "short_text": "...",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0156"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_6__x2",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 6",
+                    "short_text": "...",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0154"
+                }
+            ],
+            "filtered_results": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_27",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 27",
+                    "short_text": "...",
+                    "retrieval_method": "hybrid_filtered",
+                    "score_rank_info": "score: 0.0164"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_3__x2",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 3",
+                    "short_text": "...",
+                    "retrieval_method": "hybrid_filtered",
+                    "score_rank_info": "score: 0.0161"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_12__x2",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 12",
+                    "short_text": "...",
+                    "retrieval_method": "hybrid_filtered",
+                    "score_rank_info": "score: 0.0159"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_4__x5",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 4",
+                    "short_text": "...",
+                    "retrieval_method": "hybrid_filtered",
+                    "score_rank_info": "score: 0.0156"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_6__x2",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 6",
+                    "short_text": "...",
+                    "retrieval_method": "hybrid_filtered",
+                    "score_rank_info": "score: 0.0154"
+                }
+            ]
+        },
+        "protection of life and personal liberty": {
+            "has_filter": false,
+            "extracted": {
+                "article": null,
+                "clause": null,
+                "subclause": null
+            },
+            "baseline_results": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__article_25__clause_1",
+                    "article_number": "25",
+                    "clause": "(1)",
+                    "heading": "Article 25(1)",
+                    "short_text": "Subject to public order, morality and health and to the other provisions of this Part, all persons a...",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0164"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__schedule_6__note_p340",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Sixth Schedule \u2014 footnote p340",
+                    "short_text": "1. Sub. by the Government of Union Territories (Amendment) Act, 1971 (83 of 1971), s. 13 for paragra...",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0164"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_27",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 27",
+                    "short_text": "...",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0161"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__schedule_6__note_p337",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Sixth Schedule \u2014 footnote p337",
+                    "short_text": "1. Sub. by the Government of Union Territory (Amendment) Act, 1971 (83 of 1971), s. 13 for paragraph...",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0161"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_6__x2",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 6",
+                    "short_text": "...",
+                    "retrieval_method": "hybrid_baseline",
+                    "score_rank_info": "score: 0.0159"
+                }
+            ],
+            "filtered_results": [
+                {
+                    "rank": 1,
+                    "record_id": "constitution_of_india__article_25__clause_1",
+                    "article_number": "25",
+                    "clause": "(1)",
+                    "heading": "Article 25(1)",
+                    "short_text": "Subject to public order, morality and health and to the other provisions of this Part, all persons a...",
+                    "retrieval_method": "hybrid_filtered",
+                    "score_rank_info": "score: 0.0164"
+                },
+                {
+                    "rank": 2,
+                    "record_id": "constitution_of_india__schedule_6__note_p340",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Sixth Schedule \u2014 footnote p340",
+                    "short_text": "1. Sub. by the Government of Union Territories (Amendment) Act, 1971 (83 of 1971), s. 13 for paragra...",
+                    "retrieval_method": "hybrid_filtered",
+                    "score_rank_info": "score: 0.0164"
+                },
+                {
+                    "rank": 3,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_27",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 27",
+                    "short_text": "...",
+                    "retrieval_method": "hybrid_filtered",
+                    "score_rank_info": "score: 0.0161"
+                },
+                {
+                    "rank": 4,
+                    "record_id": "constitution_of_india__schedule_6__note_p337",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Sixth Schedule \u2014 footnote p337",
+                    "short_text": "1. Sub. by the Government of Union Territory (Amendment) Act, 1971 (83 of 1971), s. 13 for paragraph...",
+                    "retrieval_method": "hybrid_filtered",
+                    "score_rank_info": "score: 0.0161"
+                },
+                {
+                    "rank": 5,
+                    "record_id": "constitution_of_india__schedule_4__group_1_table__row_6__x2",
+                    "article_number": null,
+                    "clause": null,
+                    "heading": "Fourth Schedule \u2014 Table \u2014 6",
+                    "short_text": "...",
+                    "retrieval_method": "hybrid_filtered",
+                    "score_rank_info": "score: 0.0159"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,10 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+================================================================================
+STARTING LEXORA PRODUCTION-READINESS AUDIT
+================================================================================
+Loading SentenceTransformer embedding model (intfloat/multilingual-e5-small)...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 2488.98it/s]
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loaded Embedding Model in 11.53s
+Loading Qwen tokenizer and base model...
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights:  32%|███▏      | 99/310 [00:00<00:00, 974.78it/s]Loading weights:  69%|██████▉   | 214/310 [00:00<00:00, 1075.74it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 1108.00it/s]

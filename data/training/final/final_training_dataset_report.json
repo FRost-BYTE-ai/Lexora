@@ -1,0 +1,19 @@
+{
+  "source_record_count": 935,
+  "final_training_count": 841,
+  "final_validation_count": 94,
+  "excluded_count": 0,
+  "duplicate_count": 0,
+  "random_seed": 42,
+  "token_statistics": {
+    "percentage_le_512_tokens": 74.6524064171123,
+    "percentage_le_1024_tokens": 98.28877005347594,
+    "number_gt_1024_tokens": 16,
+    "number_gt_2048_tokens": 0
+  },
+  "confirmations": {
+    "no_HISTORICAL_OR_TRANSITIONAL_records_present": true,
+    "no_NEEDS_REVIEW_records_present": true,
+    "complex_cot_absent": true
+  }
+}

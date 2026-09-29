@@ -1,0 +1,1002 @@
+{
+  "act": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+  "act_short": "BNSS",
+  "extraction_timestamp": "2026-09-27T20:18:06+00:00",
+  "inventory_comparison": {
+    "expected_count": 531,
+    "extracted_count": 531,
+    "missing": [],
+    "unexpected": [],
+    "duplicates": [],
+    "heading_mismatches": [],
+    "chapter_mapping_mismatches": []
+  },
+  "hierarchy": {
+    "total_records": 4540,
+    "broken_parents": [],
+    "broken_chains": [],
+    "field_inconsistencies": [],
+    "empty_text_records": [],
+    "duplicate_record_ids": []
+  },
+  "segmentation_flags": {
+    "ROMAN_SEQ": 1
+  },
+  "cross_source": {
+    "dspace_text_bitstream": {
+      "expected": 531,
+      "parsed": 531,
+      "compared": 529,
+      "match_ge_0.99": 527,
+      "warn_0.97_0.99": 0,
+      "jaccard_ge_0.99": 528,
+      "mismatch_lt_0.97": [
+        {
+          "section": "58",
+          "ratio": 0.16928657799274485,
+          "jaccard": 0.3117
+        }
+      ]
+    },
+    "gazette": {
+      "expected": 531,
+      "parsed": 531,
+      "kind": "gazette",
+      "compared": 529,
+      "match_ge_0.99": 523,
+      "warn_0.97_0.99": 3,
+      "jaccard_ge_0.99": 515,
+      "mismatch_lt_0.97": []
+    },
+    "samples": [
+      {
+        "kind": "random",
+        "section": "118",
+        "heading": "Management of properties seized or forfeited under this Chapter",
+        "pages": [
+          51,
+          51
+        ],
+        "subsections": 3,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "fd4272bbfab58afa703717afc65f6aed05c606556dfe2f958f62df080bf6a9e5",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "28",
+        "heading": "Withdrawal of powers",
+        "pages": [
+          27,
+          27
+        ],
+        "subsections": 2,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "6a8fcda89d4ae7e7693a997278da61f49eb6470048c650f8d848ad9a8f0dc073",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "287",
+        "heading": "Judgment in cases tried summarily",
+        "pages": [
+          106,
+          106
+        ],
+        "subsections": 0,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "068841d8e478b2f3a6e218e3ecb0623b88d91fe53d97d9514491844c1c6640f0",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "256",
+        "heading": "Entering upon defence",
+        "pages": [
+          99,
+          99
+        ],
+        "subsections": 3,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "949cdfa03520da2e1913ee59ec858f6f06d84011fb11ac47b3834b12e5750f4a",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "233",
+        "heading": "Procedure to be followed when there is a complaint case and police investigation in respect of same offence",
+        "pages": [
+          91,
+          91
+        ],
+        "subsections": 3,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "c56e75faa3460016f7958c2e14e3f0151a17ab1cc9c593ffe9ac534bbd2d922c",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "146",
+        "heading": "Alteration in allowance",
+        "pages": [
+          60,
+          61
+        ],
+        "subsections": 4,
+        "clauses": 3,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "a7a9862934dabf1e005066aae12b2cf2a878d14bd0b31f6b8157c2b2acf310b1",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "108",
+        "heading": "Magistrate may direct search in his presence",
+        "pages": [
+          48,
+          48
+        ],
+        "subsections": 0,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "32195df63cc335bd65bd90d3a76f932ddf40bc9a369cfe3c5384246fe3a6166b",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "93",
+        "heading": "Provisions of this Chapter generally applicable to summons and warrants of arrest",
+        "pages": [
+          43,
+          43
+        ],
+        "subsections": 0,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "5ef0e0d0364073d692e4e001ba78b244ab4346a0fa0d2c8b2cb3cd0bfea61f37",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "439",
+        "heading": "Power to order inquiry",
+        "pages": [
+          151,
+          151
+        ],
+        "subsections": 0,
+        "clauses": 0,
+        "provisos": 1,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "cc5b40acd201188c6c4a1c4eaa7f07bde7690f8fb1796d4046b13781aee1aece",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "36",
+        "heading": "Procedure of arrest and duties of officer making arrest",
+        "pages": [
+          31,
+          31
+        ],
+        "subsections": 0,
+        "clauses": 3,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "7d968d1b8e6aa6d5ec6bcddc975de08306a964ca1e1a1cc15ef8650d4dec0276",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "34",
+        "heading": "Duty of officers employed in connection with affairs of a village to make certain report",
+        "pages": [
+          29,
+          29
+        ],
+        "subsections": 2,
+        "clauses": 6,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "c940da0a838fc0889e16956445446301bee7b86640634a405c360d6cc25e3961",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 0.9998,
+        "upload_jaccard": 0.9945,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "99",
+        "heading": "Application to High Court to set aside declaration of forfeiture",
+        "pages": [
+          45,
+          45
+        ],
+        "subsections": 5,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "02896a2dbcb47d539efc622b99205d40aaf7983bfb14edb4069df1626c0885ba",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "228",
+        "heading": "Magistrate may dispense with personal attendance of accused",
+        "pages": [
+          89,
+          89
+        ],
+        "subsections": 2,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "07ce563b50e49e927dc6ebc1375a62bd1e9226eb3feb919a566dc81b32bf0aed",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "244",
+        "heading": "Where it is doubtful what offence has been committed",
+        "pages": [
+          96,
+          97
+        ],
+        "subsections": 2,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 4,
+        "text_sha256": "d7257c0182b34f40b19f619248e192068daefff516b3ba51b87f4a4e1763f804",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "524",
+        "heading": "Power to alter functions allocated to Executive Magistrate in certain cases",
+        "pages": [
+          173,
+          173
+        ],
+        "subsections": 0,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "760790864383ed7383a033e46a98aed32e24c30878376323bc8d8b36582a0a76",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "30",
+        "heading": "Powers of superior officers of police",
+        "pages": [
+          28,
+          28
+        ],
+        "subsections": 0,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "109e141c1768c16f4c8512bbe8b8de1d36cfb6759187d55a44822dd06c58b169",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "207",
+        "heading": "Power to issue summons or warrant for offence committed beyond local jurisdiction",
+        "pages": [
+          83,
+          83
+        ],
+        "subsections": 2,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "6945ee1f70e3ea51cf0fc4ad3b5ba6675ec26fcce568d48ff7f8f8dacc7e55cb",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "436",
+        "heading": "Reference to High Court",
+        "pages": [
+          151,
+          151
+        ],
+        "subsections": 3,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 1,
+        "illustrations": 0,
+        "text_sha256": "dc662da31129b77311ba9a8556f0b96bf658541b1af23938e7b13e33ab0facec",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "230",
+        "heading": "Supply to accused of copy of police report and other documents",
+        "pages": [
+          90,
+          90
+        ],
+        "subsections": 0,
+        "clauses": 0,
+        "provisos": 3,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "0c3d728d12ea8f2a09fe3bcc18cf88c7d63fd17bbfa12350b5ffabb0b7f508b0",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "random",
+        "section": "466",
+        "heading": "Sentence on escaped convict when to take effect",
+        "pages": [
+          157,
+          158
+        ],
+        "subsections": 3,
+        "clauses": 2,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "dccdd6323c48545dcf2386d6effb1ff428769908bd2bdc3e2c2082e0658a93eb",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "first_section",
+        "section": "1",
+        "heading": "Short title, extent and commencement",
+        "pages": [
+          18,
+          18
+        ],
+        "subsections": 3,
+        "clauses": 2,
+        "provisos": 0,
+        "explanations": 1,
+        "illustrations": 0,
+        "text_sha256": "f5eb18f11ca353770d83e1b6b414ce474003a9099e6537d15bf7441f350a348e",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 0.9995,
+        "upload_jaccard": 0.9783,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "last_section",
+        "section": "531",
+        "heading": "Repeal and savings",
+        "pages": [
+          174,
+          174
+        ],
+        "subsections": 3,
+        "clauses": 3,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "36ef79c048b44328b966f7738729907645ace89f5319ad9a44671e8efd97a715",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "longest_section",
+        "section": "359",
+        "heading": "Compounding of offences",
+        "pages": [
+          125,
+          129
+        ],
+        "subsections": 9,
+        "clauses": 2,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "93c83396db9457e4bd9c0b375f6d7b597340d4426bbfdbeb413a9fab4add9177",
+        "dspace_txt_ratio": 0.7407,
+        "upload_ratio": 0.7725,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "section_with_subsections",
+        "section": "1",
+        "heading": "Short title, extent and commencement",
+        "pages": [
+          18,
+          18
+        ],
+        "subsections": 3,
+        "clauses": 2,
+        "provisos": 0,
+        "explanations": 1,
+        "illustrations": 0,
+        "text_sha256": "f5eb18f11ca353770d83e1b6b414ce474003a9099e6537d15bf7441f350a348e",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 0.9995,
+        "upload_jaccard": 0.9783,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "section_with_clauses",
+        "section": "1",
+        "heading": "Short title, extent and commencement",
+        "pages": [
+          18,
+          18
+        ],
+        "subsections": 3,
+        "clauses": 2,
+        "provisos": 0,
+        "explanations": 1,
+        "illustrations": 0,
+        "text_sha256": "f5eb18f11ca353770d83e1b6b414ce474003a9099e6537d15bf7441f350a348e",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 0.9995,
+        "upload_jaccard": 0.9783,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "section_with_proviso",
+        "section": "9",
+        "heading": "Courts of Judicial Magistrates",
+        "pages": [
+          22,
+          22
+        ],
+        "subsections": 3,
+        "clauses": 0,
+        "provisos": 1,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "69cd16fe893e4c3e198f0130ecccfa5d92c143c70942642de301f0227b7b3b05",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 1.0,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "section_with_explanation",
+        "section": "1",
+        "heading": "Short title, extent and commencement",
+        "pages": [
+          18,
+          18
+        ],
+        "subsections": 3,
+        "clauses": 2,
+        "provisos": 0,
+        "explanations": 1,
+        "illustrations": 0,
+        "text_sha256": "f5eb18f11ca353770d83e1b6b414ce474003a9099e6537d15bf7441f350a348e",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 0.9995,
+        "upload_jaccard": 0.9783,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "section_with_illustration",
+        "section": "234",
+        "heading": "Contents of charge",
+        "pages": [
+          92,
+          92
+        ],
+        "subsections": 7,
+        "clauses": 0,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 5,
+        "text_sha256": "3061595f60911ce06f648fea7858c7e7b178423eaf8781f2e464fa755ca1b9b5",
+        "dspace_txt_ratio": 1.0,
+        "upload_ratio": 0.9998,
+        "upload_jaccard": 0.9944,
+        "txt_jaccard": 1.0,
+        "passed": true
+      },
+      {
+        "kind": "multi_page_section",
+        "section": "359",
+        "heading": "Compounding of offences",
+        "pages": [
+          125,
+          129
+        ],
+        "subsections": 9,
+        "clauses": 2,
+        "provisos": 0,
+        "explanations": 0,
+        "illustrations": 0,
+        "text_sha256": "93c83396db9457e4bd9c0b375f6d7b597340d4426bbfdbeb413a9fab4add9177",
+        "dspace_txt_ratio": 0.7407,
+        "upload_ratio": 0.7725,
+        "upload_jaccard": 1.0,
+        "txt_jaccard": 1.0,
+        "passed": true
+      }
+    ],
+    "sample_pass": true,
+    "supplemented_sections": [
+      "215",
+      "33"
+    ],
+    "supplemented_note": "supplemented sections are sourced from the Gazette of India as-enacted print with per-record provenance; see source_note",
+    "random_sample_count": 20,
+    "special_sample_count": 9
+  },
+  "retrieval_tests": [
+    {
+      "query": "BNSS Section 173",
+      "target_section": "173",
+      "target_heading": "Information in cognizable cases.",
+      "top5": [
+        {
+          "rag_id": "BNSS-RAG-BNSS-S173-SUB2",
+          "section": "173",
+          "score": 9.494
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-SCH1-R0434",
+          "section": "",
+          "score": 8.705
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-S173-SUB3",
+          "section": "173",
+          "score": 7.229
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-S173-SUB4",
+          "section": "173",
+          "score": 7.107
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-S173-SUB1",
+          "section": "173",
+          "score": 5.451
+        }
+      ],
+      "target_rank": 1,
+      "status": "PASS"
+    },
+    {
+      "query": "How is FIR information recorded?",
+      "target_section": "173",
+      "target_heading": "Information in cognizable cases.",
+      "top5": [
+        {
+          "rag_id": "BNSS-RAG-BNSS-S173-SUB2",
+          "section": "173",
+          "score": 9.259
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-S183-SUB7",
+          "section": "183",
+          "score": 8.766
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-S183-SUB5",
+          "section": "183",
+          "score": 8.466
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-S183-SUB3",
+          "section": "183",
+          "score": 8.396
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-S183-SUB1",
+          "section": "183",
+          "score": 8.272
+        }
+      ],
+      "target_rank": 1,
+      "status": "PASS"
+    },
+    {
+      "query": "BNSS Section 35",
+      "target_section": "35",
+      "target_heading": "When police may arrest without warrant.",
+      "top5": [
+        {
+          "rag_id": "BNSS-RAG-BNSS-S35-SUB1-CLAi",
+          "section": "35",
+          "score": 8.465
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-S35-SUB1-CLAa",
+          "section": "35",
+          "score": 8.38
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-S35-SUB1-CLAg",
+          "section": "35",
+          "score": 8.236
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-S35-SUB4",
+          "section": "35",
+          "score": 8.151
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-S35-SUB1-CLAd",
+          "section": "35",
+          "score": 8.151
+        }
+      ],
+      "target_rank": 1,
+      "status": "PASS"
+    },
+    {
+      "query": "BNSS Section 187",
+      "target_section": "187",
+      "target_heading": "Procedure when investigation cannot be completed in twenty-four hours.",
+      "top5": [
+        {
+          "rag_id": "BNSS-RAG-BNSS-S187-SUB7",
+          "section": "187",
+          "score": 8.594
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-S187-SUB8",
+          "section": "187",
+          "score": 8.187
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-SCH1-R0304",
+          "section": "",
+          "score": 8.185
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-SCH1-R0454",
+          "section": "",
+          "score": 7.65
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-S187-SUB10",
+          "section": "187",
+          "score": 7.296
+        }
+      ],
+      "target_rank": 1,
+      "status": "PASS"
+    },
+    {
+      "query": "BNSS Section 193",
+      "target_section": "193",
+      "target_heading": "Report of police officer on completion of investigation.",
+      "top5": [
+        {
+          "rag_id": "BNSS-RAG-BNSS-S193-SUB1",
+          "section": "193",
+          "score": 8.163
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-SCH1-R0486",
+          "section": "",
+          "score": 7.839
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-SCH1-R0481",
+          "section": "",
+          "score": 7.839
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-SCH1-R0478",
+          "section": "",
+          "score": 7.546
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-S193-SUB5",
+          "section": "193",
+          "score": 7.326
+        }
+      ],
+      "target_rank": 1,
+      "status": "PASS"
+    },
+    {
+      "query": "BNSS Section 479",
+      "target_section": "479",
+      "target_heading": "Maximum period for which under-trial prisoner can be detained.",
+      "top5": [
+        {
+          "rag_id": "BNSS-RAG-BNSS-S479",
+          "section": "479",
+          "score": 7.045
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-SCH2-FORM47",
+          "section": "",
+          "score": 6.606
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-S397",
+          "section": "397",
+          "score": 1.716
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-S260-SUB5",
+          "section": "260",
+          "score": 1.711
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-S173-SUB1",
+          "section": "173",
+          "score": 1.711
+        }
+      ],
+      "target_rank": 1,
+      "status": "PASS"
+    },
+    {
+      "query": "How is bail granted in BNSS?",
+      "target_section": "482",
+      "target_heading": "Direction for grant of bail to person apprehending arrest.",
+      "top5": [
+        {
+          "rag_id": "BNSS-RAG-BNSS-S482",
+          "section": "482",
+          "score": 10.422
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-S483",
+          "section": "483",
+          "score": 9.937
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-S480-SUB1",
+          "section": "480",
+          "score": 6.996
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-S479",
+          "section": "479",
+          "score": 6.387
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-S480-SUB4",
+          "section": "480",
+          "score": 5.927
+        }
+      ],
+      "target_rank": 1,
+      "status": "PASS"
+    },
+    {
+      "query": "How is a search warrant issued?",
+      "target_section": "96",
+      "target_heading": "When search-warrant may be issued.",
+      "top5": [
+        {
+          "rag_id": "BNSS-RAG-BNSS-S102",
+          "section": "102",
+          "score": 16.917
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-S96",
+          "section": "96",
+          "score": 15.673
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-S104",
+          "section": "104",
+          "score": 15.221
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-S110-SUB2",
+          "section": "110",
+          "score": 12.905
+        },
+        {
+          "rag_id": "BNSS-RAG-BNSS-S108",
+          "section": "108",
+          "score": 11.828
+        }
+      ],
+      "target_rank": 2,
+      "status": "PASS"
+    }
+  ],
+  "counts": {
+    "act": 1,
+    "aos_entry": 531,
+    "aos_schedule_ref": 2,
+    "arrangement_of_sections": 1,
+    "back_matter": 1,
+    "chapter": 39,
+    "clause": 490,
+    "division_heading": 24,
+    "explanation": 36,
+    "footnote": 1,
+    "form": 58,
+    "front_matter": 2,
+    "illustration": 48,
+    "preamble": 1,
+    "proviso": 217,
+    "schedule": 2,
+    "schedule_notes": 1,
+    "schedule_page_raw": 47,
+    "schedule_part": 2,
+    "schedule_row": 1293,
+    "section": 531,
+    "subclause": 161,
+    "subsection": 1051
+  },
+  "completeness_gate": {
+    "official_source_downloaded": true,
+    "full_act_extracted": true,
+    "arrangement_of_sections_extracted": true,
+    "every_expected_section_present": true,
+    "no_unexpected_section_loss": true,
+    "no_duplicate_section_ids": true,
+    "chapter_mapping_validated": true,
+    "section_headings_validated": true,
+    "subsections_preserved": true,
+    "clauses_preserved": true,
+    "subclauses_preserved": true,
+    "provisos_preserved": true,
+    "explanations_preserved": true,
+    "illustrations_preserved": true,
+    "schedules_preserved": true,
+    "legally_meaningful_footnotes_preserved": true,
+    "page_references_preserved": true,
+    "source_hashes_generated": true,
+    "source_urls_preserved": true,
+    "no_unresolved_critical_extraction_errors": true,
+    "random_source_comparison_passed": true,
+    "retrieval_tests_passed": true,
+    "parent_child_hierarchy_intact": true
+  },
+  "completeness_status": "PASS",
+  "unresolved_critical": [],
+  "warnings": [
+    {
+      "act": "BNSS",
+      "page": 29,
+      "section": "35",
+      "error_type": "CHAPTER_HEADING_NOT_IN_BODY",
+      "description": "Chapter V (ARREST OF PERSONS) has no heading in the body print; mapped from Arrangement of Sections (page 4) at section 35",
+      "severity": "high"
+    },
+    {
+      "act": "BNSS",
+      "page": null,
+      "section": "33",
+      "error_type": "PRIMARY_SOURCE_GAP_SUPPLEMENTED",
+      "description": "India Code body omits the clause \"shall, in the absence of any reasonable excuse, the burden of proving which excuse shall lie\" in sub-section (1)(xii); section text reconstructed from the Gazette of India as-enacted print (250884_2_english_01042024.pdf).",
+      "severity": "high"
+    },
+    {
+      "act": "BNSS",
+      "page": null,
+      "section": "215",
+      "error_type": "PRIMARY_SOURCE_GAP_SUPPLEMENTED",
+      "description": "India Code body print ends section 215 after sub-section (1) and omits sub-sections (2), (3) and (4) (cross-referenced elsewhere in the Act as sub-section (4) of section 215); section text reconstructed from the Gazette of India as-enacted print (250884_2_english_01042024.pdf).",
+      "severity": "high"
+    },
+    {
+      "act": "BNSS",
+      "page": null,
+      "section": "193",
+      "error_type": "ROMAN_SEQ",
+      "description": "(i)",
+      "severity": "low"
+    }
+  ]
+}

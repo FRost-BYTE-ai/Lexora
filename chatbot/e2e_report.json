@@ -1,0 +1,235 @@
+[
+    {
+        "query": "What is Article 21?",
+        "scope": "CONSTITUTIONAL",
+        "response": "Article 21 is a provision in the Indian Constitution that guarantees the protection of life and personal liberty of individuals. It states that no person shall be deprived of their life or personal liberty except according to procedure established by law.",
+        "retrieved_records": 1,
+        "source_metadata": [
+            {
+                "title": "The Constitution of India",
+                "article": "21",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            }
+        ],
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.34676623344421387,
+            "qdrant_retrieval_time": 0.40480875968933105,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.06259465217590332,
+            "first_token_latency": 1.8872582912445068,
+            "total_generation_time": 17.582980155944824,
+            "total_time": 18.397149801254272
+        },
+        "new_session": true
+    },
+    {
+        "query": "Explain Article 14.",
+        "scope": "CONSTITUTIONAL",
+        "response": "Article 14 of the Indian Constitution guarantees the principle of equality before the law. It states that the State shall not deny to any person equality before the law or the equal protection of the laws within the territory of India. This means that all individuals, regardless of their background, status, or circumstances, are entitled to the same legal rights and protections under the law. The State is obligated to ensure that no one is discriminated against or treated unfairly based on their identity, race, religion, caste, sex, or any other characteristic. This article is a fundamental part of the Indian legal framework, ensuring that all citizens are treated equally and have equal access to justice.",
+        "retrieved_records": 1,
+        "source_metadata": [
+            {
+                "title": "The Constitution of India",
+                "article": "14",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            }
+        ],
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.04852414131164551,
+            "qdrant_retrieval_time": 0.3564741611480713,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.0033109188079833984,
+            "first_token_latency": 1.6135544776916504,
+            "total_generation_time": 46.19291114807129,
+            "total_time": 46.60122036933899
+        },
+        "new_session": true
+    },
+    {
+        "query": "What does Article 19(1)(a) protect?",
+        "scope": "CONSTITUTIONAL",
+        "response": "Article 19(1)(a) protects the right to privacy, which includes the right to control one's own personal data and to have it used only for the purposes for which it was collected. \u25c6",
+        "retrieved_records": 0,
+        "source_metadata": [],
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.04799652099609375,
+            "qdrant_retrieval_time": 0.34812283515930176,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.0023996829986572266,
+            "first_token_latency": 1.0988373756408691,
+            "total_generation_time": 15.087242126464844,
+            "total_time": 15.485761165618896
+        },
+        "new_session": true
+    },
+    {
+        "query": "What are the Fundamental Rights?",
+        "scope": "CONSTITUTIONAL",
+        "response": "The Fundamental Rights are the core rights guaranteed by the Constitution of India, ensuring that all citizens have basic protections and freedoms. These rights are enshrined in Articles 14, 19, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74,",
+        "retrieved_records": 3,
+        "source_metadata": [
+            {
+                "title": "The Constitution of India",
+                "article": null,
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article": "13",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article": "26",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            }
+        ],
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.11458611488342285,
+            "qdrant_retrieval_time": 0.11887621879577637,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.003996133804321289,
+            "first_token_latency": 2.094456672668457,
+            "total_generation_time": 86.74747920036316,
+            "total_time": 86.98493766784668
+        },
+        "new_session": true
+    },
+    {
+        "query": "What is the right to equality?",
+        "scope": "CONSTITUTIONAL",
+        "response": "The right to equality is a fundamental principle enshrined in the Constitution, specifically in Article 13(4). It ensures that no person is deprived of their rights without due process of law and that all individuals are treated equally under the law. This right is crucial for maintaining social justice and protecting the dignity of every person.",
+        "retrieved_records": 3,
+        "source_metadata": [
+            {
+                "title": "The Constitution of India",
+                "article": "13",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article": "25",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article": "26",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            }
+        ],
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.11794328689575195,
+            "qdrant_retrieval_time": 0.12726235389709473,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.004006624221801758,
+            "first_token_latency": 2.260312795639038,
+            "total_generation_time": 24.373843908309937,
+            "total_time": 24.623056173324585
+        },
+        "new_session": true
+    },
+    {
+        "query": "What is the punishment for pickpocketing?",
+        "scope": "CRIMINAL_LAW",
+        "response": "The current available legal corpus does not contain sufficient authoritative material for this criminal law question.",
+        "retrieved_records": 0,
+        "source_metadata": [],
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "total_time": 0.0
+        },
+        "new_session": true
+    },
+    {
+        "query": "Tell me a chicken recipe.",
+        "scope": "NON_LEGAL",
+        "response": "I only help with legal queries.",
+        "retrieved_records": 0,
+        "source_metadata": [],
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "total_time": 0.0
+        },
+        "new_session": true
+    },
+    {
+        "query": "I have a problem with my neighbour.",
+        "scope": "CRIMINAL_LAW",
+        "response": "The current available legal corpus does not contain sufficient authoritative material for this criminal law question.",
+        "retrieved_records": 0,
+        "source_metadata": [],
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "total_time": 0.0
+        },
+        "new_session": true
+    },
+    {
+        "query": "They keep threatening me.",
+        "scope": "CRIMINAL_LAW",
+        "response": "The current available legal corpus does not contain sufficient authoritative material for this criminal law question.",
+        "retrieved_records": 0,
+        "source_metadata": [],
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "total_time": 0.0
+        },
+        "new_session": false
+    },
+    {
+        "query": "What is the capital of India?",
+        "scope": "CONSTITUTIONAL",
+        "response": "The capital of India is Delhi.",
+        "retrieved_records": 3,
+        "source_metadata": [
+            {
+                "title": "The Constitution of India",
+                "article": null,
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article": null,
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            },
+            {
+                "title": "The Constitution of India",
+                "article": "239AA",
+                "authority": "Government of India / India Code",
+                "url": "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            }
+        ],
+        "metrics": {
+            "intent_detection_time": 0.0,
+            "query_rewriting_time": 0.0,
+            "embedding_time": 0.07983589172363281,
+            "qdrant_retrieval_time": 0.13373374938964844,
+            "reranking_time": 0.0,
+            "prompt_construction_time": 0.004515171051025391,
+            "first_token_latency": 2.2596797943115234,
+            "total_generation_time": 4.623881101608276,
+            "total_time": 4.841965913772583
+        },
+        "new_session": true
+    }
+]

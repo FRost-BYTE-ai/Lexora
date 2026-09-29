@@ -1,0 +1,34 @@
+{
+    "existing_19_tests": [
+        {
+            "query": "What is Article 21?",
+            "scope": "LEGAL",
+            "records": 1,
+            "response": "Article 21 of the Constitution of India states that no person shall be deprived of his life or personal liberty except according to procedure established by law. This provision ensures that the rights of individuals are protected and that any deprivation of life or personal liberty must be carried o"
+        },
+        {
+            "query": "Explain Article 14.",
+            "scope": "LEGAL",
+            "records": 1,
+            "response": "Article 14 of the Constitution of India states that the State shall not deny to any person equality before the law or the equal protection of the laws within the territory of India. This means that all individuals, regardless of their background, status, or circumstances, are entitled to the same le"
+        },
+        {
+            "query": "What does Article 19(1)(a) protect?",
+            "scope": "LEGAL",
+            "records": 1,
+            "response": "Article 19(1)(a) protects the freedom of speech and expression."
+        },
+        {
+            "query": "Article 19 (1) (a)",
+            "scope": "LEGAL",
+            "records": 1,
+            "response": "The user's question is: \"Article 19 (1) (a) ⚐�.\" ⚐� is the correct answer. ⚐� is the correct answer. ⚐� is the correct answer. ⚐� is the correct answer. ⚐� is the correct answer. ⚐� is the correct answer. ⚐� is the correct answer. ⚐� is the correct answer. ⚐� is the correct answer. ⚐� is the correct"
+        }
+    ],
+    "unseen_15_criminal": [],
+    "tanglish_5_queries": [],
+    "multiturn_5_sessions": [],
+    "non_legal_5_queries": [],
+    "section_variations": [],
+    "insufficient_evidence_cases": []
+}

@@ -1,0 +1,51 @@
+{
+    "total_records": 360,
+    "unique_section_numbers": 357,
+    "duplicate_record_ids": {
+        "bns__section_44": 2,
+        "bns__section_62": 2,
+        "bns__section_99": 2
+    },
+    "duplicate_record_id_count": 3,
+    "empty_text_records": 0,
+    "missing_section_numbers": 0,
+    "section_range": "1-358",
+    "missing_from_expected_range": [
+        192
+    ],
+    "extra_sections_beyond_358": [],
+    "chapters_found": [
+        "CHAPTER I",
+        "CHAPTER II",
+        "CHAPTER III",
+        "CHAPTER IV",
+        "CHAPTER IX",
+        "CHAPTER V",
+        "CHAPTER VI",
+        "CHAPTER VII",
+        "CHAPTER VIII",
+        "CHAPTER XI",
+        "CHAPTER XII",
+        "CHAPTER XIII",
+        "CHAPTER XIV",
+        "CHAPTER XX"
+    ],
+    "chapter_count": 14,
+    "source_urls": [
+        "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf"
+    ],
+    "source_authorities": [
+        "Ministry of Law and Justice / Government of India"
+    ],
+    "canonical_urls": [
+        "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+    ],
+    "duplicate_text_snippets": {},
+    "provenance": {
+        "actual_download_source": "PRS Legislative Research",
+        "actual_download_url": "https://prsindia.org/files/bills_acts/acts_parliament/2023/The%20Bharatiya%20Nyaya%20Sanhita,%202023.pdf",
+        "canonical_india_code_url": "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf",
+        "reason_for_alternative": "India Code returned HTTP 504 Gateway Timeout",
+        "document_identity": "Act No. 45 of 2023, Gazette of India, 25 December 2023"
+    }
+}

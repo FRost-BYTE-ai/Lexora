@@ -1,0 +1,41 @@
+{
+  "act": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+  "extraction_timestamp": "2026-09-27T20:18:06+00:00",
+  "errors": [],
+  "warnings": [
+    {
+      "act": "BNSS",
+      "page": 29,
+      "section": "35",
+      "error_type": "CHAPTER_HEADING_NOT_IN_BODY",
+      "description": "Chapter V (ARREST OF PERSONS) has no heading in the body print; mapped from Arrangement of Sections (page 4) at section 35",
+      "severity": "high"
+    },
+    {
+      "act": "BNSS",
+      "page": null,
+      "section": "33",
+      "error_type": "PRIMARY_SOURCE_GAP_SUPPLEMENTED",
+      "description": "India Code body omits the clause \"shall, in the absence of any reasonable excuse, the burden of proving which excuse shall lie\" in sub-section (1)(xii); section text reconstructed from the Gazette of India as-enacted print (250884_2_english_01042024.pdf).",
+      "severity": "high"
+    },
+    {
+      "act": "BNSS",
+      "page": null,
+      "section": "215",
+      "error_type": "PRIMARY_SOURCE_GAP_SUPPLEMENTED",
+      "description": "India Code body print ends section 215 after sub-section (1) and omits sub-sections (2), (3) and (4) (cross-referenced elsewhere in the Act as sub-section (4) of section 215); section text reconstructed from the Gazette of India as-enacted print (250884_2_english_01042024.pdf).",
+      "severity": "high"
+    },
+    {
+      "act": "BNSS",
+      "page": null,
+      "section": "193",
+      "error_type": "ROMAN_SEQ",
+      "description": "(i)",
+      "severity": "low"
+    }
+  ],
+  "critical_unresolved": [],
+  "status": "PASS"
+}

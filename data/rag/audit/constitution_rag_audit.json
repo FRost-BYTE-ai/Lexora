@@ -1,0 +1,31 @@
+{
+    "total_records": 3501,
+    "document_types": {
+        "Constitution": 3501
+    },
+    "missing_metadata": {
+        "parent_record_id": 38,
+        "article_number": 1188
+    },
+    "empty_text_records": 19,
+    "duplicate_record_ids": [],
+    "duplicate_text": [],
+    "legal_status_values": {
+        "active": 3446,
+        "omitted": 55
+    },
+    "source_consistency": {
+        "authorities": {
+            "Government of India / India Code": 3501
+        },
+        "urls": {
+            "https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf": 3501
+        }
+    },
+    "text_length_distribution": {
+        "min": 0,
+        "max": 13738,
+        "avg": 201.54555841188233,
+        "total": 705611
+    }
+}

@@ -1,0 +1,150 @@
+{
+  "act": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+  "act_number": "46 of 2023",
+  "source_authority": "India Code",
+  "source_url": "https://www.indiacode.nic.in/bitstream/123456789/20335/1/a2023-46.pdf",
+  "retrieval_url": "https://indiacode.gov.in/server/api/core/bitstreams/73f93470-5f6a-4f0f-bc23-1309e32b9554/content",
+  "item_handle": "123456789/496550",
+  "source_note": "Original URL (www.indiacode.nic.in) now serves an official site-migration notice to indiacode.gov.in; the PDF was retrieved from the official migrated India Code repository (indiacode.gov.in, DSpace 9.1 REST API), bitstream A2023-46.pdf, item handle 123456789/496550. India Code item metadata: enact_date=2023-12-25, enforcement_date=01-07-2024, repealed=false.",
+  "cross_verification_sources": [
+    "data/legal/raw/india_bnss_a2023-46.txt",
+    "uploads/250884_2_english_01042024.pdf (gazette)"
+  ],
+  "act_id": "AC_CEN_5_23_00049_202346_1719552320687",
+  "enactment_date": "2023-12-25",
+  "enforcement_date": "2024-07-01",
+  "long_title": "An Act to consolidate and amend the law relating to Criminal Procedure.",
+  "chapter_count": 39,
+  "section_count": 531,
+  "subsection_count": 1051,
+  "clause_count": 490,
+  "subclause_count": 161,
+  "proviso_count": 217,
+  "explanation_count": 36,
+  "illustration_count": 48,
+  "schedule_count": 2,
+  "arrangement_entry_count": 531,
+  "division_heading_count": 24,
+  "footnote_count": 1,
+  "form_count": 58,
+  "schedule_row_count": 1293,
+  "schedule_page_raw_count": 47,
+  "record_count": 4540,
+  "expected_sections": 531,
+  "extracted_sections": 531,
+  "missing_sections": [],
+  "duplicate_sections": [],
+  "unexpected_sections": [],
+  "structural_errors": [],
+  "unresolved_extraction_errors": [],
+  "warnings": [
+    {
+      "error_type": "CHAPTER_HEADING_NOT_IN_BODY",
+      "section": "35",
+      "description": "Chapter V (ARREST OF PERSONS) has no heading in the body print; mapped from Arrangement of Sections (page 4) at section 35",
+      "severity": "high"
+    },
+    {
+      "error_type": "PRIMARY_SOURCE_GAP_SUPPLEMENTED",
+      "section": "33",
+      "description": "India Code body omits the clause \"shall, in the absence of any reasonable excuse, the burden of proving which excuse shall lie\" in sub-section (1)(xii); section text reconstructed from the Gazette of India as-enacted print (250884_2_english_01042024.pdf).",
+      "severity": "high"
+    },
+    {
+      "error_type": "PRIMARY_SOURCE_GAP_SUPPLEMENTED",
+      "section": "215",
+      "description": "India Code body print ends section 215 after sub-section (1) and omits sub-sections (2), (3) and (4) (cross-referenced elsewhere in the Act as sub-section (4) of section 215); section text reconstructed from the Gazette of India as-enacted print (250884_2_english_01042024.pdf).",
+      "severity": "high"
+    },
+    {
+      "error_type": "ROMAN_SEQ",
+      "section": "193",
+      "description": "(i)",
+      "severity": "low"
+    }
+  ],
+  "empty_text_records": [],
+  "duplicate_record_ids": [],
+  "duplicate_content_classification": [
+    {
+      "text_sha256": "eef3d055c14622b3280b755c3cee397c8281110ea7abe4472b81d489dcb57e2f",
+      "count": 2,
+      "classification": "LEGITIMATE_REPETITION"
+    },
+    {
+      "text_sha256": "e5148cac7e6327c02cc7978cf530ee86934728442e2a211523035a6bbfade14e",
+      "count": 2,
+      "classification": "LEGITIMATE_REPETITION"
+    },
+    {
+      "text_sha256": "0bf2d4a6619271468c8bfa4dbce98878cb1ffb0d9e272a0df79d8d845c065ec0",
+      "count": 2,
+      "classification": "LEGITIMATE_REPETITION"
+    },
+    {
+      "text_sha256": "f3f285577cd9f0ecfc7a073b93f65580251cf050a1d560f26aec30a122350bb8",
+      "count": 2,
+      "classification": "LEGITIMATE_REPETITION"
+    },
+    {
+      "text_sha256": "f10f3afae116c779d40bbc1f8ac800c3aff4db0cd0afccddd0e343dab633c62f",
+      "count": 2,
+      "classification": "LEGITIMATE_REPETITION"
+    },
+    {
+      "text_sha256": "36c858afa6892e39ce2aaee2a5313c7e8ee5a9890bd5c8b68fddf18ff96c61e1",
+      "count": 2,
+      "classification": "LEGITIMATE_REPETITION"
+    },
+    {
+      "text_sha256": "38231cec6d97561c6955fe2e0a802fd92fe88fbc398361b6c13a43d5821c3a36",
+      "count": 2,
+      "classification": "LEGITIMATE_REPETITION"
+    },
+    {
+      "text_sha256": "4d5d5a5ef43219ca780f0937bb5a9c7d4eb2fe3758b983f28a4d11d3559e5d3f",
+      "count": 2,
+      "classification": "LEGITIMATE_REPETITION"
+    },
+    {
+      "text_sha256": "2b7501d77fdc66c654bdc467cc96b1238a677beb42d18d27019f33bfdab5f2a2",
+      "count": 2,
+      "classification": "LEGITIMATE_REPETITION"
+    },
+    {
+      "text_sha256": "e3b6d59e988858de91567c4ead5d58e7240c3aaab22ed88d2890c6b0b9d1a8a5",
+      "count": 2,
+      "classification": "LEGITIMATE_REPETITION"
+    }
+  ],
+  "document_sha256": "572c79880b9f8effc8fa6e39b864101835a0fb5d85b194b90a99d170121a0562",
+  "dataset_bytes": 11887298,
+  "rag_dataset_bytes": 3814980,
+  "extraction_timestamp": "2026-09-27T20:18:06+00:00",
+  "completeness_gate": {
+    "official_source_downloaded": true,
+    "full_act_extracted": true,
+    "arrangement_of_sections_extracted": true,
+    "every_expected_section_present": true,
+    "no_unexpected_section_loss": true,
+    "no_duplicate_section_ids": true,
+    "chapter_mapping_validated": true,
+    "section_headings_validated": true,
+    "subsections_preserved": true,
+    "clauses_preserved": true,
+    "subclauses_preserved": true,
+    "provisos_preserved": true,
+    "explanations_preserved": true,
+    "illustrations_preserved": true,
+    "schedules_preserved": true,
+    "legally_meaningful_footnotes_preserved": true,
+    "page_references_preserved": true,
+    "source_hashes_generated": true,
+    "source_urls_preserved": true,
+    "no_unresolved_critical_extraction_errors": true,
+    "random_source_comparison_passed": true,
+    "retrieval_tests_passed": true,
+    "parent_child_hierarchy_intact": true
+  },
+  "completeness_status": "PASS"
+}

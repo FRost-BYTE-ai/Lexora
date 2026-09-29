@@ -1,0 +1,85 @@
+{
+  "tokenizer_stats": {
+    "pct_le_512": 74.34542900865773,
+    "pct_le_1024": 98.24748967570174,
+    "pct_le_1536": 99.81342892480556,
+    "pct_le_2048": 99.96436282833365,
+    "pct_gt_2048": 0.03563717166635222,
+    "max_len": 64062,
+    "mean_len": 398.10332683479027,
+    "median_len": 374,
+    "p95": 809,
+    "p99": 1136
+  },
+  "long_examples_excluded": 17,
+  "long_examples_sample": [
+    {
+      "index": 377,
+      "token_length": 2118
+    },
+    {
+      "index": 3520,
+      "token_length": 6959
+    },
+    {
+      "index": 4732,
+      "token_length": 7922
+    },
+    {
+      "index": 7191,
+      "token_length": 3894
+    },
+    {
+      "index": 7610,
+      "token_length": 2934
+    },
+    {
+      "index": 10824,
+      "token_length": 7551
+    },
+    {
+      "index": 10899,
+      "token_length": 2281
+    },
+    {
+      "index": 12405,
+      "token_length": 2069
+    },
+    {
+      "index": 14015,
+      "token_length": 6428
+    },
+    {
+      "index": 15640,
+      "token_length": 2914
+    }
+  ],
+  "pilot_creation": {
+    "success": true,
+    "total_pilot_size": 1000,
+    "train_size": 900,
+    "validation_size": 100
+  },
+  "pilot_quality_check": {
+    "average_prompt_tokens": 24.55,
+    "average_response_tokens": 375.27,
+    "statute_or_section_references": 729,
+    "generic_non_explicit_legal_prompts": 447,
+    "mentions_old_laws_ipc_crpc_iea": 65,
+    "mentions_new_laws_bns_bnss_bsa": 0,
+    "token_distribution": {
+      "<256": 303,
+      "256-512": 438,
+      "512-1024": 242,
+      "1024-2048": 17
+    }
+  },
+  "conclusion": {
+    "is_2048_appropriate": true,
+    "data_quality_concerns": [
+      "Dataset still synthetically generated.",
+      "Found 65 references to outdated laws (IPC/CrPC) out of 1000.",
+      "Found 0 references to new laws (BNS/BNSS/BSA)."
+    ]
+  }
+}

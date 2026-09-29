@@ -1,0 +1,22 @@
+{
+  "discrepancy_investigation": {
+    "kaggle_dataset_description_rows": 47789,
+    "actual_extracted_rows": 47789,
+    "archive_contains_multiple_files": false,
+    "subset_extracted": false,
+    "records_filtered_during_extraction": false,
+    "duplicate_records_removed": false,
+    "explanation": "There is actually no discrepancy. The extracted JSON file ('Alpie-core_core_indian_law.json') contains exactly 47789 records, which perfectly matches the Kaggle description of 47,789 rows. The earlier assumption of a discrepancy was a miscount."
+  },
+  "sample_analysis": {
+    "legal_domain": "Indian Jurisprudence (Constitutional, Civil, Criminal, Corporate, etc.)",
+    "statute_or_act_named_count": 85,
+    "section_or_article_cited_count": 39,
+    "source_url_exists_count": 0,
+    "verifiable_legal_claim_count": 75,
+    "appears_synthetic_or_generated_count": 100,
+    "obvious_contradictions_or_suspicious_claims_count": 0,
+    "obsolete_law_references_ipc_crpc_iea_count": 10,
+    "reasoning_useful_for_training_answer_style_count": 100
+  }
+}
