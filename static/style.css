@@ -1785,3 +1785,70 @@ html, body {
     background-color: #FEE2E2;
 }
 
+/* Streaming Chat UI Styles */
+.stream-status-badge {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--gold-primary);
+    background-color: var(--gold-bg);
+    padding: 1px 6px;
+    border-radius: 4px;
+    letter-spacing: 0.3px;
+}
+
+.stream-typing-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-muted);
+    font-style: italic;
+    font-size: 13px;
+}
+
+.pulse-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--gold-primary);
+    border-radius: 50%;
+    display: inline-block;
+    animation: pulseDot 1.2s infinite ease-in-out;
+}
+
+@keyframes pulseDot {
+    0%, 100% { opacity: 0.3; transform: scale(0.8); }
+    50% { opacity: 1; transform: scale(1.1); }
+}
+
+.composer-send-btn.streaming-stop-btn {
+    background-color: #DC2626 !important;
+    border-color: #DC2626 !important;
+    color: #FFFFFF !important;
+    cursor: pointer;
+}
+
+.composer-send-btn.streaming-stop-btn:hover {
+    background-color: #B91C1C !important;
+}
+
+.stream-error-inline {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #FEF2F2;
+    border: 1px solid #FECACA;
+    border-radius: 6px;
+    color: #DC2626;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.stream-interrupted-inline {
+    margin-top: 10px;
+    padding: 6px 10px;
+    background-color: var(--surface-bg-hover, #F3F4F6);
+    border-left: 3px solid var(--text-muted);
+    color: var(--text-muted);
+    font-size: 12px;
+    font-style: italic;
+}
+
+

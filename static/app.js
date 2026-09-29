@@ -684,9 +684,65 @@ async function loadSessionDetails(sessionId) {
 // ─────────────────────────────────────────────────────────────────────────────
 // Chat Execution: Text & Voice
 // ─────────────────────────────────────────────────────────────────────────────
+let activeStreamController = null;
+
+function setComposerStreamingState(isStreaming) {
+    const btnSend = document.getElementById('btn-send');
+    if (!btnSend) return;
+    
+    if (isStreaming) {
+        btnSend.classList.add('streaming-stop-btn');
+        btnSend.title = "Stop Generation";
+        btnSend.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="4" y="4" width="16" height="16" rx="2"/></svg>`;
+    } else {
+        btnSend.classList.remove('streaming-stop-btn');
+        btnSend.title = "Send Legal Inquiry";
+        btnSend.innerHTML = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>`;
+    }
+}
+
+function stopStreaming() {
+    if (activeStreamController) {
+        activeStreamController.abort();
+    }
+}
+
+function createStreamingAssistantCard() {
+    document.getElementById('empty-state').style.display = 'none';
+    document.getElementById('chat-stream').style.display = 'block';
+
+    const messagesList = document.getElementById('messages-list');
+    const card = document.createElement('div');
+    card.className = 'message-card assistant streaming-card';
+
+    const timeStr = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    card.innerHTML = `
+        <div class="message-meta">
+            <span>Lexora Legal Analysis</span>
+            <span>·</span>
+            <span class="stream-status-badge">Thinking...</span>
+            <span>·</span>
+            <span>${timeStr}</span>
+        </div>
+        <div class="message-body" id="current-stream-body">
+            <span class="stream-typing-indicator"><span class="pulse-dot"></span> Lexora is analyzing...</span>
+        </div>
+        <div class="stream-citations-placeholder" style="display:none;"></div>
+    `;
+    messagesList.appendChild(card);
+    scrollToBottom();
+    return card;
+}
+
 async function sendMessage(overrideText = null) {
     const inputEl = document.getElementById('user-input');
     const query = (overrideText !== null ? overrideText : inputEl.value).trim();
+
+    if (activeStreamController) {
+        stopStreaming();
+        return;
+    }
+
     if (!query) return;
 
     if (overrideText === null) {
@@ -697,26 +753,29 @@ async function sendMessage(overrideText = null) {
     // Force transition immediately
     document.getElementById('empty-state').style.display = 'none';
     document.getElementById('chat-stream').style.display = 'block';
-    
-    // Check for obvious tool routing queries
-    const qLower = query.toLowerCase();
-    if (qLower.startsWith("search article") || qLower.startsWith("search section") || qLower.startsWith("search bns")) {
-        // Continue to chat RAG, but also highlight library
-    }
 
     appendMessage('user', query);
     showChatWorkspace();
 
-    const loadingCard = createLoadingCard();
-    document.getElementById('messages-list').appendChild(loadingCard);
-    scrollToBottom();
+    const card = createStreamingAssistantCard();
+    const statusBadge = card.querySelector('.stream-status-badge');
+    const msgBody = card.querySelector('#current-stream-body');
+    const citationsHolder = card.querySelector('.stream-citations-placeholder');
+
+    setComposerStreamingState(true);
+    activeStreamController = new AbortController();
+
+    let fullText = "";
+    let endMetadata = null;
+    let receivedFirstText = false;
+    let isInterrupted = false;
 
     try {
         const activeLangBtn = document.querySelector('.lang-btn.active');
         const activeLang = activeLangBtn ? activeLangBtn.dataset.lang : 'en';
         const activeJurisdiction = isTnJurisdiction ? 'Tamil Nadu' : 'Central / India';
 
-        const res = await fetch('/api/chat', {
+        const response = await fetch('/api/chat/stream', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -724,35 +783,129 @@ async function sendMessage(overrideText = null) {
                 message: query,
                 language: activeLang,
                 jurisdiction: activeJurisdiction
-            })
+            }),
+            signal: activeStreamController.signal
         });
 
-        loadingCard.remove();
-
-        if (!res.ok) {
-            const errData = await res.json().catch(() => ({ detail: 'Server error' }));
-            appendMessage('assistant', `Request error (${res.status}): ${errData.detail || 'Failed to process inquiry.'}`);
+        if (!response.ok) {
+            const errData = await response.json().catch(() => ({ detail: 'Server error' }));
+            msgBody.innerHTML = `<span class="stream-error-inline">Request error (${response.status}): ${escapeHtml(errData.detail || 'Failed to process inquiry.')}</span>`;
             return;
         }
 
-        const data = await res.json();
-        
-        if (data.session_id && data.session_id !== currentSessionId) {
-            currentSessionId = data.session_id;
-            localStorage.setItem('lexora_session_id', currentSessionId);
+        const reader = response.body.getReader();
+        const decoder = new TextDecoder('utf-8');
+        let sseBuffer = '';
+
+        while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+
+            sseBuffer += decoder.decode(value, { stream: true });
+            const frames = sseBuffer.split('\n\n');
+            sseBuffer = frames.pop() || '';
+
+            for (const frame of frames) {
+                if (!frame.trim()) continue;
+
+                let eventType = 'message';
+                let dataStr = '';
+
+                for (const line of frame.split('\n')) {
+                    if (line.startsWith('event: ')) {
+                        eventType = line.slice(7).trim();
+                    } else if (line.startsWith('data: ')) {
+                        dataStr += line.slice(6);
+                    }
+                }
+
+                if (!dataStr) continue;
+                let data;
+                try {
+                    data = JSON.parse(dataStr);
+                } catch(e) { continue; }
+
+                if (eventType === 'message_start') {
+                    if (data.session_id && data.session_id !== currentSessionId) {
+                        currentSessionId = data.session_id;
+                        localStorage.setItem('lexora_session_id', currentSessionId);
+                    }
+                    if (statusBadge) statusBadge.textContent = 'Generating...';
+                } else if (eventType === 'text_delta') {
+                    if (!receivedFirstText) {
+                        receivedFirstText = true;
+                        if (statusBadge) statusBadge.textContent = 'Generating...';
+                    }
+                    fullText += data.text;
+                    msgBody.innerHTML = formatLegalMarkdown(fullText);
+                    scrollToBottom();
+                } else if (eventType === 'message_end') {
+                    endMetadata = data;
+                } else if (eventType === 'error') {
+                    isInterrupted = true;
+                    if (fullText) {
+                        msgBody.innerHTML = formatLegalMarkdown(fullText) + `<div class="stream-error-inline">Response interrupted. Please try again.</div>`;
+                    } else {
+                        msgBody.innerHTML = `<div class="stream-error-inline">${escapeHtml(data.error || 'Response interrupted.')}</div>`;
+                    }
+                }
+            }
+        }
+    } catch (e) {
+        if (e.name === 'AbortError') {
+            isInterrupted = true;
+            if (fullText) {
+                msgBody.innerHTML = formatLegalMarkdown(fullText) + `<div class="stream-interrupted-inline">Generation stopped by user.</div>`;
+            } else {
+                msgBody.innerHTML = `<div class="stream-interrupted-inline">Generation stopped by user.</div>`;
+            }
+        } else {
+            isInterrupted = true;
+            if (fullText) {
+                msgBody.innerHTML = formatLegalMarkdown(fullText) + `<div class="stream-error-inline">Response interrupted. Please try again.</div>`;
+            } else {
+                msgBody.innerHTML = `<div class="stream-error-inline">Error connecting to Lexora server. Please check your network or server status.</div>`;
+            }
+        }
+    } finally {
+        setComposerStreamingState(false);
+        activeStreamController = null;
+
+        if (statusBadge) statusBadge.textContent = isInterrupted ? 'Interrupted' : 'Complete';
+        card.classList.remove('streaming-card');
+
+        if (fullText) {
+            msgBody.innerHTML = formatLegalMarkdown(fullText) + (isInterrupted ? `<div class="stream-interrupted-inline">Generation stopped by user.</div>` : '');
+
+            window.assistantMessages = window.assistantMessages || [];
+            const msgIdx = window.assistantMessages.length;
+            window.assistantMessages.push(fullText);
+
+            let citationsHtml = `<div class="citations-panel">`;
+            const sources = (endMetadata && endMetadata.source_metadata) ? endMetadata.source_metadata : [];
+
+            if (sources.length > 0) {
+                citationsHtml += `<span style="font-size:11px; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.5px;">Citations:</span>`;
+                sources.forEach((s, idx) => {
+                    citationsHtml += `<div class="citation-chip" onclick="showSourceModal(${idx})">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h18"/></svg>
+                        <span>${escapeHtml(s.act_name)} · ${escapeHtml(s.article_or_section || s.heading)}</span>
+                    </div>`;
+                });
+                currentSources = sources;
+            }
+
+            citationsHtml += `
+                <button class="btn-tts" onclick="speakMessageIndex(${msgIdx})">🔊 Listen</button>
+                <button class="btn-tts" onclick="translateMessageIndex(${msgIdx}, this)">🌐 Translate</button>
+                <button class="btn-tts" onclick="saveAnswerIndex(${msgIdx}, this)">💾 Save</button>
+            </div>`;
+
+            citationsHolder.innerHTML = citationsHtml;
+            citationsHolder.style.display = 'block';
         }
 
-        appendMessage('assistant', data.response, {
-            scope: data.scope,
-            metrics: data.metrics,
-            sources: data.source_metadata,
-            query_plan: data.query_plan
-        });
-
         await loadSessions();
-    } catch (e) {
-        loadingCard.remove();
-        appendMessage('assistant', 'Error connecting to Lexora server. Please check your network or server status.');
     }
 }
 
@@ -977,11 +1130,18 @@ async function playTTS(text, lang = "en") {
         currentAudioPlayer = null;
     }
 
+    let resolvedLang = lang;
+    if (!resolvedLang || resolvedLang === "en" || resolvedLang === "auto") {
+        if (/[\u0B80-\u0BFF]/.test(text)) resolvedLang = "ta";
+        else if (/[\u0900-\u097F]/.test(text)) resolvedLang = "hi";
+        else if (!resolvedLang) resolvedLang = "en";
+    }
+
     try {
         const res = await fetch('/api/tts/synthesize', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ text: text, language: lang })
+            body: JSON.stringify({ text: text, language: resolvedLang })
         });
         if (!res.ok) throw new Error("TTS endpoint error");
         
@@ -2209,7 +2369,8 @@ async function sendVoiceOverlayInquiry(transcript) {
         document.getElementById('voice-modal-audio-stop').style.display = 'inline-flex';
 
         const toSpeak = data.voice_summary || responseText;
-        await playVoiceOverlayTTS(toSpeak, activeLang);
+        const voiceLang = data.language || activeLang;
+        await playVoiceOverlayTTS(toSpeak, voiceLang);
 
         await loadSessions();
     } catch(e) {
@@ -2226,11 +2387,18 @@ async function playVoiceOverlayTTS(text, lang = 'en') {
         currentAudioPlayer = null;
     }
 
+    let resolvedLang = lang;
+    if (!resolvedLang || resolvedLang === 'en' || resolvedLang === 'auto') {
+        if (/[\u0B80-\u0BFF]/.test(text)) resolvedLang = 'ta';
+        else if (/[\u0900-\u097F]/.test(text)) resolvedLang = 'hi';
+        else if (!resolvedLang) resolvedLang = 'en';
+    }
+
     try {
         const res = await fetch('/api/tts/synthesize', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ text: text, language: lang })
+            body: JSON.stringify({ text: text, language: resolvedLang })
         });
         if (!res.ok) throw new Error('TTS endpoint error');
 
@@ -2325,7 +2493,8 @@ async function sendVoiceInquiry(transcript) {
 
         // Automatically synthesize spoken summary for voice mode
         const toSpeak = data.voice_summary || data.response;
-        await playTTS(toSpeak, activeLang);
+        const voiceLang = data.language || activeLang;
+        await playTTS(toSpeak, voiceLang);
 
         await loadSessions();
     } catch(e) {

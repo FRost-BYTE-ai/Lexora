@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "id": "1aacc0ff-2e23-4615-ac05-9b8efb10d25e",
+    "type": "note",
+    "title": "Test Legal Note",
+    "content": "Personal liberty notes under Article 21.",
+    "metadata": {},
+    "saved_at": 1790692028.5903475
+  },
+  {
+    "id": "c4f18c33-5685-4ae8-a2a3-8a9fb06e2067",
+    "type": "note",
+    "title": "Test Legal Note",
+    "content": "Personal liberty notes under Article 21.",
+    "metadata": {},
+    "saved_at": 1790689031.6542566
+  }
+]

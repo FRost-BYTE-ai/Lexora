@@ -18,7 +18,9 @@ import json
 import re
 import uuid
 import torch
-from threading import Thread
+import queue
+import asyncio
+from threading import Thread, Event
 
 # Fix Windows console UTF-8 output encoding
 if sys.stdout and hasattr(sys.stdout, 'reconfigure'):
@@ -32,7 +34,15 @@ if sys.stderr and hasattr(sys.stderr, 'reconfigure'):
     except Exception:
         pass
 
-from transformers import AutoModelForCausalLM, AutoTokenizer, TextIteratorStreamer
+from transformers import AutoModelForCausalLM, AutoTokenizer, TextIteratorStreamer, StoppingCriteria, StoppingCriteriaList
+
+class StopOnSignalCriteria(StoppingCriteria):
+    def __init__(self, stop_event: Event):
+        super().__init__()
+        self.stop_event = stop_event
+
+    def __call__(self, input_ids: torch.LongTensor, scores: torch.FloatTensor, **kwargs) -> bool:
+        return self.stop_event.is_set()
 from sentence_transformers import SentenceTransformer
 from qdrant_client import QdrantClient
 from qdrant_client.models import Filter, FieldCondition, MatchValue, SparseVector
@@ -43,6 +53,7 @@ from chatbot.larv import larv_engine
 from chatbot.response_formatter import clean_llm_response, build_system_prompt
 from chatbot.session_manager import SessionManager
 from chatbot.document_analyzer import DocumentAnalyzer
+from chatbot.quick_responses import match_quick_response
 
 
 
@@ -315,6 +326,30 @@ class LexoraChatbot:
         session = self.session_manager.get_session(conv_id)
         conv_context = session.get_conversation_context()
         
+        # Instant Multilingual Pre-stored Response Layer (Deterministic Shortcuts)
+        quick_match = match_quick_response(user_message)
+        if quick_match:
+            stored_response = quick_match["response"]
+            matched_lang = quick_match["language"]
+            metrics["total_time"] = time.time() - t_start
+            metrics["quick_response_matched"] = quick_match["entry_id"]
+            
+            session.add_turn("user", user_message, {"scope": "QUICK_RESPONSE", "language": matched_lang, "entry_id": quick_match["entry_id"]})
+            session.add_turn("assistant", stored_response, {"scope": "QUICK_RESPONSE", "language": matched_lang, "entry_id": quick_match["entry_id"]})
+            
+            return {
+                "response": stored_response,
+                "metrics": metrics,
+                "scope": "QUICK_RESPONSE",
+                "retrieved_records": 0,
+                "source_metadata": [],
+                "evidence_passed": "",
+                "evidence_sufficient": True,
+                "language": matched_lang,
+                "is_quick_response": True,
+                "entry_id": quick_match["entry_id"]
+            }
+
         # 2. Query Understanding Layer
         t_understand = time.time()
         query_plan = understand_query(user_message, session_turns=session.turns, explicit_lang=language, explicit_jurisdiction=jurisdiction)
@@ -434,13 +469,19 @@ class LexoraChatbot:
         
         # 7. LLM Generation
         t_gen_start = time.time()
+        gen_kwargs = {
+            "max_new_tokens": 256,
+            "do_sample": True,
+            "repetition_penalty": 1.15,
+            "no_repeat_ngram_size": 3,
+            "eos_token_id": [151643, 151645],
+            "pad_token_id": 151643
+        }
+        print(f"[Qwen3 Generation Config] Runtime params: {gen_kwargs}")
         with torch.no_grad():
             outputs = self.model.generate(
                 **inputs,
-                max_new_tokens=256,
-                do_sample=False,
-                eos_token_id=[151643, 151645],
-                pad_token_id=151643
+                **gen_kwargs
             )
         
         gen_tokens = outputs[0][inputs["input_ids"].shape[1]:]
@@ -476,6 +517,294 @@ class LexoraChatbot:
             "larv_diagnostics": larv_diagnostics
         }
 
+    async def process_message_stream(self, conv_id: str, user_message: str, language: str = None, jurisdiction: str = None, http_request = None):
+        """
+        Processes query and streams response tokens incrementally using Server-Sent Events (SSE).
+        Preserves RAG pipeline, scope gates, evidence validator, hallucination guard, and session memory.
+        """
+        metrics = {}
+        t_start = time.time()
+        t_first_token = None
+        t_first_visible_text = None
+        
+        # 1. Session Retrieval / Creation
+        session = self.session_manager.get_session(conv_id)
+        conv_context = session.get_conversation_context()
+        
+        # Instant Multilingual Pre-stored Response Layer (Deterministic Shortcuts)
+        quick_match = match_quick_response(user_message)
+        if quick_match:
+            stored_response = quick_match["response"]
+            matched_lang = quick_match["language"]
+            metrics["total_time"] = round(time.time() - t_start, 4)
+            metrics["first_visible_text_time"] = t_start
+            metrics["ttft"] = 0.0
+            metrics["final_completion_status"] = "completed"
+            metrics["quick_response_matched"] = quick_match["entry_id"]
+
+            session.add_turn("user", user_message, {"scope": "QUICK_RESPONSE", "language": matched_lang, "entry_id": quick_match["entry_id"]})
+            session.add_turn("assistant", stored_response, {"scope": "QUICK_RESPONSE", "language": matched_lang, "entry_id": quick_match["entry_id"]})
+
+            yield f"event: message_start\ndata: {json.dumps({'session_id': conv_id, 'scope': 'QUICK_RESPONSE', 'language': matched_lang})}\n\n"
+            yield f"event: text_delta\ndata: {json.dumps({'text': stored_response})}\n\n"
+            yield f"event: message_end\ndata: {json.dumps({'response': stored_response, 'metrics': metrics, 'scope': 'QUICK_RESPONSE', 'language': matched_lang, 'source_metadata': [], 'is_quick_response': True, 'entry_id': quick_match['entry_id'], 'completion_status': 'completed'})}\n\n"
+            return
+
+        # 2. Query Understanding Layer
+        t_understand = time.time()
+        query_plan = understand_query(user_message, session_turns=session.turns, explicit_lang=language, explicit_jurisdiction=jurisdiction)
+        metrics["query_understanding_time"] = round(time.time() - t_understand, 4)
+        
+        scope = query_plan.get("legal_scope", "LEGAL")
+
+        # 3. Scope Gate Handling
+        if scope == "CASUAL":
+            lower_msg = user_message.lower().strip()
+            cleaned_lower = re.sub(r'[^\w\s]', '', lower_msg).strip()
+            
+            if "who are you" in cleaned_lower or "who r u" in cleaned_lower:
+                response = "I'm Lexora, a Tamil-first legal and citizen assistance platform. I can help you understand legal information, search laws, analyze documents, find government schemes, explore cases, and more."
+            elif "what can you do" in cleaned_lower or "features" in cleaned_lower or "capabilities" in cleaned_lower:
+                response = "I can help you search Indian statutory laws (BNS, BNSS, BSA, Constitution, Tamil Nadu laws), find official government schemes, explore legal cases, analyze and extract uploaded documents or camera scans, draft complaints and legal notices, and provide bilingual voice consultations in English and Tamil."
+            elif "good morning" in cleaned_lower:
+                response = "Good morning! How can I help?"
+            elif "good afternoon" in cleaned_lower:
+                response = "Good afternoon! How can I help?"
+            elif "good evening" in cleaned_lower:
+                response = "Good evening! How can I help?"
+            elif cleaned_lower in ["hello", "vanakkam", "namaste"]:
+                response = "Hello! 👋 What can I help you with today?"
+            else:
+                response = "Hi! 👋 I'm Lexora. What would you like to do?"
+                
+            metrics["total_time"] = round(time.time() - t_start, 4)
+            metrics["first_visible_text_time"] = t_start
+            metrics["ttft"] = 0.0
+            metrics["final_completion_status"] = "completed"
+            
+            session.add_turn("user", user_message, {"scope": "CASUAL", "query_plan": query_plan})
+            session.add_turn("assistant", response, {"scope": "CASUAL"})
+            
+            yield f"event: message_start\ndata: {json.dumps({'session_id': conv_id, 'scope': 'CASUAL', 'query_plan': query_plan})}\n\n"
+            yield f"event: text_delta\ndata: {json.dumps({'text': response})}\n\n"
+            yield f"event: message_end\ndata: {json.dumps({'response': response, 'metrics': metrics, 'scope': 'CASUAL', 'source_metadata': [], 'query_plan': query_plan, 'completion_status': 'completed'})}\n\n"
+            return
+
+        if scope == "NON_LEGAL":
+            response = "I only help with legal queries."
+            metrics["total_time"] = round(time.time() - t_start, 4)
+            metrics["first_visible_text_time"] = t_start
+            metrics["ttft"] = 0.0
+            metrics["final_completion_status"] = "completed"
+            
+            session.add_turn("user", user_message, {"scope": "NON_LEGAL"})
+            session.add_turn("assistant", response, {"scope": "NON_LEGAL"})
+            
+            yield f"event: message_start\ndata: {json.dumps({'session_id': conv_id, 'scope': 'NON_LEGAL', 'query_plan': query_plan})}\n\n"
+            yield f"event: text_delta\ndata: {json.dumps({'text': response})}\n\n"
+            yield f"event: message_end\ndata: {json.dumps({'response': response, 'metrics': metrics, 'scope': 'NON_LEGAL', 'source_metadata': [], 'query_plan': query_plan, 'completion_status': 'completed'})}\n\n"
+            return
+            
+        if scope == "AMBIGUOUS":
+            response = "Could you please specify the factual situation or legal issue you would like information on?"
+            metrics["total_time"] = round(time.time() - t_start, 4)
+            metrics["first_visible_text_time"] = t_start
+            metrics["ttft"] = 0.0
+            metrics["final_completion_status"] = "completed"
+            
+            session.add_turn("user", user_message, {"scope": "AMBIGUOUS"})
+            session.add_turn("assistant", response, {"scope": "AMBIGUOUS"})
+            
+            yield f"event: message_start\ndata: {json.dumps({'session_id': conv_id, 'scope': 'AMBIGUOUS', 'query_plan': query_plan})}\n\n"
+            yield f"event: text_delta\ndata: {json.dumps({'text': response})}\n\n"
+            yield f"event: message_end\ndata: {json.dumps({'response': response, 'metrics': metrics, 'scope': 'AMBIGUOUS', 'source_metadata': [], 'query_plan': query_plan, 'completion_status': 'completed'})}\n\n"
+            return
+
+        # 4. Multi-Corpus Hybrid Retrieval
+        t_ret = time.time()
+        top_docs, rrf_scores, larv_diagnostics = self.execute_multi_corpus_retrieval(query_plan)
+        metrics["retrieval_time"] = round(time.time() - t_ret, 4)
+        
+        # 5. Evidence Sufficiency Validation
+        is_sufficient, reason = self.evidence_validator.validate_retrieval(query_plan, top_docs, rrf_scores)
+        evidence_text, source_metadata = self.format_evidence_and_sources(top_docs)
+
+        # Inject Session Document text if uploaded
+        doc_text = session.get_documents_text()
+        if doc_text:
+            evidence_text = f"Uploaded Consultation Documents:\n{doc_text}\n\nAuthoritative Statutory Evidence:\n{evidence_text}"
+
+        if not is_sufficient:
+            response = self.evidence_validator.build_insufficient_response(query_plan, reason)
+            metrics["total_time"] = round(time.time() - t_start, 4)
+            metrics["first_visible_text_time"] = t_start
+            metrics["ttft"] = 0.0
+            metrics["final_completion_status"] = "completed"
+            
+            session.add_turn("user", user_message, {"scope": "LEGAL", "sufficient": False, "query_plan": query_plan, "larv_diagnostics": larv_diagnostics})
+            session.add_turn("assistant", response, {"scope": "LEGAL", "sufficient": False})
+            
+            yield f"event: message_start\ndata: {json.dumps({'session_id': conv_id, 'scope': 'LEGAL', 'evidence_sufficient': False, 'query_plan': query_plan})}\n\n"
+            yield f"event: text_delta\ndata: {json.dumps({'text': response})}\n\n"
+            yield f"event: message_end\ndata: {json.dumps({'response': response, 'metrics': metrics, 'scope': 'LEGAL', 'evidence_sufficient': False, 'reason': reason, 'source_metadata': source_metadata, 'query_plan': query_plan, 'larv_diagnostics': larv_diagnostics, 'completion_status': 'completed'})}\n\n"
+            return
+
+        # 6. Prompt Construction
+        t_prompt = time.time()
+        system_prompt = build_system_prompt(query_plan)
+        user_prompt = f"Authoritative Legal Evidence:\n{evidence_text}\n\nUser Question: {user_message}"
+        
+        messages = [
+            {"role": "system", "content": system_prompt}
+        ] + conv_context + [
+            {"role": "user", "content": user_prompt}
+        ]
+        
+        prompt_text = self.tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+        inputs = self.tokenizer([prompt_text], return_tensors="pt").to("cpu")
+        metrics["prompt_construction_time"] = round(time.time() - t_prompt, 4)
+        
+        # 7. Start Streaming Generation
+        yield f"event: message_start\ndata: {json.dumps({'session_id': conv_id, 'scope': 'LEGAL', 'evidence_sufficient': True, 'query_plan': query_plan})}\n\n"
+        
+        t_gen_start = time.time()
+        streamer = TextIteratorStreamer(self.tokenizer, skip_prompt=True, skip_special_tokens=True)
+        stop_event = Event()
+        stopping_criteria = StoppingCriteriaList([StopOnSignalCriteria(stop_event)])
+        
+        kwargs = dict(
+            **inputs,
+            streamer=streamer,
+            max_new_tokens=256,
+            do_sample=False,
+            eos_token_id=[151643, 151645],
+            pad_token_id=151643,
+            stopping_criteria=stopping_criteria
+        )
+        
+        thread = Thread(target=self.model.generate, kwargs=kwargs)
+        thread.start()
+        
+        full_generated_text = ""
+        buffer = ""
+        chunks_sent = 0
+        tokens_count = 0
+        interrupted = False
+        last_flush_time = time.time()
+        
+        # Boundary pattern for natural chunking: whitespace, punctuation, newline
+        boundary_regex = re.compile(r'([\s\.\,\?\!\:\;\-\–\—\(\)\[\]\{\}])')
+        
+        try:
+            while thread.is_alive() or not streamer.text_queue.empty():
+                if http_request and await http_request.is_disconnected():
+                    stop_event.set()
+                    interrupted = True
+                    break
+                    
+                try:
+                    text_chunk = streamer.text_queue.get_nowait()
+                    if text_chunk is streamer.stop_signal:
+                        break
+                        
+                    if t_first_token is None:
+                        t_first_token = time.time()
+                        
+                    buffer += text_chunk
+                    tokens_count += 1
+                    
+                    now = time.time()
+                    time_elapsed = now - last_flush_time
+                    
+                    # Check flush boundary
+                    # Flush if whitespace/punctuation boundary exists OR buffer len >= 20 OR time elapsed >= 0.1s
+                    should_flush = False
+                    split_pos = -1
+                    
+                    matches = list(boundary_regex.finditer(buffer))
+                    if matches:
+                        split_pos = matches[-1].end()
+                        should_flush = True
+                    elif len(buffer) >= 20 or time_elapsed >= 0.1:
+                        split_pos = len(buffer)
+                        should_flush = True
+                        
+                    if should_flush and split_pos > 0:
+                        to_send = buffer[:split_pos]
+                        buffer = buffer[split_pos:]
+                        
+                        if to_send:
+                            full_generated_text += to_send
+                            if t_first_visible_text is None and to_send.strip():
+                                t_first_visible_text = now
+                            yield f"event: text_delta\ndata: {json.dumps({'text': to_send})}\n\n"
+                            chunks_sent += 1
+                            last_flush_time = now
+                            
+                except queue.Empty:
+                    await asyncio.sleep(0.01)
+                    
+            # Flush remaining buffer text
+            if buffer and not interrupted:
+                full_generated_text += buffer
+                if t_first_visible_text is None and buffer.strip():
+                    t_first_visible_text = time.time()
+                yield f"event: text_delta\ndata: {json.dumps({'text': buffer})}\n\n"
+                chunks_sent += 1
+                buffer = ""
+                
+        except Exception as e:
+            stop_event.set()
+            interrupted = True
+            yield f"event: error\ndata: {json.dumps({'error': f'Streaming exception: {str(e)}'})}\n\n"
+        finally:
+            thread.join()
+            
+        gen_time = time.time() - t_gen_start
+        metrics["generation_time"] = round(gen_time, 4)
+        metrics["tokens_generated"] = tokens_count
+        metrics["tokens_per_second"] = round(tokens_count / max(gen_time, 0.001), 2)
+        metrics["chunks_sent"] = chunks_sent
+        metrics["stream_start_time"] = t_start
+        metrics["first_token_time"] = t_first_token or t_start
+        metrics["first_visible_text_time"] = t_first_visible_text or t_start
+        metrics["ttft"] = round((t_first_visible_text - t_start) if t_first_visible_text else (time.time() - t_start), 4)
+        metrics["total_time"] = round(time.time() - t_start, 4)
+        completion_status = "interrupted" if interrupted else "completed"
+        metrics["final_completion_status"] = completion_status
+        
+        cleaned_response = clean_llm_response(full_generated_text)
+        
+        # Post-generation Hallucination Verification
+        guarded_response, has_fabrication, fabricated_items = self.evidence_validator.guard_hallucination(
+            cleaned_response, evidence_text, query_plan=query_plan
+        )
+        
+        # 8. Record in Session Memory ONCE
+        is_sufficient = not has_fabrication
+        if interrupted:
+            session.add_turn("user", user_message, {"scope": "LEGAL", "interrupted": True, "query_plan": query_plan})
+            session.add_turn("assistant", guarded_response, {"scope": "LEGAL", "interrupted": True, "sources": len(source_metadata)})
+        else:
+            session.add_turn("user", user_message, {"scope": "LEGAL", "sufficient": is_sufficient, "query_plan": query_plan, "larv_diagnostics": larv_diagnostics})
+            session.add_turn("assistant", guarded_response, {"scope": "LEGAL", "sufficient": is_sufficient, "sources": len(source_metadata)})
+            
+        end_data = {
+            "response": guarded_response,
+            "metrics": metrics,
+            "scope": "LEGAL",
+            "query_plan": query_plan,
+            "retrieved_records": len(top_docs),
+            "source_metadata": source_metadata,
+            "evidence_passed": evidence_text,
+            "evidence_sufficient": is_sufficient,
+            "fabricated_items": fabricated_items,
+            "larv_diagnostics": larv_diagnostics,
+            "interrupted": interrupted,
+            "completion_status": completion_status
+        }
+        yield f"event: message_end\ndata: {json.dumps(end_data)}\n\n"
+
 
     def process_voice_message(self, conv_id: str, transcript: str, language: str = None, jurisdiction: str = None) -> dict:
         """Processes voice queries through the exact same legal intelligence pipeline."""
@@ -487,7 +816,9 @@ class LexoraChatbot:
         scope = result.get("scope", "LEGAL")
         sources = result.get("source_metadata", [])
         
-        if scope == "CASUAL":
+        if result.get("is_quick_response"):
+            voice_summary = full_resp
+        elif scope == "CASUAL":
             voice_summary = full_resp
         elif scope == "NON_LEGAL":
             voice_summary = "I only help with legal queries."

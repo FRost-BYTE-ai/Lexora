@@ -1,0 +1,128 @@
+{
+    "timestamp": 1790694571.0056734,
+    "total": 20,
+    "passed": 11,
+    "pass_rate": "55.0%",
+    "tests": [
+        {
+            "name": "Nonlegal Rejection: Recipe",
+            "status": "PASS",
+            "duration": 0.02,
+            "detail": "Scope: NON_LEGAL | Response: I only help with legal queries."
+        },
+        {
+            "name": "Nonlegal Rejection: Code",
+            "status": "FAIL",
+            "duration": 90.74,
+            "detail": "Scope: LEGAL | Response: To write a Python script that can handle sorting functions l"
+        },
+        {
+            "name": "Constitution: Article 21",
+            "status": "PASS",
+            "duration": 73.69,
+            "detail": "Corpora: ['constitution'] | Sources: 1"
+        },
+        {
+            "name": "Constitution: Article 19(1)(a)",
+            "status": "PASS",
+            "duration": 78.54,
+            "detail": "Corpora: ['constitution']"
+        },
+        {
+            "name": "BNS: Theft / Section 303",
+            "status": "PASS",
+            "duration": 118.58,
+            "detail": "Corpora: ['bns']"
+        },
+        {
+            "name": "BNSS: FIR filing / Section 173",
+            "status": "PASS",
+            "duration": 140.92,
+            "detail": "Corpora: ['bnss']"
+        },
+        {
+            "name": "BSA: Electronic Evidence / Section 61",
+            "status": "PASS",
+            "duration": 175.52,
+            "detail": "Corpora: ['bsa']"
+        },
+        {
+            "name": "Tamil Nadu State Law: Cooperative Societies",
+            "status": "PASS",
+            "duration": 81.48,
+            "detail": "Corpora: ['tamilnadu']"
+        },
+        {
+            "name": "Supreme Court Precedent: Maneka Gandhi",
+            "status": "PASS",
+            "duration": 112.24,
+            "detail": "Precedent: ['Maneka Gandhi v. Union of India', 'Shreya Singhal v. Union of India']"
+        },
+        {
+            "name": "Tanglish Query Processing",
+            "status": "PASS",
+            "duration": 123.28,
+            "detail": "Corpora: ['bns']"
+        },
+        {
+            "name": "Tamil Script Processing",
+            "status": "FAIL",
+            "duration": 0.01,
+            "detail": "Corpora: []"
+        },
+        {
+            "name": "Hindi Script Processing",
+            "status": "FAIL",
+            "duration": 0.01,
+            "detail": "Corpora: []"
+        },
+        {
+            "name": "Hallucination Resistance: Non-existent Section",
+            "status": "PASS",
+            "duration": 0.16,
+            "detail": "Sufficient: False | Response: The available authoritative legal corpus does not contain sufficient m"
+        },
+        {
+            "name": "Session Memory & Isolation",
+            "status": "PASS",
+            "duration": 253.73,
+            "detail": "Turn2 Rewritten: My neighbour threatened to kill me. | What is the  | Session2 Scope: NON_LEGAL"
+        },
+        {
+            "name": "SSE Streaming Protocol",
+            "status": "FAIL",
+            "duration": 947.6,
+            "detail": "[WinError 10054] An existing connection was forcibly closed by the remote host"
+        },
+        {
+            "name": "Security: HTTP Headers (CSP/nosniff/X-Frame-Options)",
+            "status": "FAIL",
+            "duration": 2.03,
+            "detail": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+        },
+        {
+            "name": "Security: CORS Origin Whitelist",
+            "status": "FAIL",
+            "duration": 2.03,
+            "detail": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+        },
+        {
+            "name": "Security: Document Upload Validation (.exe / >15MB)",
+            "status": "FAIL",
+            "duration": 2.03,
+            "detail": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+        },
+        {
+            "name": "Repetition Bug Fix: .rem token",
+            "status": "FAIL",
+            "duration": 2.06,
+            "detail": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+        },
+        {
+            "name": "Repetition Bug Fix: Arabic token",
+            "status": "FAIL",
+            "duration": 2.06,
+            "detail": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+        }
+    ]
+}

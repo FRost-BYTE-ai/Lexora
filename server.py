@@ -19,7 +19,7 @@ import os
 import time
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException, Request, Response
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import HTMLResponse, JSONResponse, Response as RawResponse
+from fastapi.responses import HTMLResponse, JSONResponse, StreamingResponse, Response as RawResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
@@ -73,17 +73,19 @@ use_lora_env = os.environ.get("USE_LORA", "true").lower() == "true"
 bot = LexoraChatbot(config={"use_lora": use_lora_env})
 print("Lexora Chatbot Engine ready.")
 
+from typing import Optional
+
 class ChatRequest(BaseModel):
     session_id: str = Field(default="", max_length=128)
     message: str = Field(..., min_length=1, max_length=4000)
-    language: str = Field(default=None, max_length=16)
-    jurisdiction: str = Field(default=None, max_length=32)
+    language: Optional[str] = Field(default=None, max_length=16)
+    jurisdiction: Optional[str] = Field(default=None, max_length=32)
 
 class VoiceRequest(BaseModel):
     session_id: str = Field(default="", max_length=128)
     transcript: str = Field(..., min_length=1, max_length=4000)
-    language: str = Field(default=None, max_length=16)
-    jurisdiction: str = Field(default=None, max_length=32)
+    language: Optional[str] = Field(default=None, max_length=16)
+    jurisdiction: Optional[str] = Field(default=None, max_length=32)
 
 class TranslateRequest(BaseModel):
     text: str = Field(..., min_length=1, max_length=10000)
@@ -193,6 +195,34 @@ def chat_endpoint(req: ChatRequest, request: Request):
     )
     result["session_id"] = session_id
     return result
+
+@app.post("/api/chat/stream")
+async def chat_stream_endpoint(req: ChatRequest, request: Request):
+    client_ip = request.client.host if request.client else "127.0.0.1"
+    check_rate_limit(client_ip)
+    
+    if not req.message or not req.message.strip():
+        raise HTTPException(status_code=400, detail="Empty message")
+        
+    session_id = req.session_id
+    if not session_id or not bot.session_manager.has_session(session_id):
+        session_id = bot.start_consultation()
+        
+    return StreamingResponse(
+        bot.process_message_stream(
+            session_id,
+            req.message.strip(),
+            language=req.language,
+            jurisdiction=req.jurisdiction,
+            http_request=request
+        ),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "Connection": "keep-alive",
+            "X-Accel-Buffering": "no"
+        }
+    )
 
 @app.post("/api/voice")
 def voice_endpoint(req: VoiceRequest, request: Request):
@@ -305,7 +335,16 @@ def translate_endpoint(req: TranslateRequest):
 @app.post("/api/tts/synthesize")
 def synthesize_tts_endpoint(req: TTSRequest):
     try:
-        audio_bytes, mime_type, provider_name = tts_manager.synthesize(req.text, req.language)
+        lang = req.language
+        # Auto-detect script if language is ambiguous or default 'en' but text is Indic
+        if lang in ["auto", "en", None, ""]:
+            if any('\u0B80' <= c <= '\u0BFF' for c in req.text):
+                lang = "ta"
+            elif any('\u0900' <= c <= '\u097F' for c in req.text):
+                lang = "hi"
+            elif not lang or lang == "auto":
+                lang = "en"
+        audio_bytes, mime_type, provider_name = tts_manager.synthesize(req.text, lang)
         return RawResponse(
             content=audio_bytes,
             media_type=mime_type,
